@@ -7,6 +7,7 @@ public class ActionManager : MonoBehaviour {
 
 	public GameObject responsible;
 	public GameObject target;
+	public GameObject interactionManager;
 
 	// Use this for initialization
 	void Start () {
@@ -60,10 +61,10 @@ public class ActionManager : MonoBehaviour {
 					else if(hit.transform != null){
 						target = hit.transform.gameObject;
 						Debug.Log("list available target interactions.");
-
+						interactionManager.GetComponent<InteractionUI>().ShowInteractions(target);
 					}
 				}
 			}
 		}
-	}
+	}	
 }
