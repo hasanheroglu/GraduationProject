@@ -36,6 +36,11 @@ public class UIManager : MonoBehaviour
 	{
 		var button = Instantiate(interactionButton, panel.transform);
 		button.GetComponent<InteractionButton>().SetText(buttonInfo.Method.Name);
-		button.GetComponent<Button>().onClick.AddListener(delegate { buttonInfo.Method.Invoke(buttonInfo.Target.GetComponent<Interactable>(), buttonInfo.Parameters); });
+		button.GetComponent<Button>().onClick.AddListener(
+			delegate
+			{
+				buttonInfo.Method.Invoke(buttonInfo.Target.GetComponent<Interactable>(), buttonInfo.Parameters); 
+				InteractionUtil.CloseInteractionMenu();
+			});
 	}
 }

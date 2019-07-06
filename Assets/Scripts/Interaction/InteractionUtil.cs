@@ -26,7 +26,6 @@ public class InteractionUtil : MonoBehaviour
 		{
 			ButtonInfo buttonInfo = new ButtonInfo(target, method, parameters);
 			UIManager.Instance.AddButton(interactionPanel, buttonInfo);
-			Debug.Log(method.Name);
 		}
 	}
 
@@ -44,8 +43,11 @@ public class InteractionUtil : MonoBehaviour
 		return methods;
 	}
 
-	public static void CloseInteractions()
+	public static void CloseInteractionMenu()
 	{
-
+		if (interactionPanel != null)
+		{
+			Destroy(interactionPanel);
+		}
 	}
 }

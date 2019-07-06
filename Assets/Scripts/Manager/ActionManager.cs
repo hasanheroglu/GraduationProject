@@ -3,22 +3,46 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ActionManager : MonoBehaviour
 {
 
-	private LayerMask layerMask;
+	private LayerMask _layerMask;
+	private GraphicRaycaster _graphicRaycaster;
+	private PointerEventData _pointerEventData;
+	private EventSystem _eventSystem;
 	
 	public GameObject responsible;
 	public GameObject target;
-
+	public GameObject canvas;
+	
 	private void Start()
 	{
-		layerMask = 1 << 5;
-		layerMask = ~layerMask;
+		_layerMask = 1 << 5;
+		_layerMask = ~_layerMask;
+		_graphicRaycaster = canvas.GetComponent<GraphicRaycaster>();
+		_eventSystem = GetComponent<EventSystem>();
 	}
+	
+	private void Update () {
 
-	void Update () {
+		if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
+		{
+			_pointerEventData = new PointerEventData(_eventSystem);
+			_pointerEventData.position = Input.mousePosition;
+
+			List<RaycastResult> raycastResults = new List<RaycastResult>();
+			_graphicRaycaster.Raycast(_pointerEventData, raycastResults);
+
+
+			if (raycastResults.Count == 0)
+			{
+				InteractionUtil.CloseInteractionMenu();
+			}
+		}
+
 		if(responsible == null){
 			if (Input.GetMouseButtonDown(0))
 			{ 
@@ -56,12 +80,7 @@ public class ActionManager : MonoBehaviour
 				RaycastHit hit;
 				if (Physics.Raycast(ray, out hit))
 				{
-					if(hit.transform.gameObject.CompareTag("Floor"))
-					{
-						Debug.Log("move to the destination.");
-						responsible.GetComponent<NavMeshAgent>().SetDestination(hit.point);
-					}
-					else if(hit.transform != null){
+					if(hit.transform != null){
 						target = hit.transform.gameObject;
 						Debug.Log("list available target interactions.");
 						InteractionUtil.ShowInteractions(target, new object[] {responsible.GetComponent<Human>()});
