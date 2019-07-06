@@ -1,20 +1,23 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ActionManager : MonoBehaviour {
+public class ActionManager : MonoBehaviour
+{
 
+	private LayerMask layerMask;
+	
 	public GameObject responsible;
 	public GameObject target;
-	public GameObject interactionManager;
 
-	// Use this for initialization
-	void Start () {
-		
+	private void Start()
+	{
+		layerMask = 1 << 5;
+		layerMask = ~layerMask;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		if(responsible == null){
 			if (Input.GetMouseButtonDown(0))
@@ -61,7 +64,7 @@ public class ActionManager : MonoBehaviour {
 					else if(hit.transform != null){
 						target = hit.transform.gameObject;
 						Debug.Log("list available target interactions.");
-						interactionManager.GetComponent<InteractionUI>().ShowInteractions(target);
+						InteractionUtil.ShowInteractions(target, new object[] {responsible.GetComponent<Human>()});
 					}
 				}
 			}

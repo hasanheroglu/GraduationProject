@@ -2,20 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle : MonoBehaviour {
-
-	// Use this for initialization
-	private void Start () {
-		
-	}
+public class Obstacle : Interactable, IDestroyable{
 	
-	// Update is called once per frame
-	private void Update () {
-		
-	}
-
-	public void Print()
+	public void Destroy(Human human)
 	{
-		Debug.Log("This is an obstacle.");
+		Debug.Log("Destroyed by " + human.Name);
 	}
 }
