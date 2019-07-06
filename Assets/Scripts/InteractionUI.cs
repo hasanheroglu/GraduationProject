@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class InteractionUI : MonoBehaviour
@@ -23,7 +24,7 @@ public class InteractionUI : MonoBehaviour
 	void Update () {
 		if (Input.anyKeyDown)
 		{
-			CloseInteractions();
+			//CloseInteractions();
 		}
 	}
 
@@ -41,15 +42,18 @@ public class InteractionUI : MonoBehaviour
 		foreach (var m in methods)
 		{
 			interaction = Instantiate(interactionPanel, canvas.transform);
-			AddButton(m.Name);
+			AddButton(target, m);
 			Debug.Log(m.Name);
 		}
 	}
 
-	private void AddButton(string functionName)
+	private void AddButton(GameObject target, MethodInfo method)
 	{
 		var button = Instantiate(interactionButton, interaction.transform);
-		button.GetComponent<InteractionButton>().SetText(functionName);
+		button.GetComponent<InteractionButton>().SetText(method.Name);
+		//var action = (UnityAction) Delegate.CreateDelegate(typeof(Action), );
+		
+		button.GetComponent<Button>().onClick.AddListener(delegate { method.Invoke(this, null); });
 	}
 
 	public void ShowInteractions(GameObject target)
