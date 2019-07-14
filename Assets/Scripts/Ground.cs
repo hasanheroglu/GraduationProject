@@ -1,24 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class Human : Interactable, ISocializable
+public class Ground : Interactable, IWalkable
 {
 
-	
-	
-	// Use this for initialization
-	void Start ()
-	{
-		this.Name = "Moruk";
-	}
-
-	public IEnumerator Talk()
+	public IEnumerator Walk()
 	{
 		Human human = ActionManager.Instance.responsible.GetComponent<Human>();
 		yield return human.GetComponent<AIManager>().StartCoroutine("Walk", gameObject.transform.position);
-		Debug.Log(human.Name + " talking with " + Name);
 	}
-	
-	
 }

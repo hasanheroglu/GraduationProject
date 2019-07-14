@@ -35,12 +35,18 @@ public class UIManager : MonoBehaviour
 	public void AddButton(GameObject panel, ButtonInfo buttonInfo)
 	{
 		var button = Instantiate(interactionButton, panel.transform);
+		var buttonRect = button.GetComponent<RectTransform>().rect;
+		var panelRect = panel.GetComponent<RectTransform>().rect;
+		var buttonPosition = new Vector3(1,-1 * button.transform.GetSiblingIndex() * buttonRect.height, 0);
+		button.GetComponent<RectTransform>().anchoredPosition = buttonPosition;
 		button.GetComponent<InteractionButton>().SetText(buttonInfo.Method.Name);
+		panel.GetComponent<RectTransform>().sizeDelta = new Vector2(buttonRect.width, buttonRect.height * panel.transform.GetChildCount());
 		button.GetComponent<Button>().onClick.AddListener(
 			delegate
 			{
-				buttonInfo.Method.Invoke(buttonInfo.Target.GetComponent<Interactable>(), buttonInfo.Parameters); 
 				InteractionUtil.CloseInteractionMenu();
+				buttonInfo.Interactable.StartCoroutine(buttonInfo.Method.Name, buttonInfo.Parameters);
+				//buttonInfo.Method.Invoke(buttonInfo.Target.GetComponent<Interactable>(), buttonInfo.Parameters); 
 			});
 	}
 }

@@ -18,13 +18,14 @@ public class InteractionUtil : MonoBehaviour
 	private static void GetInteractionMenu(GameObject target, object[] parameters)
 	{
 		List<MethodInfo> methods = new List<MethodInfo>();
+		var script = target.GetComponent<Interactable>();
 		methods = GetTargetMethods(target);
 
 		interactionPanel = UIManager.Instance.CreateInteractionPanel();
         		
 		foreach (var method in methods)
 		{
-			ButtonInfo buttonInfo = new ButtonInfo(target, method, parameters);
+			ButtonInfo buttonInfo = new ButtonInfo(target, method, script, parameters);
 			UIManager.Instance.AddButton(interactionPanel, buttonInfo);
 		}
 	}
@@ -32,14 +33,12 @@ public class InteractionUtil : MonoBehaviour
 	private static List<MethodInfo> GetTargetMethods(GameObject target)
 	{
 		List<MethodInfo> methods = new List<MethodInfo>();
-		var scripts = target.GetComponents<MonoBehaviour>();
+		var script = target.GetComponent<Interactable>();
 		var flags = BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly;
-		foreach (var script in scripts)
-		{
-			var type = script.GetType();
-			methods.AddRange(type.GetMethods(flags));
-		}
-
+		
+		var type = script.GetType();
+		methods.AddRange(type.GetMethods(flags));
+		
 		return methods;
 	}
 

@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IWalkable
 {
-	void Walk(Human human);
+	IEnumerator Walk();
 }

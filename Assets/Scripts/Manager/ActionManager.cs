@@ -8,26 +8,36 @@ using UnityEngine.UI;
 
 public class ActionManager : MonoBehaviour
 {
+	private static ActionManager instance;
 
-	private LayerMask _layerMask;
 	private GraphicRaycaster _graphicRaycaster;
 	private PointerEventData _pointerEventData;
 	private EventSystem _eventSystem;
-	
+
 	public GameObject responsible;
 	public GameObject target;
 	public GameObject canvas;
 	
+	public static ActionManager Instance { get { return instance; } }
+	
+	private void Awake()
+	{
+		if (instance != null && instance != this)
+		{
+			Destroy(this.gameObject);
+		} else {
+			instance = this;
+		}
+	}
+	
 	private void Start()
 	{
-		_layerMask = 1 << 5;
-		_layerMask = ~_layerMask;
 		_graphicRaycaster = canvas.GetComponent<GraphicRaycaster>();
 		_eventSystem = GetComponent<EventSystem>();
 	}
 	
-	private void Update () {
-
+	private void Update () 
+	{
 		if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
 		{
 			_pointerEventData = new PointerEventData(_eventSystem);
@@ -43,7 +53,8 @@ public class ActionManager : MonoBehaviour
 			}
 		}
 
-		if(responsible == null){
+		if(responsible == null)
+		{
 			if (Input.GetMouseButtonDown(0))
 			{ 
 				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -69,8 +80,9 @@ public class ActionManager : MonoBehaviour
 						responsible = hit.transform.gameObject;
 					}
 					else{
-						responsible = null;
-						target = null;
+						//responsible = null;
+						//target = null;
+						//responsible.GetComponent<AIManager>().target = target;
 					}
 				}
 			}
@@ -82,8 +94,8 @@ public class ActionManager : MonoBehaviour
 				{
 					if(hit.transform != null){
 						target = hit.transform.gameObject;
-						Debug.Log("list available target interactions.");
-						InteractionUtil.ShowInteractions(target, new object[] {responsible.GetComponent<Human>()});
+						responsible.GetComponent<AIManager>().target = target;
+ 						InteractionUtil.ShowInteractions(target, new object[] {responsible.GetComponent<Human>()});
 					}
 				}
 			}
