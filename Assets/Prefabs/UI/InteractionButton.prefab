@@ -39,7 +39,6 @@ GameObject:
   - component: {fileID: 222493837056836808}
   - component: {fileID: 114855481039883246}
   - component: {fileID: 114341821766753724}
-  - component: {fileID: 114051078930466610}
   m_Layer: 5
   m_Name: InteractionButton
   m_TagString: UI
@@ -47,17 +46,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114051078930466610
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1517343036122846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1804c6454bba40a39fa2d67265b07c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114341821766753724
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1,52 +1,103 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using System.Collections;
+using System.Reflection;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+namespace Manager
 {
-
-	private static UIManager instance;
-	
-	public GameObject canvas;
-	
-	[Header("Interaction")]
-	public GameObject interactionButton;
-	public GameObject interactionPanel;
-
-
-	public static UIManager Instance { get { return instance; } }
-	
-	private void Awake()
+	public class UIManager : MonoBehaviour
 	{
-		if (instance != null && instance != this)
+
+		private static UIManager instance;
+		
+		public GameObject canvas;
+	
+		[Header("Interaction")]
+		public GameObject interactionButton;
+		public GameObject interactionPanel;
+		[Header("Job")] 
+		public GameObject jobButton;
+		public GameObject jobPanel;
+
+
+		public static UIManager Instance { get { return instance; } }
+	
+		private void Awake()
 		{
-			Destroy(this.gameObject);
-		} else {
-			instance = this;
-		}
-	}
-
-	public GameObject CreateInteractionPanel()
-	{
-		return Instantiate(interactionPanel, canvas.transform);
-	}
-
-	public void AddButton(GameObject panel, ButtonInfo buttonInfo)
-	{
-		var button = Instantiate(interactionButton, panel.transform);
-		var buttonRect = button.GetComponent<RectTransform>().rect;
-		var panelRect = panel.GetComponent<RectTransform>().rect;
-		var buttonPosition = new Vector3(1,-1 * button.transform.GetSiblingIndex() * buttonRect.height, 0);
-		button.GetComponent<RectTransform>().anchoredPosition = buttonPosition;
-		button.GetComponent<InteractionButton>().SetText(buttonInfo.Method.Name);
-		panel.GetComponent<RectTransform>().sizeDelta = new Vector2(buttonRect.width, buttonRect.height * panel.transform.GetChildCount());
-		button.GetComponent<Button>().onClick.AddListener(
-			delegate
+			if (instance != null && instance != this)
 			{
+				Destroy(this.gameObject);
+			} else {
+				instance = this;
+			}
+		}
+		
+		/*
+		 * CREATING INTERACTION MENU AND BUTTON
+		 */
+		
+		public GameObject CreateInteractionPanel(Vector3 position)
+		{
+			return Instantiate(interactionPanel, position, Quaternion.identity, canvas.transform);
+		}
+
+		public void AddInteractionButton(GameObject panel, ButtonInfo buttonInfo)
+		{
+			IEnumerator enumerator = InteractionUtil.CreateCoroutine(buttonInfo);
+
+			if (enumerator == null) return;
+
+			var button = CreateInteractionButton(panel, buttonInfo);
+			ButtonUtil.SetOnClickAction(button, GetInteractionAction(enumerator, buttonInfo.Target.GetComponent<Interactable>(), button));
+		}
+
+		private UnityAction GetInteractionAction(IEnumerator enumerator, Interactable target, GameObject button)
+		{
+			return delegate {
 				InteractionUtil.CloseInteractionMenu();
-				buttonInfo.Interactable.StartCoroutine(buttonInfo.Method.Name, buttonInfo.Parameters);
-				//buttonInfo.Method.Invoke(buttonInfo.Target.GetComponent<Interactable>(), buttonInfo.Parameters); 
-			});
+				ActionManager.Instance.responsible.GetComponent<Responsible>().AddJob(enumerator);
+				ActionManager.Instance.responsible.GetComponent<Responsible>().AddTarget(target);
+				//var coroutine = StartCoroutine(enumerator);
+				AddJobButton(enumerator);
+				
+			};
+			
+		}
+
+		private GameObject CreateInteractionButton(GameObject panel, ButtonInfo buttonInfo)
+		{
+			var button = Instantiate(interactionButton, panel.transform);
+			
+			ButtonUtil.AdjustPosition(button, -1);
+			ButtonUtil.SetText(button, buttonInfo.Method.Name);
+			return button;
+		}
+		
+		/*
+		 * CREATING JOB PANEL AND BUTTONS
+		 */
+
+		private void AddJobButton(IEnumerator enumerator)
+		{
+			var button = Instantiate(jobButton, jobPanel.transform);
+			ButtonUtil.AdjustPosition(button, 1);
+			ActionManager.Instance.responsible.GetComponent<Responsible>().AddButton(button);
+			ButtonUtil.SetOnClickAction(button, GetJobButtonAction(enumerator, button));
+		}
+		
+		private UnityAction GetJobButtonAction(IEnumerator enumerator, GameObject button)
+		{
+			return delegate {
+				ActionManager.Instance.responsible.GetComponent<Responsible>().StopDoingJob(enumerator);
+				ButtonUtil.Destroy(button);
+			};
+			
+		}
+
+		
+		
+		
 	}
 }

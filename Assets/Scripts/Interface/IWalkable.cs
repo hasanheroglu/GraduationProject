@@ -1,8 +1,9 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public interface IWalkable
+namespace Interface
 {
-	IEnumerator Walk();
+	public interface IWalkable
+	{
+		IEnumerator Walk();
+	}
 }

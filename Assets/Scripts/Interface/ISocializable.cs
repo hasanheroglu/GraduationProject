@@ -1,8 +1,9 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public interface ISocializable
+namespace Interface
 {
-	IEnumerator Talk();
+	public interface ISocializable
+	{
+		IEnumerator Talk();
+	}
 }

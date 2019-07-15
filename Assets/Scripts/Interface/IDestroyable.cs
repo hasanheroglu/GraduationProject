@@ -1,9 +1,10 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public interface IDestroyable
+namespace Interface
 {
-	IEnumerator Destroy();
+	public interface IDestroyable
+	{
+		IEnumerator Destroy(Human human);
 
+	}
 }

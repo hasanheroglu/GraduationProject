@@ -3,6 +3,7 @@
 namespace Interface
 {
     public interface ICarriable{
-        IEnumerator Carry();
+        IEnumerator Carry(Human human);
+        IEnumerator Hold(Human human);
     }
 }

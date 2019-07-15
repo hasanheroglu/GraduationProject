@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 54010224583577348}
   - component: {fileID: 195241192558851332}
   - component: {fileID: 114779213018351180}
-  - component: {fileID: 114410990013457374}
   m_Layer: 0
   m_Name: Human
   m_TagString: Human
@@ -70,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1943965387288054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.75, y: 0.294, z: -0.72}
+  m_LocalPosition: {x: 6.67, y: 0.294, z: -1.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4293607203975152}
@@ -156,19 +155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d559a4740e661475f9be95956fd83920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114410990013457374
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1943965387288054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42e8ce6fb5448442ab2ec941dcc77a2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetInRange: 0
-  target: {fileID: 0}
 --- !u!114 &114779213018351180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -180,6 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe4494e2c5f20af45a7bcbe598ef948e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetInRange: 0
+  target: {fileID: 0}
 --- !u!135 &135389797667103430
 SphereCollider:
   m_ObjectHideFlags: 1
