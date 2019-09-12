@@ -3,13 +3,30 @@
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets/ImportedAssets" t="Include">
+        <e p="Survival_Pack_Low_Poly" t="Include">
+          <e p="Read-Me.txt" t="Include" />
+        </e>
+      </e>
       <e p="Assets/Scripts" t="Include">
-        <e p="Interactables" t="Include">
-          <e p="Ground.cs" t="Include" />
-          <e p="Human.cs" t="Include" />
-          <e p="Interactable.cs" t="Include" />
-          <e p="Obstacle.cs" t="Include" />
-          <e p="Responsible.cs" t="Include" />
+        <e p="Activity.cs" t="Include" />
+        <e p="Effect.cs" t="Include" />
+        <e p="HumanFactory.cs" t="Include" />
+        <e p="Interactable" t="Include">
+          <e p="Base" t="Include">
+            <e p="Interactable.cs" t="Include" />
+            <e p="Responsible.cs" t="Include" />
+          </e>
+          <e p="Creatures" t="Include">
+            <e p="Human.cs" t="Include" />
+          </e>
+          <e p="Environment" t="Include">
+            <e p="Ground.cs" t="Include" />
+            <e p="Obstacle.cs" t="Include" />
+            <e p="Plant.cs" t="Include" />
+            <e p="Tent.cs" t="Include" />
+            <e p="Tree.cs" t="Include" />
+          </e>
         </e>
         <e p="Interaction" t="Include">
           <e p="InteractCollider.cs" t="Include" />
@@ -18,17 +35,29 @@
         <e p="Interface" t="Include">
           <e p="IAttackable.cs" t="Include" />
           <e p="ICarriable.cs" t="Include" />
+          <e p="IChoppable.cs" t="Include" />
           <e p="IDestroyable.cs" t="Include" />
+          <e p="IEdible.cs" t="Include" />
+          <e p="IHarvestable.cs" t="Include" />
+          <e p="ISleepable.cs" t="Include" />
           <e p="ISocializable.cs" t="Include" />
           <e p="IWalkable.cs" t="Include" />
         </e>
+        <e p="JobUtil.cs" t="Include" />
         <e p="Manager" t="Include">
           <e p="ActionManager.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
         </e>
+        <e p="Needs" t="Include">
+          <e p="Base" t="Include">
+            <e p="Need.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Skill.cs" t="Include" />
         <e p="UI" t="Include">
           <e p="ButtonInfo.cs" t="Include" />
           <e p="ButtonUtil.cs" t="Include" />
+          <e p="NeedBox.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />

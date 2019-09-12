@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using Interactable.Base;
+using Interaction;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -13,12 +15,18 @@ namespace Manager
 		private GraphicRaycaster _graphicRaycaster;
 		private PointerEventData _pointerEventData;
 		private EventSystem _eventSystem;
-		private Camera main;
-
-		public GameObject responsible;
-		public GameObject target;
+		private Camera _main;
+		public GameObject _responsible;
+		public GameObject _target;
+		
 		public GameObject canvas;
-	
+
+		public GameObject Responsible
+		{
+			get { return _responsible; }
+			set { _responsible = value; }
+		}
+
 		public static ActionManager Instance { get { return instance; } }
 	
 		private void Awake()
@@ -30,12 +38,12 @@ namespace Manager
 				instance = this;
 			}
 		}
-	
+		
 		private void Start()
 		{
 			_graphicRaycaster = canvas.GetComponent<GraphicRaycaster>();
 			_eventSystem = GetComponent<EventSystem>();
-			main = Camera.main;
+			_main = Camera.main;
 		}
 	
 		private void Update () 
@@ -51,53 +59,46 @@ namespace Manager
 
 				if (raycastResults.Count == 0)
 				{
-					InteractionUtil.CloseInteractionMenu();
+					UIManager.Instance.CloseInteractionPanel();
+					SetResponsible();
 
-					if (responsible == null)
+					if (_responsible)
 					{
-						SetResponsible();
-					}
-					else
-					{
-						SetTarget();
 						Interact();
 					}
 				}
 			}
-
-			
-			
 		}
 
 		private void SetResponsible()
 		{
 			if (!Input.GetMouseButtonDown(0)) return;
-			if (main == null) return;
+			if (_main == null) return;
 
-			Ray ray = main.ScreenPointToRay(Input.mousePosition);
+			Ray ray = _main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
 			
 			if (!Physics.Raycast(ray, out hit)) return;
+			if (!hit.transform.gameObject.CompareTag("Human")) return;
 			
-			if(hit.transform.gameObject.CompareTag("Human"))
-			{
-				responsible = hit.transform.gameObject;
-			}
+			_responsible = hit.transform.gameObject;
+			UIManager.Instance.ActivateJobPanel(_responsible.GetComponent<Responsible>().JobPanel);
+			UIManager.Instance.SetInfoPanel(_responsible.GetComponent<Responsible>());
 		}
 
 		private void SetTarget()
 		{
 			if (Input.GetMouseButtonDown(0))
 			{ 
-				if (main == null) return;
+				if (_main == null) return;
 
-				Ray ray = main.ScreenPointToRay(Input.mousePosition);
+				Ray ray = _main.ScreenPointToRay(Input.mousePosition);
 				RaycastHit hit;
 				if (Physics.Raycast(ray, out hit))
 				{
 					if(hit.transform.gameObject.CompareTag("Human"))
 					{
-						responsible = hit.transform.gameObject;
+						_responsible = hit.transform.gameObject;
 						//responsible.GetComponent<Responsible>.ShowInfo();
 					}
 				}
@@ -107,16 +108,16 @@ namespace Manager
 		private void Interact()
 		{
 			if (!Input.GetMouseButtonDown(1)) return;
-			if (main == null) return;
+			if (_main == null) return;
 			
-			Ray ray = main.ScreenPointToRay(Input.mousePosition);
+			Ray ray = _main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
 			
 			if (!Physics.Raycast(ray, out hit)) return;
 			if (hit.transform == null) return;
 			
-			target = hit.transform.gameObject;
-			InteractionUtil.ShowInteractions(target, new object[] {responsible.GetComponent<Responsible>()}, Input.mousePosition);
+			_target = hit.transform.gameObject;
+			InteractionUtil.ShowInteractions(_responsible, _target, new object[] {_responsible.GetComponent<Responsible>()}, Input.mousePosition);
 		}
 	}
 }

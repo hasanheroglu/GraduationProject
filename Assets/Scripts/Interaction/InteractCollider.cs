@@ -1,31 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Manager;
+﻿using Interactable.Base;
 using UnityEngine;
 
-public class InteractCollider : MonoBehaviour
+namespace Interaction
 {
-
-	private Responsible _responsible;
-
-	private void Start()
+	public class InteractCollider : MonoBehaviour
 	{
-		_responsible = GetComponentInParent<Responsible>();
-	}
 
-	private void OnTriggerEnter(Collider other)
-	{
-		if (!ReferenceEquals(other.gameObject, _responsible.target)) return;
+		private Responsible _responsible;
+
+		private void Start()
+		{
+			_responsible = GetComponentInParent<Responsible>();
+		}
+
+		private void OnTriggerEnter(Collider other)
+		{
+			if (!ReferenceEquals(other.gameObject, _responsible.Target)) return;
 		
-		_responsible.targetInRange = true;
-		Debug.Log("Target found!");
-	}
+			_responsible.TargetInRange = true;
+		}
 	
-	private void OnTriggerStay(Collider other)
-	{
-		if (!ReferenceEquals(other.gameObject, _responsible.target)) return;
+		private void OnTriggerStay(Collider other)
+		{
+			if (!ReferenceEquals(other.gameObject, _responsible.Target)) return;
 		
-		_responsible.targetInRange = true;
-		Debug.Log("Target found!");
+			_responsible.TargetInRange = true;
+		}
 	}
 }

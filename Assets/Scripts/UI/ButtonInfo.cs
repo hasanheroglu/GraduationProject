@@ -8,10 +8,10 @@ public class ButtonInfo
 {
 	private GameObject _target;
 	private MethodInfo _method;
-	private Interactable _interactable;
+	private Interactable.Base.Interactable _interactable;
 	private object[] _parameters;
 
-	public ButtonInfo(GameObject target, MethodInfo method, Interactable interactable, object[] parameters)
+	public ButtonInfo(GameObject target, MethodInfo method, Interactable.Base.Interactable interactable, object[] parameters)
 	{
 		_target = target;
 		_method = method;
@@ -37,7 +37,7 @@ public class ButtonInfo
 		set { _parameters = value; }
 	}
 	
-	public Interactable Interactable
+	public Interactable.Base.Interactable Interactable
 	{
 		get { return _interactable; }
 		set { _interactable = value; }

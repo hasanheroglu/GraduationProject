@@ -1,8 +1,10 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using Interactable.Creatures;
 
-public interface IAttackable
+namespace Interface
 {
-    IEnumerator Attack(Human human);
+    public interface IAttackable
+    {
+        IEnumerator Attack(Human human);
+    }
 }

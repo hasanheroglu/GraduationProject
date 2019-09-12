@@ -1,0 +1,20 @@
+﻿using System.Collections;
+using Interactable.Base;
+using Interactable.Creatures;
+using Interface;
+using Manager;
+using UnityEngine;
+
+namespace Interactable.Environment
+{
+	public class Ground : Interactable.Base.Interactable, IWalkable
+	{
+
+		public IEnumerator Walk(Human human)
+		{
+			yield return human.GetComponent<Responsible>().StartCoroutine("Walk", gameObject.transform.position);
+			human.GetComponent<Responsible>().FinishJob();
+			Debug.Log("Finished walking!");
+		}
+	}
+}

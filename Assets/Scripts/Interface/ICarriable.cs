@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Interactable.Creatures;
 
 namespace Interface
 {

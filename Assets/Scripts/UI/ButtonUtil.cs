@@ -25,9 +25,21 @@ public class ButtonUtil : MonoBehaviour {
 		var buttonPosition = new Vector3(1,direction * button.transform.GetSiblingIndex() * buttonRect.height, 0);
 		button.GetComponent<RectTransform>().anchoredPosition = buttonPosition;
 	}
+	
+	public static void DropPosition(GameObject button)
+	{
+		var buttonRect = button.GetComponent<RectTransform>().rect;
+		var buttonPosition = new Vector3(1,(button.transform.GetSiblingIndex() - 1) * buttonRect.height, 0);
+		button.GetComponent<RectTransform>().anchoredPosition = buttonPosition;
+	}
 
 	public static void Destroy(GameObject button)
 	{
+		if (!button.activeSelf)
+		{
+			Debug.Log(button.activeSelf);
+			button.SetActive(true);
+		}
 		GameObject.Destroy(button);
 	}
 	
