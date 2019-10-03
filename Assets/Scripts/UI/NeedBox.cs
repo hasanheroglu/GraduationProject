@@ -7,13 +7,19 @@ namespace UI
 	public class NeedBox : MonoBehaviour
 	{
 		private Need _need;
+		private RawImage _status;
 	
 		public GameObject name;
-		public GameObject value;
+		public GameObject status;
+
+		private void Awake()
+		{
+			_status = status.GetComponent<RawImage>();
+		}
 
 		private void Update()
 		{
-			SetValue();
+			SetStatus();
 		}
 
 		public void SetNeed(Need need)
@@ -25,7 +31,7 @@ namespace UI
 		private void SetNeedBox()
 		{
 			SetName();
-			SetValue();
+			SetStatus();
 		}
 
 		private void SetName()
@@ -33,9 +39,10 @@ namespace UI
 			this.name.GetComponent<Text>().text = _need.Name;
 		}
 
-		private void SetValue()
+		private void SetStatus()
 		{
-			this.value.GetComponent<Text>().text = _need.Value.ToString(CultureInfo.InvariantCulture);
+			var statusColor = ((_need.Value / 100) * 120) / 360;
+			_status.color = Color.HSVToRGB(statusColor, 1, 1);
 		}
 	}
 }

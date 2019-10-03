@@ -10,8 +10,20 @@
       </e>
       <e p="Assets/Scripts" t="Include">
         <e p="Activity.cs" t="Include" />
+        <e p="Attribute" t="Include">
+          <e p="ActivityTypeAttribute.cs" t="Include" />
+        </e>
+        <e p="Behaviour" t="Include">
+          <e p="HumanBehaviour.cs" t="Include" />
+        </e>
         <e p="Effect.cs" t="Include" />
-        <e p="HumanFactory.cs" t="Include" />
+        <e p="Factory" t="Include">
+          <e p="ActivityFactory.cs" t="Include" />
+          <e p="EffectFactory.cs" t="Include" />
+          <e p="HumanFactory.cs" t="Include" />
+          <e p="NeedFactory.cs" t="Include" />
+          <e p="SkillFactory.cs" t="Include" />
+        </e>
         <e p="Interactable" t="Include">
           <e p="Base" t="Include">
             <e p="Interactable.cs" t="Include" />
@@ -22,7 +34,6 @@
           </e>
           <e p="Environment" t="Include">
             <e p="Ground.cs" t="Include" />
-            <e p="Obstacle.cs" t="Include" />
             <e p="Plant.cs" t="Include" />
             <e p="Tent.cs" t="Include" />
             <e p="Tree.cs" t="Include" />
@@ -46,6 +57,7 @@
         <e p="JobUtil.cs" t="Include" />
         <e p="Manager" t="Include">
           <e p="ActionManager.cs" t="Include" />
+          <e p="NotificationManager.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
         </e>
         <e p="Needs" t="Include">
@@ -58,6 +70,7 @@
           <e p="ButtonInfo.cs" t="Include" />
           <e p="ButtonUtil.cs" t="Include" />
           <e p="NeedBox.cs" t="Include" />
+          <e p="SkillInfo.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />

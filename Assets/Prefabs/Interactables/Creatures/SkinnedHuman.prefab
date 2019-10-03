@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 54792633118898094}
   - component: {fileID: 114731538130232222}
   - component: {fileID: 195993404693633164}
+  - component: {fileID: 114188922835320398}
   m_Layer: 0
   m_Name: SkinnedHuman
   m_TagString: Human
@@ -711,7 +712,7 @@ Transform:
   m_GameObject: {fileID: 1068021408138880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.15, y: -1.168, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4569099519178924}
   - {fileID: 4239758219274732}
@@ -840,6 +841,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114188922835320398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1068021408138880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d398bb26cded457a956e09634999986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114731538130232222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -851,8 +863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe4494e2c5f20af45a7bcbe598ef948e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetInRange: 0
-  target: {fileID: 0}
+  interactionPoint: {fileID: 0}
 --- !u!114 &114989582648483830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -873,7 +884,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.26
+  m_Radius: 0.18
   m_Height: 1.76
   m_Direction: 1
   m_Center: {x: 0, y: 0.8, z: 0}

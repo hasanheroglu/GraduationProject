@@ -4,24 +4,12 @@ using UnityEngine;
 
 public class Effect
 {
-	private Needs needType;
-	private float stepValue;
+	public NeedType NeedType { get; set; }
+	public float StepValue { get; set; }
 
-	public Needs NeedType
+	public Effect(NeedType needType, float stepValue)
 	{
-		get { return needType; }
-		set { needType = value; }
-	}
-	
-	public float StepValue
-	{
-		get { return stepValue; }
-		set { stepValue = value; }
-	}
-	
-	public Effect(Needs needType, float stepValue)
-	{
-		this.needType = needType;
-		this.stepValue = stepValue;
+		this.NeedType = needType;
+		this.StepValue = stepValue;
 	}
 }

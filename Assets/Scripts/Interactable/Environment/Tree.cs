@@ -1,48 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Attribute;
+using Factory;
 using Interactable.Base;
 using Interactable.Creatures;
 using Interface;
+using Manager;
 using UnityEngine;
 
 namespace Interactable.Environment
 {
-	public class Tree : Base.Interactable, IChoppable {
+	public class Tree : Base.Interactable, IChoppable
+	{	
+		private void Start()
+		{
+			InUse = 1;
+			SetMethods();
+		}
+
 		public IEnumerator Chop(Human human)
 		{
-			yield return human.GetComponent<Responsible>().StartCoroutine("Walk", gameObject.transform.position);
+			yield return human.GetComponent<Responsible>().StartCoroutine("Walk", interactionPoint.transform.position);
 			Debug.Log(human.Name + " is chopping the plant");
-			
-			var effects = new List<Effect> {new Effect(Needs.Energy, -0.6f), new Effect(Needs.Hygiene, -0.5f)};
-			var activity = new Activity(ActivityType.Chop, effects);
-			human.Activities.Add(activity);
 
-			var skillExists = false;
-			foreach (var skill in human.Skills)
-			{
-				if (skill.SkillType == Skills.Lumberjack)
-				{
-					skillExists = true;
-				}
-			}
-
-			if (!skillExists)
-			{
-				var skill = new Skill(Skills.Lumberjack, 0, 0, 1000, 1.2f);
-				human.Skills.Add(skill);
-			}
+			var activity = ActivityFactory.GetChop();
+			human.AddActivity(activity);
 			
+			human.AddSkill(SkillFactory.GetLumberjack());			
 			yield return new WaitForSeconds(6);
-			human.Activities.Remove(activity);
 			Destroy(gameObject);
-
-			foreach (var skill in human.Skills)
-			{
-				if (skill.SkillType == Skills.Lumberjack)
-				{
-					skill.TotalXp += 1200;
-				}
-			}
+			human.UpdateSkill(SkillType.Lumberjack, 400);
 			
 			Debug.Log("Chopped the plant by " + human.Name);
 			human.GetComponent<Responsible>().FinishJob();

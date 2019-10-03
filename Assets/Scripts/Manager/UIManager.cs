@@ -30,9 +30,12 @@ namespace Manager
 		public GameObject jobPanelPrefab;
 		[Header("Character Info")]
 		public GameObject responsibleName;
-		[Header("Need")] 
+		[Header("Need Info")] 
 		public GameObject needPrefab;
 		public GameObject needParent;
+		[Header("Skill Info")] 
+		public GameObject skillPrefab;
+		public GameObject skillParent;
 
 
 		public HashSet<GameObject> JobPanels
@@ -113,7 +116,16 @@ namespace Manager
 				JobUtil.AddTarget(responsible.GetComponent<Responsible>().TargetList, target);
 				AddJobButton(responsible, enumerator);
 			};
-		}		
+		}
+
+		public void SetInteractionAction(GameObject responsible, IEnumerator enumerator, Interactable.Base.Interactable target)
+		{
+			JobUtil.AddJob(responsible.GetComponent<Responsible>().JobList, enumerator);
+			JobUtil.AddTarget(responsible.GetComponent<Responsible>().TargetList, target);
+			AddJobButton(responsible, enumerator);
+		}
+		
+		
 		/*
 		 * CREATING JOB PANEL AND BUTTONS
 		 */
@@ -140,25 +152,48 @@ namespace Manager
 				ButtonUtil.Destroy(button);
 			};
 		}
+		
+		/*
+		 * INFO PANEL SETTINGS
+		 */
 
 		public void SetInfoPanel(Responsible responsible)
 		{
 			responsibleName.GetComponent<Text>().text = responsible.Name;
 			SetNeeds(responsible);
+			SetSkills(responsible);
 		}
 
 		private void SetNeeds(Responsible responsible)
-		{
+		{			
 			foreach (Transform child in needParent.transform)
 			{
 				Destroy(child.gameObject);
 			}
 
 			var i = 0;
-			foreach (var need in responsible.NeedList)
+			foreach (var need in responsible.Needs)
 			{
-				var newNeed = Instantiate(needPrefab, new Vector3(10f, 60-20f*i, 0f), Quaternion.identity, needParent.transform);
-				newNeed.GetComponent<NeedBox>().SetNeed(need);
+				var newNeed = Instantiate(needPrefab, Vector3.zero, Quaternion.identity, needParent.transform);
+				newNeed.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0f, -20f * i, 0f);
+				newNeed.GetComponent<NeedBox>().SetNeed(need.Value);
+				i++;
+			}
+		}
+
+		public void SetSkills(Responsible responsible)
+		{			
+			foreach (Transform child in skillParent.transform)
+			{
+				Destroy(child.gameObject);
+			}
+
+			var i = 0;
+			foreach (var skill in responsible.Skills)
+			{
+				var newSkill = Instantiate(skillPrefab, Vector3.zero, Quaternion.identity, skillParent.transform);
+				newSkill.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0f,  36f-20f * i, 0f);
+				newSkill.GetComponent<SkillInfo>().SetSkill(skill.Value);
 				i++;
 			}
 		}

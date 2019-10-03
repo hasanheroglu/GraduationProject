@@ -11,15 +11,18 @@ namespace Interactable.Base
 		private bool _jobFinished;
 
 		private NavMeshAgent _agent;
+		private List<ActivityType> _jobActivityList;
 		private List<IEnumerator> _jobList;
 		private List<Interactable> _targetList;
 		private bool _targetInRange;
 		private GameObject _target;
 		private GameObject _jobPanel;
 		private List<GameObject> _buttonList;
-		private List<Need> _needList;
-		private List<Activity> _activities;
-		private List<Skill> _skills;
+		private List<ActivityType> _activityList;
+		private Dictionary<NeedType, Need> _needs;
+		private Dictionary<ActivityType, Activity> _activities;
+		private Dictionary<SkillType, Skill> _skills;
+		private List<Interactable> _inventory;
 		
 		public GameObject Target
 		{
@@ -39,6 +42,12 @@ namespace Interactable.Base
 			set { _agent = value; }
 		}
 
+		public List<ActivityType> JobActivityList
+		{
+			get { return _jobActivityList; }
+			set { _jobActivityList = value; }
+		}
+		
 		public List<IEnumerator> JobList
 		{
 			get { return _jobList; }
@@ -69,74 +78,68 @@ namespace Interactable.Base
 			set { _buttonList = value; }
 		}
 
-		public List<Need> NeedList
+		public List<ActivityType> ActivityList
 		{
-			get { return _needList; }
-			set { _needList = value; }
+			get { return _activityList; }
+			set { _activityList = value; }
 		}
 
-		public List<Activity> Activities
+		public Dictionary<NeedType, Need> Needs
+		{
+			get { return _needs; }
+			set { _needs = value; }
+		}
+
+		public Dictionary<ActivityType, Activity> Activities
 		{
 			get { return _activities; }
 			set { _activities = value; }
 		}
 
-		public List<Skill> Skills
+		public Dictionary<SkillType, Skill> Skills
 		{
 			get { return _skills; }
 			set { _skills = value; }
 		}
 
-		private void Start()
+		public List<Interactable> Inventory
 		{
+			get { return _inventory; }
+			set { _inventory = value; }
+		}
+
+		private void Awake()
+		{
+			_jobActivityList = new List<ActivityType>();
 			_jobList =  new List<IEnumerator>();
 			_targetList = new List<Interactable>();
 			_buttonList = new List<GameObject>();
-			_needList = new List<Need>();
+			_activityList = new List<ActivityType>();
+			_needs = new Dictionary<NeedType, Need>();
+			_activities = new Dictionary<ActivityType, Activity>();
+			_skills = new Dictionary<SkillType, Skill>();
+			_inventory = new List<Interactable>();
+			
 			_agent = GetComponent<NavMeshAgent>();
 			_jobFinished = true;
 			_jobPanel = Instantiate(UIManager.Instance.jobPanelPrefab, UIManager.Instance.canvas.transform);
 			_jobPanel.SetActive(false);
 			UIManager.Instance.JobPanels.Add(_jobPanel);
-			
-			_needList.Add(new Need(Needs.Hunger, -0.01f));
-			_needList.Add(new Need(Needs.Fun, -0.05f));
-			_needList.Add(new Need(Needs.Bladder, -0.012f));
-			_needList.Add(new Need(Needs.Hygiene, -0.04f));
-			_needList.Add(new Need(Needs.Energy, -0.03f));
-			_needList.Add(new Need(Needs.Social, -0.02f));
-			
-			_activities = new List<Activity>();
-			_skills = new List<Skill>();
 		}
 
 		private void Update()
 		{
-			DoJob();
-			foreach (var need in _needList)
-			{
-				need.Update();
-			}
+			foreach (var need in _needs){ need.Value.Update(); }
 			
-			ResetNeeds();
 			foreach (var activity in _activities)
 			{
-				foreach (var effect in activity.Effects)
+				foreach (var effect in activity.Value.Effects)
 				{
 					ApplyEffect(effect.NeedType, effect.StepValue);
 				}
 			}
 
-			foreach (var skill in _skills)
-			{
-				Debug.Log( skill.SkillType + " Level: " + skill.Level + " Total Xp: " + skill.TotalXp);
-				if (!(skill.TotalXp > skill.NeededXp)) continue;
-				
-				skill.TotalXp -= skill.NeededXp;
-				skill.NeededXp *= skill.NeededXpMultiplier;
-				skill.Level++;
-				Debug.Log(skill.SkillType + " leveled up!");
-			}
+			DoJob();
 		}
 
 		public IEnumerator Walk(Vector3 position)
@@ -155,9 +158,28 @@ namespace Interactable.Base
 
 		private void DoJob()
 		{
+			if (_targetList.Count > 0  && _targetList[0] == null)
+			{
+				FinishJob();
+			}
+			
+			
 			if (_jobFinished && _jobList.Count != 0)
 			{
+				if (_targetList[0] == null)
+				{
+					FinishJob();
+					return;
+				}
+
+				if (_targetList[0].InUse <= 0)
+				{
+					CancelJob();
+					return;
+				}
+				
 				_jobFinished = false;
+				_targetList[0].InUse--;
 				_target = _targetList[0].gameObject;
 				_targetInRange = false;
 			
@@ -187,8 +209,10 @@ namespace Interactable.Base
 				}
 				else
 				{
-					if(_activities.Count > 0){
-						_activities.RemoveAt(jobIndex);
+					if(_activities.Count > 0)
+					{
+						_activities.Remove(_activityList[0]);
+						_activityList.RemoveAt(0);
 					}
 					JobUtil.RemoveTarget(_targetList, jobIndex);
 					JobUtil.RemoveJob(_jobList, job);
@@ -199,78 +223,75 @@ namespace Interactable.Base
 
 		public void FinishJob()
 		{
+			if (_jobList.Count == 0){ return; }
+			
 			_jobFinished = true;
 			_jobList.RemoveAt(0);
+			
 			if(_activities.Count > 0){
-				_activities.RemoveAt(0);
-			}			
+				_activities.Remove(_activityList[0]);
+				_activityList.RemoveAt(0);
+			}
+			
+			_targetList[0].InUse++;
 			_targetList.RemoveAt(0);
 			JobUtil.RemoveButton(_buttonList, 0);
 		}
 
-		private float ApplyEffect(Needs needType, float stepValue)
+		public void CancelJob()
 		{
-			var oldStepValue = 0.0f;
+			if (_jobList.Count == 0){ return; }
 			
-			foreach (var need in _needList)
-			{
-				if (need.Id != needType) continue;
-
-				oldStepValue = need.StepValue;
-				need.StepValue = stepValue;
+			_jobFinished = true;
+			_jobList.RemoveAt(0);
+			
+			if(_activities.Count > 0){
+				_activities.Remove(_activityList[0]);
+				_activityList.RemoveAt(0);
 			}
 
-			return oldStepValue;
+			_targetList.RemoveAt(0);
+			JobUtil.RemoveButton(_buttonList, 0);
+		}
+
+		private void ApplyEffect(NeedType needType, float stepValue)
+		{
+			if (_needs.ContainsKey(needType)){ _needs[needType].StepValue = stepValue; }
 		}
 		
-		public IEnumerator ApplyEffectForSeconds(Needs needType, float stepValue, float effectDuration)
+ 		public IEnumerator ApplyEffectForSeconds(NeedType needType, float stepValue, float effectDuration)
 		{
-			var oldStepValue = 0.0f;
-			
-			foreach (var need in _needList)
-			{
-				if (need.Id != needType) continue;
-
-				oldStepValue = need.StepValue;
-				need.StepValue = stepValue;
-			}
-			
+			if (_needs.ContainsKey(needType)){ _needs[needType].StepValue = stepValue; }	
 			yield return new WaitForSeconds(effectDuration);
-			
-			foreach (var need in _needList)
-			{
-				if (need.Id != needType) continue;
+			if (_needs.ContainsKey(needType)){ _needs[needType].Reset(); }
+		}
 
-				need.StepValue = oldStepValue;
+		public void AddSkill(Skill skill)
+		{
+			if (!_skills.ContainsKey(skill.SkillType)){ _skills.Add(skill.SkillType, skill); }
+			UIManager.Instance.SetSkills(this);
+		}
+
+		public void UpdateSkill(SkillType skillType, float xp)
+		{
+			if (_skills.ContainsKey(skillType))
+			{
+				_skills[skillType].LevelUp(xp);
 			}
 		}
 
-		private void ResetNeeds()
+		public void AddActivity(Activity activity)
 		{
-			foreach (var need in _needList)
+			if (!_activities.ContainsKey(activity.ActivityType))
 			{
-				switch (need.Id)
-				{
-					case Needs.Hunger:
-						need.StepValue = -0.01f;
-						break;
-					case Needs.Bladder:
-						need.StepValue = -0.012f;
-						break;
-					case Needs.Fun:
-						need.StepValue = -0.05f;
-						break;
-					case Needs.Hygiene:
-						need.StepValue = -0.04f;
-						break;
-					case Needs.Energy:
-						need.StepValue = -0.03f;
-						break;
-					case Needs.Social:
-						need.StepValue = -0.02f;
-						break;
-				}
+				_activityList.Add(activity.ActivityType);
+				_activities.Add(activity.ActivityType, activity);
 			}
+		}
+
+		public void RemoveActivity(ActivityType activityType)
+		{
+			if (_activities.ContainsKey(activityType)){ _activities.Remove(activityType); }
 		}
 	}
 }

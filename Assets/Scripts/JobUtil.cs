@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Attribute;
+using Interactable.Base;
 using UnityEngine;
 
 public class JobUtil : MonoBehaviour {
@@ -37,5 +39,27 @@ public class JobUtil : MonoBehaviour {
 		{
 			ButtonUtil.DropPosition(buttonList[i]);
 		}
+	}
+
+	public static ActivityType GetActivityType(IEnumerator job)
+	{
+		Debug.Log(job.GetType());
+		var objects = job.GetType().GetCustomAttributes(typeof(ActivityTypeAttribute), false);
+		Debug.Log("Found " + ((ActivityTypeAttribute) objects[0]).ActivityType);
+		return ((ActivityTypeAttribute) objects[0]).ActivityType;
+	}
+
+	public static bool ActivityTypeExists(Responsible responsible, ActivityType activityType)
+	{
+		foreach (var job in responsible.JobList)
+		{
+			Debug.Log("Looking for " + activityType);
+			if (activityType == GetActivityType(job))
+			{
+				return true;
+			}
+		}
+
+		return false;
 	}
 }

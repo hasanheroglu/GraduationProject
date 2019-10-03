@@ -12,7 +12,8 @@ namespace Interaction
 		public static void ShowInteractions(GameObject responsible, GameObject target, object[] parameters, Vector3 panelPosition)
 		{
 			List<MethodInfo> methods = new List<MethodInfo>();
-			methods = GetTargetMethods(target);
+			//methods = GetTargetMethods(target);
+			methods = target.GetComponent<Interactable.Base.Interactable>().Methods;
 			UIManager.Instance.SetInteractionPanel(responsible, methods, target, parameters, panelPosition);
 		}
 

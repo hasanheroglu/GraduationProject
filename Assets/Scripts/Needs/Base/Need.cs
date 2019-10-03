@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Needs{Hunger, Social, Fun, Bladder, Energy, Hygiene}
+public enum NeedType{Hunger, Social, Fun, Bladder, Energy, Hygiene}
 
 public class Need
 {
-	private Needs _id;
+	private NeedType _id;
 	private string name;
 	private float _value;
 	private float _stepValue;
+	private float _baseStepValue;
 
-	public Needs Id
+	public NeedType Id
 	{
 		get { return _id; }
 		set { _id = value; }
@@ -35,50 +36,49 @@ public class Need
 		set { _stepValue = value; }
 	}
 
-	public Need(Needs id, float stepValue)
+	public Need(NeedType id, float baseStepValue)
 	{
 		_id = id;
 		SelectName();
-		_stepValue = stepValue;
+		_baseStepValue = baseStepValue;
+		_stepValue = _baseStepValue;
 		_value = 100f;
 	}
 
 	public void Update()
 	{
 		_value += _stepValue;
-/*
-		if (_value < 0)
-		{
-			_value = 0;
-		}
+		Reset();
 		
-		if (_value < 30)
-		{
-			Debug.Log(name + " value is low!");
-		}
-*/
+		if (_value < 0){ _value = 0; }
+		if (_value > 100){ _value = 100; }
+	}
+
+	public void Reset()
+	{
+		_stepValue = _baseStepValue;
 	}
 
 	private void SelectName()
 	{
 		switch (_id)
 		{
-			case Needs.Hunger:
+			case NeedType.Hunger:
 				name = "Hunger";
 				break;
-			case Needs.Hygiene:
+			case NeedType.Hygiene:
 				name = "Hygiene";
 				break;
-			case Needs.Fun:
+			case NeedType.Fun:
 				name = "Fun";
 				break;
-			case Needs.Energy:
+			case NeedType.Energy:
 				name = "Energy";
 				break;
-			case Needs.Bladder:
+			case NeedType.Bladder:
 				name = "Bladder";
 				break;
-			case Needs.Social:
+			case NeedType.Social:
 				name = "Social";
 				break;
 			default:

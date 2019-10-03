@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using Interactable.Base;
 using Interface;
 using Manager;
@@ -7,7 +8,7 @@ using UnityEngine;
 namespace Interactable.Creatures
 {
 	public class Human : Responsible, ISocializable
-	{
+	{	
 		public IEnumerator Talk(Human human)
 		{
 			yield return human.GetComponent<Responsible>().StartCoroutine("Walk", gameObject.transform.position);
