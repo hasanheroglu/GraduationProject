@@ -2,7 +2,7 @@
 
 namespace Factory
 {
-	public class ActivityFactory {
+	public static class ActivityFactory {
 		public static Activity GetChop()
 		{
 			var effects = new List<Effect> {new Effect(NeedType.Energy, -0.6f), new Effect(NeedType.Hygiene, -0.5f)};

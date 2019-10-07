@@ -108,16 +108,16 @@ namespace Manager
 		private void Interact()
 		{
 			if (!Input.GetMouseButtonDown(1)) return;
-			if (_main == null) return;
+			if (!_main) return;
 			
 			Ray ray = _main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
 			
 			if (!Physics.Raycast(ray, out hit)) return;
-			if (hit.transform == null) return;
+			if (!hit.transform) return;
 			
 			_target = hit.transform.gameObject;
-			InteractionUtil.ShowInteractions(_responsible, _target, new object[] {_responsible.GetComponent<Responsible>()}, Input.mousePosition);
+			UIManager.Instance.SetInteractionPanel(_responsible.GetComponent<Responsible>(), _target.GetComponent<Interactable.Base.Interactable>(), new object[] {_responsible.GetComponent<Responsible>()}, Input.mousePosition);
 		}
 	}
 }

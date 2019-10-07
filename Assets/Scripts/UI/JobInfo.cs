@@ -1,25 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
+using Interactable.Base;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ButtonInfo
+public class JobInfo
 {
-	private GameObject _target;
+	private Responsible _responsible;
+	private Interactable.Base.Interactable _target;
 	private MethodInfo _method;
-	private Interactable.Base.Interactable _interactable;
 	private object[] _parameters;
 
-	public ButtonInfo(GameObject target, MethodInfo method, Interactable.Base.Interactable interactable, object[] parameters)
+	public JobInfo(Responsible responsible, Interactable.Base.Interactable target, MethodInfo method, object[] parameters)
 	{
+		_responsible = responsible;
 		_target = target;
 		_method = method;
 		_parameters = parameters;
-		_interactable = interactable;
+	}
+
+	public Responsible Responsible
+	{
+		get { return _responsible; }
+		set { _responsible = value; }
 	}
 	
-	public GameObject Target
+	public Interactable.Base.Interactable Target
 	{
 		get { return _target; }
 		set { _target = value; }
@@ -30,16 +37,10 @@ public class ButtonInfo
 		get { return _method; }
 		set { _method = value; }
 	}
-	
+
 	public object[] Parameters
 	{
 		get { return _parameters; }
 		set { _parameters = value; }
-	}
-	
-	public Interactable.Base.Interactable Interactable
-	{
-		get { return _interactable; }
-		set { _interactable = value; }
 	}
 }

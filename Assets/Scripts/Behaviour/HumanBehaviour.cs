@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Interactable.Base;
 using Interactable.Creatures;
 using Interactable.Environment;
+using Interaction;
 using Interface;
 using Manager;
 using UnityEngine;
@@ -10,48 +11,42 @@ using UnityEngine;
 public class HumanBehaviour : MonoBehaviour
 {
 	private Human _human;
-	
+
+	public bool activated;
 	
 	// Use this for initialization
 	void Start ()
 	{
 		_human = GetComponent<Human>();
+		activated = false;
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		SearchEdible();
-		SearchSleepable();
-		SearchHarvestable();
+	void Update ()
+	{
+		if (activated)
+		{
+			SearchEdible();
+			SearchSleepable();
+			SearchHarvestable();
+		}
 	}
 
 	private void SearchEdible()
 	{
-		if (_human.Needs[NeedType.Hunger].Value < 10 && !JobUtil.ActivityTypeExists(_human, ActivityType.Eat))
+		if (!(_human.Needs[NeedType.Hunger].Value < 10) || JobUtil.ActivityTypeExists(_human, ActivityType.Eat)) {return;}
+		var possibleEdibles = Physics.OverlapSphere(this.transform.position, 500f);
+		if (possibleEdibles.Length > 0)
 		{
-			foreach (var item in _human.Inventory)
+			foreach (var possibleEdible in possibleEdibles)
 			{
-				if (item is IEdible)
+				var interactable = possibleEdible.gameObject.GetComponent<Interactable.Base.Interactable>();
+				if (interactable is IEdible && interactable.InUse > 0)
 				{
-					Debug.Log("I'm hungry, let me eat something!");
-					UIManager.Instance.SetInteractionAction(this.gameObject, item.GetComponent<IEdible>().Eat(_human), item);
-					Debug.Log("That was delicious!");
-					_human.Inventory.Remove(item);
+					if(((Plant) interactable).harvested){ continue; }
+					var coroutineInfo = new JobInfo(_human, interactable, interactable.GetType().GetMethod("Eat"), new object[]{_human});
+					UIManager.SetInteractionAction(this.gameObject, coroutineInfo);
 					return;
-				}
-			}
-			var possibleEdibles = Physics.OverlapSphere(this.transform.position, 500f);
-			if (possibleEdibles.Length > 0)
-			{
-				foreach (var possibleEdible in possibleEdibles)
-				{
-					var interactable = possibleEdible.gameObject.GetComponent<Interactable.Base.Interactable>();
-					if (interactable is IEdible && interactable.InUse > 0)
-					{
-						if(((Plant) interactable).harvested){ continue; }
-						UIManager.Instance.SetInteractionAction(this.gameObject, possibleEdible.gameObject.GetComponent<IEdible>().Eat(_human), interactable);
-						return;
-					}
 				}
 			}
 		}
@@ -59,19 +54,19 @@ public class HumanBehaviour : MonoBehaviour
 
 	private void SearchSleepable()
 	{
-		if (_human.Needs[NeedType.Energy].Value < 10 && !JobUtil.ActivityTypeExists(_human, ActivityType.Sleep))
+		if (!(_human.Needs[NeedType.Energy].Value < 10) ||
+		    JobUtil.ActivityTypeExists(_human, ActivityType.Sleep)) {return;}
+		var possibleSleepables = Physics.OverlapSphere(this.transform.position, 500f);
+		if (possibleSleepables.Length > 0)
 		{
-			var possibleSleepables = Physics.OverlapSphere(this.transform.position, 500f);
-			if (possibleSleepables.Length > 0)
+			foreach (var possibleSleepable in possibleSleepables)
 			{
-				foreach (var possibleSleepable in possibleSleepables)
+				var interactable = possibleSleepable.gameObject.GetComponent<Interactable.Base.Interactable>();
+				if (interactable is ISleepable && interactable.InUse > 0)
 				{
-					var interactable = possibleSleepable.gameObject.GetComponent<Interactable.Base.Interactable>();
-					if (interactable is ISleepable && interactable.InUse > 0)
-					{
-						UIManager.Instance.SetInteractionAction(this.gameObject, possibleSleepable.gameObject.GetComponent<ISleepable>().Sleep(_human), interactable);
-						break;
-					}
+					var coroutineInfo = new JobInfo(_human, interactable, interactable.GetType().GetMethod("Sleep"), new object[]{_human});
+					UIManager.SetInteractionAction(this.gameObject, coroutineInfo);
+					break;
 				}
 			}
 		}
@@ -79,7 +74,7 @@ public class HumanBehaviour : MonoBehaviour
 
 	private void SearchHarvestable()
 	{
-		if (_human.JobList.Count != 0){ return; }
+		if (JobUtil.ActivityTypeExists(_human, ActivityType.Harvest)){ return; }
 		var possibleHarvestables = Physics.OverlapSphere(this.transform.position, 500f);
 		if (possibleHarvestables.Length > 0)
 		{
@@ -89,7 +84,8 @@ public class HumanBehaviour : MonoBehaviour
 				if (interactable is IHarvestable && interactable.InUse > 0)
 				{
 					if(((Plant) interactable).harvested){ continue; }
-					UIManager.Instance.SetInteractionAction(this.gameObject, possibleHarvestable.gameObject.GetComponent<IHarvestable>().Harvest(_human), interactable);
+					var coroutineInfo = new JobInfo(_human, interactable, interactable.GetType().GetMethod("Harvest"), new object[]{_human});
+					UIManager.SetInteractionAction(this.gameObject, coroutineInfo);
 					break;
 				}
 			}

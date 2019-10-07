@@ -1,6 +1,6 @@
 ﻿namespace Factory
 {
-	public class SkillFactory{
+	public static class SkillFactory{
 
 		public static Skill GetLumberjack()
 		{

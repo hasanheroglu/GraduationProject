@@ -18,6 +18,7 @@ namespace Interactable.Environment
 			SetMethods();
 		}
 
+		[ActivityType(ActivityType.Chop)]
 		public IEnumerator Chop(Human human)
 		{
 			yield return human.GetComponent<Responsible>().StartCoroutine("Walk", interactionPoint.transform.position);

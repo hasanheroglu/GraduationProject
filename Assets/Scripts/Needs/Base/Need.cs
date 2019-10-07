@@ -6,83 +6,63 @@ public enum NeedType{Hunger, Social, Fun, Bladder, Energy, Hygiene}
 
 public class Need
 {
-	private NeedType _id;
-	private string name;
-	private float _value;
-	private float _stepValue;
-	private float _baseStepValue;
+	public NeedType Id { get; set; }
 
-	public NeedType Id
-	{
-		get { return _id; }
-		set { _id = value; }
-	}
+	public string Name { get; set; }
 
-	public string Name
-	{
-		get { return name; }
-		set { name = value; }
-	}
+	public float Value { get; set; }
 
-	public float Value
-	{
-		get { return _value; }
-		set { _value = value; }
-	}
+	public float BaseStepValue { get; set; }
 
-	public float StepValue
-	{
-		get { return _stepValue; }
-		set { _stepValue = value; }
-	}
+	public float StepValue { get; set; }
 
 	public Need(NeedType id, float baseStepValue)
 	{
-		_id = id;
+		Id = id;
 		SelectName();
-		_baseStepValue = baseStepValue;
-		_stepValue = _baseStepValue;
-		_value = 100f;
+		BaseStepValue = baseStepValue;
+		StepValue = BaseStepValue;
+		Value = 100f;
 	}
 
 	public void Update()
 	{
-		_value += _stepValue;
+		Value += StepValue;
 		Reset();
 		
-		if (_value < 0){ _value = 0; }
-		if (_value > 100){ _value = 100; }
+		if (Value < 0){ Value = 0; }
+		if (Value > 100){ Value = 100; }
 	}
 
 	public void Reset()
 	{
-		_stepValue = _baseStepValue;
+		StepValue = BaseStepValue;
 	}
 
 	private void SelectName()
 	{
-		switch (_id)
+		switch (Id)
 		{
 			case NeedType.Hunger:
-				name = "Hunger";
+				Name = "Hunger";
 				break;
 			case NeedType.Hygiene:
-				name = "Hygiene";
+				Name = "Hygiene";
 				break;
 			case NeedType.Fun:
-				name = "Fun";
+				Name = "Fun";
 				break;
 			case NeedType.Energy:
-				name = "Energy";
+				Name = "Energy";
 				break;
 			case NeedType.Bladder:
-				name = "Bladder";
+				Name = "Bladder";
 				break;
 			case NeedType.Social:
-				name = "Social";
+				Name = "Social";
 				break;
 			default:
-				name = "Unknown";
+				Name = "Unknown";
 				break;
 		}
 	}

@@ -37,7 +37,6 @@ namespace Interactable.Base
 			var flags = BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly;
 			Methods = new List<MethodInfo>();
 			Methods.AddRange(this.GetType().GetMethods(flags));	
-			Debug.Log("This script has " + Methods.Count + " methods!");
 		}
 	}
 }

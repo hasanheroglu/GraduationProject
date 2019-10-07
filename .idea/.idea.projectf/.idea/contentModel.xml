@@ -41,7 +41,6 @@
         </e>
         <e p="Interaction" t="Include">
           <e p="InteractCollider.cs" t="Include" />
-          <e p="InteractionUtil.cs" t="Include" />
         </e>
         <e p="Interface" t="Include">
           <e p="IAttackable.cs" t="Include" />
@@ -54,6 +53,7 @@
           <e p="ISocializable.cs" t="Include" />
           <e p="IWalkable.cs" t="Include" />
         </e>
+        <e p="Job.cs" t="Include" />
         <e p="JobUtil.cs" t="Include" />
         <e p="Manager" t="Include">
           <e p="ActionManager.cs" t="Include" />
@@ -67,8 +67,8 @@
         </e>
         <e p="Skill.cs" t="Include" />
         <e p="UI" t="Include">
-          <e p="ButtonInfo.cs" t="Include" />
           <e p="ButtonUtil.cs" t="Include" />
+          <e p="JobInfo.cs" t="Include" />
           <e p="NeedBox.cs" t="Include" />
           <e p="SkillInfo.cs" t="Include" />
         </e>

@@ -17,7 +17,6 @@ public class ButtonUtil : MonoBehaviour {
 		button.GetComponent<Button>().onClick.AddListener(action);
 	}
 	
-	
 	//Direction 1 or -1
 	public static void AdjustPosition(GameObject button, int direction)
 	{

@@ -11,18 +11,21 @@ namespace Interactable.Base
 		private bool _jobFinished;
 
 		private NavMeshAgent _agent;
-		private List<ActivityType> _jobActivityList;
-		private List<IEnumerator> _jobList;
-		private List<Interactable> _targetList;
+		private List<Job> _jobs;
 		private bool _targetInRange;
 		private GameObject _target;
 		private GameObject _jobPanel;
-		private List<GameObject> _buttonList;
 		private List<ActivityType> _activityList;
 		private Dictionary<NeedType, Need> _needs;
 		private Dictionary<ActivityType, Activity> _activities;
 		private Dictionary<SkillType, Skill> _skills;
 		private List<Interactable> _inventory;
+
+		public List<Job> Jobs
+		{
+			get { return _jobs; }
+			set { _jobs = value; }
+		}
 		
 		public GameObject Target
 		{
@@ -42,24 +45,6 @@ namespace Interactable.Base
 			set { _agent = value; }
 		}
 
-		public List<ActivityType> JobActivityList
-		{
-			get { return _jobActivityList; }
-			set { _jobActivityList = value; }
-		}
-		
-		public List<IEnumerator> JobList
-		{
-			get { return _jobList; }
-			set { _jobList = value; }
-		}
-
-		public List<Interactable> TargetList
-		{
-			get { return _targetList; }
-			set { _targetList = value; }
-		}
-
 		public bool JobFinished
 		{
 			get { return _jobFinished; }
@@ -70,12 +55,6 @@ namespace Interactable.Base
 		{
 			get { return _jobPanel; }
 			set { _jobPanel = value; }
-		}
-
-		public List<GameObject> ButtonList
-		{
-			get { return _buttonList; }
-			set { _buttonList = value; }
 		}
 
 		public List<ActivityType> ActivityList
@@ -110,10 +89,7 @@ namespace Interactable.Base
 
 		private void Awake()
 		{
-			_jobActivityList = new List<ActivityType>();
-			_jobList =  new List<IEnumerator>();
-			_targetList = new List<Interactable>();
-			_buttonList = new List<GameObject>();
+			_jobs = new List<Job>();
 			_activityList = new List<ActivityType>();
 			_needs = new Dictionary<NeedType, Need>();
 			_activities = new Dictionary<ActivityType, Activity>();
@@ -150,108 +126,39 @@ namespace Interactable.Base
 			StopWalking();
 		}
 
-		private void StopWalking()
+		public void StopWalking()
 		{
 			_agent.isStopped = true;
 			_agent.ResetPath();
 		}
 
 		private void DoJob()
-		{
-			if (_targetList.Count > 0  && _targetList[0] == null)
-			{
-				FinishJob();
-			}
-			
-			
-			if (_jobFinished && _jobList.Count != 0)
-			{
-				if (_targetList[0] == null)
-				{
-					FinishJob();
-					return;
-				}
-
-				if (_targetList[0].InUse <= 0)
-				{
-					CancelJob();
-					return;
-				}
-				
-				_jobFinished = false;
-				_targetList[0].InUse--;
-				_target = _targetList[0].gameObject;
-				_targetInRange = false;
-			
-				StartCoroutine(_jobList[0]);
+		{		
+			if (_jobFinished && _jobs.Count != 0)
+			{	
+				_jobs[0].Start();
 			}
 		}
 
-		public void StopDoingJob(IEnumerator job)
+		public void StopDoingJob(Job job)
 		{
-			if (!_jobList.Contains(job))
+			if(_activities.Count > 0)
 			{
-				Debug.Log("Does not contain job!");
-				StopCoroutine(job);
-				StopWalking();
-				FinishJob();
+				_activities.Remove(_activityList[0]);
+				_activityList.RemoveAt(0);
 			}
-			else
-			{
-				var jobIndex = _jobList.IndexOf(job);
-				Debug.Log("I am gonna remove job with index " + jobIndex);
 
-				if (jobIndex == 0)
-				{
-					StopCoroutine(_jobList[0]);
-					StopWalking();
-					FinishJob();
-				}
-				else
-				{
-					if(_activities.Count > 0)
-					{
-						_activities.Remove(_activityList[0]);
-						_activityList.RemoveAt(0);
-					}
-					JobUtil.RemoveTarget(_targetList, jobIndex);
-					JobUtil.RemoveJob(_jobList, job);
-					JobUtil.RemoveButton(_buttonList, jobIndex);
-				}
-			}
+			job.Stop();
 		}
 
 		public void FinishJob()
-		{
-			if (_jobList.Count == 0){ return; }
-			
-			_jobFinished = true;
-			_jobList.RemoveAt(0);
-			
+		{			
 			if(_activities.Count > 0){
 				_activities.Remove(_activityList[0]);
 				_activityList.RemoveAt(0);
 			}
 			
-			_targetList[0].InUse++;
-			_targetList.RemoveAt(0);
-			JobUtil.RemoveButton(_buttonList, 0);
-		}
-
-		public void CancelJob()
-		{
-			if (_jobList.Count == 0){ return; }
-			
-			_jobFinished = true;
-			_jobList.RemoveAt(0);
-			
-			if(_activities.Count > 0){
-				_activities.Remove(_activityList[0]);
-				_activityList.RemoveAt(0);
-			}
-
-			_targetList.RemoveAt(0);
-			JobUtil.RemoveButton(_buttonList, 0);
+			_jobs[0].Finish();
 		}
 
 		private void ApplyEffect(NeedType needType, float stepValue)

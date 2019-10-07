@@ -14,12 +14,9 @@ namespace Manager
 {
 	public class UIManager : MonoBehaviour
 	{
-		private static UIManager _instance;
 		private GameObject _interactionPanel;
-		private HashSet<GameObject> _jobPanels;
-		
 
-		
+
 		public GameObject canvas;
 	
 		[Header("Interaction")]
@@ -38,26 +35,22 @@ namespace Manager
 		public GameObject skillParent;
 
 
-		public HashSet<GameObject> JobPanels
-		{
-			get { return _jobPanels; }
-			set { _jobPanels = value; }
-		}
+		public HashSet<GameObject> JobPanels { get; private set; }
 
-		public static UIManager Instance { get { return _instance; } }
+		public static UIManager Instance { get; private set; }
 
 		private void Awake()
 		{
-			if (_instance != null && _instance != this)
+			if (Instance != null && Instance != this)
 			{
 				Destroy(this.gameObject);
 			}
 			else
 			{
-				_instance = this;
+				Instance = this;
 			}
 
-			_jobPanels = new HashSet<GameObject>();
+			JobPanels = new HashSet<GameObject>();
 		}
 
 		/*
@@ -69,15 +62,16 @@ namespace Manager
 			_interactionPanel =  Instantiate(interactionPanelPrefab, panelPosition, Quaternion.identity, canvas.transform);
 		}
 
-		public void SetInteractionPanel(GameObject responsible, List<MethodInfo> methods, GameObject target, object[] parameters, Vector3 panelPosition)
+		public void SetInteractionPanel(Responsible responsible, Interactable.Base.Interactable target, object[] parameters, Vector3 panelPosition)
 		{
 			CreateInteractionPanel(panelPosition);
-			var script = target.GetComponent<Interactable.Base.Interactable>();
-
+			
+			List<MethodInfo> methods = target.GetComponent<Interactable.Base.Interactable>().Methods;
+			
 			foreach (var method in methods)
 			{
-				ButtonInfo buttonInfo = new ButtonInfo(target, method, script, parameters);
-				AddInteractionButton(responsible, buttonInfo);
+				JobInfo jobInfo = new JobInfo(responsible, target, method, parameters);
+				AddInteractionButton(responsible, jobInfo);
 			}
 		}
 		
@@ -88,67 +82,55 @@ namespace Manager
 				Destroy(_interactionPanel);
 			}
 		}
-		
-		private void AddInteractionButton(GameObject responsible, ButtonInfo buttonInfo)
-		{
-			IEnumerator enumerator = InteractionUtil.CreateCoroutine(buttonInfo);
-
-			if (enumerator == null) return;
-
-			var button = CreateInteractionButton(_interactionPanel, buttonInfo);
-			ButtonUtil.SetOnClickAction(button, GetInteractionAction(responsible, enumerator, buttonInfo.Target.GetComponent<Interactable.Base.Interactable>(), button));
-		}
-		
-		private GameObject CreateInteractionButton(GameObject panel, ButtonInfo buttonInfo)
+	
+		private GameObject CreateInteractionButton(GameObject panel, JobInfo jobInfo)
 		{
 			var button = Instantiate(interactionButtonPrefab, panel.transform);
-			
 			ButtonUtil.AdjustPosition(button, -1);
-			ButtonUtil.SetText(button, buttonInfo.Method.Name);
+			ButtonUtil.SetText(button, jobInfo.Method.Name);
 			return button;
 		}
 
-		private UnityAction GetInteractionAction(GameObject responsible, IEnumerator enumerator, Interactable.Base.Interactable target, GameObject button)
+		private void AddInteractionButton(Responsible responsible, JobInfo jobInfo)
 		{
+			var button = CreateInteractionButton(_interactionPanel, jobInfo);
+			ButtonUtil.SetOnClickAction(button, GetInteractionAction(responsible, jobInfo));
+		}
+		
+		private UnityAction GetInteractionAction(Responsible responsible, JobInfo jobInfo)
+		{			
 			return delegate {
 				CloseInteractionPanel();
-				JobUtil.AddJob(responsible.GetComponent<Responsible>().JobList, enumerator);
-				JobUtil.AddTarget(responsible.GetComponent<Responsible>().TargetList, target);
-				AddJobButton(responsible, enumerator);
+				JobUtil.AddJob(responsible,new Job(jobInfo));
 			};
 		}
 
-		public void SetInteractionAction(GameObject responsible, IEnumerator enumerator, Interactable.Base.Interactable target)
+		public static void SetInteractionAction(GameObject responsible, JobInfo jobInfo)
 		{
-			JobUtil.AddJob(responsible.GetComponent<Responsible>().JobList, enumerator);
-			JobUtil.AddTarget(responsible.GetComponent<Responsible>().TargetList, target);
-			AddJobButton(responsible, enumerator);
+			JobUtil.AddJob(responsible.GetComponent<Responsible>(), new Job(jobInfo));
 		}
-		
 		
 		/*
 		 * CREATING JOB PANEL AND BUTTONS
 		 */
+		
 		public void ActivateJobPanel(GameObject jobPanel)
 		{
-			foreach (var panel in _jobPanels)
+			foreach (var panel in JobPanels)
 			{
 				panel.SetActive(ReferenceEquals(panel, jobPanel));
 			}
 		}
-
-		private void AddJobButton(GameObject responsible, IEnumerator enumerator)
+		
+		public GameObject GetJobButton(Transform buttonParent)
 		{
-			var button = Instantiate(jobButtonPrefab, responsible.GetComponent<Responsible>().JobPanel.transform);
-			ButtonUtil.AdjustPosition(button, 1);
-			JobUtil.AddButton(responsible.GetComponent<Responsible>().ButtonList, button);
-			ButtonUtil.SetOnClickAction(button, GetJobButtonAction(enumerator, button));
+			return Instantiate(jobButtonPrefab, buttonParent);
 		}
 		
-		private UnityAction GetJobButtonAction(IEnumerator enumerator, GameObject button)
+		public static UnityAction GetJobButtonAction(Job job, GameObject button)
 		{
 			return delegate {
-				ActionManager.Instance.Responsible.GetComponent<Responsible>().StopDoingJob(enumerator);
+				job.Responsible.StopDoingJob(job);
 				ButtonUtil.Destroy(button);
 			};
 		}

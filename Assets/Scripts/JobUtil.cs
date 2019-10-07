@@ -1,63 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using Attribute;
 using Interactable.Base;
 using UnityEngine;
 
 public class JobUtil : MonoBehaviour {
 
-	public static void AddJob(List<IEnumerator> jobList ,IEnumerator job)
+	public static void AddJob(Responsible responsible, Job job)
 	{
-		jobList.Add(job);
+		responsible.Jobs.Add(job);
 	}
 
-	public static void RemoveJob(List<IEnumerator> jobList, IEnumerator job)
+	public static void RemoveJob(Responsible responsible, Job job)
 	{
-		jobList.RemoveAt(jobList.IndexOf(job));
+		RemoveButton(responsible, job);
+		responsible.Jobs.Remove(job);
 	}
 
-	public static void AddTarget(List<Interactable.Base.Interactable> targetList, Interactable.Base.Interactable target)
+	private static void RemoveButton(Responsible responsible, Job job)
 	{
-		targetList.Add(target);
-	}
-
-	public static void RemoveTarget(List<Interactable.Base.Interactable> targetList, int index)
-	{
-		targetList.RemoveAt(index);
-	}
-
-	public static void AddButton(List<GameObject> buttonList, GameObject button)
-	{
-		buttonList.Add(button);
-	}
-
-	public static void RemoveButton(List<GameObject> buttonList, int index)
-	{
-		ButtonUtil.Destroy(buttonList[index].gameObject);
-		buttonList.RemoveAt(index);
-		for (var i = index; i < buttonList.Count; i++)
+		var index = responsible.Jobs.IndexOf(job);
+		ButtonUtil.Destroy(job.Button);
+		for (var i = index; i < responsible.Jobs.Count; i++)
 		{
-			ButtonUtil.DropPosition(buttonList[i]);
+			ButtonUtil.DropPosition(responsible.Jobs[i].Button);
 		}
-	}
-
-	public static ActivityType GetActivityType(IEnumerator job)
-	{
-		Debug.Log(job.GetType());
-		var objects = job.GetType().GetCustomAttributes(typeof(ActivityTypeAttribute), false);
-		Debug.Log("Found " + ((ActivityTypeAttribute) objects[0]).ActivityType);
-		return ((ActivityTypeAttribute) objects[0]).ActivityType;
 	}
 
 	public static bool ActivityTypeExists(Responsible responsible, ActivityType activityType)
 	{
-		foreach (var job in responsible.JobList)
+		foreach (var job in responsible.Jobs)
 		{
-			Debug.Log("Looking for " + activityType);
-			if (activityType == GetActivityType(job))
-			{
-				return true;
-			}
+			if (activityType == job.ActivityType){ return true; }
 		}
 
 		return false;

@@ -4,12 +4,12 @@ namespace Factory
 {
 	public static class NeedFactory
 	{
-		private static float _hungerStepValue = -0.3f;
-		private static float _hygieneStepValue = -0.4f;
-		private static float _funStepValue = -0.2f;
-		private static float _energyStepValue = -0.7f;
-		private static float _bladderStepValue = -0.9f;
-		private static float _socialStepValue = -1f;
+		private static float _hungerStepValue = -0.01f;
+		private static float _hygieneStepValue = -0.1f;
+		private static float _funStepValue = -0.1f;
+		private static float _energyStepValue = -0.05f;
+		private static float _bladderStepValue = -0.1f;
+		private static float _socialStepValue = -0.1f;
 		
 		
 		public static Need GetHunger()

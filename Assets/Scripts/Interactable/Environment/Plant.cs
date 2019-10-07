@@ -23,8 +23,9 @@ namespace Interactable.Environment
 			SetMethods();
 		}
 
+		[ActivityType(ActivityType.Harvest)]
 		public IEnumerator Harvest(Human human)
-		{			
+		{
 			yield return human.GetComponent<Responsible>().StartCoroutine("Walk", gameObject.transform.position);
 			Debug.Log(human.Name + " is harvesting the plant");
 			human.AddSkill(SkillFactory.GetGardening());
@@ -41,15 +42,16 @@ namespace Interactable.Environment
 			yield return human.GetComponent<Responsible>().StartCoroutine("Walk", gameObject.transform.position);
 			Debug.Log(human.Name + " is eating the plant");
 			yield return new WaitForSeconds(2);
-			human.GetComponent<Responsible>().FinishJob();
 			Debug.Log("Plant eaten by " + human.Name);
 			yield return human.ApplyEffectForSeconds(NeedType.Hunger, 	30f, 1000f);
 			yield return Refresh();
+			human.GetComponent<Responsible>().FinishJob();
 		}
 
 		private IEnumerator Refresh()
 		{
 			harvested = true;
+			Debug.Log("Harvested:" + harvested);
 			Methods.Remove(GetType().GetMethod("Harvest"));
 			Methods.Remove(GetType().GetMethod("Eat"));
 
