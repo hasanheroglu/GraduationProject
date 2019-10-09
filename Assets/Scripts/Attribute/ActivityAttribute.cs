@@ -3,12 +3,12 @@
 namespace Attribute
 {
 	[AttributeUsage(AttributeTargets.Method)]
-	public class ActivityTypeAttribute : System.Attribute
+	public class ActivityAttribute : System.Attribute
 	{
 
 		private ActivityType _activityType;
 
-		public ActivityTypeAttribute(ActivityType activityType)
+		public ActivityAttribute(ActivityType activityType)
 		{
 			_activityType = activityType;
 		}

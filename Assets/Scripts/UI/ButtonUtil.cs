@@ -25,6 +25,13 @@ public class ButtonUtil : MonoBehaviour {
 		button.GetComponent<RectTransform>().anchoredPosition = buttonPosition;
 	}
 	
+	public static void AdjustPosition(GameObject button, int direction, int iterationCount)
+	{
+		var buttonRect = button.GetComponent<RectTransform>().rect;
+		var buttonPosition = new Vector3(1,direction * iterationCount * buttonRect.height, 0);
+		button.GetComponent<RectTransform>().anchoredPosition = buttonPosition;
+	}
+	
 	public static void DropPosition(GameObject button)
 	{
 		var buttonRect = button.GetComponent<RectTransform>().rect;

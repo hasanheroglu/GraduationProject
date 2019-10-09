@@ -18,22 +18,15 @@ namespace Interactable.Environment
 			SetMethods();
 		}
 
-		[ActivityType(ActivityType.Chop)]
+		[Activity(ActivityType.Chop)]
+		[Skill(SkillType.Lumberjack, 250)]
 		public IEnumerator Chop(Human human)
 		{
-			yield return human.GetComponent<Responsible>().StartCoroutine("Walk", interactionPoint.transform.position);
 			Debug.Log(human.Name + " is chopping the plant");
-
-			var activity = ActivityFactory.GetChop();
-			human.AddActivity(activity);
-			
-			human.AddSkill(SkillFactory.GetLumberjack());			
 			yield return new WaitForSeconds(6);
-			Destroy(gameObject);
-			human.UpdateSkill(SkillType.Lumberjack, 400);
-			
+			Destroy(gameObject);			
 			Debug.Log("Chopped the plant by " + human.Name);
-			human.GetComponent<Responsible>().FinishJob();
+			human.FinishJob();
 		}
 	}
 }

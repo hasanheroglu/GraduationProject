@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Reflection;
 using Interactable.Base;
+using Interactable.Manager;
 using Interaction;
 using UI;
 using UnityEngine;
@@ -101,13 +102,19 @@ namespace Manager
 		{			
 			return delegate {
 				CloseInteractionPanel();
-				JobUtil.AddJob(responsible,new Job(jobInfo));
+				JobManager.AddJob(responsible,new Job(jobInfo));
 			};
 		}
 
-		public static void SetInteractionAction(GameObject responsible, JobInfo jobInfo)
+		public static void SetInteractionAction(GameObject responsible, JobInfo jobInfo, bool beginning = false)
 		{
-			JobUtil.AddJob(responsible.GetComponent<Responsible>(), new Job(jobInfo));
+			if (beginning)
+			{
+				JobManager.AddToBeginning(responsible.GetComponent<Responsible>(), new Job(jobInfo));
+				return;
+			}
+			
+			JobManager.AddJob(responsible.GetComponent<Responsible>(), new Job(jobInfo));
 		}
 		
 		/*
@@ -133,6 +140,16 @@ namespace Manager
 				job.Responsible.StopDoingJob(job);
 				ButtonUtil.Destroy(button);
 			};
+		}
+
+		public static void SetJobButtons(Responsible responsible)
+		{
+			var i = 1;
+			foreach (var job in responsible.Jobs)
+			{
+				ButtonUtil.AdjustPosition(job.Button, 1, i);
+				i++;
+			}
 		}
 		
 		/*

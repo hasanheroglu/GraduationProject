@@ -16,12 +16,12 @@ namespace Interactable.Environment
 			SetMethods();
 		}
 		
-		[ActivityType(ActivityType.None)]
+		[Activity(ActivityType.None)]
 		public IEnumerator Walk(Human human)
 		{
-			yield return human.GetComponent<Responsible>().StartCoroutine("Walk", gameObject.transform.position);
-			human.GetComponent<Responsible>().FinishJob();
+			human.FinishJob();
 			Debug.Log("Finished walking!");
+			yield break;
 		}
 	}
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum SkillType{Lumberjack, Cooking, Hunting, Gardening}
+public enum SkillType{None, Lumberjack, Cooking, Hunting, Gardening}
 
 public class Skill
 {
@@ -34,7 +34,5 @@ public class Skill
 		TotalXp -= NeededXp;
 		NeededXp *= NeededXpMultiplier;
 		Level++;
-	}
-	
-	
+	}	
 }

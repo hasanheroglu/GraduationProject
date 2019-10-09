@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Interactable.Base;
 using UnityEngine;
 
 public enum NeedType{Hunger, Social, Fun, Bladder, Energy, Hygiene}
@@ -12,25 +13,38 @@ public class Need
 
 	public float Value { get; set; }
 
+	public ActivityType Activity { get; set; }
+	
 	public float BaseStepValue { get; set; }
 
 	public float StepValue { get; set; }
 
-	public Need(NeedType id, float baseStepValue)
+	public Need(NeedType id, ActivityType activity, float baseStepValue)
 	{
 		Id = id;
 		SelectName();
 		BaseStepValue = baseStepValue;
+		Activity = activity;
 		StepValue = BaseStepValue;
 		Value = 100f;
 	}
 
-	public void Update()
+	public void Update(Responsible responsible)
 	{
 		Value += StepValue;
-		Reset();
 		
 		if (Value < 0){ Value = 0; }
+
+		if (Value < 20 && !responsible.Activities.Contains(Activity))
+		{
+			responsible.Activities.Add(Activity);
+		}
+
+		if (Value >= 20 && responsible.Activities.Contains(Activity))
+		{
+			responsible.Activities.Remove(Activity);
+		}
+		
 		if (Value > 100){ Value = 100; }
 	}
 

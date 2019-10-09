@@ -17,17 +17,14 @@ namespace Interactable.Environment
 			SetMethods();
 		}
 		
-		[ActivityType(ActivityType.Sleep)]
+		[Activity(ActivityType.Sleep)]
+		[Skill(SkillType.None)]
 		public IEnumerator Sleep(Human human)
 		{
-			
-			yield return human.GetComponent<Responsible>().StartCoroutine("Walk", gameObject.transform.position);
 			Debug.Log(human.Name + " is sleeping");
-			
-			human.AddActivity(ActivityFactory.GetSleep());
 			yield return new WaitForSeconds(15);
 			Debug.Log(human.Name + " slept!");
-			human.GetComponent<Responsible>().FinishJob();
+			human.FinishJob();
 		}
 	}
 }

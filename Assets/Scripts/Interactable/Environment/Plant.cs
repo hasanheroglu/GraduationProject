@@ -5,6 +5,7 @@ using Attribute;
 using Factory;
 using Interactable.Base;
 using Interactable.Creatures;
+using Interactable.Manager;
 using Interface;
 using Manager;
 using UnityEngine;
@@ -23,29 +24,26 @@ namespace Interactable.Environment
 			SetMethods();
 		}
 
-		[ActivityType(ActivityType.Harvest)]
+		[Activity(ActivityType.Harvest)]
+		[Skill(SkillType.Gardening, 500)]
 		public IEnumerator Harvest(Human human)
 		{
-			yield return human.GetComponent<Responsible>().StartCoroutine("Walk", gameObject.transform.position);
 			Debug.Log(human.Name + " is harvesting the plant");
-			human.AddSkill(SkillFactory.GetGardening());
 			yield return new WaitForSeconds(2);
-			human.UpdateSkill(SkillType.Gardening, 500);
 			Debug.Log("Plant harvested by " + human.Name);
-			human.GetComponent<Responsible>().FinishJob();
+			human.FinishJob();
 			yield return Refresh();
 		}
 
-		[ActivityType(ActivityType.Eat)]
+		[Activity(ActivityType.Eat)]
+		[Skill(SkillType.None)]
 		public IEnumerator Eat(Human human)
 		{
-			yield return human.GetComponent<Responsible>().StartCoroutine("Walk", gameObject.transform.position);
 			Debug.Log(human.Name + " is eating the plant");
 			yield return new WaitForSeconds(2);
 			Debug.Log("Plant eaten by " + human.Name);
-			yield return human.ApplyEffectForSeconds(NeedType.Hunger, 	30f, 1000f);
+			human.FinishJob();
 			yield return Refresh();
-			human.GetComponent<Responsible>().FinishJob();
 		}
 
 		private IEnumerator Refresh()

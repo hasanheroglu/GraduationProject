@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Attribute;
 using Interactable.Base;
 using Interactable.Creatures;
 using Interactable.Environment;
+using Interactable.Manager;
 using Interaction;
 using Interface;
 using Manager;
@@ -11,84 +14,55 @@ using UnityEngine;
 public class HumanBehaviour : MonoBehaviour
 {
 	private Human _human;
-
-	public bool activated;
+	private SphereCollider _collider;
 	
+	public bool activated;
+
 	// Use this for initialization
-	void Start ()
+	void Start()
 	{
 		_human = GetComponent<Human>();
+		_collider = GetComponent<SphereCollider>();
 		activated = false;
 	}
-	
+
 	// Update is called once per frame
-	void Update ()
+	void Update()
 	{
 		if (activated)
 		{
-			SearchEdible();
-			SearchSleepable();
-			SearchHarvestable();
+			DoActivity(_human.Activity);
 		}
 	}
-
-	private void SearchEdible()
+	
+	private void DoActivity(ActivityType activityType)
 	{
-		if (!(_human.Needs[NeedType.Hunger].Value < 10) || JobUtil.ActivityTypeExists(_human, ActivityType.Eat)) {return;}
-		var possibleEdibles = Physics.OverlapSphere(this.transform.position, 500f);
-		if (possibleEdibles.Length > 0)
+		if (activityType == ActivityType.None || JobManager.ActivityTypeExists(_human, activityType)) return;
+
+		var interactableObjects = Physics.OverlapSphere(this.transform.position, 200f);
+		if (interactableObjects.Length <= 0) return;
+		
+		foreach (var interactableObject in interactableObjects)
 		{
-			foreach (var possibleEdible in possibleEdibles)
+			var interactable = interactableObject.gameObject.GetComponent<Interactable.Base.Interactable>();
+			if (!interactable) continue;
+			var methods = interactable.Methods;
+			if (methods.Count == 0) continue;
+			
+			foreach (var method in methods)
 			{
-				var interactable = possibleEdible.gameObject.GetComponent<Interactable.Base.Interactable>();
-				if (interactable is IEdible && interactable.InUse > 0)
+				ActivityAttribute activityAttribute =
+					System.Attribute.GetCustomAttribute(method, typeof(ActivityAttribute)) as ActivityAttribute;
+
+				if (activityAttribute != null && activityAttribute.ActivityType == activityType && interactable.InUse > 0)
 				{
-					if(((Plant) interactable).harvested){ continue; }
-					var coroutineInfo = new JobInfo(_human, interactable, interactable.GetType().GetMethod("Eat"), new object[]{_human});
+					var coroutineInfo = new JobInfo(_human, interactable, method, new object[] {_human});
 					UIManager.SetInteractionAction(this.gameObject, coroutineInfo);
 					return;
 				}
 			}
 		}
-	}
 
-	private void SearchSleepable()
-	{
-		if (!(_human.Needs[NeedType.Energy].Value < 10) ||
-		    JobUtil.ActivityTypeExists(_human, ActivityType.Sleep)) {return;}
-		var possibleSleepables = Physics.OverlapSphere(this.transform.position, 500f);
-		if (possibleSleepables.Length > 0)
-		{
-			foreach (var possibleSleepable in possibleSleepables)
-			{
-				var interactable = possibleSleepable.gameObject.GetComponent<Interactable.Base.Interactable>();
-				if (interactable is ISleepable && interactable.InUse > 0)
-				{
-					var coroutineInfo = new JobInfo(_human, interactable, interactable.GetType().GetMethod("Sleep"), new object[]{_human});
-					UIManager.SetInteractionAction(this.gameObject, coroutineInfo);
-					break;
-				}
-			}
-		}
-	}
-
-	private void SearchHarvestable()
-	{
-		if (JobUtil.ActivityTypeExists(_human, ActivityType.Harvest)){ return; }
-		var possibleHarvestables = Physics.OverlapSphere(this.transform.position, 500f);
-		if (possibleHarvestables.Length > 0)
-		{
-			foreach (var possibleHarvestable in possibleHarvestables)
-			{
-				var interactable = possibleHarvestable.gameObject.GetComponent<Interactable.Base.Interactable>();
-				if (interactable is IHarvestable && interactable.InUse > 0)
-				{
-					if(((Plant) interactable).harvested){ continue; }
-					var coroutineInfo = new JobInfo(_human, interactable, interactable.GetType().GetMethod("Harvest"), new object[]{_human});
-					UIManager.SetInteractionAction(this.gameObject, coroutineInfo);
-					break;
-				}
-			}
-		}
+		_human.Activities.Remove(_human.Activity);
 	}
 }
