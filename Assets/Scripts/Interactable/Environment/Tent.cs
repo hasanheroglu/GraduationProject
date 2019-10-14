@@ -16,8 +16,15 @@ namespace Interactable.Environment
 			InUse = 1;
 			SetMethods();
 		}
-		
+
+		private void Update()
+		{
+			Debug.Log("I'm a tent and my InUse is " + InUse);
+		}
+
 		[Activity(ActivityType.Sleep)]
+		[Interactable(typeof(Responsible))]
+		[Interactable(typeof(Human))]
 		[Skill(SkillType.None)]
 		public IEnumerator Sleep(Human human)
 		{

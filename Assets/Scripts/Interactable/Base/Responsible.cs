@@ -28,7 +28,9 @@ namespace Interactable.Base
  
 		public Dictionary<SkillType, Skill> Skills { get; set; }
 
-		public List<Interactable> Inventory { get; set; }
+		public List<InventoryItem> Inventory { get; set; }
+		
+		public List<ActivityType> IdleActvities { get; set; }
 
 		private void Awake()
 		{
@@ -36,9 +38,12 @@ namespace Interactable.Base
 			Needs = new Dictionary<NeedType, Need>();
 			Skills = new Dictionary<SkillType, Skill>();
 			Activities = new List<ActivityType>();
-			Inventory = new List<Interactable>();
-			Activity = ActivityType.Chop;
+			IdleActvities = new List<ActivityType> {ActivityType.Chop, ActivityType.Harvest};
+			Inventory = new List<InventoryItem>();
 			
+			Activity = ActivityType.None;
+			SetActivity();
+
 			Agent = GetComponent<NavMeshAgent>();
 			JobFinished = true;
 			JobPanel = Instantiate(UIManager.Instance.jobPanelPrefab, UIManager.Instance.canvas.transform);
@@ -48,9 +53,13 @@ namespace Interactable.Base
 
 		private void Update()
 		{
-			Debug.Log(Activity);
 			SetActivity();
 			foreach (var need in Needs){ need.Value.Update(this); }
+
+			foreach (var item in Inventory)
+			{
+				Debug.Log(item.Item.GetComponent<Interactable>().Name + " count:" + item.Count);
+			}
 			StartCoroutine(DoJob());
 		}
 
@@ -90,11 +99,50 @@ namespace Interactable.Base
 		{
 			if (Activities.Count == 0)
 			{
-				Activity = ActivityType.None;
+				if (IdleActvities.Count == 0)
+				{
+					Activity = ActivityType.None;
+					return;
+				}	
+				
+				Activity = IdleActvities[0];
 				return;
 			}
-
+			
 			Activity = Activities[0];
+		}
+
+		public void AddToInventory(GameObject item)
+		{
+			foreach (var inventoryItem in Inventory)
+			{
+				if (inventoryItem.Item.GetComponent<Interactable>().Name == item.GetComponent<Interactable>().Name)
+				{
+					inventoryItem.Add(1);
+					return;
+				}
+			}
+			
+			Inventory.Add(new InventoryItem(item));
+		}
+
+		public void RemoveFromInventory(GameObject item)
+		{
+			foreach (var inventoryItem in Inventory)
+			{
+				if (inventoryItem.Item.GetComponent<Interactable>().Name == item.GetComponent<Interactable>().Name)
+				{
+					if (inventoryItem.Count == 1)
+					{
+						Inventory.Remove(inventoryItem);
+					}
+					else
+					{
+						inventoryItem.Remove(1);
+					}
+				}
+			}
+			
 		}
 	}
 }

@@ -456,6 +456,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33401307e2594442b014cb5f0eb0159, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: Flower
   interactionPoint: {fileID: 1819965432943684}
   harvested: 0
   plantMesh: {fileID: 1680990191512038}
+  product: {fileID: 1374016083561066}

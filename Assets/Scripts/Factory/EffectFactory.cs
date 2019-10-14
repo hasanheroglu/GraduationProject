@@ -31,6 +31,8 @@ namespace Factory
 					break;
 				case ActivityType.Cook:
 					break;
+				case ActivityType.Walk:
+					break;
 				default:
 					throw new ArgumentOutOfRangeException("activityType", activityType, null);
 			}
@@ -53,7 +55,7 @@ namespace Factory
 
 		public static Effect GetHunger()
 		{
-			return new Effect(NeedType.Hunger, -0.05f);
+			return new Effect(NeedType.Hunger, -0.1f);
 		}
 
 	}

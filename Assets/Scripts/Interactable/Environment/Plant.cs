@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using Attribute;
@@ -16,6 +17,7 @@ namespace Interactable.Environment
 	{
 		public bool harvested;
 		public GameObject plantMesh;
+		public GameObject product;
 
 		private void Start()
 		{
@@ -24,18 +26,29 @@ namespace Interactable.Environment
 			SetMethods();
 		}
 
+		private void Update()
+		{
+			Debug.Log("I'm a plant and my InUse is " + InUse);
+		}
+
 		[Activity(ActivityType.Harvest)]
+		[Interactable(typeof(Human))]
 		[Skill(SkillType.Gardening, 500)]
 		public IEnumerator Harvest(Human human)
 		{
 			Debug.Log(human.Name + " is harvesting the plant");
 			yield return new WaitForSeconds(2);
 			Debug.Log("Plant harvested by " + human.Name);
+			var newProduct = Instantiate(product);
+			human.AddToInventory(newProduct);
+			newProduct.SetActive(false);
 			human.FinishJob();
 			yield return Refresh();
 		}
 
 		[Activity(ActivityType.Eat)]
+		[Interactable(typeof(Responsible))]
+		[Interactable(typeof(Human))]
 		[Skill(SkillType.None)]
 		public IEnumerator Eat(Human human)
 		{
@@ -49,7 +62,6 @@ namespace Interactable.Environment
 		private IEnumerator Refresh()
 		{
 			harvested = true;
-			Debug.Log("Harvested:" + harvested);
 			Methods.Remove(GetType().GetMethod("Harvest"));
 			Methods.Remove(GetType().GetMethod("Eat"));
 

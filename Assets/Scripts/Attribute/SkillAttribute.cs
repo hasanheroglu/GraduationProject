@@ -1,5 +1,8 @@
-﻿namespace Attribute
+﻿using System;
+
+namespace Attribute
 {
+	[AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
 	public class SkillAttribute : System.Attribute
 	{
 

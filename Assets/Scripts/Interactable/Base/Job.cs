@@ -16,6 +16,8 @@ public class Job
 	public Responsible Responsible { get; private set; }
 
 	private IEnumerator Coroutine { get; set; }
+	
+	private MethodInfo Method { get; set; }
 
 	private Interactable.Base.Interactable Target { get; set; }
 
@@ -38,6 +40,7 @@ public class Job
 		SetSkillType(jobInfo.Method);
 		SetEffects();
 		SetButton(jobInfo);
+		Method = jobInfo.Method;
 		_started = false;
 	}
 
@@ -105,53 +108,58 @@ public class Job
 	{
 		var button = UIManager.Instance.GetJobButton(jobInfo.Responsible.JobPanel.transform);
 		button.GetComponentInChildren<Text>().text = jobInfo.Method.Name;
-		UIManager.SetJobButtons(Responsible);
-		ButtonUtil.SetOnClickAction(button, UIManager.GetJobButtonAction(this, button));
+		ButtonUtil.SetOnClickAction(button, UIManager.GetJobButtonAction(this));
 		Button = button;
 	}
 
 	public IEnumerator Start()
 	{
-		if (Target.InUse == 0)
+		Responsible.JobFinished = false;
+		Responsible.TargetInRange = false;
+		
+		if(Target){
+			Responsible.Target = Target.gameObject;
+		}
+		
+		yield return Responsible.StartCoroutine("Walk", Target.interactionPoint.transform.position);
+		
+		_started = true;
+		Responsible.StartCoroutine(Coroutine);
+		Target.InUse--;
+		if (Target == null || Target.InUse < 0 || !Target.Methods.Contains(Method))
 		{
 			Stop(true);
 		}
-
-		_started = true;
-		Responsible.JobFinished = false;
-		Responsible.TargetInRange = false;
-		Target.InUse--;
-		Responsible.Target = Target.gameObject;
-		yield return Responsible.StartCoroutine("Walk", Target.interactionPoint.transform.position);
+		
 		SkillManager.AddSkill(Responsible, SkillFactory.GetSkill(SkillType));
 		EffectManager.Apply(Responsible, Effects);
-		
-		Responsible.StartCoroutine(Coroutine);
 	}
 
 	public void Stop(bool immediate = false)
 	{
+		if (Responsible.Jobs.IndexOf(this) == 0)
+		{
+			Responsible.StopWalking();
+			Responsible.JobFinished = true;
+		}
+
+		if (immediate)
+		{
+			Responsible.StopCoroutine(Coroutine);
+		}
+		
 		if (_started)
 		{
-			if (Responsible.Jobs.IndexOf(this) == 0)
-			{
-				Responsible.StopWalking();
-				Responsible.JobFinished = true;
-			}
-
-			if (immediate)
-			{
-				Responsible.StopCoroutine(Coroutine);
-			}
-			else
+			if(!immediate)
 			{
 				SkillManager.UpdateSkill(Responsible, SkillType, EarnedXp);
 			}
+			
 			EffectManager.Remove(Responsible, Effects);
-			Target.InUse++;
 			_started = false;
-		}
+		}		
 		
-		JobManager.RemoveJob(Responsible, this);
+		Target.InUse++;
+		JobManager.RemoveJob(this);
 	}
 }

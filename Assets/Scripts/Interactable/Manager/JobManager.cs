@@ -1,42 +1,41 @@
 ﻿using System.Collections.Generic;
 using Interactable.Base;
+using Manager;
 using UnityEngine;
 
 namespace Interactable.Manager
 {
 	public class JobManager : MonoBehaviour {
 
-		public static void AddToBeginning(Responsible responsible, Job job)
+		public static void AddToBeginning(Job job)
 		{
 			List<Job> newJobs = new List<Job> {job};
 
-			foreach (var oldJob in responsible.Jobs)
+			foreach (var oldJob in job.Responsible.Jobs)
 			{
 				newJobs.Add(oldJob);
 			}
 
-			responsible.Jobs = newJobs;
+			job.Responsible.Jobs = newJobs;
+			UIManager.SetJobButtons(job.Responsible);
 		}
 		
-		public static void AddJob(Responsible responsible, Job job)
+		public static void AddJob(Job job)
 		{
-			responsible.Jobs.Add(job);
+			job.Responsible.Jobs.Add(job);
+			UIManager.SetJobButtons(job.Responsible);
 		}
 
-		public static void RemoveJob(Responsible responsible, Job job)
+		public static void RemoveJob(Job job)
 		{
-			RemoveButton(responsible, job);
-			responsible.Jobs.Remove(job);
+			job.Responsible.Jobs.Remove(job);
+			RemoveButton(job);
 		}
 
-		private static void RemoveButton(Responsible responsible, Job job)
+		public static void RemoveButton(Job job)
 		{
-			var index = responsible.Jobs.IndexOf(job);
 			ButtonUtil.Destroy(job.Button);
-			for (var i = index; i < responsible.Jobs.Count; i++)
-			{
-				ButtonUtil.DropPosition(responsible.Jobs[i].Button);
-			}
+			UIManager.SetJobButtons(job.Responsible);
 		}
 
 		public static bool ActivityTypeExists(Responsible responsible, ActivityType activityType)

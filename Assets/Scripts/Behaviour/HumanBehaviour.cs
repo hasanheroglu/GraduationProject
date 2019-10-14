@@ -39,7 +39,7 @@ public class HumanBehaviour : MonoBehaviour
 	{
 		if (activityType == ActivityType.None || JobManager.ActivityTypeExists(_human, activityType)) return;
 
-		var interactableObjects = Physics.OverlapSphere(this.transform.position, 200f);
+		var interactableObjects = Physics.OverlapSphere(this.transform.position, 20f);
 		if (interactableObjects.Length <= 0) return;
 		
 		foreach (var interactableObject in interactableObjects)
@@ -54,15 +54,16 @@ public class HumanBehaviour : MonoBehaviour
 				ActivityAttribute activityAttribute =
 					System.Attribute.GetCustomAttribute(method, typeof(ActivityAttribute)) as ActivityAttribute;
 
-				if (activityAttribute != null && activityAttribute.ActivityType == activityType && interactable.InUse > 0)
-				{
-					var coroutineInfo = new JobInfo(_human, interactable, method, new object[] {_human});
-					UIManager.SetInteractionAction(this.gameObject, coroutineInfo);
-					return;
-				}
+				if (activityAttribute == null || activityAttribute.ActivityType != activityType ||
+				    (interactable.InUse <= 0)) continue;
+				
+				var coroutineInfo = new JobInfo(_human, interactable, method, new object[] {_human});
+				UIManager.SetInteractionAction(this.gameObject, coroutineInfo);
+				return;
 			}
 		}
 
-		_human.Activities.Remove(_human.Activity);
+		_human.Activities.Remove(activityType);
+		_human.IdleActvities.Remove(activityType);
 	}
 }

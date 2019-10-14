@@ -4,12 +4,12 @@ namespace Factory
 {
 	public static class NeedFactory
 	{
-		private static float _hungerStepValue = -0.1f;
-		private static float _hygieneStepValue = -0.01f;
-		private static float _funStepValue = -0.01f;
+		private static float _hungerStepValue = -0.5f;
+		private static float _hygieneStepValue = -0.00f;
+		private static float _funStepValue = -0.00f;
 		private static float _energyStepValue = -0.01f;
-		private static float _bladderStepValue = -0.01f;
-		private static float _socialStepValue = -0.01f;
+		private static float _bladderStepValue = -0.00f;
+		private static float _socialStepValue = -0.00f;
 		
 		
 		public static Need GetHunger()
@@ -19,12 +19,12 @@ namespace Factory
 		
 		public static Need GetHygiene()
 		{
-			return new Need(NeedType.Hygiene, ActivityType.Harvest, _hygieneStepValue);
+			return new Need(NeedType.Hygiene, ActivityType.None, _hygieneStepValue);
 		}
 		
 		public static Need GetFun()
 		{
-			return new Need(NeedType.Fun, ActivityType.Harvest, _funStepValue);
+			return new Need(NeedType.Fun, ActivityType.None, _funStepValue);
 		}
 		
 		public static Need GetEnergy()
@@ -34,12 +34,12 @@ namespace Factory
 		
 		public static Need GetBladder()
 		{
-			return new Need(NeedType.Bladder, ActivityType.Harvest, _bladderStepValue);
+			return new Need(NeedType.Bladder, ActivityType.None, _bladderStepValue);
 		}
 		
 		public static Need GetSocial()
 		{
-			return new Need(NeedType.Social, ActivityType.Harvest, _socialStepValue);
+			return new Need(NeedType.Social, ActivityType.None, _socialStepValue);
 		}
 	}
 }

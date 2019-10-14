@@ -11,15 +11,21 @@
       <e p="Assets/Scripts" t="Include">
         <e p="Attribute" t="Include">
           <e p="ActivityAttribute.cs" t="Include" />
+          <e p="InteractableAttribute.cs" t="Include" />
           <e p="SkillAttribute.cs" t="Include" />
         </e>
         <e p="Behaviour" t="Include">
           <e p="HumanBehaviour.cs" t="Include" />
         </e>
+        <e p="Crafting" t="Include">
+          <e p="Recipe.cs" t="Include" />
+          <e p="RecipeManager.cs" t="Include" />
+        </e>
         <e p="Factory" t="Include">
           <e p="EffectFactory.cs" t="Include" />
           <e p="HumanFactory.cs" t="Include" />
           <e p="NeedFactory.cs" t="Include" />
+          <e p="RecipeFactory.cs" t="Include" />
           <e p="SkillFactory.cs" t="Include" />
         </e>
         <e p="Interactable" t="Include">
@@ -27,6 +33,8 @@
             <e p="Activity.cs" t="Include" />
             <e p="Effect.cs" t="Include" />
             <e p="Interactable.cs" t="Include" />
+            <e p="InventoryItem.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
             <e p="Job.cs" t="Include" />
             <e p="Need.cs" t="Include" />
             <e p="Responsible.cs" t="Include" />
@@ -57,7 +65,7 @@
           <e p="IAttackable.cs" t="Include" />
           <e p="ICarriable.cs" t="Include" />
           <e p="IChoppable.cs" t="Include" />
-          <e p="ICookable.cs" t="Include" />
+          <e p="ICraftable.cs" t="Include" />
           <e p="IDestroyable.cs" t="Include" />
           <e p="IEdible.cs" t="Include" />
           <e p="IHarvestable.cs" t="Include" />
@@ -72,8 +80,10 @@
         </e>
         <e p="UI" t="Include">
           <e p="ButtonUtil.cs" t="Include" />
+          <e p="ItemInfo.cs" t="Include" />
           <e p="JobInfo.cs" t="Include" />
           <e p="NeedBox.cs" t="Include" />
+          <e p="RecipeInfo.cs" t="Include" />
           <e p="SkillInfo.cs" t="Include" />
         </e>
       </e>

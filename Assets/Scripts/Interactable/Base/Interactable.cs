@@ -8,17 +8,13 @@ namespace Interactable.Base
 	public abstract class Interactable : MonoBehaviour
 	{
 
-		private string _name;
+		public string Name;
 		private int _inUse;
 		private List<MethodInfo> _methods;
 		
 		public GameObject interactionPoint;
 
-		public string Name
-		{
-			get { return _name; }
-			set { _name = value; }
-		}
+		
 
 		public int InUse
 		{

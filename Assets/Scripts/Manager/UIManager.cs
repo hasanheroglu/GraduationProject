@@ -71,8 +71,25 @@ namespace Manager
 			
 			foreach (var method in methods)
 			{
-				JobInfo jobInfo = new JobInfo(responsible, target, method, parameters);
-				AddInteractionButton(responsible, jobInfo);
+				InteractableAttribute [] interactableAttributes =
+					System.Attribute.GetCustomAttributes(method, typeof(InteractableAttribute)) as InteractableAttribute[];
+
+			
+				
+				if (interactableAttributes == null)
+				{
+					Debug.Log("Method's interactable type is missing!");
+					return;
+				}
+
+				foreach (var interactableAttribute in interactableAttributes)
+				{
+					if (interactableAttribute.InteractableType == responsible.GetType())
+					{
+						JobInfo jobInfo = new JobInfo(responsible, target, method, parameters);
+						AddInteractionButton(responsible, jobInfo);
+					}
+				}
 			}
 		}
 		
@@ -102,7 +119,7 @@ namespace Manager
 		{			
 			return delegate {
 				CloseInteractionPanel();
-				JobManager.AddJob(responsible,new Job(jobInfo));
+				JobManager.AddJob(new Job(jobInfo));
 			};
 		}
 
@@ -110,11 +127,11 @@ namespace Manager
 		{
 			if (beginning)
 			{
-				JobManager.AddToBeginning(responsible.GetComponent<Responsible>(), new Job(jobInfo));
+				JobManager.AddToBeginning(new Job(jobInfo));
 				return;
 			}
 			
-			JobManager.AddJob(responsible.GetComponent<Responsible>(), new Job(jobInfo));
+			JobManager.AddJob(new Job(jobInfo));
 		}
 		
 		/*
@@ -134,17 +151,18 @@ namespace Manager
 			return Instantiate(jobButtonPrefab, buttonParent);
 		}
 		
-		public static UnityAction GetJobButtonAction(Job job, GameObject button)
+		public static UnityAction GetJobButtonAction(Job job)
 		{
 			return delegate {
 				job.Responsible.StopDoingJob(job);
-				ButtonUtil.Destroy(button);
+				JobManager.RemoveButton(job);
+				
 			};
 		}
 
 		public static void SetJobButtons(Responsible responsible)
 		{
-			var i = 1;
+			var i = 0;
 			foreach (var job in responsible.Jobs)
 			{
 				ButtonUtil.AdjustPosition(job.Button, 1, i);

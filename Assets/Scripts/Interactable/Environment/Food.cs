@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Attribute;
+using Interactable.Base;
 using Interactable.Creatures;
 using Interface;
 using UnityEngine;
@@ -10,9 +11,12 @@ public class Food : Interactable.Base.Interactable, IEdible {
 	{
 		InUse = 1;
 		SetMethods();
+		Name = "Kebab";
 	}
 
 	[Activity(ActivityType.Eat)]
+	[Interactable(typeof(Responsible))]
+	[Interactable(typeof(Human))]
 	[Skill(SkillType.None)]
 	public IEnumerator Eat(Human human)
 	{

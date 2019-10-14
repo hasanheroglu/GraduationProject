@@ -12,11 +12,13 @@ namespace Interactable.Environment
 	{
 		private void Start()
 		{
-			InUse = -1; //infinite use
+			InUse = 999; //infinite use change this value!!!
 			SetMethods();
 		}
 		
 		[Activity(ActivityType.None)]
+		[Interactable(typeof(Responsible))]
+		[Interactable(typeof(Human))]
 		public IEnumerator Walk(Human human)
 		{
 			human.FinishJob();

@@ -168,4 +168,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c88a4bf3a8bb7f4d9700b4776b76824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: Ground
   interactionPoint: {fileID: 1970338696063446}
