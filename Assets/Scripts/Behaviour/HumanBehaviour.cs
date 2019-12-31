@@ -11,37 +11,23 @@ using Interface;
 using Manager;
 using UnityEngine;
 
-public class HumanBehaviour : MonoBehaviour
+public class HumanBehaviour : Behaviour
 {
-	private Human _human;
-	private SphereCollider _collider;
+	public Responsible Responsible { get; set; }
 	
-	public bool activated;
-
-	// Use this for initialization
-	void Start()
+	public HumanBehaviour(Responsible responsible)
 	{
-		_human = GetComponent<Human>();
-		_collider = GetComponent<SphereCollider>();
-		activated = false;
-	}
-
-	// Update is called once per frame
-	void Update()
-	{
-		if (activated)
-		{
-			DoActivity(_human.Activity);
-		}
-	}
+		Responsible = responsible;
+	}	
 	
-	private void DoActivity(ActivityType activityType)
+	
+	public void DoActivity(ActivityType activityType)
 	{
-		if (activityType == ActivityType.None || JobManager.ActivityTypeExists(_human, activityType)) return;
+		if (activityType == ActivityType.None || JobManager.ActivityTypeExists(Responsible, activityType)) return;
 
-		var interactableObjects = Physics.OverlapSphere(this.transform.position, 20f);
+		var interactableObjects = Physics.OverlapSphere(Responsible.gameObject.transform.position, 20f);
 		if (interactableObjects.Length <= 0) return;
-		
+
 		foreach (var interactableObject in interactableObjects)
 		{
 			var interactable = interactableObject.gameObject.GetComponent<Interactable.Base.Interactable>();
@@ -57,13 +43,23 @@ public class HumanBehaviour : MonoBehaviour
 				if (activityAttribute == null || activityAttribute.ActivityType != activityType ||
 				    (interactable.InUse <= 0)) continue;
 				
-				var coroutineInfo = new JobInfo(_human, interactable, method, new object[] {_human});
-				UIManager.SetInteractionAction(this.gameObject, coroutineInfo);
+				var coroutineInfo = new JobInfo(Responsible, interactable, method, new object[] {Responsible});
+				UIManager.SetInteractionAction(Responsible.gameObject, coroutineInfo);
 				return;
 			}
 		}
 
-		_human.Activities.Remove(activityType);
-		_human.IdleActvities.Remove(activityType);
+		Responsible.Activities.Remove(activityType);
+		Responsible.StartCoroutine("RemoveActivity", activityType);
+	}
+
+	private IEnumerator RemoveActivity(ActivityType activityType)
+	{
+		Responsible.IdleActvities.Remove(activityType);
+		Debug.Log(activityType + " removed from idle activities!");
+		yield return new WaitForSeconds(150);
+		Responsible.IdleActvities.Add(activityType);
+		Debug.Log(activityType + " added back to idle activities!");
+
 	}
 }

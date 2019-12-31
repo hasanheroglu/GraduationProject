@@ -156,7 +156,6 @@ namespace Manager
 			return delegate {
 				job.Responsible.StopDoingJob(job);
 				JobManager.RemoveButton(job);
-				
 			};
 		}
 

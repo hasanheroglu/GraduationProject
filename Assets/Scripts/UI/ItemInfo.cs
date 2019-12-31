@@ -20,4 +20,22 @@ public class ItemInfo : MonoBehaviour
 		name.GetComponent<Text>().text = itemName;
 		//image = itemImage;
 	}
+	
+	public void SetItemInfo(Item item)
+	{
+		name.GetComponent<Text>().text = item.Name;
+		//image = item.Image;
+	}
+
+	public void SetIngredientInfo(Ingredient ingredient)
+	{
+		name.GetComponent<Text>().text = ingredient.Amount.ToString() + " " + ingredient.Name;
+		//image = item.Image;
+
+	}
+
+	public void AddAmountInfo(int amount)
+	{
+		name.GetComponent<Text>().text = amount + "/" + name.GetComponent<Text>().text;
+	}
 }

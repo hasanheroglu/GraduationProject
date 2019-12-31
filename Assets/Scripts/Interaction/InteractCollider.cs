@@ -15,14 +15,23 @@ namespace Interaction
 
 		private void OnTriggerEnter(Collider other)
 		{
-			if (!ReferenceEquals(other.gameObject, _responsible.Target)) return;
+			if (!ReferenceEquals(other.transform.parent.gameObject, _responsible.Target)
+				&& !ReferenceEquals(other.gameObject, _responsible.Target))
+			{
+				return;
+			}
 		
 			_responsible.TargetInRange = true;
 		}
 	
 		private void OnTriggerStay(Collider other)
 		{
-			if (!ReferenceEquals(other.gameObject, _responsible.Target)) return;
+			Debug.Log(other.gameObject.name);
+			if (!ReferenceEquals(other.transform.parent.gameObject, _responsible.Target) 
+			    && !ReferenceEquals(other.gameObject, _responsible.Target))
+			{
+				return;
+			}
 		
 			_responsible.TargetInRange = true;
 		}

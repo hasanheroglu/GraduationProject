@@ -10,6 +10,12 @@ public class Item
 
     private GameObject itemPrefab;
 
+    protected Item()
+    {
+        Name = "";
+        Image = null;
+    }
+    
     public Item(string name, RawImage image)
     {
         Name = name;

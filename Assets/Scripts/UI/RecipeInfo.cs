@@ -22,12 +22,17 @@ public class RecipeInfo : MonoBehaviour
 		SetSelectButton();
 	}
 
-	private void SetIngredients(List<Item> ingredientList)
+	private void SetIngredients(List<Ingredient> ingredientList)
 	{
+		var i = 0;
 		foreach (var ingredient in ingredientList)
 		{
 			var itemInfo = Instantiate(itemInfoPrefab, ingredients.transform);
-			itemInfo.GetComponent<ItemInfo>().SetItemInfo(ingredient.Name, null);
+			itemInfo.GetComponent<ItemInfo>().SetIngredientInfo(ingredient);
+			var ingredientInfoRect = itemInfo.GetComponent<RectTransform>().rect;
+			var ingredientPosition = new Vector3(i*ingredientInfoRect.width, itemInfo.GetComponent<RectTransform>().anchoredPosition.y, 0);
+			itemInfo.GetComponent<RectTransform>().anchoredPosition = ingredientPosition;
+			i++;
 		}
 	}
 

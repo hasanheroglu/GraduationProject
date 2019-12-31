@@ -23,6 +23,6 @@ public class RecipeFactory: MonoBehaviour
 	
 	public Recipe GetKebab()
 	{
-		return new Recipe("Kebab", new List<Item>(), kebab, 5f, null);
+		return new Recipe("Kebab", new List<Ingredient>(), kebab, 5f, null);
 	}
 }

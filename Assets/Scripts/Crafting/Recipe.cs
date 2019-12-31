@@ -11,12 +11,12 @@ namespace Crafting
 	{
 		
 		public string Name { get; set; }
-		public List<Item> Ingredients { get; set; }
+		public List<Ingredient> Ingredients { get; set; }
 		public GameObject Product { get; set; }
 		public float Duration { get; set; }
 		public ICraftable Craftable { get; set; }
 
-		public Recipe(string name, List<Item> ingredients, GameObject product, float duration, ICraftable craftable)
+		public Recipe(string name, List<Ingredient> ingredients, GameObject product, float duration, ICraftable craftable)
 		{
 			Name = name;
 			Ingredients = ingredients;
@@ -33,7 +33,7 @@ namespace Crafting
 				{
 					if (item.Item.GetComponent<Interactable.Base.Interactable>().Name == ingredient.Name)
 					{
-						item.Remove(1);
+						item.Remove(ingredient.Amount);
 					}
 				}
 			}

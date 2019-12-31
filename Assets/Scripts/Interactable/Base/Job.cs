@@ -121,15 +121,27 @@ public class Job
 			Responsible.Target = Target.gameObject;
 		}
 		
+		if (Target == null || Target.InUse <= 0 || !Target.Methods.Contains(Method))
+		{	
+			Debug.Log("Target is already in use!");
+			Stop(true);
+			yield break;
+		}
 		yield return Responsible.StartCoroutine("Walk", Target.interactionPoint.transform.position);
+		
+		Debug.Log("Reached to the target now I'm gonna start doing my job!");
+		if (Target == null || Target.InUse <= 0 || !Target.Methods.Contains(Method))
+		{	
+			Debug.Log("Target is already in use!");
+			Stop(true);
+			yield break;
+		}
+		Debug.Log("Nobody is using this target!");
+
 		
 		_started = true;
 		Responsible.StartCoroutine(Coroutine);
 		Target.InUse--;
-		if (Target == null || Target.InUse < 0 || !Target.Methods.Contains(Method))
-		{
-			Stop(true);
-		}
 		
 		SkillManager.AddSkill(Responsible, SkillFactory.GetSkill(SkillType));
 		EffectManager.Apply(Responsible, Effects);
@@ -157,9 +169,9 @@ public class Job
 			
 			EffectManager.Remove(Responsible, Effects);
 			_started = false;
+			Target.InUse++;
 		}		
 		
-		Target.InUse++;
 		JobManager.RemoveJob(this);
 	}
 }

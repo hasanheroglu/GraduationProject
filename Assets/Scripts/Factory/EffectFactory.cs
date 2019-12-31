@@ -33,6 +33,11 @@ namespace Factory
 					break;
 				case ActivityType.Walk:
 					break;
+				case ActivityType.Shower:
+					effects.Add(GetShower());
+					break;
+				case ActivityType.Kill:
+					break;
 				default:
 					throw new ArgumentOutOfRangeException("activityType", activityType, null);
 			}
@@ -56,6 +61,11 @@ namespace Factory
 		public static Effect GetHunger()
 		{
 			return new Effect(NeedType.Hunger, -0.1f);
+		}
+
+		public static Effect GetShower()
+		{
+			return new Effect(NeedType.Hygiene, 0.1f);
 		}
 
 	}

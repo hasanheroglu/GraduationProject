@@ -14,8 +14,6 @@ namespace Interactable.Base
 		
 		public GameObject interactionPoint;
 
-		
-
 		public int InUse
 		{
 			get { return _inUse; }

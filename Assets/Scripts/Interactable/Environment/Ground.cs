@@ -19,9 +19,10 @@ namespace Interactable.Environment
 		[Activity(ActivityType.None)]
 		[Interactable(typeof(Responsible))]
 		[Interactable(typeof(Human))]
-		public IEnumerator Walk(Human human)
+		[Interactable(typeof(Zombie))]
+		public IEnumerator Walk(Responsible responsible)
 		{
-			human.FinishJob();
+			responsible.FinishJob();
 			Debug.Log("Finished walking!");
 			yield break;
 		}

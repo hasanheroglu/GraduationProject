@@ -18,11 +18,6 @@ namespace Interactable.Environment
 			SetMethods();
 		}
 
-		private void Update()
-		{
-			Debug.Log("I'm a tree and my InUse is " + InUse);
-		}
-
 		[Activity(ActivityType.Chop)]
 		[Interactable(typeof(Human))]
 		[Skill(SkillType.Lumberjack, 250)]

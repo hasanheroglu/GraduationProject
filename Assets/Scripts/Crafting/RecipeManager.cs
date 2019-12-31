@@ -46,26 +46,34 @@ public class RecipeManager : MonoBehaviour
 
 	private void SetRecipes(List<Recipe> recipeList, List<InventoryItem> items)
 	{
+		foreach (Transform child in recipes.transform)
+		{
+			Destroy(child.gameObject);
+		}
+		
+		var i = 0;
 		foreach (var recipe in recipeList)
 		{
 			var recipeInfo = Instantiate(recipeInfoPrefab, recipes.transform);
 			recipeInfo.GetComponent<RecipeInfo>().SetRecipeInfo(recipe);
+			recipeInfo.GetComponent<RecipeInfo>().selectButton.GetComponent<Button>().interactable = false;
+			var recipeInfoRect = recipeInfo.GetComponent<RectTransform>().rect;
+			var recipeInfoPosition = new Vector3(1, -1*i*recipeInfoRect.height, 0);
+			recipeInfo.GetComponent<RectTransform>().anchoredPosition = recipeInfoPosition;
 
-			if (items.Count == 0)
-			{
-				recipeInfo.GetComponent<RecipeInfo>().selectButton.GetComponent<Button>().interactable = false;
-			}
-			
 			foreach (var ingredient in recipe.Ingredients)
 			{
 				foreach (var item in items)
 				{
-					if (item.Item.GetComponent<Interactable.Base.Interactable>().Name != ingredient.Name || item.Count < 1)
+					
+					if (item.Item.GetComponent<Interactable.Base.Interactable>().Name == ingredient.Name && item.Count >= ingredient.Amount)
 					{
-						recipeInfo.GetComponent<RecipeInfo>().selectButton.GetComponent<Button>().interactable = false;
+						recipeInfo.GetComponent<RecipeInfo>().selectButton.GetComponent<Button>().interactable = true;
 					}
 				}
 			}
+
+			i++;
 		}
 	}
 

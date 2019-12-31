@@ -12,7 +12,7 @@ namespace Interactable.Base
 
 		public GameObject Target { get; set; }
 
-		public bool TargetInRange { get; set; }
+		public bool TargetInRange;
 
 		public NavMeshAgent Agent { get; set; }
 		
@@ -31,6 +31,12 @@ namespace Interactable.Base
 		public List<InventoryItem> Inventory { get; set; }
 		
 		public List<ActivityType> IdleActvities { get; set; }
+		
+		public Behaviour Behaviour { get; set; }
+		
+		public bool AutoWill { get; set; }
+		
+		public Weapon Weapon { get; set; }
 
 		private void Awake()
 		{
@@ -38,10 +44,9 @@ namespace Interactable.Base
 			Needs = new Dictionary<NeedType, Need>();
 			Skills = new Dictionary<SkillType, Skill>();
 			Activities = new List<ActivityType>();
-			IdleActvities = new List<ActivityType> {ActivityType.Chop, ActivityType.Harvest};
 			Inventory = new List<InventoryItem>();
-			
 			Activity = ActivityType.None;
+			IdleActvities = new List<ActivityType> {ActivityType.Chop, ActivityType.Harvest};
 			SetActivity();
 
 			Agent = GetComponent<NavMeshAgent>();
@@ -51,7 +56,7 @@ namespace Interactable.Base
 			UIManager.Instance.JobPanels.Add(JobPanel);
 		}
 
-		private void Update()
+		public void Update()
 		{
 			SetActivity();
 			foreach (var need in Needs){ need.Value.Update(this); }
@@ -60,6 +65,7 @@ namespace Interactable.Base
 			{
 				Debug.Log(item.Item.GetComponent<Interactable>().Name + " count:" + item.Count);
 			}
+			
 			StartCoroutine(DoJob());
 		}
 

@@ -26,10 +26,6 @@ namespace Interactable.Environment
 			SetMethods();
 		}
 
-		private void Update()
-		{
-			Debug.Log("I'm a plant and my InUse is " + InUse);
-		}
 
 		[Activity(ActivityType.Harvest)]
 		[Interactable(typeof(Human))]
