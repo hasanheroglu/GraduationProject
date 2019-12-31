@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="41f68628-977b-4739-9fb5-e8b401d59f06" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Creatures/Zombie.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Creatures/Zombie.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Creatures/SkinnedHuman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Creatures/SkinnedHuman.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/CraftingMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/CraftingMenu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/ItemInfo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/ItemInfo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/RecipeInfo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/RecipeInfo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/NeedFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/NeedFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Activity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Activity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/JobManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/JobManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IAttackable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IAttackable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IWalkable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IWalkable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ItemInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ItemInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/RecipeInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/RecipeInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/JobInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/RecipeInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/NeedBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SkillInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/IngredientInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/SkillFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/NotificationManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Crafting/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/InteractableAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/ActivityAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/SkillAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IHarvestable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IChoppable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IAttackable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ICarriable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IShowerable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ISocializable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ISleepable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ICraftable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/NeedFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IWalkable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IDestroyable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IEdible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/UI/InteractionButton.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Need.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/InventoryItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Skill.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Activity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Effect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/EffectManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/NeedManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/JobManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/SkillManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemInfo.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Skill.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Attribute/EffectAttribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Effect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/EffectManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Need.cs" />
+        <option value="$PROJECT_DIR$/Assets/CampFire.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/SkillFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ButtonUtil.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/JobManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Attribute/SkillAttribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Attribute/ActivityAttribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Attribute/InteractableAttribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/SkillManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/ICookable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/ICraftable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/InventoryItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/IngredientInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ItemInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/Ingredient.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/RecipeInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IShowerable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IWalkable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/NeedFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IAttackable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Activity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VbMUzCRiKfrJfUXwVJZj7Z4Iq1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="TWShift.4" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="45971">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="45971" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41f68628-977b-4739-9fb5-e8b401d59f06" name="Default Changelist" comment="" />
+      <created>1562129882070</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562129882070</updated>
+      <workItem from="1562129887227" duration="2443000" />
+      <workItem from="1562138243526" duration="7719000" />
+      <workItem from="1562568445277" duration="1744000" />
+      <workItem from="1562654834525" duration="2409000" />
+      <workItem from="1562734368803" duration="3444000" />
+      <workItem from="1563115478443" duration="36613000" />
+      <workItem from="1564806419667" duration="12745000" />
+      <workItem from="1568186714887" duration="37271000" />
+      <workItem from="1569472737816" duration="2472000" />
+      <workItem from="1569996940025" duration="10849000" />
+      <workItem from="1570011339704" duration="13291000" />
+      <workItem from="1570089434184" duration="110463000" />
+      <workItem from="1571635898976" duration="422000" />
+      <workItem from="1577516530354" duration="635000" />
+      <workItem from="1577517377852" duration="13409000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="260" key="GridCell.Tab.0.bottom" timestamp="1577540498797">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1577540498797" />
+    <state width="1398" height="260" key="GridCell.Tab.0.center" timestamp="1577540498796">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1577540498796" />
+    <state width="1398" height="260" key="GridCell.Tab.0.left" timestamp="1577540498796">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1577540498796" />
+    <state width="1398" height="260" key="GridCell.Tab.0.right" timestamp="1577540498797">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1577540498797" />
+    <state width="1398" height="260" key="GridCell.Tab.1.bottom" timestamp="1577540498799">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.bottom/0.23.1440.813@0.23.1440.813" timestamp="1577540498799" />
+    <state width="1398" height="260" key="GridCell.Tab.1.center" timestamp="1577540498798">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.center/0.23.1440.813@0.23.1440.813" timestamp="1577540498798" />
+    <state width="1398" height="260" key="GridCell.Tab.1.left" timestamp="1577540498798">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.left/0.23.1440.813@0.23.1440.813" timestamp="1577540498798" />
+    <state width="1398" height="260" key="GridCell.Tab.1.right" timestamp="1577540498799">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.right/0.23.1440.813@0.23.1440.813" timestamp="1577540498799" />
+    <state width="1398" height="260" key="GridCell.Tab.2.bottom" timestamp="1577540498801">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.2.bottom/0.23.1440.813@0.23.1440.813" timestamp="1577540498801" />
+    <state width="1398" height="260" key="GridCell.Tab.2.center" timestamp="1577540498800">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.2.center/0.23.1440.813@0.23.1440.813" timestamp="1577540498800" />
+    <state width="1398" height="260" key="GridCell.Tab.2.left" timestamp="1577540498799">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.2.left/0.23.1440.813@0.23.1440.813" timestamp="1577540498799" />
+    <state width="1398" height="260" key="GridCell.Tab.2.right" timestamp="1577540498800">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.2.right/0.23.1440.813@0.23.1440.813" timestamp="1577540498800" />
+    <state width="1398" height="260" key="GridCell.Tab.3.bottom" timestamp="1577540498802">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.3.bottom/0.23.1440.813@0.23.1440.813" timestamp="1577540498802" />
+    <state width="1398" height="260" key="GridCell.Tab.3.center" timestamp="1577540498802">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.3.center/0.23.1440.813@0.23.1440.813" timestamp="1577540498802" />
+    <state width="1398" height="260" key="GridCell.Tab.3.left" timestamp="1577540498801">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.3.left/0.23.1440.813@0.23.1440.813" timestamp="1577540498801" />
+    <state width="1398" height="260" key="GridCell.Tab.3.right" timestamp="1577540498802">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.3.right/0.23.1440.813@0.23.1440.813" timestamp="1577540498802" />
+    <state x="221" y="68" key="SettingsEditor" timestamp="1577533763619">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="221" y="68" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1577533763619" />
+    <state x="383" y="157" width="672" height="678" key="search.everywhere.popup" timestamp="1577521616954">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="383" y="157" width="672" height="678" key="search.everywhere.popup/0.23.1440.813@0.23.1440.813" timestamp="1577521616954" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="Zombie" fieldName="JobPanel" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>

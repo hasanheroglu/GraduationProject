@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets/ImportedAssets" t="Include">
+        <e p="Survival_Pack_Low_Poly" t="Include">
+          <e p="Read-Me.txt" t="Include" />
+        </e>
+      </e>
+      <e p="Assets/Scripts" t="Include">
+        <e p="Attribute" t="Include">
+          <e p="ActivityAttribute.cs" t="Include" />
+          <e p="InteractableAttribute.cs" t="Include" />
+          <e p="SkillAttribute.cs" t="Include" />
+        </e>
+        <e p="Behaviour" t="Include">
+          <e p="Behaviour.cs" t="Include" />
+          <e p="HumanBehaviour.cs" t="Include" />
+        </e>
+        <e p="Crafting" t="Include">
+          <e p="Ingredient.cs" t="Include" />
+          <e p="Recipe.cs" t="Include" />
+          <e p="RecipeManager.cs" t="Include" />
+        </e>
+        <e p="Factory" t="Include">
+          <e p="EffectFactory.cs" t="Include" />
+          <e p="HumanFactory.cs" t="Include" />
+          <e p="NeedFactory.cs" t="Include" />
+          <e p="RecipeFactory.cs" t="Include" />
+          <e p="SkillFactory.cs" t="Include" />
+        </e>
+        <e p="Interactable" t="Include">
+          <e p="Base" t="Include">
+            <e p="Activity.cs" t="Include" />
+            <e p="Effect.cs" t="Include" />
+            <e p="Interactable.cs" t="Include" />
+            <e p="InventoryItem.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
+            <e p="Job.cs" t="Include" />
+            <e p="Need.cs" t="Include" />
+            <e p="Responsible.cs" t="Include" />
+            <e p="Skill.cs" t="Include" />
+          </e>
+          <e p="Creatures" t="Include">
+            <e p="Human.cs" t="Include" />
+            <e p="Zombie.cs" t="Include" />
+          </e>
+          <e p="Environment" t="Include">
+            <e p="CampFire.cs" t="Include" />
+            <e p="Food.cs" t="Include" />
+            <e p="Ground.cs" t="Include" />
+            <e p="Plant.cs" t="Include" />
+            <e p="Tent.cs" t="Include" />
+            <e p="Tree.cs" t="Include" />
+            <e p="Water.cs" t="Include" />
+          </e>
+          <e p="Manager" t="Include">
+            <e p="EffectManager.cs" t="Include" />
+            <e p="JobManager.cs" t="Include" />
+            <e p="NeedManager.cs" t="Include" />
+            <e p="SkillManager.cs" t="Include" />
+          </e>
+          <e p="Weapons" t="Include">
+            <e p="Weapon.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Interaction" t="Include">
+          <e p="InteractCollider.cs" t="Include" />
+        </e>
+        <e p="Interface" t="Include">
+          <e p="IAttackable.cs" t="Include" />
+          <e p="ICarriable.cs" t="Include" />
+          <e p="IChoppable.cs" t="Include" />
+          <e p="ICraftable.cs" t="Include" />
+          <e p="IDestroyable.cs" t="Include" />
+          <e p="IEdible.cs" t="Include" />
+          <e p="IHarvestable.cs" t="Include" />
+          <e p="IShowerable.cs" t="Include" />
+          <e p="ISleepable.cs" t="Include" />
+          <e p="ISocializable.cs" t="Include" />
+          <e p="IWalkable.cs" t="Include" />
+        </e>
+        <e p="Manager" t="Include">
+          <e p="ActionManager.cs" t="Include" />
+          <e p="NotificationManager.cs" t="Include" />
+          <e p="UIManager.cs" t="Include" />
+        </e>
+        <e p="UI" t="Include">
+          <e p="ButtonUtil.cs" t="Include" />
+          <e p="IngredientInfo.cs" t="Include" />
+          <e p="ItemInfo.cs" t="Include" />
+          <e p="JobInfo.cs" t="Include" />
+          <e p="NeedBox.cs" t="Include" />
+          <e p="RecipeInfo.cs" t="Include" />
+          <e p="SkillInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="projectf.sln" t="IncludeFlat" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_projectf.548537420.00" t="ExcludeRecursive" />
+  </component>
+</project>
