@@ -73,6 +73,14 @@ namespace Interactable.Base
 		{
 			Agent.isStopped = false;
 			Agent.SetDestination(position);
+			if (Target.GetComponent<NavMeshAgent>() != null)
+			{
+				while (!TargetInRange)
+				{
+					Agent.destination = Target.transform.position;
+					yield return new WaitForSeconds(0.1f);
+				}
+			}
 			yield return new WaitUntil((() => TargetInRange));
 			StopWalking();
 		}

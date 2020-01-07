@@ -2,50 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41f68628-977b-4739-9fb5-e8b401d59f06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Creatures/Zombie.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Creatures/Zombie.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Creatures/SkinnedHuman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Creatures/SkinnedHuman.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/CraftingMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/CraftingMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/ItemInfo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/ItemInfo.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/RecipeInfo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/RecipeInfo.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/NeedFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/NeedFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Activity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Activity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Item.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/JobManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/JobManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IAttackable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IAttackable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IWalkable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IWalkable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ItemInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ItemInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/RecipeInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/RecipeInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,65 +16,68 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/JobInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/RecipeInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/NeedBox.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SkillInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/IngredientInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonUtil.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/SkillFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IAttackable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IEdible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IChoppable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/NotificationManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Crafting/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/SkillAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/ActivityAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/InteractableAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/RecipeInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SkillInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/NeedBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/SkillManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/NeedManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/JobInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/UI/InteractionButton.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/IngredientInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/InteractableAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/ActivityAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/SkillAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Crafting/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IHarvestable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IChoppable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IAttackable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ICarriable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IShowerable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ISocializable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ISleepable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ICraftable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/NeedFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IWalkable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IDestroyable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IEdible.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/UI/InteractionButton.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Need.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/InventoryItem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Skill.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Activity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Item.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Effect.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/EffectManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/NeedManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/JobManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/SkillManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/EffectManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/SkillFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/NeedFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0DD71E7E-BD24-4367-880B-6E8BC7CC8DB5/3e/8c1ec91f/StackTrace.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ISocializable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6E70D638-4BAB-4CCF-8A0E-0DE574CBB65A/d5/e3e20d59/StackTraceUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ICarriable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Skill.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Need.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IShowerable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IWalkable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/InventoryItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IDestroyable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Effect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IHarvestable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Activity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ICraftable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ISleepable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -154,7 +117,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IShowerable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IWalkable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factory/NeedFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
@@ -167,8 +129,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" />
       </list>
     </option>
@@ -200,10 +163,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="45971">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="92829">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="45971" />
+      <option name="pid" value="92829" />
       <method v="2" />
     </configuration>
   </component>
@@ -244,6 +207,7 @@
       <workItem from="1571635898976" duration="422000" />
       <workItem from="1577516530354" duration="635000" />
       <workItem from="1577517377852" duration="13409000" />
+      <workItem from="1578321003786" duration="2937000" />
     </task>
     <servers />
   </component>
@@ -257,7 +221,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -267,69 +233,89 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="260" key="GridCell.Tab.0.bottom" timestamp="1577540498797">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="258" key="GridCell.Tab.0.bottom" timestamp="1578404364407">
+      <screen x="0" y="23" width="1440" height="805" />
     </state>
+    <state width="1398" height="258" key="GridCell.Tab.0.bottom/0.23.1440.805@0.23.1440.805" timestamp="1578404364407" />
+    <state width="1398" height="260" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1578320994342" />
     <state width="1398" height="260" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1577540498797" />
-    <state width="1398" height="260" key="GridCell.Tab.0.center" timestamp="1577540498796">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="258" key="GridCell.Tab.0.center" timestamp="1578404364397">
+      <screen x="0" y="23" width="1440" height="805" />
     </state>
+    <state width="1398" height="258" key="GridCell.Tab.0.center/0.23.1440.805@0.23.1440.805" timestamp="1578404364397" />
+    <state width="1398" height="260" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1578320994341" />
     <state width="1398" height="260" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1577540498796" />
-    <state width="1398" height="260" key="GridCell.Tab.0.left" timestamp="1577540498796">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="258" key="GridCell.Tab.0.left" timestamp="1578404364396">
+      <screen x="0" y="23" width="1440" height="805" />
     </state>
+    <state width="1398" height="258" key="GridCell.Tab.0.left/0.23.1440.805@0.23.1440.805" timestamp="1578404364396" />
+    <state width="1398" height="260" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1578320994340" />
     <state width="1398" height="260" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1577540498796" />
-    <state width="1398" height="260" key="GridCell.Tab.0.right" timestamp="1577540498797">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="258" key="GridCell.Tab.0.right" timestamp="1578404364406">
+      <screen x="0" y="23" width="1440" height="805" />
     </state>
+    <state width="1398" height="258" key="GridCell.Tab.0.right/0.23.1440.805@0.23.1440.805" timestamp="1578404364406" />
+    <state width="1398" height="260" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1578320994341" />
     <state width="1398" height="260" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1577540498797" />
-    <state width="1398" height="260" key="GridCell.Tab.1.bottom" timestamp="1577540498799">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="260" key="GridCell.Tab.1.bottom" timestamp="1578320994343">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.bottom/0.23.1440.808@0.23.1440.808" timestamp="1578320994343" />
     <state width="1398" height="260" key="GridCell.Tab.1.bottom/0.23.1440.813@0.23.1440.813" timestamp="1577540498799" />
-    <state width="1398" height="260" key="GridCell.Tab.1.center" timestamp="1577540498798">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="260" key="GridCell.Tab.1.center" timestamp="1578320994342">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.center/0.23.1440.808@0.23.1440.808" timestamp="1578320994342" />
     <state width="1398" height="260" key="GridCell.Tab.1.center/0.23.1440.813@0.23.1440.813" timestamp="1577540498798" />
-    <state width="1398" height="260" key="GridCell.Tab.1.left" timestamp="1577540498798">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="260" key="GridCell.Tab.1.left" timestamp="1578320994342">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.left/0.23.1440.808@0.23.1440.808" timestamp="1578320994342" />
     <state width="1398" height="260" key="GridCell.Tab.1.left/0.23.1440.813@0.23.1440.813" timestamp="1577540498798" />
-    <state width="1398" height="260" key="GridCell.Tab.1.right" timestamp="1577540498799">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="260" key="GridCell.Tab.1.right" timestamp="1578320994342">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.right/0.23.1440.808@0.23.1440.808" timestamp="1578320994342" />
     <state width="1398" height="260" key="GridCell.Tab.1.right/0.23.1440.813@0.23.1440.813" timestamp="1577540498799" />
-    <state width="1398" height="260" key="GridCell.Tab.2.bottom" timestamp="1577540498801">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="260" key="GridCell.Tab.2.bottom" timestamp="1578320994344">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
+    <state width="1398" height="260" key="GridCell.Tab.2.bottom/0.23.1440.808@0.23.1440.808" timestamp="1578320994344" />
     <state width="1398" height="260" key="GridCell.Tab.2.bottom/0.23.1440.813@0.23.1440.813" timestamp="1577540498801" />
-    <state width="1398" height="260" key="GridCell.Tab.2.center" timestamp="1577540498800">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="260" key="GridCell.Tab.2.center" timestamp="1578320994343">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
+    <state width="1398" height="260" key="GridCell.Tab.2.center/0.23.1440.808@0.23.1440.808" timestamp="1578320994343" />
     <state width="1398" height="260" key="GridCell.Tab.2.center/0.23.1440.813@0.23.1440.813" timestamp="1577540498800" />
-    <state width="1398" height="260" key="GridCell.Tab.2.left" timestamp="1577540498799">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="260" key="GridCell.Tab.2.left" timestamp="1578320994343">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
+    <state width="1398" height="260" key="GridCell.Tab.2.left/0.23.1440.808@0.23.1440.808" timestamp="1578320994343" />
     <state width="1398" height="260" key="GridCell.Tab.2.left/0.23.1440.813@0.23.1440.813" timestamp="1577540498799" />
-    <state width="1398" height="260" key="GridCell.Tab.2.right" timestamp="1577540498800">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="260" key="GridCell.Tab.2.right" timestamp="1578320994343">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
+    <state width="1398" height="260" key="GridCell.Tab.2.right/0.23.1440.808@0.23.1440.808" timestamp="1578320994343" />
     <state width="1398" height="260" key="GridCell.Tab.2.right/0.23.1440.813@0.23.1440.813" timestamp="1577540498800" />
-    <state width="1398" height="260" key="GridCell.Tab.3.bottom" timestamp="1577540498802">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="260" key="GridCell.Tab.3.bottom" timestamp="1578320994345">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
+    <state width="1398" height="260" key="GridCell.Tab.3.bottom/0.23.1440.808@0.23.1440.808" timestamp="1578320994345" />
     <state width="1398" height="260" key="GridCell.Tab.3.bottom/0.23.1440.813@0.23.1440.813" timestamp="1577540498802" />
-    <state width="1398" height="260" key="GridCell.Tab.3.center" timestamp="1577540498802">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="260" key="GridCell.Tab.3.center" timestamp="1578320994344">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
+    <state width="1398" height="260" key="GridCell.Tab.3.center/0.23.1440.808@0.23.1440.808" timestamp="1578320994344" />
     <state width="1398" height="260" key="GridCell.Tab.3.center/0.23.1440.813@0.23.1440.813" timestamp="1577540498802" />
-    <state width="1398" height="260" key="GridCell.Tab.3.left" timestamp="1577540498801">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="260" key="GridCell.Tab.3.left" timestamp="1578320994344">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
+    <state width="1398" height="260" key="GridCell.Tab.3.left/0.23.1440.808@0.23.1440.808" timestamp="1578320994344" />
     <state width="1398" height="260" key="GridCell.Tab.3.left/0.23.1440.813@0.23.1440.813" timestamp="1577540498801" />
-    <state width="1398" height="260" key="GridCell.Tab.3.right" timestamp="1577540498802">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="260" key="GridCell.Tab.3.right" timestamp="1578320994345">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
+    <state width="1398" height="260" key="GridCell.Tab.3.right/0.23.1440.808@0.23.1440.808" timestamp="1578320994345" />
     <state width="1398" height="260" key="GridCell.Tab.3.right/0.23.1440.813@0.23.1440.813" timestamp="1577540498802" />
     <state x="221" y="68" key="SettingsEditor" timestamp="1577533763619">
       <screen x="0" y="23" width="1440" height="813" />

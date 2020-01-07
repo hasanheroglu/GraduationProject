@@ -14,7 +14,7 @@ namespace Interactable.Creatures
 		public void Start()
 		{
 			Behaviour = new HumanBehaviour(this.GetComponent<Responsible>());
-			AutoWill = false;
+			AutoWill = true;
 			SetMethods();
 			InUse = 999;
 		}

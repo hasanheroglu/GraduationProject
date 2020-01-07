@@ -50,7 +50,7 @@ public class HumanBehaviour : Behaviour
 		}
 
 		Responsible.Activities.Remove(activityType);
-		Responsible.StartCoroutine("RemoveActivity", activityType);
+		Responsible.StartCoroutine(RemoveActivity(activityType));
 	}
 
 	private IEnumerator RemoveActivity(ActivityType activityType)
