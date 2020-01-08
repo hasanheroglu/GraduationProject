@@ -17,6 +17,7 @@
         <e p="Behaviour" t="Include">
           <e p="Behaviour.cs" t="Include" />
           <e p="HumanBehaviour.cs" t="Include" />
+          <e p="ZombieBehaviour.cs" t="Include" />
         </e>
         <e p="Crafting" t="Include">
           <e p="Ingredient.cs" t="Include" />

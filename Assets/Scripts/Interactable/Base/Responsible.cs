@@ -16,21 +16,16 @@ namespace Interactable.Base
 
 		public NavMeshAgent Agent { get; set; }
 		
-		public ActivityType Activity { get; set; }
-
 		public bool JobFinished { get; set; }
 		
 		public GameObject JobPanel { get; set; }
 		
 		public Dictionary<NeedType, Need> Needs { get; set; }
 		
-		public List<ActivityType> Activities { get; set; }
- 
 		public Dictionary<SkillType, Skill> Skills { get; set; }
 
 		public List<InventoryItem> Inventory { get; set; }
 		
-		public List<ActivityType> IdleActvities { get; set; }
 		
 		public Behaviour Behaviour { get; set; }
 		
@@ -43,12 +38,8 @@ namespace Interactable.Base
 			Jobs = new List<Job>();
 			Needs = new Dictionary<NeedType, Need>();
 			Skills = new Dictionary<SkillType, Skill>();
-			Activities = new List<ActivityType>();
 			Inventory = new List<InventoryItem>();
-			Activity = ActivityType.None;
-			IdleActvities = new List<ActivityType> {ActivityType.Chop, ActivityType.Harvest};
-			SetActivity();
-
+			
 			Agent = GetComponent<NavMeshAgent>();
 			JobFinished = true;
 			JobPanel = Instantiate(UIManager.Instance.jobPanelPrefab, UIManager.Instance.canvas.transform);
@@ -58,7 +49,7 @@ namespace Interactable.Base
 
 		public void Update()
 		{
-			SetActivity();
+			Behaviour.SetActivity();
 			foreach (var need in Needs){ need.Value.Update(this); }
 
 			foreach (var item in Inventory)
@@ -108,24 +99,7 @@ namespace Interactable.Base
 		{						
 			Jobs[0].Stop();
 		}
-
-		public void SetActivity()
-		{
-			if (Activities.Count == 0)
-			{
-				if (IdleActvities.Count == 0)
-				{
-					Activity = ActivityType.None;
-					return;
-				}	
-				
-				Activity = IdleActvities[0];
-				return;
-			}
-			
-			Activity = Activities[0];
-		}
-
+		
 		public void AddToInventory(GameObject item)
 		{
 			foreach (var inventoryItem in Inventory)

@@ -11,27 +11,15 @@ using Interface;
 using Manager;
 using UnityEngine;
 
-public class HumanBehaviour : Behaviour
+public class ZombieBehaviour : Behaviour
 {
-	public HumanBehaviour(Responsible responsible): base(responsible)
+	public ZombieBehaviour(Responsible responsible): base(responsible)
 	{
 	}	
 	
 	public override void SetActivity()
 	{
-		if (Activities.Count == 0)
-		{
-			if (IdleActvities.Count == 0)
-			{
-				Activity = ActivityType.None;
-				return;
-			}	
-				
-			Activity = IdleActvities[0];
-			return;
-		}
-			
-		Activity = Activities[0];
+		Activity = ActivityType.Kill;
 	}
 	
 	public override void DoActivity()
@@ -44,7 +32,19 @@ public class HumanBehaviour : Behaviour
 		foreach (var interactableObject in interactableObjects)
 		{
 			var interactable = interactableObject.gameObject.GetComponent<Interactable.Base.Interactable>();
-			if (!interactable) continue;
+			if (!interactable)
+			{
+				if (interactableObject.gameObject.transform.parent.gameObject
+					.GetComponent<Interactable.Base.Interactable>())
+				{
+					interactable = interactableObject.gameObject.transform.parent.gameObject
+						.GetComponent<Interactable.Base.Interactable>();
+				}
+				else
+				{
+					continue;
+				}
+			}
 			var methods = interactable.Methods;
 			if (methods.Count == 0) continue;
 			
@@ -61,18 +61,5 @@ public class HumanBehaviour : Behaviour
 				return;
 			}
 		}
-
-		Activities.Remove(Activity);
-		Responsible.StartCoroutine(RemoveActivity(Activity));
-	}
-
-	private IEnumerator RemoveActivity(ActivityType activityType)
-	{
-		IdleActvities.Remove(activityType);
-		Debug.Log(activityType + " removed from idle activities!");
-		yield return new WaitForSeconds(150);
-		IdleActvities.Add(activityType);
-		Debug.Log(activityType + " added back to idle activities!");
-
 	}
 }

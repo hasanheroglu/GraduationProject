@@ -26,7 +26,6 @@ namespace Interaction
 	
 		private void OnTriggerStay(Collider other)
 		{
-			Debug.Log(other.gameObject.name);
 			if (!ReferenceEquals(other.transform.parent.gameObject, _responsible.Target) 
 			    && !ReferenceEquals(other.gameObject, _responsible.Target))
 			{

@@ -35,14 +35,14 @@ public class Need
 		
 		if (Value < 0){ Value = 0; }
 
-		if (Value < 20 && !responsible.Activities.Contains(Activity))
+		if (Value < 20 && !responsible.Behaviour.Activities.Contains(Activity))
 		{
-			responsible.Activities.Add(Activity);
+			responsible.Behaviour.Activities.Add(Activity);
 		}
 
-		if (Value >= 20 && responsible.Activities.Contains(Activity))
+		if (Value >= 20 && responsible.Behaviour.Activities.Contains(Activity))
 		{
-			responsible.Activities.Remove(Activity);
+			responsible.Behaviour.Activities.Remove(Activity);
 		}
 		
 		if (Value > 100){ Value = 100; }

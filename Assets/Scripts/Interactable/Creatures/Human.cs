@@ -11,20 +11,29 @@ namespace Interactable.Creatures
 {
 	public class Human : Responsible, ISocializable
 	{
+		private int health = 100;
 		public void Start()
 		{
 			Behaviour = new HumanBehaviour(this.GetComponent<Responsible>());
 			AutoWill = true;
 			SetMethods();
+			Behaviour.IdleActvities = new List<ActivityType> {ActivityType.Chop, ActivityType.Harvest};
+			Behaviour.SetActivity();
 			InUse = 999;
 		}
 
 		public void Update()
 		{
+			if (health <= 0)
+			{
+				StopDoingJob(Jobs[0]);
+				Destroy(gameObject);
+			}
+			
 			base.Update();
 			if (AutoWill)
 			{
-				Behaviour.DoActivity(Activity);
+				Behaviour.DoActivity();
 			}
 		}
 
@@ -40,7 +49,8 @@ namespace Interactable.Creatures
 		[Interactable(typeof(Human))]
 		public IEnumerator Attack(Responsible responsible)
 		{
-			yield return new WaitForSeconds(2);
+			yield return new WaitForSeconds(0.2f);
+			health -= 10;
 			Debug.Log(responsible.Name + " attacked " + Name);
 			responsible.GetComponent<Responsible>().FinishJob();
 		}
