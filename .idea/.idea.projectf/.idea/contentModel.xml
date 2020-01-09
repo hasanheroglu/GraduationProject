@@ -63,7 +63,9 @@
             <e p="SkillManager.cs" t="Include" />
           </e>
           <e p="Weapons" t="Include">
+            <e p="PistolPattern.cs" t="Include" />
             <e p="Weapon.cs" t="Include" />
+            <e p="WeaponPattern.cs" t="Include" />
           </e>
         </e>
         <e p="Interaction" t="Include">
@@ -77,6 +79,7 @@
           <e p="IDestroyable.cs" t="Include" />
           <e p="IEdible.cs" t="Include" />
           <e p="IHarvestable.cs" t="Include" />
+          <e p="IPickable.cs" t="Include" />
           <e p="IShowerable.cs" t="Include" />
           <e p="ISleepable.cs" t="Include" />
           <e p="ISocializable.cs" t="Include" />

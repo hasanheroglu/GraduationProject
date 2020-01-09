@@ -26,7 +26,7 @@ public class ZombieBehaviour : Behaviour
 	{
 		if (Activity == ActivityType.None || JobManager.ActivityTypeExists(Responsible, Activity)) return;
 
-		var interactableObjects = Physics.OverlapSphere(Responsible.gameObject.transform.position, 20f);
+		var interactableObjects = Physics.OverlapSphere(Responsible.gameObject.transform.position, 1f);
 		if (interactableObjects.Length <= 0) return;
 
 		foreach (var interactableObject in interactableObjects)

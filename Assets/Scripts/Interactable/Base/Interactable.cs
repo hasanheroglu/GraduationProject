@@ -9,6 +9,7 @@ namespace Interactable.Base
 	{
 
 		public string Name;
+		public int health = 100;
 		private int _inUse;
 		private List<MethodInfo> _methods;
 		

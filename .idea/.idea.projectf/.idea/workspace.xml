@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41f68628-977b-4739-9fb5-e8b401d59f06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/PistolPattern.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/PistolPattern.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponPattern.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponPattern.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IPickable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Creatures/SkinnedHuman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Creatures/SkinnedHuman.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Creatures/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Creatures/Zombie.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Need.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Need.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +36,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/NotificationManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/SkillAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/ActivityAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IPickable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/InteractableAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" root0="FORCE_HIGHLIGHTING" />
@@ -85,17 +87,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IDestroyable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Effect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/PistolPattern.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IHarvestable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Activity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponPattern.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ICraftable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ISleepable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Attribute/EffectAttribute.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Effect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/EffectManager.cs" />
         <option value="$PROJECT_DIR$/Assets/CampFire.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factory/SkillFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ButtonUtil.cs" />
@@ -105,7 +106,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Attribute/InteractableAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/SkillManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interface/ICookable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interface/ICraftable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/InventoryItem.cs" />
@@ -118,7 +118,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/Ingredient.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/RecipeInfo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" />
@@ -130,7 +129,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IAttackable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Activity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" />
@@ -138,12 +136,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Need.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponPattern.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/PistolPattern.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IPickable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" />
       </list>
     </option>
   </component>
@@ -218,7 +222,7 @@
       <workItem from="1571635898976" duration="422000" />
       <workItem from="1577516530354" duration="635000" />
       <workItem from="1577517377852" duration="13409000" />
-      <workItem from="1578321003786" duration="7459000" />
+      <workItem from="1578321003786" duration="13309000" />
     </task>
     <servers />
   </component>

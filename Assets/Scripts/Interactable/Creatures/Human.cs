@@ -11,11 +11,10 @@ namespace Interactable.Creatures
 {
 	public class Human : Responsible, ISocializable
 	{
-		private int health = 100;
 		public void Start()
 		{
 			Behaviour = new HumanBehaviour(this.GetComponent<Responsible>());
-			AutoWill = true;
+			AutoWill = false;
 			SetMethods();
 			Behaviour.IdleActvities = new List<ActivityType> {ActivityType.Chop, ActivityType.Harvest};
 			Behaviour.SetActivity();
@@ -26,7 +25,8 @@ namespace Interactable.Creatures
 		{
 			if (health <= 0)
 			{
-				StopDoingJob(Jobs[0]);
+				if(Jobs.Count > 0)
+					StopDoingJob(Jobs[0]);
 				Destroy(gameObject);
 			}
 			

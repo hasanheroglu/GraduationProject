@@ -15,8 +15,8 @@ namespace Interaction
 
 		private void OnTriggerEnter(Collider other)
 		{
-			if (!ReferenceEquals(other.transform.parent.gameObject, _responsible.Target)
-				&& !ReferenceEquals(other.gameObject, _responsible.Target))
+			if (!ReferenceEquals(other.gameObject, _responsible.Target)
+				&& !ReferenceEquals(other.transform.parent.gameObject, _responsible.Target))
 			{
 				return;
 			}
@@ -26,8 +26,8 @@ namespace Interaction
 	
 		private void OnTriggerStay(Collider other)
 		{
-			if (!ReferenceEquals(other.transform.parent.gameObject, _responsible.Target) 
-			    && !ReferenceEquals(other.gameObject, _responsible.Target))
+			if (!ReferenceEquals(other.gameObject, _responsible.Target)
+				&& !ReferenceEquals(other.transform.parent.gameObject, _responsible.Target))
 			{
 				return;
 			}
