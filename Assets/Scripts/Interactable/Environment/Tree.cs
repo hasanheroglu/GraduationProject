@@ -21,13 +21,14 @@ namespace Interactable.Environment
 		[Activity(ActivityType.Chop)]
 		[Interactable(typeof(Human))]
 		[Skill(SkillType.Lumberjack, 250)]
-		public IEnumerator Chop(Human human)
+		public IEnumerator Chop(Responsible responsible)
 		{
-			Debug.Log(human.Name + " is chopping the plant");
+			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
+			Debug.Log(responsible.Name + " is chopping the plant");
 			yield return new WaitForSeconds(6);
 			Destroy(gameObject);			
-			Debug.Log("Chopped the plant by " + human.Name);
-			human.FinishJob();
+			Debug.Log("Chopped the plant by " + responsible.Name);
+			responsible.FinishJob();
 		}
 	}
 }

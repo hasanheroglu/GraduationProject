@@ -17,6 +17,7 @@ public class Water : Interactable.Base.Interactable, IShowerable, IWalkable {
 	[Interactable(typeof(Human))]
 	public IEnumerator Shower(Responsible responsible)
 	{
+		yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 		Debug.Log(responsible.Name + " is taking a shower!");
 		yield return new WaitForSeconds(10);
 		Debug.Log(responsible.Name + " took a shower!");
@@ -26,6 +27,7 @@ public class Water : Interactable.Base.Interactable, IShowerable, IWalkable {
 	[Interactable(typeof(Human))]
 	public IEnumerator Walk(Responsible responsible)
 	{
+		yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 		responsible.FinishJob();
 		Debug.Log("Finished walking!");
 		yield break;

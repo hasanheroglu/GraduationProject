@@ -26,6 +26,7 @@ public class Weapon: Interactable.Base.Interactable, IPickable
 	[Interactable(typeof(Human))]
 	public IEnumerator Pick(Responsible responsible)
 	{
+		yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 		yield return new WaitForSeconds(0.1f);
 		Debug.Log( responsible.Name + " picked up the weapon.");
 		responsible.Weapon = this;

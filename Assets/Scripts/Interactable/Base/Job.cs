@@ -127,7 +127,6 @@ public class Job
 			Stop(true);
 			yield break;
 		}
-		yield return Responsible.StartCoroutine("Walk", Target.interactionPoint.transform.position);
 		
 		Debug.Log("Reached to the target now I'm gonna start doing my job!");
 		if (Target == null || Target.InUse <= 0 || !Target.Methods.Contains(Method))

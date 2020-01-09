@@ -35,6 +35,7 @@ public class Zombie : Responsible, IAttackable {
 	[Interactable(typeof(Human))]
 	public IEnumerator Attack(Responsible responsible)
 	{
+		yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 		while (health > 0)
 		{
 			yield return new WaitForSeconds(0.2f);

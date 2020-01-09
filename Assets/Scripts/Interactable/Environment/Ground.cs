@@ -22,6 +22,7 @@ namespace Interactable.Environment
 		[Interactable(typeof(Zombie))]
 		public IEnumerator Walk(Responsible responsible)
 		{
+			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 			responsible.FinishJob();
 			Debug.Log("Finished walking!");
 			yield break;

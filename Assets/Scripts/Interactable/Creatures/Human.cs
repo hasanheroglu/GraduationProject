@@ -37,11 +37,11 @@ namespace Interactable.Creatures
 			}
 		}
 
-		public IEnumerator Talk(Human human)
+		public IEnumerator Talk(Responsible responsible)
 		{
-			yield return human.GetComponent<Responsible>().StartCoroutine("Walk", gameObject.transform.position);
-			Debug.Log(human.Name + " talking with " + Name);
-			human.GetComponent<Responsible>().FinishJob();
+			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
+			Debug.Log(responsible.Name + " talking with " + Name);
+			responsible.GetComponent<Responsible>().FinishJob();
 		}
 
 		[Activity(ActivityType.Kill)]
@@ -49,6 +49,7 @@ namespace Interactable.Creatures
 		[Interactable(typeof(Human))]
 		public IEnumerator Attack(Responsible responsible)
 		{
+			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 			yield return new WaitForSeconds(0.2f);
 			health -= 10;
 			Debug.Log(responsible.Name + " attacked " + Name);

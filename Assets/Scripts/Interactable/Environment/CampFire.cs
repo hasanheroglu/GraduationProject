@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Attribute;
 using Crafting;
+using Interactable.Base;
 using Interactable.Creatures;
 using Interface;
 using Manager;
@@ -32,24 +33,25 @@ public class CampFire : Interactable.Base.Interactable, ICraftable
 	[Activity(ActivityType.Cook)]
 	[Interactable(typeof(Human))]
 	[Skill(SkillType.Cooking, 500)]
-	public IEnumerator Craft(Human human)
+	public IEnumerator Craft(Responsible responsible)
 	{
-		Debug.Log(human.name + "is cooking!");
-		RecipeManager.Instance.OpenCraftingMenu(recipes, human);
+		yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
+		Debug.Log(responsible.name + "is cooking!");
+		RecipeManager.Instance.OpenCraftingMenu(recipes, responsible);
 		yield return new WaitUntil(() => recipeSet);
-		yield return currentRecipe.Craft(human);
+		yield return currentRecipe.Craft(responsible);
 		Debug.Log(currentRecipe.Name + "Cooking finished!");
-		human.FinishJob();
+		responsible.FinishJob();
 		var food = RecipeManager.Instance.CreateProduct(currentRecipe, gameObject);
-		Eat(human, food);
+		Eat(responsible, food);
 		ResetRecipe();
 	}
 
-	private void Eat(Human human, GameObject food)
+	private void Eat(Responsible responsible, GameObject food)
 	{
 		var interactable = food.GetComponent<Interactable.Base.Interactable>();
-		var coroutineInfo = new JobInfo(human, interactable,  interactable.GetComponent<IEdible>().GetType().GetMethod("Eat"), new object[] {human});
-		UIManager.SetInteractionAction(human.gameObject, coroutineInfo, true);
+		var coroutineInfo = new JobInfo(responsible, interactable,  interactable.GetComponent<IEdible>().GetType().GetMethod("Eat"), new object[] {responsible});
+		UIManager.SetInteractionAction(responsible.gameObject, coroutineInfo, true);
 	}
 
 	public void SetRecipe(Recipe recipe)

@@ -2,21 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41f68628-977b-4739-9fb5-e8b401d59f06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/PistolPattern.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/PistolPattern.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponPattern.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponPattern.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IPickable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Creatures/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Creatures/Zombie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IChoppable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IChoppable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/ICraftable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/ICraftable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IDestroyable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IDestroyable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IEdible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IEdible.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IHarvestable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IHarvestable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/ISleepable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/ISleepable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/ISocializable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/ISocializable.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,17 +101,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/CampFire.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/SkillFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ButtonUtil.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/JobManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Attribute/SkillAttribute.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Attribute/ActivityAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attribute/InteractableAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/SkillManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interface/ICookable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/ICraftable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/InventoryItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" />
@@ -118,36 +114,44 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/Ingredient.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/RecipeInfo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IShowerable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IWalkable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factory/NeedFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IAttackable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Activity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Need.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponPattern.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/PistolPattern.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IPickable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IChoppable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/ICraftable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IDestroyable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IEdible.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IHarvestable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/ISleepable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/ISocializable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" />
       </list>
     </option>
   </component>
@@ -222,7 +226,7 @@
       <workItem from="1571635898976" duration="422000" />
       <workItem from="1577516530354" duration="635000" />
       <workItem from="1577517377852" duration="13409000" />
-      <workItem from="1578321003786" duration="13309000" />
+      <workItem from="1578321003786" duration="14198000" />
     </task>
     <servers />
   </component>
@@ -348,6 +352,10 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="221" y="68" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1577533763619" />
+    <state x="371" y="61" width="698" height="729" key="find.popup" timestamp="1578568182459">
+      <screen x="0" y="23" width="1440" height="806" />
+    </state>
+    <state x="371" y="61" width="698" height="729" key="find.popup/0.23.1440.806@0.23.1440.806" timestamp="1578568182459" />
     <state x="383" y="157" width="672" height="678" key="search.everywhere.popup" timestamp="1577521616954">
       <screen x="0" y="23" width="1440" height="813" />
     </state>

@@ -30,15 +30,16 @@ namespace Interactable.Environment
 		[Activity(ActivityType.Harvest)]
 		[Interactable(typeof(Human))]
 		[Skill(SkillType.Gardening, 500)]
-		public IEnumerator Harvest(Human human)
+		public IEnumerator Harvest(Responsible responsible)
 		{
-			Debug.Log(human.Name + " is harvesting the plant");
+			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
+			Debug.Log(responsible.Name + " is harvesting the plant");
 			yield return new WaitForSeconds(2);
-			Debug.Log("Plant harvested by " + human.Name);
+			Debug.Log("Plant harvested by " + responsible.Name);
 			var newProduct = Instantiate(product);
-			human.AddToInventory(newProduct);
+			responsible.AddToInventory(newProduct);
 			newProduct.SetActive(false);
-			human.FinishJob();
+			responsible.FinishJob();
 			yield return Refresh();
 		}
 
@@ -46,12 +47,13 @@ namespace Interactable.Environment
 		[Interactable(typeof(Responsible))]
 		[Interactable(typeof(Human))]
 		[Skill(SkillType.None)]
-		public IEnumerator Eat(Human human)
+		public IEnumerator Eat(Responsible responsible)
 		{
-			Debug.Log(human.Name + " is eating the plant");
+			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
+			Debug.Log(responsible.Name + " is eating the plant");
 			yield return new WaitForSeconds(2);
-			Debug.Log("Plant eaten by " + human.Name);
-			human.FinishJob();
+			Debug.Log("Plant eaten by " + responsible.Name);
+			responsible.FinishJob();
 			yield return Refresh();
 		}
 

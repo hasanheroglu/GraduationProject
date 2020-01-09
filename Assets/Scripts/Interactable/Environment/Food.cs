@@ -18,12 +18,13 @@ public class Food : Interactable.Base.Interactable, IEdible {
 	[Interactable(typeof(Responsible))]
 	[Interactable(typeof(Human))]
 	[Skill(SkillType.None)]
-	public IEnumerator Eat(Human human)
+	public IEnumerator Eat(Responsible responsible)
 	{
-		Debug.Log(human.name + "is eating food!");
+		yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
+		Debug.Log(responsible.name + "is eating food!");
 		yield return new WaitForSeconds(3f);
-		Debug.Log(human.name + " ate food!");
+		Debug.Log(responsible.name + " ate food!");
 		Destroy(this.gameObject);
-		human.FinishJob();
+		responsible.FinishJob();
 	}
 }

@@ -21,12 +21,13 @@ namespace Interactable.Environment
 		[Interactable(typeof(Responsible))]
 		[Interactable(typeof(Human))]
 		[Skill(SkillType.None)]
-		public IEnumerator Sleep(Human human)
+		public IEnumerator Sleep(Responsible responsible)
 		{
-			Debug.Log(human.Name + " is sleeping");
+			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
+			Debug.Log(responsible.Name + " is sleeping");
 			yield return new WaitForSeconds(15);
-			Debug.Log(human.Name + " slept!");
-			human.FinishJob();
+			Debug.Log(responsible.Name + " slept!");
+			responsible.FinishJob();
 		}
 	}
 }
