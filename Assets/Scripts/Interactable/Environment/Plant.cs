@@ -36,9 +36,10 @@ namespace Interactable.Environment
 			Debug.Log(responsible.Name + " is harvesting the plant");
 			yield return new WaitForSeconds(2);
 			Debug.Log("Plant harvested by " + responsible.Name);
-			var newProduct = Instantiate(product);
-			responsible.AddToInventory(newProduct);
-			newProduct.SetActive(false);
+			//var newProduct = Instantiate(product);
+			responsible.AddToInventory(this.gameObject);
+			this.gameObject.transform.position = new Vector3(0f, -100f, 0f);
+			//newProduct.SetActive(false);
 			responsible.FinishJob();
 			yield return Refresh();
 		}
@@ -49,20 +50,25 @@ namespace Interactable.Environment
 		[Skill(SkillType.None)]
 		public IEnumerator Eat(Responsible responsible)
 		{
-			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
+			if (!harvested)
+			{
+				yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
+			}
 			Debug.Log(responsible.Name + " is eating the plant");
 			yield return new WaitForSeconds(2);
 			Debug.Log("Plant eaten by " + responsible.Name);
+			responsible.RemoveFromInventory(Name, 1);
+			Destroy(gameObject, 0.5f);
 			responsible.FinishJob();
-			yield return Refresh();
 		}
 
 		private IEnumerator Refresh()
 		{
 			harvested = true;
 			Methods.Remove(GetType().GetMethod("Harvest"));
-			Methods.Remove(GetType().GetMethod("Eat"));
-
+			yield return null;
+			//Methods.Remove(GetType().GetMethod("Eat"));
+/*
 			if (plantMesh.activeSelf)
 			{
 				plantMesh.SetActive(false);
@@ -77,6 +83,7 @@ namespace Interactable.Environment
 				Methods.Add(GetType().GetMethod("Eat"));
 				plantMesh.SetActive(true);
 			}
+*/
 		}
 	}
 }

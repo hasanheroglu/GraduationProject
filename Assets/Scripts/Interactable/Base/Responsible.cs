@@ -51,12 +51,6 @@ namespace Interactable.Base
 		{
 			Behaviour.SetActivity();
 			foreach (var need in Needs){ need.Value.Update(this); }
-
-			foreach (var item in Inventory)
-			{
-				Debug.Log(item.Item.GetComponent<Interactable>().Name + " count:" + item.Count);
-			}
-			
 			StartCoroutine(DoJob());
 		}
 
@@ -104,33 +98,39 @@ namespace Interactable.Base
 		{
 			foreach (var inventoryItem in Inventory)
 			{
-				if (inventoryItem.Item.GetComponent<Interactable>().Name == item.GetComponent<Interactable>().Name)
+				if (inventoryItem.Name == item.GetComponent<Interactable>().Name)
 				{
-					inventoryItem.Add(1);
+					inventoryItem.Add(item);
+					UIManager.Instance.SetInventory(this);
 					return;
 				}
 			}
 			
 			Inventory.Add(new InventoryItem(item));
+			UIManager.Instance.SetInventory(this);
 		}
 
-		public void RemoveFromInventory(GameObject item)
+		public void RemoveFromInventory(string itemName, int count)
 		{
 			foreach (var inventoryItem in Inventory)
 			{
-				if (inventoryItem.Item.GetComponent<Interactable>().Name == item.GetComponent<Interactable>().Name)
+				if (inventoryItem.Name == itemName)
 				{
-					if (inventoryItem.Count == 1)
+					if (inventoryItem.Count == count)
 					{
+						inventoryItem.Remove(count);
 						Inventory.Remove(inventoryItem);
 					}
 					else
 					{
-						inventoryItem.Remove(1);
+						inventoryItem.Remove(count);
 					}
+					
+					break;
 				}
 			}
 			
+			UIManager.Instance.SetInventory(this);
 		}
 	}
 }

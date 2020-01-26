@@ -1,25 +1,33 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class InventoryItem{
 	
-	public GameObject Item { get; set; }
+	public List<GameObject> Items { get; set; }
+	public string Name { get; set; }
 	public int Count { get; set; }
 
 	public InventoryItem(GameObject item)
 	{
-		Item = item;
+		Items = new List<GameObject> {item};
+		Name = item.GetComponent<Interactable.Base.Interactable>().Name;
 		Count = 1;
 	}
 
-	public void Add(int count)
+	public void Add(GameObject item)
 	{
-		Count += count;
+		Items.Add(item);
+		Count += 1;
 	}
 
-	public void Remove(int count)
+	public void Remove(int count = 0)
 	{
-		Count -= count;
+		for (int i = 0; i < count; i++)
+		{
+			Items.RemoveAt(0);
+			Count -= 1;
+		}
 	}
 }

@@ -85,7 +85,7 @@ namespace Manager
 			UIManager.Instance.ActivateJobPanel(_responsible.GetComponent<Responsible>().JobPanel);
 			UIManager.Instance.SetInfoPanel(_responsible.GetComponent<Responsible>());
 			UIManager.Instance.SetSkills(_responsible.GetComponent<Responsible>());
-
+			UIManager.Instance.SetInventory(_responsible.GetComponent<Responsible>());
 		}
 
 		private void SetTarget()

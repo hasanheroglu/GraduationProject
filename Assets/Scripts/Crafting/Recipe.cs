@@ -31,9 +31,10 @@ namespace Crafting
 			{
 				foreach (var item in responsible.Inventory)
 				{
-					if (item.Item.GetComponent<Interactable.Base.Interactable>().Name == ingredient.Name)
+					if (item.Name == ingredient.Name && item.Count >= ingredient.Amount)
 					{
-						item.Remove(ingredient.Amount);
+						responsible.RemoveFromInventory(item.Name, ingredient.Amount);
+						break;
 					}
 				}
 			}

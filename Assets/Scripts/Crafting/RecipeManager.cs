@@ -66,7 +66,7 @@ public class RecipeManager : MonoBehaviour
 				foreach (var item in items)
 				{
 					
-					if (item.Item.GetComponent<Interactable.Base.Interactable>().Name == ingredient.Name && item.Count >= ingredient.Amount)
+					if (item.Name == ingredient.Name && item.Count >= ingredient.Amount)
 					{
 						recipeInfo.GetComponent<RecipeInfo>().selectButton.GetComponent<Button>().interactable = true;
 					}

@@ -17,7 +17,6 @@ namespace Manager
 	{
 		private GameObject _interactionPanel;
 
-
 		public GameObject canvas;
 	
 		[Header("Interaction")]
@@ -34,7 +33,10 @@ namespace Manager
 		[Header("Skill Info")] 
 		public GameObject skillPrefab;
 		public GameObject skillParent;
-
+		[Header("Inventory Info")] 
+		public GameObject inventoryItemPrefab;
+		public GameObject inventoryParent;
+		public GameObject inventory;
 
 		public HashSet<GameObject> JobPanels { get; private set; }
 
@@ -60,6 +62,7 @@ namespace Manager
 		
 		private void CreateInteractionPanel(Vector3 panelPosition)
 		{
+			if(!_interactionPanel != null){ Destroy(_interactionPanel);}
 			_interactionPanel =  Instantiate(interactionPanelPrefab, panelPosition, Quaternion.identity, canvas.transform);
 		}
 
@@ -212,6 +215,39 @@ namespace Manager
 				newSkill.GetComponent<SkillInfo>().SetSkill(skill.Value);
 				i++;
 			}
+		}
+		
+		/*
+		 * INVENTORY ACTIONS
+		 */
+
+		public void SetInventory(Responsible responsible)
+		{
+			foreach (Transform child in inventoryParent.transform)
+			{
+				Destroy(child.gameObject);
+			}
+			
+			var i = 0;
+			foreach (var inventoryItem in responsible.Inventory)
+			{
+				var newItem = Instantiate(inventoryItemPrefab, Vector3.zero, Quaternion.identity,
+					inventoryParent.transform);
+				newItem.GetComponent<RectTransform>().anchoredPosition = new Vector3(0f, -i*inventoryItemPrefab.GetComponent<RectTransform>().rect.height, 0f);
+				newItem.GetComponent<InventoryItemInfo>().SetItemInfo(inventoryItem.Name, inventoryItem.Count);
+				newItem.GetComponent<InventoryItemInfo>().SetActionButton(delegate { UIManager.Instance.SetInteractionPanel(responsible, inventoryItem.Items[0].GetComponent<Interactable.Base.Interactable>(), new object[] {responsible.GetComponent<Responsible>()}, Input.mousePosition); });
+				i++;
+			}
+		}
+		
+		public void ToggleInventory()
+		{
+			if (ActionManager.Instance._responsible == null)
+			{
+				return;
+			}
+			
+			inventory.SetActive(!inventory.activeSelf);
 		}
 	}
 }
