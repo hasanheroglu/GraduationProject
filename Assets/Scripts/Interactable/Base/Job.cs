@@ -19,7 +19,7 @@ public class Job
 	
 	private MethodInfo Method { get; set; }
 
-	private Interactable.Base.Interactable Target { get; set; }
+	public Interactable.Base.Interactable Target { get; set; }
 
 	public ActivityType ActivityType { get; private set; }
 	

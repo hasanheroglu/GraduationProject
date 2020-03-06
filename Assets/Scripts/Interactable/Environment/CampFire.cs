@@ -51,7 +51,7 @@ public class CampFire : Interactable.Base.Interactable, ICraftable
 	{
 		var interactable = food.GetComponent<Interactable.Base.Interactable>();
 		var coroutineInfo = new JobInfo(responsible, interactable,  interactable.GetComponent<IEdible>().GetType().GetMethod("Eat"), new object[] {responsible});
-		UIManager.SetInteractionAction(responsible.gameObject, coroutineInfo, true);
+		UIManager.SetInteractionAction(coroutineInfo, true);
 	}
 
 	public void SetRecipe(Recipe recipe)
@@ -60,7 +60,7 @@ public class CampFire : Interactable.Base.Interactable, ICraftable
 		recipeSet = true;
 	}
 
-	private void ResetRecipe()
+	public void ResetRecipe()
 	{
 		currentRecipe = null;
 		recipeSet = false;

@@ -29,11 +29,11 @@ namespace Crafting
 		{
 			foreach (var ingredient in Ingredients)
 			{
-				foreach (var item in responsible.Inventory)
+				foreach (var item in responsible.Inventory.Items)
 				{
 					if (item.Name == ingredient.Name && item.Count >= ingredient.Amount)
 					{
-						responsible.RemoveFromInventory(item.Name, ingredient.Amount);
+						responsible.Inventory.Remove(item.Name, ingredient.Amount);
 						break;
 					}
 				}

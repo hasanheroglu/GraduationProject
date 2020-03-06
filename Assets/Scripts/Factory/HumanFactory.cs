@@ -12,7 +12,7 @@ namespace Factory
 
         public void CreateHuman()
         {
-            GameObject human = Instantiate(humanPrefab, new Vector3(0f, 5f, 0f), Quaternion.identity);
+            GameObject human = Instantiate(humanPrefab, new Vector3(0f, 1, 0f), Quaternion.identity);
             human.GetComponent<Human>().Name = humanName.GetComponent<Text>().text;
             SetNeeds(human.GetComponent<Human>());
         }

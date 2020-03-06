@@ -36,10 +36,8 @@ namespace Interactable.Environment
 			Debug.Log(responsible.Name + " is harvesting the plant");
 			yield return new WaitForSeconds(2);
 			Debug.Log("Plant harvested by " + responsible.Name);
-			//var newProduct = Instantiate(product);
-			responsible.AddToInventory(this.gameObject);
+			responsible.Inventory.Add(this.gameObject);
 			this.gameObject.transform.position = new Vector3(0f, -100f, 0f);
-			//newProduct.SetActive(false);
 			responsible.FinishJob();
 			yield return Refresh();
 		}
@@ -57,7 +55,7 @@ namespace Interactable.Environment
 			Debug.Log(responsible.Name + " is eating the plant");
 			yield return new WaitForSeconds(2);
 			Debug.Log("Plant eaten by " + responsible.Name);
-			responsible.RemoveFromInventory(Name, 1);
+			responsible.Inventory.Remove(Name, 1);
 			Destroy(gameObject, 0.5f);
 			responsible.FinishJob();
 		}

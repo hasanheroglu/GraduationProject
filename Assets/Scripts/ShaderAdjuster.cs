@@ -19,9 +19,6 @@ public class ShaderAdjuster : MonoBehaviour
         {
             _renderer = _mesh.GetComponent<Renderer>();
         }
-        
-        Debug.Log(_renderer.materials[0].color.r);
-        
     }
 
     public void OnMouseEnter()

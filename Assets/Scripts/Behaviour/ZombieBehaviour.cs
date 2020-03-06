@@ -21,11 +21,12 @@ public class ZombieBehaviour : Behaviour
 	{
 		Activity = ActivityType.Kill;
 	}
-	
+
 	public override void DoActivity()
 	{
 		if (Activity == ActivityType.None || JobManager.ActivityTypeExists(Responsible, Activity)) return;
-
+		
+		Responsible.Wander();
 		var interactableObjects = Physics.OverlapSphere(Responsible.gameObject.transform.position, 1f);
 		if (interactableObjects.Length <= 0) return;
 
@@ -56,8 +57,9 @@ public class ZombieBehaviour : Behaviour
 				if (activityAttribute == null || activityAttribute.ActivityType != Activity ||
 				    (interactable.InUse <= 0)) continue;
 				
+				Responsible.StopWandering();
 				var coroutineInfo = new JobInfo(Responsible, interactable, method, new object[] {Responsible});
-				UIManager.SetInteractionAction(Responsible.gameObject, coroutineInfo);
+				UIManager.SetInteractionAction(coroutineInfo);
 				return;
 			}
 		}

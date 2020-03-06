@@ -31,7 +31,7 @@ public class RecipeManager : MonoBehaviour
 	public void OpenCraftingMenu(List<Recipe> recipeList, Responsible responsible)
 	{
 		craftingMenu.SetActive(true);
-		SetRecipes(recipeList, responsible.Inventory);
+		SetRecipes(recipeList, responsible.Inventory.Items);
 		_job = responsible.Jobs[0];
 	}
 

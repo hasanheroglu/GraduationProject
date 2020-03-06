@@ -9,5 +9,6 @@ namespace Interface
 	{
 		IEnumerator Craft(Responsible responsible);
 		void SetRecipe(Recipe recipe);
+		void ResetRecipe();
 	}
 }

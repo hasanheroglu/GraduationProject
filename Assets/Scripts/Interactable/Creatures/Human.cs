@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace Interactable.Creatures
 {
-	public class Human : Responsible, ISocializable
+	public class Human : Responsible, ISocializable, IAttackable
 	{
 		public void Start()
 		{

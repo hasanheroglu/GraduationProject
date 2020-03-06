@@ -7,6 +7,7 @@ using Interface;
 using UnityEngine;
 
 public class Zombie : Responsible, IAttackable {
+	
 	public void Start()
 	{
 		Behaviour = new ZombieBehaviour(this.GetComponent<Responsible>());
@@ -19,12 +20,6 @@ public class Zombie : Responsible, IAttackable {
 
 	public void Update()
 	{
-		if (health <= 0)
-		{
-			if(Jobs.Count > 0)
-				StopDoingJob(Jobs[0]);			
-			Destroy(gameObject);
-		}
 		base.Update();
 		if (AutoWill)
 		{
@@ -35,18 +30,35 @@ public class Zombie : Responsible, IAttackable {
 	[Interactable(typeof(Human))]
 	public IEnumerator Attack(Responsible responsible)
 	{
-		yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 		while (health > 0)
 		{
-			yield return new WaitForSeconds(0.2f);
-			health -= 50;
+			yield return new WaitForSeconds(1f);
 			if (responsible.Weapon != null)
 			{
-				responsible.Weapon.Use();
+				responsible.Turn();
+				responsible.Weapon.Use(this);
 			}
-			Debug.Log(responsible.Name + " attacked " + Name);
+
+			responsible.TargetInRange = responsible.Weapon.CheckTargetInRange();
+
+			if (!responsible.Weapon.CheckTargetInRange())
+			{
+				var circlePos = Vector3.forward * responsible.Weapon.weaponPattern.range;
+				circlePos = Quaternion.AngleAxis(Random.Range(0, 360), Vector3.up) * circlePos;
+				Debug.Log("circle pos: " + circlePos);
+				yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position + circlePos));
+			}
+			else
+			{
+				responsible.StopWalking();
+			}
 		}
 		
 		responsible.GetComponent<Responsible>().FinishJob();
+		
+		if(Jobs.Count > 0)
+			StopDoingJob(Jobs[0]);		
+		
+		Destroy(gameObject);
 	}
 }

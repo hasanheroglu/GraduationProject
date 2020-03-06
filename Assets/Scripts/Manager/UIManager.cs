@@ -90,7 +90,7 @@ namespace Manager
 					if (interactableAttribute.InteractableType == responsible.GetType())
 					{
 						JobInfo jobInfo = new JobInfo(responsible, target, method, parameters);
-						AddInteractionButton(responsible, jobInfo);
+						AddInteractionButton(jobInfo);
 					}
 				}
 			}
@@ -112,13 +112,13 @@ namespace Manager
 			return button;
 		}
 
-		private void AddInteractionButton(Responsible responsible, JobInfo jobInfo)
+		private void AddInteractionButton(JobInfo jobInfo)
 		{
 			var button = CreateInteractionButton(_interactionPanel, jobInfo);
-			ButtonUtil.SetOnClickAction(button, GetInteractionAction(responsible, jobInfo));
+			ButtonUtil.SetOnClickAction(button, GetInteractionAction(jobInfo));
 		}
 		
-		private UnityAction GetInteractionAction(Responsible responsible, JobInfo jobInfo)
+		private UnityAction GetInteractionAction(JobInfo jobInfo)
 		{			
 			return delegate {
 				CloseInteractionPanel();
@@ -126,7 +126,7 @@ namespace Manager
 			};
 		}
 
-		public static void SetInteractionAction(GameObject responsible, JobInfo jobInfo, bool beginning = false)
+		public static void SetInteractionAction(JobInfo jobInfo, bool beginning = false)
 		{
 			if (beginning)
 			{
@@ -229,7 +229,7 @@ namespace Manager
 			}
 			
 			var i = 0;
-			foreach (var inventoryItem in responsible.Inventory)
+			foreach (var inventoryItem in responsible.Inventory.Items)
 			{
 				var newItem = Instantiate(inventoryItemPrefab, Vector3.zero, Quaternion.identity,
 					inventoryParent.transform);

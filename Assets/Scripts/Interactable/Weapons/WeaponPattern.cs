@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class WeaponPattern
 {
+	public float range;
 
-	public abstract void Use();
+	public abstract void Use(GameObject weapon, GameObject bullet, Vector3 direction);
 }

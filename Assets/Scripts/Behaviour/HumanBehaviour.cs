@@ -57,7 +57,7 @@ public class HumanBehaviour : Behaviour
 				    (interactable.InUse <= 0)) continue;
 				
 				var coroutineInfo = new JobInfo(Responsible, interactable, method, new object[] {Responsible});
-				UIManager.SetInteractionAction(Responsible.gameObject, coroutineInfo);
+				UIManager.SetInteractionAction(coroutineInfo);
 				return;
 			}
 		}
