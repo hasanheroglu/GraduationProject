@@ -38,6 +38,8 @@ namespace Factory
 					break;
 				case ActivityType.Kill:
 					break;
+				case ActivityType.Plant:
+					break;
 				default:
 					throw new ArgumentOutOfRangeException("activityType", activityType, null);
 			}

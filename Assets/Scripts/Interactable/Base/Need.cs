@@ -38,6 +38,7 @@ public class Need
 		if (Value < 20 && !responsible.Behaviour.Activities.Contains(Activity))
 		{
 			responsible.Behaviour.Activities.Add(Activity);
+			NotificationManager.Instance.Notify(responsible.Name + "'s " + Name + " level is critical!", responsible.gameObject.transform.position);
 		}
 
 		if (Value >= 20 && responsible.Behaviour.Activities.Contains(Activity))

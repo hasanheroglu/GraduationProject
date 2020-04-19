@@ -73,6 +73,7 @@
               <e p="Food.cs" t="Include" />
               <e p="Ground.cs" t="Include" />
               <e p="Plant.cs" t="Include" />
+              <e p="Seed.cs" t="Include" />
               <e p="Tent.cs" t="Include" />
               <e p="Tree.cs" t="Include" />
               <e p="Water.cs" t="Include" />
@@ -89,8 +90,12 @@
             </e>
             <e p="Weapons" t="Include">
               <e p="Bullet.cs" t="Include" />
+              <e p="BulletFactory.cs" t="Include" />
+              <e p="FistPattern.cs" t="Include" />
               <e p="PistolPattern.cs" t="Include" />
+              <e p="ShotgunPattern.cs" t="Include" />
               <e p="Weapon.cs" t="Include" />
+              <e p="WeaponFactory.cs" t="Include" />
               <e p="WeaponPattern.cs" t="Include" />
             </e>
           </e>
@@ -102,11 +107,13 @@
             <e p="ICarriable.cs" t="Include" />
             <e p="IChoppable.cs" t="Include" />
             <e p="ICraftable.cs" t="Include" />
+            <e p="IDamagable.cs" t="Include" />
             <e p="IDestroyable.cs" t="Include" />
             <e p="IEdible.cs" t="Include" />
             <e p="IEquippable.cs" t="Include" />
             <e p="IHarvestable.cs" t="Include" />
             <e p="IPickable.cs" t="Include" />
+            <e p="IPlantable.cs" t="Include" />
             <e p="IShowerable.cs" t="Include" />
             <e p="ISleepable.cs" t="Include" />
             <e p="ISocializable.cs" t="Include" />
@@ -119,6 +126,7 @@
           <e p="Manager" t="Include">
             <e p="ActionManager.cs" t="Include" />
             <e p="CameraManager.cs" t="Include" />
+            <e p="DayManager.cs" t="Include" />
             <e p="NotificationManager.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
           </e>
@@ -130,9 +138,11 @@
             <e p="ItemInfo.cs" t="Include" />
             <e p="JobInfo.cs" t="Include" />
             <e p="NeedBox.cs" t="Include" />
+            <e p="NotificationInfo.cs" t="Include" />
             <e p="RecipeInfo.cs" t="Include" />
             <e p="SkillInfo.cs" t="Include" />
           </e>
+          <e p="Util.cs" t="Include" />
         </e>
       </e>
       <e p="NavMeshComponents.csproj" t="IncludeRecursive" />

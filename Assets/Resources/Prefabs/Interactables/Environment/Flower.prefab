@@ -152,6 +152,7 @@ MonoBehaviour:
   harvested: 0
   plantMesh: {fileID: 1680990191512038}
   product: {fileID: 1374016083561066}
+  seed: {fileID: 6604773001231907862, guid: cb2404e2e5d7b4546acd98bdc96cc531, type: 3}
 --- !u!114 &1379633841
 MonoBehaviour:
   m_ObjectHideFlags: 0

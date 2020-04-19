@@ -38,13 +38,14 @@ public class HumanBehaviour : Behaviour
 	{
 		if (Activity == ActivityType.None || JobManager.ActivityTypeExists(Responsible, Activity)) return;
 
-		var interactableObjects = Physics.OverlapSphere(Responsible.gameObject.transform.position, 20f);
+		var interactableObjects = Physics.OverlapSphere(Responsible.gameObject.transform.position, 50f);
 		if (interactableObjects.Length <= 0) return;
 
 		foreach (var interactableObject in interactableObjects)
 		{
-			var interactable = interactableObject.gameObject.GetComponent<Interactable.Base.Interactable>();
+			var interactable = Util.GetInteractableFromCollider(interactableObject);
 			if (!interactable) continue;
+			
 			var methods = interactable.Methods;
 			if (methods.Count == 0) continue;
 			
@@ -56,8 +57,27 @@ public class HumanBehaviour : Behaviour
 				if (activityAttribute == null || activityAttribute.ActivityType != Activity ||
 				    (interactable.InUse <= 0)) continue;
 				
+				InteractableAttribute[] interactableAttributes =
+					System.Attribute.GetCustomAttributes(method, typeof (InteractableAttribute)) as InteractableAttribute [];
+
+				bool typeExist = false;
+
+				if (interactableAttributes.Length <= 0) continue;
+				
+				foreach (var attribute in interactableAttributes)
+				{
+					Debug.Log(Responsible.GetType());
+					if (attribute.InteractableType == Responsible.GetType())
+					{
+						typeExist = true;
+					}
+				}
+				
+				if(!typeExist) continue;
+
 				var coroutineInfo = new JobInfo(Responsible, interactable, method, new object[] {Responsible});
 				UIManager.SetInteractionAction(coroutineInfo);
+				Debug.Log("Found target!");
 				return;
 			}
 		}

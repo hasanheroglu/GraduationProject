@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Interface;
 using Manager;
 using UnityEngine;
 using UnityEngine.AI;
 
 namespace Interactable.Base
 {
-	public abstract class Responsible : Interactable
+	public abstract class Responsible : Interactable, IDamagable
 	{
 		public List<Job> Jobs { get; set; }
 
@@ -56,16 +57,23 @@ namespace Interactable.Base
 
 		public void Update()
 		{
-			Behaviour.SetActivity();
-			foreach (var need in Needs){ need.Value.Update(this); }
-			
-			Debug.DrawRay(transform.position, new Vector3(directionPosition.transform.position.x - transform.position.x, 0, directionPosition.transform.position.z - transform.position.z));
-
-			if (Target != null)
+			/*
+			if (health <= 0)
 			{
-				Debug.DrawRay(transform.position, new Vector3(Target.GetComponent<Interactable>().interactionPoint.transform.position.x - transform.position.x, 0, Target.GetComponent<Interactable>().interactionPoint.transform.position.z - transform.position.z));
+				if(Jobs.Count > 0)
+					StopDoingJob(Jobs[0]);
+				Destroy(gameObject);
+			}
+			*/
+			
+			Behaviour.SetActivity();
+
+			if (AutoWill)
+			{
+				Behaviour.DoActivity();
 			}
 			
+			foreach (var need in Needs){ need.Value.Update(this); }
 			StartCoroutine(DoJob());
 		}
 
@@ -90,28 +98,24 @@ namespace Interactable.Base
 		{
 			var respDirection = new Vector2(directionPosition.transform.position.x - transform.position.x, directionPosition.transform.position.z - transform.position.z);
 			var targetDirection = new Vector2(Target.GetComponent<Interactable>().interactionPoint.transform.position.x - transform.position.x, Target.GetComponent<Interactable>().interactionPoint.transform.position.z - transform.position.z);
-			var angleBetween = Vector2.Angle(respDirection.normalized, targetDirection.normalized);
-			Debug.Log("Angle: " + angleBetween);
+			var angleBetween = Vector2.SignedAngle(respDirection.normalized, targetDirection.normalized);
+			
 			var newRotationEuler = transform.eulerAngles;
 			newRotationEuler.y -= angleBetween;
 			var newRotation = Quaternion.Euler(newRotationEuler);
 			var timer = 0f;
 			
-			while (timer < 5f)
+			while (timer < 100f)
 			{
 				timer += Time.deltaTime;
-				transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 5);
+				transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 100);
 			}
-			
-			Debug.Log(transform.rotation);
-			Debug.Log(newRotation);
 		}
 
 		public void Wander()
 		{
 			if (transform.position.x == WanderPosition.x && transform.position.z == WanderPosition.y) 
 			{
-				Debug.Log("Wander position reached!");
 				Wandering = false;
 			}
 			
@@ -121,7 +125,7 @@ namespace Interactable.Base
 			}
 			
 			Agent.isStopped = false;
-			WanderPosition = new Vector2(Random.Range(-5f, 5f), Random.Range(-5f, 5f));
+			WanderPosition = new Vector2(transform.position.x + Random.Range(-5f, 5f), transform.position.z + Random.Range(-5f, 5f));
 			Vector3 destination = new Vector3(WanderPosition.x, 0.4f, WanderPosition.y);
 			Agent.SetDestination(destination);
 			Wandering = true;
@@ -137,6 +141,7 @@ namespace Interactable.Base
 		{
 			Agent.isStopped = true;
 			Agent.ResetPath();
+			Agent.isStopped = false;
 		}
 
 		private IEnumerator DoJob()
@@ -160,6 +165,11 @@ namespace Interactable.Base
 		public void FinishJob()
 		{						
 			Jobs[0].Stop();
+		}
+
+		public void Damage(int damage)
+		{
+			health -= damage;
 		}
 	}
 }

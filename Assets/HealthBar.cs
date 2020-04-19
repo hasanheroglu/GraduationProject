@@ -5,18 +5,22 @@ using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
-    [SerializeField] private GameObject _parent;
+    private GameObject _parent;
     private Responsible _responsible;
+    private float _startScale;
     
     // Start is called before the first frame update
     void Start()
     {
+        _parent = gameObject.transform.parent.gameObject;
         _responsible = _parent.GetComponent<Responsible>();
+        _startScale = 5f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.localScale = new Vector3(((float)_responsible.health/100)*10, 1, 1);
+        transform.localRotation = Quaternion.Euler(0, Camera.main.transform.localRotation.eulerAngles.y - transform.parent.localRotation.eulerAngles.y, 0);
+        transform.localScale = new Vector3(((float)_responsible.health/100)*_startScale, 1, 1);
     }
 }

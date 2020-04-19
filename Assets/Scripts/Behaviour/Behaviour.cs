@@ -15,6 +15,7 @@ public abstract class Behaviour
 	{
 		Activity = ActivityType.None;
 		Activities = new List<ActivityType>();
+		IdleActvities = new List<ActivityType>();
 		Responsible = responsible;
 	}
 

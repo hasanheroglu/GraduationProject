@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-    private Camera _camera;
+    private static Camera _camera;
     
     [Range(5f, 10f)]
     public float minOrtographicSize = 5f;
@@ -61,6 +61,18 @@ public class CameraManager : MonoBehaviour
         if (_camera.orthographicSize < minOrtographicSize)
         {
             _camera.orthographicSize = minOrtographicSize;
+        }
+    }
+
+    public static void SetPosition(Vector3 camPosition)
+    {
+        var timer = 0f;
+
+        camPosition.y = _camera.transform.position.y;
+        while (timer < 5f)
+        {
+            timer += Time.deltaTime;
+            _camera.transform.position = Vector3.Slerp(_camera.transform.position, camPosition, Time.deltaTime * 5);
         }
     }
 }

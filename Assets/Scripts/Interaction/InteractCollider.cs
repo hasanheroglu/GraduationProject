@@ -8,30 +8,26 @@ namespace Interaction
 
 		private Responsible _responsible;
 
-		private void Start()
+		private void Awake()
 		{
 			_responsible = GetComponentInParent<Responsible>();
 		}
 
 		private void OnTriggerEnter(Collider other)
 		{
-			if (!ReferenceEquals(other.gameObject, _responsible.Target)
-				&& !ReferenceEquals(other.transform.parent.gameObject, _responsible.Target))
-			{
-				return;
-			}
-		
+			var interactable = Util.GetInteractableFromCollider(other);
+			if (interactable == null || _responsible == null || _responsible.Target == null) return;
+			if (!ReferenceEquals(_responsible.Target, interactable.gameObject)) return;
+			
 			_responsible.TargetInRange = true;
 		}
 	
 		private void OnTriggerStay(Collider other)
 		{
-			if (!ReferenceEquals(other.gameObject, _responsible.Target)
-				&& !ReferenceEquals(other.transform.parent.gameObject, _responsible.Target))
-			{
-				return;
-			}
-		
+			var interactable = Util.GetInteractableFromCollider(other);
+			if (interactable == null || _responsible == null || _responsible.Target == null) return;
+			if (!ReferenceEquals(_responsible.Target, interactable.gameObject)) return;
+			
 			_responsible.TargetInRange = true;
 		}
 	}

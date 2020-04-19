@@ -6,14 +6,15 @@ public class PistolPattern : WeaponPattern
 {
 	public PistolPattern()
 	{
-		range = 10f;
+		damage = 25;
+		range = 25f;
+		delay = 1f;
 	}
 	
-	public override void Use(GameObject weapon, GameObject bullet, Vector3 direction)
+	public override void Use(GameObject weapon,  Vector3 direction)
 	{
-		var bulletGO = GameObject.Instantiate(bullet, weapon.transform.position, Quaternion.identity);
-		bulletGO.GetComponent<Rigidbody>().velocity = direction;
-		Debug.Log(direction);
+		var bulletGo = BulletFactory.GetPistolBullet(weapon.transform.position + direction * 0.05f, damage);
+		bulletGo.GetComponent<Rigidbody>().velocity = direction;
 		Debug.Log("Weapon used pistol pattern!");
 	}
 }

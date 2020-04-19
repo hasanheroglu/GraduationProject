@@ -15,15 +15,53 @@ namespace Interactable.Environment
 {
 	public class Plant : Interactable.Base.Interactable, IHarvestable, IEdible
 	{
-		public bool harvested;
+		public bool harvestable;
+		public bool hasGrown;
+		public float growDuration;
 		public GameObject plantMesh;
 		public GameObject product;
+		public GameObject seed;
 
-		private void Start()
+		private void Awake()
 		{
 			InUse = 1;
-			harvested = false;
+			harvestable = true;
+			hasGrown = true;
+			growDuration = 15f;
 			SetMethods();
+		}
+
+		private void Update()
+		{
+			if (!hasGrown)
+			{
+				transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(1f, 1f, 1f), Time.deltaTime * (((1.0f - 0.01f)/growDuration)/(1.0f-0.01f)));
+				if (transform.localScale.x >= 1.0f - 0.01f)
+				{
+					hasGrown = true;
+					SetStatus(true);
+				}
+			}
+		}
+
+		public void SetStatus(bool harvestable)
+		{
+			this.harvestable = harvestable;
+
+			if (!harvestable)
+			{
+				hasGrown = false;
+				Methods.Remove(GetType().GetMethod("Harvest"));
+				Methods.Remove(GetType().GetMethod("Eat"));
+				transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+			}
+			else
+			{
+				hasGrown = true;
+				Methods.Add(GetType().GetMethod("Harvest"));
+				Methods.Add(GetType().GetMethod("Eat"));
+				transform.localScale = new Vector3(1f, 1f, 1f);
+			}
 		}
 
 
@@ -48,7 +86,7 @@ namespace Interactable.Environment
 		[Skill(SkillType.None)]
 		public IEnumerator Eat(Responsible responsible)
 		{
-			if (!harvested)
+			if (harvestable)
 			{
 				yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 			}
@@ -56,13 +94,16 @@ namespace Interactable.Environment
 			yield return new WaitForSeconds(2);
 			Debug.Log("Plant eaten by " + responsible.Name);
 			responsible.Inventory.Remove(Name, 1);
+			var newSeed = Instantiate(seed, Vector3.zero, Quaternion.identity);
+			responsible.Inventory.Add(newSeed);
+			responsible.health += 20;
 			Destroy(gameObject, 0.5f);
 			responsible.FinishJob();
 		}
 
 		private IEnumerator Refresh()
 		{
-			harvested = true;
+			harvestable = false;
 			Methods.Remove(GetType().GetMethod("Harvest"));
 			yield return null;
 			//Methods.Remove(GetType().GetMethod("Eat"));
@@ -73,7 +114,7 @@ namespace Interactable.Environment
 			}
 			
 			yield return new WaitForSeconds(60);
-			harvested = false;
+			harvestable = true;
 			
 			if (!plantMesh.activeSelf)
 			{

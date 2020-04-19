@@ -11,15 +11,17 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         Destroy(this.gameObject, 1.5f);
-        damage = 50;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Damagable"))
+        var damagable = Util.GetDamagableFromCollider(other);
+        
+        if (damagable != null)
         {
             Debug.Log("Hit damagable!");
-            other.gameObject.GetComponentInParent<Interactable.Base.Interactable>().health -= damage;
+            damagable.Damage(damage);
+            //damagable.gameObject.GetComponent<Rigidbody>().AddForce(GetComponent<Rigidbody>().velocity*20);
             Destroy(this.gameObject);
         }
     }

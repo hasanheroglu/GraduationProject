@@ -12,47 +12,76 @@ public class Zombie : Responsible, IAttackable {
 	{
 		Behaviour = new ZombieBehaviour(this.GetComponent<Responsible>());
 		AutoWill = true;
+		
+		var weaponGo = WeaponFactory.GetFist(transform.position);
+		weaponGo.transform.SetParent(weaponPosition.transform);
+		weaponGo.transform.position = weaponPosition.transform.position;
+		weaponGo.transform.rotation = gameObject.transform.rotation;
+		
+		Weapon = weaponGo.GetComponent<Weapon>();
+
 		//Behaviour.IdleActvities = new List<ActivityType> {ActivityType.Kill};
 		Behaviour.SetActivity();
 		SetMethods();
 		InUse = 999;
 	}
 
-	public void Update()
-	{
-		base.Update();
-		if (AutoWill)
-		{
-			Behaviour.DoActivity();
-		}
-	}
-	
+	[Activity(ActivityType.Kill)]
 	[Interactable(typeof(Human))]
 	public IEnumerator Attack(Responsible responsible)
 	{
+		Coroutine coroutine = null;
+		
 		while (health > 0)
 		{
-			yield return new WaitForSeconds(1f);
+			if (responsible.Weapon == null) break;
+			
+			coroutine = responsible.Weapon.Use(this, coroutine);
+			yield return responsible.Weapon.Reload();
+		}
+
+		yield return null;
+		/*
+		Coroutine coroutine = null;
+
+		while (health > 0)
+		{
 			if (responsible.Weapon != null)
 			{
+				if (coroutine != null)
+				{
+					StopCoroutine(coroutine);
+				}
+				
 				responsible.Turn();
 				responsible.Weapon.Use(this);
 			}
 
 			responsible.TargetInRange = responsible.Weapon.CheckTargetInRange();
 
-			if (!responsible.Weapon.CheckTargetInRange())
+			if (!responsible.TargetInRange)
 			{
-				var circlePos = Vector3.forward * responsible.Weapon.weaponPattern.range;
+				var circlePos = Vector3.forward * responsible.Weapon.GetWeaponPattern().range;
 				circlePos = Quaternion.AngleAxis(Random.Range(0, 360), Vector3.up) * circlePos;
-				Debug.Log("circle pos: " + circlePos);
-				yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position + circlePos));
+
+				if (coroutine != null)
+				{
+					StopCoroutine(coroutine);
+				}
+				coroutine = StartCoroutine(responsible.Walk(interactionPoint.transform.position + circlePos));
 			}
 			else
 			{
+				if (coroutine != null)
+				{
+					StopCoroutine(coroutine);
+				}
 				responsible.StopWalking();
 			}
+			
+			yield return responsible.Weapon.Reload();
 		}
+		*/
 		
 		responsible.GetComponent<Responsible>().FinishJob();
 		
@@ -61,4 +90,5 @@ public class Zombie : Responsible, IAttackable {
 		
 		Destroy(gameObject);
 	}
+	
 }

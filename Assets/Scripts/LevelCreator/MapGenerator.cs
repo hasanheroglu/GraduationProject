@@ -45,6 +45,10 @@ public class MapGenerator : MonoBehaviour
                 {
                     Debug.Log("Creating a tree.");
                     Instantiate(colorMapping.prefab, new Vector3(x * 1.5f, 0.28f, y * 1.5f), Quaternion.identity, transform);
+                } else if (pixelColor == Color.red)
+                {
+                    Debug.Log("Creating a zombie.");
+                    Instantiate(colorMapping.prefab, new Vector3(x * 1.5f, 0f, y * 1.5f), Quaternion.identity, transform);
                 }
             }
         }

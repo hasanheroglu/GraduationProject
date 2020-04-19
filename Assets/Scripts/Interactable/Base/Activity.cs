@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ActivityType{None, Walk, Cook, Sleep, Workout, Relax, Social, Chop, Eat, Harvest, Shower, Kill}
+public enum ActivityType{None, Walk, Cook, Sleep, Workout, Relax, Social, Chop, Eat, Harvest, Shower, Kill, Plant}
 public class Activity
 {
         public ActivityType ActivityType { get; set; }
