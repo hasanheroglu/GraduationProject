@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Interactable.Environment;
+using Interactable.Manager;
 using Interface;
 using Manager;
 using UnityEngine;
@@ -9,92 +11,102 @@ namespace Interactable.Base
 {
 	public abstract class Responsible : Interactable, IDamagable
 	{
+		private NavMeshAgent _agent;
+
 		public List<Job> Jobs { get; set; }
+		public GameObject JobPanel { get; set; }
+		public bool JobFinished { get; set; }
+
 
 		public GameObject Target { get; set; }
-
 		public bool TargetInRange { get; set; }
-
-		public NavMeshAgent Agent { get; set; }
-		
-		public bool JobFinished { get; set; }
-		
-		public bool Wandering { get; set; }
-		
-		public Vector2 WanderPosition { get; set; }
-		
-		public GameObject JobPanel { get; set; }
 		
 		public Dictionary<NeedType, Need> Needs { get; set; }
-		
 		public Dictionary<SkillType, Skill> Skills { get; set; }
 
-		public Inventory Inventory { get; set; }
 		
-		public Behaviour Behaviour { get; set; }
+		public Inventory Inventory { get; set; }
+		public Equipment Equipment { get; set; }
+		
 		
 		public bool AutoWill { get; set; }
-		
-		public Weapon Weapon { get; set; }
-
-		public GameObject weaponPosition;
+		public Behaviour Behaviour { get; set; }
 
 		public GameObject directionPosition;
-
+		
+		
 		private void Awake()
 		{
 			Jobs = new List<Job>();
 			Needs = new Dictionary<NeedType, Need>();
 			Skills = new Dictionary<SkillType, Skill>();
 			Inventory = new Inventory(this);
-			
-			Agent = GetComponent<NavMeshAgent>();
+			Equipment = new Equipment(this);
+
+			_agent = GetComponent<NavMeshAgent>();
 			JobFinished = true;
 			JobPanel = Instantiate(UIManager.Instance.jobPanelPrefab, UIManager.Instance.canvas.transform);
 			JobPanel.SetActive(false);
 			UIManager.Instance.JobPanels.Add(JobPanel);
 		}
-
 		public void Update()
 		{
-			/*
+			if (Jobs.Count > 0 && Jobs[0].Target == null) Jobs[0].Stop(true);
+			
 			if (health <= 0)
 			{
 				if(Jobs.Count > 0)
 					StopDoingJob(Jobs[0]);
 				Destroy(gameObject);
 			}
-			*/
 			
 			Behaviour.SetActivity();
 
-			if (AutoWill)
-			{
-				Behaviour.DoActivity();
-			}
+			if (AutoWill) Behaviour.DoActivity();
 			
 			foreach (var need in Needs){ need.Value.Update(this); }
+			
 			StartCoroutine(DoJob());
 		}
+		
 
 		public IEnumerator Walk(Vector3 position)
 		{
-			Agent.isStopped = false;
-			Agent.SetDestination(position);
+			_agent.isStopped = false;
+			_agent.SetDestination(position);
 
 			if (Target.GetComponent<NavMeshAgent>() != null)
 			{
 				while (!TargetInRange)
 				{
-					Agent.destination = Target.transform.position;
-					yield return new WaitForSeconds(0.1f);
+					_agent.destination = Target.transform.position;
+					yield return new WaitForSeconds(5f);
 				}
 			}
 			yield return new WaitUntil((() => TargetInRange));
 			StopWalking();
+			yield return Turn();
+		}
+		public void StopWalking()
+		{
+			_agent.isStopped = true;
+			_agent.ResetPath();
+			_agent.isStopped = false;
+		}
+		public void Wander()
+		{
+			if (Jobs.Count != 0) return;
+		
+			var position = gameObject.transform.position;
+			var direction = new Vector2(position.x, position.z) + Random.insideUnitCircle * 10f;
+			var destination = new Vector3(direction.x, 0.4f, direction.y);
+
+			var ground = GroundUtil.FindGround(destination);
+			if(ground != null) JobManager.AddJob(new Job(new JobInfo(this, ground, ground.GetType().GetMethod("Walk"), new object[]{this})));
 		}
 
-		public void Turn()
+
+		public IEnumerator Turn()
 		{
 			var respDirection = new Vector2(directionPosition.transform.position.x - transform.position.x, directionPosition.transform.position.z - transform.position.z);
 			var targetDirection = new Vector2(Target.GetComponent<Interactable>().interactionPoint.transform.position.x - transform.position.x, Target.GetComponent<Interactable>().interactionPoint.transform.position.z - transform.position.z);
@@ -103,73 +115,51 @@ namespace Interactable.Base
 			var newRotationEuler = transform.eulerAngles;
 			newRotationEuler.y -= angleBetween;
 			var newRotation = Quaternion.Euler(newRotationEuler);
-			var timer = 0f;
+			var startTime = Time.time;
+			var startRotation = transform.rotation;
+			var duration = 0.3f;
 			
-			while (timer < 100f)
+			while (Time.time < startTime + duration)
 			{
-				timer += Time.deltaTime;
-				transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 100);
+				transform.rotation = Quaternion.Lerp(startRotation, newRotation, (Time.time - startTime)/duration);
+				yield return null;
 			}
-		}
 
-		public void Wander()
+			transform.rotation = newRotation;
+		}
+		
+		
+		public Job GetCurrentJob()
 		{
-			if (transform.position.x == WanderPosition.x && transform.position.z == WanderPosition.y) 
-			{
-				Wandering = false;
-			}
-			
-			if (Wandering)
-			{
-				return;
-			}
-			
-			Agent.isStopped = false;
-			WanderPosition = new Vector2(transform.position.x + Random.Range(-5f, 5f), transform.position.z + Random.Range(-5f, 5f));
-			Vector3 destination = new Vector3(WanderPosition.x, 0.4f, WanderPosition.y);
-			Agent.SetDestination(destination);
-			Wandering = true;
+			return Jobs[0];
 		}
-
-		public void StopWandering()
-		{
-			Wandering = false;
-			StopWalking();
-		}
-
-		public void StopWalking()
-		{
-			Agent.isStopped = true;
-			Agent.ResetPath();
-			Agent.isStopped = false;
-		}
-
 		private IEnumerator DoJob()
 		{		
-			if (Jobs.Count > 0 && Jobs[0].Target == null)
-			{
-				Jobs[0].Stop(true);
-			}
-			
-			if (JobFinished && Jobs.Count != 0)
-			{	
-				yield return Jobs[0].Start();
-			}
+			if (Jobs.Count > 0 && Jobs[0].Target == null) Jobs[0].Stop(true);
+			if (JobFinished && Jobs.Count != 0) yield return Jobs[0].Start();
 		}
-
 		public void StopDoingJob(Job job)
 		{
 			job.Stop(true);
 		}
-
-		public void FinishJob()
+		public void FinishJob(bool immediate=false)
 		{						
-			Jobs[0].Stop();
+			Jobs[0].Stop(immediate);
 		}
 
+		
 		public void Damage(int damage)
 		{
-			health -= damage;
+			var decrease = damage * (Equipment.GetArmorValue() / 1000);
+			if (decrease > damage) decrease = damage;
+			
+			health -= damage - (int) decrease;
+		}
+		public void Heal(int heal)
+		{
+			health += heal;
+
+			if (health > 100) health = 100;
 		}
 	}
 }

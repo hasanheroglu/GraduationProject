@@ -66,8 +66,7 @@ public class HumanBehaviour : Behaviour
 				
 				foreach (var attribute in interactableAttributes)
 				{
-					Debug.Log(Responsible.GetType());
-					if (attribute.InteractableType == Responsible.GetType())
+					if (attribute.InteractableType == Responsible.GetType() || attribute.InteractableType == Responsible.GetType().BaseType)
 					{
 						typeExist = true;
 					}

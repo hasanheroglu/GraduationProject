@@ -22,6 +22,7 @@ public class Food : Interactable.Base.Interactable, IEdible {
 	{
 		yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 		Debug.Log(responsible.name + "is eating food!");
+		responsible.GetCurrentJob().SetProgressDuration(3);
 		yield return new WaitForSeconds(3f);
 		Debug.Log(responsible.name + " ate food!");
 		Destroy(this.gameObject);

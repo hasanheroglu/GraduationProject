@@ -10,25 +10,38 @@ public class DayManager : MonoBehaviour
     private int _temperature;
 
     [SerializeField] private Light sun;
-    [Range(1, 100)]
-    [SerializeField] private float gameSpeed;
-    
-    
+
     // Start is called before the first frame update
     void Start()
     {
         _time = 0;
         _hour = 0;
         _minute = 0;
-        gameSpeed = 1f;
     }
 
     // Update is called once per frame
     void Update()
     {
         GetTime();
-        Time.timeScale = gameSpeed;
-        //Debug.Log("Hour: " + _hour + "Minute: " + _minute);
+        
+        if(Input.GetKeyDown(KeyCode.Alpha1)) SetSpeedNormal();
+        if(Input.GetKeyDown(KeyCode.Alpha2)) SetSpeedFaster();
+        if(Input.GetKeyDown(KeyCode.Alpha3)) SetSpeedFastest();
+    }
+
+    public static void SetSpeedNormal()
+    {
+        Time.timeScale = 1;
+    }
+
+    public static void SetSpeedFaster()
+    {
+        Time.timeScale = 2;
+    }
+
+    public static void SetSpeedFastest()
+    {
+        Time.timeScale = 4;
     }
 
     private void GetTime()

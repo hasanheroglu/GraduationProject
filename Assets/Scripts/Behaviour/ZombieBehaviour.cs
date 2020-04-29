@@ -34,7 +34,8 @@ public class ZombieBehaviour : Behaviour
 		{
 			var interactable = Util.GetInteractableFromCollider(interactableObject);
 			if (!interactable) continue;
-			
+			if(ReferenceEquals(interactable, this.Responsible)) continue;
+
 			var methods = interactable.Methods;
 			if (methods.Count == 0) continue;
 			
@@ -55,7 +56,7 @@ public class ZombieBehaviour : Behaviour
 				
 				foreach (var attribute in interactableAttributes)
 				{
-					if (attribute.InteractableType == Responsible.GetType())
+					if (attribute.InteractableType == Responsible.GetType() || attribute.InteractableType == Responsible.GetType().BaseType)
 					{
 						typeExist = true;
 					}
@@ -63,7 +64,7 @@ public class ZombieBehaviour : Behaviour
 				
 				if(!typeExist) continue;
 
-				Responsible.StopWandering();
+				Responsible.StopWalking();
 				var coroutineInfo = new JobInfo(Responsible, interactable, method, new object[] {Responsible});
 				UIManager.SetInteractionAction(coroutineInfo);
 				return;

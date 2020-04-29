@@ -1,30 +1,54 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 public static class WeaponFactory
 {
     private static readonly GameObject Weapon = Resources.Load<GameObject>("Prefabs/Interactables/Environment/Weapon");
-
+    
     public static GameObject GetFist(Vector3 position)
     {
         var weapon = Object.Instantiate(Weapon, position, Quaternion.identity);
-        weapon.GetComponent<Weapon>().SetWeaponPattern(new FistPattern());
+        weapon.GetComponent<Weapon>().SetWeapon(WeaponType.Melee, 10, 3f, 1f);
         return weapon;
     }
     
     public static GameObject GetPistol(Vector3 position)
     {
         var weapon = Object.Instantiate(Weapon, position, Quaternion.identity);
-        weapon.GetComponent<Weapon>().SetWeaponPattern(new PistolPattern());
+        weapon.GetComponent<Weapon>().SetWeapon(WeaponType.SingleShot, 15, 30f, 1f);
         return weapon;
     }
 
     public static GameObject GetShotgun(Vector3 position)
     {
         var weapon = Object.Instantiate(Weapon, position, Quaternion.identity);
-        weapon.GetComponent<Weapon>().SetWeaponPattern(new ShotgunPattern());
+        weapon.GetComponent<Weapon>().SetWeapon(WeaponType.MultipleShot, 20, 10f, 2f);
         return weapon;
+    }
+
+    public static WeaponPattern GetWeaponPattern(WeaponType weaponType, int damage, float range, float delay)
+    {
+        WeaponPattern weaponPattern = null;
+        
+        switch (weaponType)
+        {
+            case WeaponType.Melee:
+                weaponPattern = new MeleePattern(damage, range, delay);
+                break;
+            case WeaponType.SingleShot:
+                weaponPattern = new SingleShotPattern(damage, range, delay);
+                break;
+            case WeaponType.MultipleShot:
+                weaponPattern = new MultipleShotPattern(damage, range, delay);
+                break;
+            default:
+                throw new ArgumentOutOfRangeException(nameof(weaponType), weaponType, null);
+        }
+
+        return weaponPattern;
     }
     
 }

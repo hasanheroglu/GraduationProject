@@ -21,6 +21,15 @@ public class ShaderAdjuster : MonoBehaviour
         }
     }
 
+    public void SetColor(Color color)
+    {
+        foreach (var material in _renderer.materials)
+        {
+            material.SetColor("_EmissionColor", material.color * color);
+            material.EnableKeyword("_EMISSION");
+        }
+    }
+
     public void OnMouseEnter()
     {
         foreach (var material in _renderer.materials)

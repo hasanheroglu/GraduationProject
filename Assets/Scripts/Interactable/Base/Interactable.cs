@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Reflection;
 using Attribute;
 using UnityEngine;
@@ -11,9 +12,14 @@ namespace Interactable.Base
 		public string Name;
 		public int health = 100;
 		private int _inUse;
-		private List<MethodInfo> _methods;
+		private HashSet<MethodInfo> _methods;
 		
 		public GameObject interactionPoint;
+
+		private void Awake()
+		{
+			SetMethods();
+		}
 
 		public int InUse
 		{
@@ -21,7 +27,7 @@ namespace Interactable.Base
 			set { _inUse = value; }
 		}
 
-		public List<MethodInfo> Methods
+		public HashSet<MethodInfo> Methods
 		{
 			get { return _methods; }
 			set { _methods = value; }
@@ -29,9 +35,18 @@ namespace Interactable.Base
 
 		protected void SetMethods()
 		{
-			var flags = BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly;
-			Methods = new List<MethodInfo>();
-			Methods.AddRange(this.GetType().GetMethods(flags));	
+			var flags = BindingFlags.Public | BindingFlags.Instance | BindingFlags.FlattenHierarchy;
+			Methods = new HashSet<MethodInfo>();
+			var methods = GetType().GetMethods(flags);
+			foreach (var method in methods)
+			{
+				InteractableAttribute [] interactableAttributes =
+					System.Attribute.GetCustomAttributes(method, typeof(InteractableAttribute)) as InteractableAttribute[];
+				
+				if(interactableAttributes.Length == 0) continue;
+				
+				Methods.Add(method);
+			}
 		}
 	}
 }

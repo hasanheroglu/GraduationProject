@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using Crafting;
 using Interactable.Base;
 using Interface;
@@ -44,7 +45,7 @@ public class RecipeManager : MonoBehaviour
 		craftingMenu.SetActive(false);	
 	}
 
-	private void SetRecipes(List<Recipe> recipeList, List<InventoryItem> items)
+	private void SetRecipes(List<Recipe> recipeList, List<GameObject> items)
 	{
 		foreach (Transform child in recipes.transform)
 		{
@@ -63,13 +64,19 @@ public class RecipeManager : MonoBehaviour
 
 			foreach (var ingredient in recipe.Ingredients)
 			{
+				var count = 0;
 				foreach (var item in items)
 				{
 					
-					if (item.Name == ingredient.Name && item.Count >= ingredient.Amount)
+					if (item.GetComponent<Interactable.Base.Interactable>().Name == ingredient.Name)
 					{
-						recipeInfo.GetComponent<RecipeInfo>().selectButton.GetComponent<Button>().interactable = true;
+						count++;
 					}
+				}
+
+				if (count >= ingredient.Amount)
+				{
+					recipeInfo.GetComponent<RecipeInfo>().selectButton.GetComponent<Button>().interactable = true;
 				}
 			}
 
@@ -79,6 +86,6 @@ public class RecipeManager : MonoBehaviour
 
 	public GameObject CreateProduct(Recipe recipe, GameObject parent)
 	{
-		return Instantiate(recipe.Product, parent.transform.position, Quaternion.identity);
+		return (GameObject) recipe.ProductMethod.Invoke(null, new object[] {parent.transform.position});
 	}
 }

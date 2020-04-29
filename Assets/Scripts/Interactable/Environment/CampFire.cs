@@ -13,21 +13,13 @@ public class CampFire : Interactable.Base.Interactable, ICraftable
 	public Recipe currentRecipe;
 	public bool recipeSet;
 	public List<Recipe> recipes;
-	public GameObject kebabPrefab;
 	
 	private void Awake()
 	{
 		InUse = 1;
 		recipeSet = false;
 		SetMethods();
-		recipes = new List<Recipe>();
-		var ingredients = new List<Ingredient>();
-		var item = new Ingredient("Onion", null, 2);
-		var item1 = new Ingredient("Flower", null, 1);
-		ingredients.Add(item);
-		ingredients.Add(item1);
-		recipes.Add(new Recipe("Kebab", ingredients, kebabPrefab, 5.0f, this));
-		recipes.Add(new Recipe("Beyti", ingredients, kebabPrefab, 10.0f, this));
+		recipes = new List<Recipe> {RecipeFactory.GetWoodenGauntlets(this), RecipeFactory.GetWoodenHelmet(this), RecipeFactory.GetWoodenFaulds(this)};
 	}
 
 	[Activity(ActivityType.Cook)]

@@ -45,7 +45,7 @@ public class SkillInfo : MonoBehaviour
 
 	private void SetName()
 	{
-		this.name.GetComponent<Text>().text = _skill.SkillType.ToString();
+		this.name.GetComponent<Text>().text = _skill.Type.ToString();
 	}
 
 	private void SetLevel()

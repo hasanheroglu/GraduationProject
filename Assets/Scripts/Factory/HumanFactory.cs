@@ -1,6 +1,7 @@
 ﻿using Interactable.Base;
 using Interactable.Creatures;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 
 namespace Factory

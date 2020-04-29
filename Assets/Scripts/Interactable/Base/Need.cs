@@ -7,25 +7,22 @@ public enum NeedType{Hunger, Social, Fun, Bladder, Energy, Hygiene}
 
 public class Need
 {
-	public NeedType Id { get; set; }
-
-	public string Name { get; set; }
-
-	public float Value { get; set; }
-
-	public ActivityType Activity { get; set; }
+	private readonly NeedType _type;
+	private readonly ActivityType _activity;
+	private readonly float _baseStepValue;
 	
-	public float BaseStepValue { get; set; }
-
+	public string Name { get; set; }
+	public float Value { get; set; }
 	public float StepValue { get; set; }
+	
 
-	public Need(NeedType id, ActivityType activity, float baseStepValue)
+	public Need(NeedType type, ActivityType activity, float baseStepValue)
 	{
-		Id = id;
+		_type = type;
 		SelectName();
-		BaseStepValue = baseStepValue;
-		Activity = activity;
-		StepValue = BaseStepValue;
+		_baseStepValue = baseStepValue;
+		_activity = activity;
+		StepValue = _baseStepValue;
 		Value = 100f;
 	}
 
@@ -35,15 +32,15 @@ public class Need
 		
 		if (Value < 0){ Value = 0; }
 
-		if (Value < 20 && !responsible.Behaviour.Activities.Contains(Activity))
+		if (Value < 20 && !responsible.Behaviour.Activities.Contains(_activity))
 		{
-			responsible.Behaviour.Activities.Add(Activity);
+			responsible.Behaviour.Activities.Add(_activity);
 			NotificationManager.Instance.Notify(responsible.Name + "'s " + Name + " level is critical!", responsible.gameObject.transform.position);
 		}
 
-		if (Value >= 20 && responsible.Behaviour.Activities.Contains(Activity))
+		if (Value >= 20 && responsible.Behaviour.Activities.Contains(_activity))
 		{
-			responsible.Behaviour.Activities.Remove(Activity);
+			responsible.Behaviour.Activities.Remove(_activity);
 		}
 		
 		if (Value > 100){ Value = 100; }
@@ -51,12 +48,12 @@ public class Need
 
 	public void Reset()
 	{
-		StepValue = BaseStepValue;
+		StepValue = _baseStepValue;
 	}
 
 	private void SelectName()
 	{
-		switch (Id)
+		switch (_type)
 		{
 			case NeedType.Hunger:
 				Name = "Hunger";

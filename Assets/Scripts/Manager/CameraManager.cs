@@ -11,14 +11,17 @@ public class CameraManager : MonoBehaviour
     [Range(20f, 30f)]
     public float maxOrtographicSize = 30f;
     public float zoomAmount = 0.3f;
-    public float moveAmount = 0.3f;
+    public float moveAmount = 0.5f;
     public GameObject camera;
     public GameObject cameraCenter;
+
+    private float _rotation;
     
     // Start is called before the first frame update
     void Start()
     {
         _camera = camera.GetComponent<Camera>();
+        _rotation = 0f;
     }
 
     // Update is called once per frame
@@ -28,10 +31,11 @@ public class CameraManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             _camera.transform.RotateAround(cameraCenter.transform.position, Vector3.up, -90);
+            _rotation -= 90;
         }
         else
         {
-            _camera.transform.position += new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")) * moveAmount;
+            _camera.transform.position += Quaternion.Euler(0, _rotation, 0) * new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")) * moveAmount;
         }
         
         if (Input.mouseScrollDelta.y < 0)

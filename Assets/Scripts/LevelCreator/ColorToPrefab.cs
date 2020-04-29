@@ -7,4 +7,7 @@ public class ColorToPrefab
 {
     public Color color;
     public GameObject prefab;
+    public Vector3 position;
+    public float width;
+    public float length;
 }

@@ -19,6 +19,7 @@ public class Water : Interactable.Base.Interactable, IShowerable, IWalkable {
 	{
 		yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 		Debug.Log(responsible.Name + " is taking a shower!");
+		responsible.GetCurrentJob().SetProgressDuration(10);
 		yield return new WaitForSeconds(10);
 		Debug.Log(responsible.Name + " took a shower!");
 		responsible.FinishJob();

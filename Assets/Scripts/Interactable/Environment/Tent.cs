@@ -11,22 +11,22 @@ namespace Interactable.Environment
 {
 	public class Tent : Interactable.Base.Interactable, ISleepable
 	{
+		private float _sleepDuration;
+		
 		private void Start()
 		{
 			InUse = 1;
+			_sleepDuration = 15f;
 			SetMethods();
 		}
 
 		[Activity(ActivityType.Sleep)]
 		[Interactable(typeof(Responsible))]
-		[Interactable(typeof(Human))]
 		[Skill(SkillType.None)]
 		public IEnumerator Sleep(Responsible responsible)
 		{
 			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
-			Debug.Log(responsible.Name + " is sleeping");
-			yield return new WaitForSeconds(15);
-			Debug.Log(responsible.Name + " slept!");
+			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), _sleepDuration);
 			responsible.FinishJob();
 		}
 	}

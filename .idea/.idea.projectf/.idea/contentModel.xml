@@ -4,8 +4,11 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="HealthBar.cs" t="Include" />
         <e p="ImportedAssets" t="Include">
+          <e p="FarmAnimals_v1.1" t="Include">
+            <e p="changelog.txt" t="Include" />
+            <e p="VertexColorUnlit.shader" t="Include" />
+          </e>
           <e p="NavMeshComponents" t="Include">
             <e p="Editor" t="Include">
               <e p="NavMeshAssetManager.cs" t="Include" />
@@ -17,17 +20,26 @@
               <e p="NavMeshSurfaceEditor.cs" t="Include" />
             </e>
             <e p="Scripts" t="Include">
+              <e p="LocalNavMeshBuilder.cs" t="Include" />
               <e p="NavMeshComponents.asmdef" t="Include" />
               <e p="NavMeshLink.cs" t="Include" />
               <e p="NavMeshModifier.cs" t="Include" />
               <e p="NavMeshModifierVolume.cs" t="Include" />
+              <e p="NavMeshSourceTag.cs" t="Include" />
               <e p="NavMeshSurface.cs" t="Include" />
             </e>
+          </e>
+          <e p="Objects" t="Include">
+            <e p="StandardShaderWDoubleSided.shader" t="Include" />
+          </e>
+          <e p="PROCJAM2017-DevilsGarage" t="Include">
+            <e p="ReadMe.txt" t="Include" />
           </e>
           <e p="Survival_Pack_Low_Poly" t="Include">
             <e p="Read-Me.txt" t="Include" />
           </e>
         </e>
+        <e p="scri.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Attribute" t="Include">
             <e p="ActivityAttribute.cs" t="Include" />
@@ -41,6 +53,7 @@
           </e>
           <e p="Crafting" t="Include">
             <e p="Ingredient.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
             <e p="Recipe.cs" t="Include" />
             <e p="RecipeManager.cs" t="Include" />
           </e>
@@ -51,14 +64,12 @@
             <e p="RecipeFactory.cs" t="Include" />
             <e p="SkillFactory.cs" t="Include" />
           </e>
+          <e p="GroundUtil.cs" t="Include" />
           <e p="Interactable" t="Include">
             <e p="Base" t="Include">
               <e p="Activity.cs" t="Include" />
               <e p="Effect.cs" t="Include" />
               <e p="Interactable.cs" t="Include" />
-              <e p="Inventory.cs" t="Include" />
-              <e p="InventoryItem.cs" t="Include" />
-              <e p="Item.cs" t="Include" />
               <e p="Job.cs" t="Include" />
               <e p="Need.cs" t="Include" />
               <e p="Responsible.cs" t="Include" />
@@ -77,10 +88,15 @@
               <e p="Tent.cs" t="Include" />
               <e p="Tree.cs" t="Include" />
               <e p="Water.cs" t="Include" />
+              <e p="Wood.cs" t="Include" />
             </e>
             <e p="Equipment" t="Include">
+              <e p="Armor.cs" t="Include" />
+              <e p="Equipable.cs" t="Include" />
+              <e p="EquipableFactory.cs" t="Include" />
               <e p="Equipment.cs" t="Include" />
-              <e p="EquipmentItem.cs" t="Include" />
+              <e p="Inventory.cs" t="Include" />
+              <e p="Pickable.cs" t="Include" />
             </e>
             <e p="Manager" t="Include">
               <e p="EffectManager.cs" t="Include" />
@@ -91,9 +107,9 @@
             <e p="Weapons" t="Include">
               <e p="Bullet.cs" t="Include" />
               <e p="BulletFactory.cs" t="Include" />
-              <e p="FistPattern.cs" t="Include" />
-              <e p="PistolPattern.cs" t="Include" />
-              <e p="ShotgunPattern.cs" t="Include" />
+              <e p="MeleePattern.cs" t="Include" />
+              <e p="MultipleShotPattern.cs" t="Include" />
+              <e p="SingleShotPattern.cs" t="Include" />
               <e p="Weapon.cs" t="Include" />
               <e p="WeaponFactory.cs" t="Include" />
               <e p="WeaponPattern.cs" t="Include" />
@@ -108,11 +124,8 @@
             <e p="IChoppable.cs" t="Include" />
             <e p="ICraftable.cs" t="Include" />
             <e p="IDamagable.cs" t="Include" />
-            <e p="IDestroyable.cs" t="Include" />
             <e p="IEdible.cs" t="Include" />
-            <e p="IEquippable.cs" t="Include" />
             <e p="IHarvestable.cs" t="Include" />
-            <e p="IPickable.cs" t="Include" />
             <e p="IPlantable.cs" t="Include" />
             <e p="IShowerable.cs" t="Include" />
             <e p="ISleepable.cs" t="Include" />
@@ -133,12 +146,14 @@
           <e p="ShaderAdjuster.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="ButtonUtil.cs" t="Include" />
+            <e p="HealthBar.cs" t="Include" />
             <e p="IngredientInfo.cs" t="Include" />
             <e p="InventoryItemInfo.cs" t="Include" />
             <e p="ItemInfo.cs" t="Include" />
             <e p="JobInfo.cs" t="Include" />
             <e p="NeedBox.cs" t="Include" />
             <e p="NotificationInfo.cs" t="Include" />
+            <e p="ProgressBar.cs" t="Include" />
             <e p="RecipeInfo.cs" t="Include" />
             <e p="SkillInfo.cs" t="Include" />
           </e>

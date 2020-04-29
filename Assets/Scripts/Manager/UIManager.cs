@@ -70,7 +70,8 @@ namespace Manager
 		{
 			CreateInteractionPanel(panelPosition);
 			
-			List<MethodInfo> methods = target.GetComponent<Interactable.Base.Interactable>().Methods;
+			HashSet<MethodInfo> methods = target.GetComponent<Interactable.Base.Interactable>().Methods;
+			Debug.Log(methods.Count);
 			
 			foreach (var method in methods)
 			{
@@ -87,7 +88,7 @@ namespace Manager
 
 				foreach (var interactableAttribute in interactableAttributes)
 				{
-					if (interactableAttribute.InteractableType == responsible.GetType())
+					if (interactableAttribute.InteractableType == responsible.GetType() || interactableAttribute.InteractableType == responsible.GetType().BaseType)
 					{
 						JobInfo jobInfo = new JobInfo(responsible, target, method, parameters);
 						AddInteractionButton(jobInfo);
@@ -227,15 +228,24 @@ namespace Manager
 			{
 				Destroy(child.gameObject);
 			}
+
+			Dictionary<string, int> inventoryItems = new Dictionary<string, int>();
+			foreach (var item in responsible.Inventory.Items)
+			{
+				var itemName = item.GetComponent<Interactable.Base.Interactable>().Name;
+				
+				if (inventoryItems.ContainsKey(itemName)) inventoryItems[itemName]++;
+				else inventoryItems.Add(itemName, 1);
+			}
 			
 			var i = 0;
-			foreach (var inventoryItem in responsible.Inventory.Items)
+			foreach (var item in inventoryItems)
 			{
 				var newItem = Instantiate(inventoryItemPrefab, Vector3.zero, Quaternion.identity,
 					inventoryParent.transform);
 				newItem.GetComponent<RectTransform>().anchoredPosition = new Vector3(0f, -i*inventoryItemPrefab.GetComponent<RectTransform>().rect.height, 0f);
-				newItem.GetComponent<InventoryItemInfo>().SetItemInfo(inventoryItem.Name, inventoryItem.Count);
-				newItem.GetComponent<InventoryItemInfo>().SetActionButton(delegate { UIManager.Instance.SetInteractionPanel(responsible, inventoryItem.Items[0].GetComponent<Interactable.Base.Interactable>(), new object[] {responsible.GetComponent<Responsible>()}, Input.mousePosition); });
+				newItem.GetComponent<InventoryItemInfo>().SetItemInfo(item.Key, responsible.Inventory.FindCount(item.Key));
+				newItem.GetComponent<InventoryItemInfo>().SetActionButton(delegate { UIManager.Instance.SetInteractionPanel(responsible, responsible.Inventory.Find(item.Key).GetComponent<Interactable.Base.Interactable>(), new object[] {responsible.GetComponent<Responsible>()}, Input.mousePosition); });
 				i++;
 			}
 		}

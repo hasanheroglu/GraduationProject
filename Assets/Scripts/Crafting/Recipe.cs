@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using Interactable.Base;
 using Interactable.Creatures;
 using Interface;
@@ -12,15 +13,15 @@ namespace Crafting
 		
 		public string Name { get; set; }
 		public List<Ingredient> Ingredients { get; set; }
-		public GameObject Product { get; set; }
+		public MethodInfo ProductMethod { get; set; }
 		public float Duration { get; set; }
 		public ICraftable Craftable { get; set; }
 
-		public Recipe(string name, List<Ingredient> ingredients, GameObject product, float duration, ICraftable craftable)
+		public Recipe(string name, List<Ingredient> ingredients, MethodInfo productMethod, float duration, ICraftable craftable)
 		{
 			Name = name;
 			Ingredients = ingredients;
-			Product = product;
+			ProductMethod = productMethod;
 			Duration = duration;
 			Craftable = craftable;
 		}
@@ -29,15 +30,18 @@ namespace Crafting
 		{
 			foreach (var ingredient in Ingredients)
 			{
-				foreach (var item in responsible.Inventory.Items)
+				var count = responsible.Inventory.FindCount(ingredient.Name);
+
+				if (count >= ingredient.Amount)
 				{
-					if (item.Name == ingredient.Name && item.Count >= ingredient.Amount)
+					for (int i = 0; i < ingredient.Amount; i++)
 					{
-						responsible.Inventory.Remove(item.Name, ingredient.Amount);
-						break;
+						responsible.Inventory.Remove(ingredient.Name);
 					}
 				}
 			}
+			
+			responsible.GetCurrentJob().SetProgressDuration(Duration);
 			yield return new WaitForSeconds(Duration);
 		}
 	}

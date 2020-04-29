@@ -15,7 +15,7 @@ public class Job
 	private bool _started;
 	public Responsible Responsible { get; private set; }
 
-	private IEnumerator Coroutine { get; set; }
+	public IEnumerator Coroutine { get; set; }
 	
 	private MethodInfo Method { get; set; }
 
@@ -112,6 +112,11 @@ public class Job
 		Button = button;
 	}
 
+	public void SetProgressDuration(float duration)
+	{
+		Button.GetComponentInChildren<ProgressBar>().SetDuration(duration);
+	}
+
 	public IEnumerator Start()
 	{
 		Responsible.JobFinished = false;
@@ -121,27 +126,20 @@ public class Job
 			Responsible.Target = Target.gameObject;
 		}
 		
-		if (Target == null || Target.InUse <= 0 || !Target.Methods.Contains(Method))
-		{	
-			Debug.Log("Target is already in use!");
-			Stop(true);
-			yield break;
-		}
-		
-		Debug.Log("Reached to the target now I'm gonna start doing my job!");
-		if (Target == null || Target.InUse <= 0 || !Target.Methods.Contains(Method))
-		{	
-			Debug.Log("Target is already in use!");
-			Stop(true);
-			yield break;
-		}
-		Debug.Log("Nobody is using this target!");
-
-		 
-		_started = true;
 		Responsible.StartCoroutine(Coroutine);
-		Target.InUse--;
 		
+		yield return new WaitUntil(() => Responsible.TargetInRange); //Some jobs does not require target in range!!!
+		
+		if (Target == null || Target.InUse <= 0 || !Target.Methods.Contains(Method))
+		{	
+			Debug.Log("Target is already in use!");
+			Stop(true);
+			yield break;
+		}
+		
+		_started = true;
+		Debug.Log("Reached to the target now I'm gonna start doing my job!");
+		Target.InUse--;
 		SkillManager.AddSkill(Responsible, SkillFactory.GetSkill(SkillType));
 		EffectManager.Apply(Responsible, Effects);
 	}
