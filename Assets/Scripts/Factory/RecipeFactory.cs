@@ -16,7 +16,7 @@ public static class RecipeFactory
 	public static Recipe GetTable(ICraftable craftable)
 	{
 		List<Ingredient> ingredients = new List<Ingredient>() {new Ingredient("Wood", null, 2)};
-		return new Recipe("Table", ingredients, typeof(EquipableFactory).GetMethod("GetWoodenHelmet"), 12f, craftable);
+		return new Recipe("Table", ingredients, typeof(ItemFactory).GetMethod("GetTable"), 12f, craftable);
 	}
 
 	public static Recipe GetWoodenHelmet(ICraftable craftable)

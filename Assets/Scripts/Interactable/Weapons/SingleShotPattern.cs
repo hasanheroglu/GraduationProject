@@ -21,7 +21,8 @@ public class SingleShotPattern : WeaponPattern
 	
 	public override void Use(GameObject weapon,  Vector3 direction)
 	{
-		var bulletGo = BulletFactory.GetBullet(weapon.transform.position + direction * 0.05f, damage);
+		var bulletPosition = weapon.GetComponent<Weapon>().bulletPoint.transform.position;
+		var bulletGo = BulletFactory.GetBullet(bulletPosition, damage);
 		bulletGo.GetComponent<Rigidbody>().velocity = direction.normalized * range;
 	}
 }

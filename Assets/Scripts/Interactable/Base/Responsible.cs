@@ -12,6 +12,8 @@ namespace Interactable.Base
 	public abstract class Responsible : Interactable, IDamagable
 	{
 		private NavMeshAgent _agent;
+		
+		public Animator animator;
 
 		public List<Job> Jobs { get; set; }
 		public GameObject JobPanel { get; set; }
@@ -33,8 +35,7 @@ namespace Interactable.Base
 		public Behaviour Behaviour { get; set; }
 
 		public GameObject directionPosition;
-		
-		
+
 		private void Awake()
 		{
 			Jobs = new List<Job>();
@@ -44,6 +45,8 @@ namespace Interactable.Base
 			Equipment = new Equipment(this);
 
 			_agent = GetComponent<NavMeshAgent>();
+			animator = GetComponent<Animator>();
+			animator.SetBool("isWalking", false);
 			JobFinished = true;
 			JobPanel = Instantiate(UIManager.Instance.jobPanelPrefab, UIManager.Instance.canvas.transform);
 			JobPanel.SetActive(false);
@@ -52,13 +55,6 @@ namespace Interactable.Base
 		public void Update()
 		{
 			if (Jobs.Count > 0 && Jobs[0].Target == null) Jobs[0].Stop(true);
-			
-			if (health <= 0)
-			{
-				if(Jobs.Count > 0)
-					StopDoingJob(Jobs[0]);
-				Destroy(gameObject);
-			}
 			
 			Behaviour.SetActivity();
 
@@ -74,6 +70,7 @@ namespace Interactable.Base
 		{
 			_agent.isStopped = false;
 			_agent.SetDestination(position);
+			animator.SetBool("isWalking", true);
 
 			if (Target.GetComponent<NavMeshAgent>() != null)
 			{
@@ -89,6 +86,7 @@ namespace Interactable.Base
 		}
 		public void StopWalking()
 		{
+			animator.SetBool("isWalking", false);
 			_agent.isStopped = true;
 			_agent.ResetPath();
 			_agent.isStopped = false;
@@ -154,6 +152,17 @@ namespace Interactable.Base
 			if (decrease > damage) decrease = damage;
 			
 			health -= damage - (int) decrease;
+
+			if (health <= 0)
+			{
+				health = 0;
+				animator.SetTrigger("dead");
+				
+				if(Jobs.Count > 0)
+					StopDoingJob(Jobs[0]);
+				
+				Destroy(gameObject, 2.5f);
+			}
 		}
 		public void Heal(int heal)
 		{

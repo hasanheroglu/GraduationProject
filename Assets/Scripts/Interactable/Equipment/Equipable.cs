@@ -55,7 +55,7 @@ public abstract class Equipable : Pickable
         responsible.FinishJob();
     }
 
-    protected void SetEquipped(bool equippedStatus)
+    public void SetEquipped(bool equippedStatus)
     {
         if (equippedStatus)
         {

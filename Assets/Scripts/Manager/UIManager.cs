@@ -245,7 +245,10 @@ namespace Manager
 					inventoryParent.transform);
 				newItem.GetComponent<RectTransform>().anchoredPosition = new Vector3(0f, -i*inventoryItemPrefab.GetComponent<RectTransform>().rect.height, 0f);
 				newItem.GetComponent<InventoryItemInfo>().SetItemInfo(item.Key, responsible.Inventory.FindCount(item.Key));
-				newItem.GetComponent<InventoryItemInfo>().SetActionButton(delegate { UIManager.Instance.SetInteractionPanel(responsible, responsible.Inventory.Find(item.Key).GetComponent<Interactable.Base.Interactable>(), new object[] {responsible.GetComponent<Responsible>()}, Input.mousePosition); });
+				newItem.GetComponent<InventoryItemInfo>().SetActionButton(delegate
+				{
+					UIManager.Instance.SetInteractionPanel(responsible, responsible.Inventory.Find(item.Key).GetComponent<Interactable.Base.Interactable>(), new object[] {responsible.GetComponent<Responsible>()}, Input.mousePosition);
+				});
 				i++;
 			}
 		}

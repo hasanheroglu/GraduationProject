@@ -35,6 +35,21 @@ public class Inventory
 
         return null;
     }
+
+    public bool InInventory(GameObject item)
+    {
+        bool inInventory = false;
+        foreach (var inventoryItem in Items)
+        {
+            if (item == inventoryItem)
+            {
+                inInventory = true;
+                break;
+            }
+        }
+
+        return inInventory;
+    }
     
     public int FindCount(string itemName)
     {

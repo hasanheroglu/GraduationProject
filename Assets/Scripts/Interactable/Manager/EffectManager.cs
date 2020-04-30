@@ -13,6 +13,7 @@ namespace Interactable.Manager
 			{
 				if (!responsible.Needs.ContainsKey(effect.NeedType)) continue;
 				responsible.Needs[effect.NeedType].StepValue = effect.StepValue;
+				Debug.Log("Affecting " + effect.NeedType);
 			}
 		}
 		

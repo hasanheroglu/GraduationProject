@@ -6,12 +6,14 @@ using Object = UnityEngine.Object;
 
 public static class WeaponFactory
 {
+    private static readonly GameObject Fist = Resources.Load<GameObject>("Prefabs/Interactables/Environment/Fist");
     private static readonly GameObject Weapon = Resources.Load<GameObject>("Prefabs/Interactables/Environment/Weapon");
     
     public static GameObject GetFist(Vector3 position)
     {
-        var weapon = Object.Instantiate(Weapon, position, Quaternion.identity);
-        weapon.GetComponent<Weapon>().SetWeapon(WeaponType.Melee, 10, 3f, 1f);
+        var weapon = Object.Instantiate(Fist, position, Quaternion.identity);
+        weapon.GetComponent<Weapon>().SetWeapon(WeaponType.Melee, 10, 1f, 0f);
+        weapon.GetComponent<Weapon>().Name = "Fist";
         return weapon;
     }
     
@@ -19,6 +21,7 @@ public static class WeaponFactory
     {
         var weapon = Object.Instantiate(Weapon, position, Quaternion.identity);
         weapon.GetComponent<Weapon>().SetWeapon(WeaponType.SingleShot, 15, 30f, 1f);
+        weapon.GetComponent<Weapon>().Name = "Pistol";
         return weapon;
     }
 
@@ -26,6 +29,7 @@ public static class WeaponFactory
     {
         var weapon = Object.Instantiate(Weapon, position, Quaternion.identity);
         weapon.GetComponent<Weapon>().SetWeapon(WeaponType.MultipleShot, 20, 10f, 2f);
+        weapon.GetComponent<Weapon>().Name = "Shotgun";
         return weapon;
     }
 

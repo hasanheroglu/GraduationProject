@@ -48,5 +48,41 @@ namespace Interactable.Base
 				Methods.Add(method);
 			}
 		}
+		
+		public MethodInfo FindAllowedAction(Responsible responsible, ActivityType activityType)
+		{
+			MethodInfo methodInfo = null;
+			
+			if (_methods.Count == 0) return null;
+			
+			foreach (var method in _methods)
+			{
+				ActivityAttribute activityAttribute =
+					System.Attribute.GetCustomAttribute(method, typeof(ActivityAttribute)) as ActivityAttribute;
+				
+				if (activityAttribute == null || activityAttribute.ActivityType != activityType || (InUse <= 0)) continue;
+				
+				InteractableAttribute[] interactableAttributes =
+					System.Attribute.GetCustomAttributes(method, typeof (InteractableAttribute)) as InteractableAttribute [];
+
+				bool typeExist = false;
+
+				if (interactableAttributes != null && interactableAttributes.Length <= 0) continue;
+				
+				foreach (var attribute in interactableAttributes)
+				{
+					if (attribute.InteractableType == responsible.GetType() || attribute.InteractableType == responsible.GetType().BaseType)
+					{
+						typeExist = true;
+						methodInfo = method;
+						break;
+					}
+				}
+				
+				if(typeExist) break;
+			}
+
+			return methodInfo;
+		}
 	}
 }

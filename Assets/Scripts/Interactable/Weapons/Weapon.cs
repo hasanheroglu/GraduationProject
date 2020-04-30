@@ -24,7 +24,7 @@ public class Weapon: Equipable
 	[SerializeField] private int damage;
 	[SerializeField] private float range;
 	[SerializeField] private float delay;
-	
+	[SerializeField] public GameObject bulletPoint;
 	private WeaponPattern _weaponPattern;
 
 	private void Awake()

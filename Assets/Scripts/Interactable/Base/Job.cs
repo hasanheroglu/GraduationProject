@@ -127,8 +127,10 @@ public class Job
 		}
 		
 		Responsible.StartCoroutine(Coroutine);
+
 		
-		yield return new WaitUntil(() => Responsible.TargetInRange); //Some jobs does not require target in range!!!
+		if(!Responsible.Inventory.InInventory(Target.gameObject))
+			yield return new WaitUntil(() => Responsible.TargetInRange); 
 		
 		if (Target == null || Target.InUse <= 0 || !Target.Methods.Contains(Method))
 		{	

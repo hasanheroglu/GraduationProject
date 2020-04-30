@@ -2,1126 +2,139 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41f68628-977b-4739-9fb5-e8b401d59f06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/ChickenBrown.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/ChickenBrown.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/CowBlW.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/CowBlW.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/DuckWhite.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/DuckWhite.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/FarmAnimal.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/FarmAnimal.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/Pig.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/Pig.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/SheepWhite.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/SheepWhite.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/VertexColorUnlit.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/VertexColorUnlit.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/changelog.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/changelog.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_10Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_10Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_11Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_11Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_12Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_12Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_13Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_13Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_14Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_14Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_15Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_15Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_16Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_16Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_17Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_17Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_18Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_18Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_19Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_19Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_1Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_1Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_20Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_20Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_21Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_21Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_22Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_22Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_23Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_23Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_24Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_24Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_2Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_2Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_3Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_3Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_4Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_4Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_5Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_5Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_6Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_6Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_7Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_7Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_8Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_8Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_9Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/_9Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/defaultMat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/Materials/defaultMat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NavMeshComponents/Scripts/LocalNavMeshBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NavMeshComponents/Scripts/LocalNavMeshBuilder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NavMeshComponents/Scripts/NavMeshSourceTag.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NavMeshComponents/Scripts/NavMeshSourceTag.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/New Assets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/New Assets/human.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/New Assets/human.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/New Assets/tent.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/New Assets/tent.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant01_MaterialColoured.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant01_MaterialColoured.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant01_Textured.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant01_Textured.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant02_MaterialColoured.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant02_MaterialColoured.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant02_Textured.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant02_Textured.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant03_MaterialColoured.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant03_MaterialColoured.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant03_Textured.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant03_Textured.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant04_MaterialColoured.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant04_MaterialColoured.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant04_Textured.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant04_Textured.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant05_MaterialColoured.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant05_MaterialColoured.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant05_Textured.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Plant05_Textured.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot01_LOD1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot01_LOD1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot01_LOD2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot01_LOD2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot01_LOD3.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot01_LOD3.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot02_LOD1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot02_LOD1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot02_LOD2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot02_LOD2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot02_LOD3.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot02_LOD3.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot03_LOD1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot03_LOD1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot03_LOD2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot03_LOD2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot03_LOD3.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot03_LOD3.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot04_LOD1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot04_LOD1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot04_LOD2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot04_LOD2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot04_LOD3.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot04_LOD3.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot05_LOD1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot05_LOD1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot05_LOD2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot05_LOD2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot05_LOD3.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/01Prefabs/Pot05_LOD3.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower01.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower01/F01_BackLeafs.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower01/F01_BackLeafs.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower01/F01_Leafs.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower01/F01_Leafs.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower01/F01_Petals.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower01/F01_Petals.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower01/F01_RootLeafs.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower01/F01_RootLeafs.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower01/F01_RootLeafs2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower01/F01_RootLeafs2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower01/F01_Stalks.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower01/F01_Stalks.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower02.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower02/F02_BackPetals.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower02/F02_BackPetals.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower02/F02_Bud.002.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower02/F02_Bud.002.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower02/F02_Petals01.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower02/F02_Petals01.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower02/F02_Stem&amp;Ground.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower02/F02_Stem&amp;Ground.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower02/F02_SunBudsEdges.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower02/F02_SunBudsEdges.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower03.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower03/F03Leaf.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower03/F03Leaf.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower03/F03Stems.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower03/F03Stems.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04/F04Buds.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04/F04Buds.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04/F04DarkLeaf.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04/F04DarkLeaf.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04/F04Grass.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04/F04Grass.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04/F04LeafPetals.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04/F04LeafPetals.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04/F04PetalEdge.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04/F04PetalEdge.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04/F04Petals.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04/F04Petals.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04/F04Stem.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower04/F04Stem.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower05.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower05/F05Leaf.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower05/F05Leaf.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower05/F05Petals.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower05/F05Petals.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower05/F05Pollen.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower05/F05Pollen.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower05/F05Pollen2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower05/F05Pollen2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower05/F05Stems.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Materials/Flower05/F05Stems.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Plants.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Plants/MBJ_PlantPack01_Plant01v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Plants/MBJ_PlantPack01_Plant01v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Plants/MBJ_PlantPack01_Plant02v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Plants/MBJ_PlantPack01_Plant02v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Plants/MBJ_PlantPack01_Plant03v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Plants/MBJ_PlantPack01_Plant03v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Plants/MBJ_PlantPack01_Plant04v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Plants/MBJ_PlantPack01_Plant04v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Plants/MBJ_PlantPack01_Plant05v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Plants/MBJ_PlantPack01_Plant05v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot01_LOD1_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot01_LOD1_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot01_LOD2_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot01_LOD2_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot01_LOD3_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot01_LOD3_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot02_LOD1_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot02_LOD1_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot02_LOD2_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot02_LOD2_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot02_LOD3_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot02_LOD3_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot03_LOD1_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot03_LOD1_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot03_LOD2_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot03_LOD2_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot03_LOD3_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot03_LOD3_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot04_LOD1_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot04_LOD1_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot04_LOD2_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot04_LOD2_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot04_LOD3_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot04_LOD3_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot05_LOD1_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot05_LOD1_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot05_LOD2_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot05_LOD2_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot05_LOD3_v001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/02MaterialColouredMeshes/Pots/MBJ_PlantPack01_Pot05_LOD3_v001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant01_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant01_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant01_Texture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant01_Texture.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant01_Uvd_Model.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant01_Uvd_Model.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant02_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant02_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant02_Texture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant02_Texture.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant02_Uvd_Model.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant02_Uvd_Model.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant03_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant03_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant03_Texture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant03_Texture.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant03_Uvd_Model.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant03_Uvd_Model.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant04_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant04_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant04_Texture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant04_Texture.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant04_Uvd_Model.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant04_Uvd_Model.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant05_Texture.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant05_Texture.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant05_Texture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant05_Texture.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant05_Uvd_Model.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/03TexturedMeshes/Plant05_Uvd_Model.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/FloorPlane_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/FloorPlane_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/PlantPotsSoil_Colour_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/PlantPotsSoil_Colour_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/PlantPots_Colour_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/PlantPots_Colour_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/StandardShaderWDoubleSided.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Objects/StandardShaderWDoubleSided.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/boxA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/boxA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/boxB.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/boxB.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/boxGiftA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/boxGiftA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/bridgeA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/bridgeA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/chairA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/chairA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/char01.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/char01.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/char02.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/char02.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/char03.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/char03.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/char04.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/char04.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/chestA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/chestA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/chestB.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/chestB.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/diceA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/diceA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/diceB.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/diceB.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/doorA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/doorA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/doorB.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/doorB.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/eggA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/eggA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/eggB.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/eggB.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/eggC.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/eggC.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundACracked.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundACracked.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundB.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundB.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundBCracked.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundBCracked.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundC.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundC.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundCCracked.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundCCracked.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundSpikeA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundSpikeA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundSpikeB.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/groundSpikeB.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/lockA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/lockA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/map.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/map.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/paintingA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/paintingA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/paintingB.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/paintingB.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/pillarA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/pillarA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/player.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/player.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/props_base_color.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/props_base_color.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/stoolA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/stoolA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/trapdoorMetal.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/trapdoorMetal.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/trapdoorWooden.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/trapdoorWooden.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/wallEarthA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/wallEarthA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/wallEarthB.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/wallEarthB.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/wallStoneA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/wallStoneA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/wallStoneB.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/wallStoneB.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/waterA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Materials/waterA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/BoulderSpike.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/BoulderSpike.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/Chalice.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/Chalice.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/Cog1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/Cog1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/Cog2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/Cog2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/Cog3.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/Cog3.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/Rock.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/Rock.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/Sword.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/Sword.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/WizardHat.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/WizardHat.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/arch.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/arch.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bed.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bed.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/beer.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/beer.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bench.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bench.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bottlePotionHealth.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bottlePotionHealth.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bottlePotionMana.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bottlePotionMana.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bottlePotionPoison.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bottlePotionPoison.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/boxCardboard.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/boxCardboard.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/boxGift1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/boxGift1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/boxWooden.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/boxWooden.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bridgeWooden01.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bridgeWooden01.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bridgeWooden02.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bridgeWooden02.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bridgeWooden03.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bridgeWooden03.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bridgeWoodenRails.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/bridgeWoodenRails.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/button_red.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/button_red.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/cage.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/cage.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/chair.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/chair.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/char01.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/char01.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/char02.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/char02.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/char03.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/char03.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/char04.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/char04.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/chestA.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/chestA.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/chestB.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/chestB.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/coin.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/coin.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/coinProcJam.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/coinProcJam.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/crown.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/crown.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/cupMetal.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/cupMetal.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/diceA.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/diceA.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/diceB.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/diceB.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/doorA.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/doorA.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/doorB.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/doorB.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/egg01.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/egg01.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/egg02.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/egg02.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/egg03.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/egg03.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/flagA.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/flagA.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/flagB.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/flagB.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/flagC.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/flagC.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/flagD.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/flagD.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/gem.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/gem.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/ground01.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/ground01.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/ground01Cracked.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/ground01Cracked.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/ground02.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/ground02.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/ground02Cracked.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/ground02Cracked.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/ground03.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/ground03.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/ground03Cracked.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/ground03Cracked.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/groundSpike01.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/groundSpike01.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/groundSpike02.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/groundSpike02.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/hammer.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/hammer.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/heart.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/heart.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/helmetViking.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/helmetViking.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/key.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/key.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/ladder.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/ladder.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/lock.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/lock.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/magnet.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/magnet.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/map.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/map.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/paintBrush.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/paintBrush.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/paintingA.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/paintingA.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/paintingB.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/paintingB.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/pike.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/pike.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/pillar01.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/pillar01.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/pillar02.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/pillar02.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/pipe.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/pipe.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/player1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/player1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/player2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/player2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/player3.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/player3.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/player4.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/player4.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/pot01.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/pot01.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/pot02.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/pot02.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/scissor.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/scissor.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/shield.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/shield.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/skull.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/skull.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/stool.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/stool.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/suitCase.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/suitCase.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/table.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/table.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/tableLong.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/tableLong.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/torch.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/torch.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/trapdoorMetal.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/trapdoorMetal.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/trapdoorWooden.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/trapdoorWooden.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallChain.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallChain.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallEarth01.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallEarth01.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallEarth02.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallEarth02.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallSpike01.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallSpike01.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallSpike02.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallSpike02.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallSpike_base.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallSpike_base.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallSteps.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallSteps.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallStone01 6.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallStone01 6.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallStone01.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallStone01.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallStone03.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallStone03.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallStonePlatform.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallStonePlatform.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallWindow.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/wallWindow.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/water01.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/water01.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/woodenBarrel.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Mesh/woodenBarrel.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/arch.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/arch.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bed.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bed.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/beer.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/beer.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bench.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bench.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bottlePotionHealth.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bottlePotionHealth.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bottlePotionMana.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bottlePotionMana.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bottlePotionPoison.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bottlePotionPoison.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/boulderSpike.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/boulderSpike.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/boxCardboard.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/boxCardboard.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/boxGift.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/boxGift.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/boxWooden.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/boxWooden.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bridgeWooden01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bridgeWooden01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bridgeWooden02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bridgeWooden02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bridgeWooden03.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bridgeWooden03.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bridgeWoodenRails.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/bridgeWoodenRails.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/button_red.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/button_red.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/cage.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/cage.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/chair.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/chair.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/chalice.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/chalice.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/char01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/char01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/char02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/char02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/char03.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/char03.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/char04.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/char04.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/chestA.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/chestA.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/chestB.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/chestB.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/cog1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/cog1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/cog2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/cog2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/cog3.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/cog3.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/coin.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/coin.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/coinProcJam.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/coinProcJam.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/crown.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/crown.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/cupMetal.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/cupMetal.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/diceA.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/diceA.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/diceB.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/diceB.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/doorA.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/doorA.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/doorB.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/doorB.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/egg01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/egg01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/egg02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/egg02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/egg03.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/egg03.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/flagA.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/flagA.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/flagB.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/flagB.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/flagC.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/flagC.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/flagD.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/flagD.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/gem.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/gem.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/ground01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/ground01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/ground01Cracked.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/ground01Cracked.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/ground02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/ground02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/ground02Cracked.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/ground02Cracked.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/ground03.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/ground03.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/ground03Cracked.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/ground03Cracked.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/groundSpike01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/groundSpike01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/groundSpike02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/groundSpike02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/hammer.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/hammer.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/heart.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/heart.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/helmetViking.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/helmetViking.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/key.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/key.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/ladder.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/ladder.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/lock.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/lock.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/magnet.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/magnet.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/map.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/map.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/paintBrush.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/paintBrush.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/paintingA.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/paintingA.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/paintingB.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/paintingB.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/pike.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/pike.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/pillar01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/pillar01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/pillar02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/pillar02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/pipe.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/pipe.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/player1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/player1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/player2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/player2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/player3.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/player3.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/player4.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/player4.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/pot01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/pot01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/pot02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/pot02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/rock.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/rock.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/scissor.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/scissor.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/shield.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/shield.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/skull.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/skull.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/stool.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/stool.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/suitCase.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/suitCase.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/sword.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/sword.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/table.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/table.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/tableLong.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/tableLong.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/torch.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/torch.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/trapdoorMetal.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/trapdoorMetal.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/trapdoorWooden.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/trapdoorWooden.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallChain.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallChain.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallEarth01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallEarth01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallEarth02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallEarth02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallSpike01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallSpike01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallSpike02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallSpike02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallSpike_base.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallSpike_base.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallSteps.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallSteps.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallStone01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallStone01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallStone03.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallStone03.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallStonePlatform.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallStonePlatform.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallWindow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wallWindow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/water01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/water01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wizardHat.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/wizardHat.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/woodenBarrel.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Prefabs/woodenBarrel.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Scene/Game Assets.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Scene/Game Assets.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/boxA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/boxA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/boxB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/boxB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/boxC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/boxC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/boxGiftA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/boxGiftA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/bridgeA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/bridgeA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/chairA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/chairA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/char01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/char01.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/char02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/char02.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/char03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/char03.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/char04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/char04.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/chestA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/chestA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/chestB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/chestB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/coinA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/coinA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/diceA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/diceA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/diceB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/diceB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/doorA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/doorA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/doorB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/doorB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/eggA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/eggA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/eggB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/eggB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/eggC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/eggC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/floorStoneA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/floorStoneA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/gemA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/gemA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundACracked.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundACracked.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundBCracked.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundBCracked.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundCCracked.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundCCracked.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundSpikeA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundSpikeA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundSpikeB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/groundSpikeB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/keyA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/keyA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/lockA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/lockA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/map.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/paintingA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/paintingA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/paintingB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/paintingB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/pillarA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/pillarA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/player.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/player.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/props_base_color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/props_base_color.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/stoolA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/stoolA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/trapdoorMetal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/trapdoorMetal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/trapdoorWooden.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/trapdoorWooden.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/wallEarthA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/wallEarthA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/wallEarthB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/wallEarthB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/wallStoneA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/wallStoneA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/wallStoneB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/wallStoneB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/wallStoneC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/wallStoneC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/waterA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/3D_v01.0.0/Textures/waterA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/ReadMe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/ReadMe.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/reference.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/reference/01Level_Sample.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/reference/01Level_Sample.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/reference/02Level_Sample.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/reference/02Level_Sample.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/reference/dungeon_Platformer.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/reference/dungeon_Platformer.gif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/reference/dungeon_level_design_lowpoly_pixel.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/reference/dungeon_level_design_lowpoly_pixel.gif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/reference/windows_Screensaver.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/reference/windows_Screensaver.gif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/reference/windows_wallpaper.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/PROCJAM2017-DevilsGarage/reference/windows_wallpaper.gif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Demo_Scene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Demo_Scene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Demo_SceneSettings.lighting" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Demo_SceneSettings.lighting.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Materials/LowPoly_Material.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Materials/LowPoly_Material.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Materials/Texture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Materials/Texture.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Mesh.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Mesh/Tryall_WinterScene.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Mesh/Tryall_WinterScene.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_01_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_01_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_02_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_02_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_03.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_03.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_03_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_03_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_04.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_04.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_04_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Branch_04_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Tree_01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Tree_01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Tree_01_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Tree_01_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Tree_02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Tree_02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Tree_02_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneDead_Tree_02_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneGrass_01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneGrass_01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneGrass_02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneGrass_02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneGrass_03.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneGrass_03.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneGrass_04.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneGrass_04.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneGrass_05.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneGrass_05.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_01_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_01_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_02_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_02_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_03.001.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_03.001.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_03.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_03.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_04.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_04.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_04_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_04_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_05.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_05.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_05_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_ScenePineTree_05_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_01_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_01_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_02_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_02_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_03.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_03.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_03_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_03_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_04.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_04.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_04_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_04_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_05.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_05.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_05_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_05_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_06.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_06.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_06_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_06_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_07.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_07.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_07_Snow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneRock_07_Snow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneSnowmen.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneSnowmen.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneSun.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LowPoly_Winter_Scene/Prefabs/Tryall_Winter_SceneSun.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Maps/Map_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Maps/Map_03.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Maps/Map_04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Maps/Map_04.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Maps/map_small_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Maps/map_small_01.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/ChickenBrown.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/ChickenBrown.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/CowBlW.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/CowBlW.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/DuckWhite.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/DuckWhite.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/Pig.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/Pig.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/SheepWhite.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/SheepWhite.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/Dirt.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/Dirt.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/Grass.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/Grass.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch3.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch3.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch4.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch4.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch4.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch4.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch5.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch5.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch6.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch6.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch7.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch7.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch7.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch7.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/GroundTemp.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/GroundTemp.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/SeedMat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/SeedMat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Surface.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Surface.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Tree 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Tree 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/WhiteMat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/WhiteMat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Armor.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Armor.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Food.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Food.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Table.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Table.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Wood.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Wood.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/ProgressBar.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/ProgressBar.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GroundUtil.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GroundUtil.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Wood.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Armor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Armor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/EquipableFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/EquipableFactory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Pickable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MeleePattern.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ProgressBar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/ButtonSprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/ButtonSprite.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/ButtonSpriteFrame.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/ButtonSpriteFrame.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scri.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scri.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/HumanAnimator.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/HumanAnimator.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/ZombieAnimator.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/ZombieAnimator.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/idle.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/idle.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/jump.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/jump.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/run.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/run.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models/Materials/human_skin.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models/Materials/human_skin.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models/Materials/zombie_skin.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models/Materials/zombie_skin.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models/characterMedium.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models/characterMedium.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/survivorFemaleA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/survivorFemaleA.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/survivorMaleB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/survivorMaleB.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/zombieA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/zombieA.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/zombieC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/zombieC.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_purpleC.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_purpleC.mtl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_purpleC.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_purpleC.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_redB.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_redB.mtl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_redB.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_redB.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_yellowB.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_yellowB.mtl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_yellowB.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_yellowB.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/Pistol.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/Pistol.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-9mm.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-9mm.mtl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-9mm.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-9mm.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-shotgun.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-shotgun.mtl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-shotgun.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-shotgun.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/pistol-coonan.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/pistol-coonan.mtl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/shotgun.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/shotgun.mtl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/shotgun.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/shotgun.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/HumanAnimator.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/HumanAnimator.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/ZombieAnimator.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/ZombieAnimator.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/ZombieWalking.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/ZombieWalking.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/die.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/die.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/harvest.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/harvest.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/idle.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/idle.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/jump.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/jump.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/plant.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/plant.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/punch.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/punch.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/run.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/run.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/zombie attack.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/zombie attack.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/zombie idle.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/zombie idle.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Human.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Human.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Zombie 1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Zombie 1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Fist.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Fist.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Flower 1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Flower 1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/GrassMat.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/GrassMat.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Pistol.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Pistol.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Shotgun.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Shotgun.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/ActivityFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/ItemFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IPlaceable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IPlaceable.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HealthBar.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthBar.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/naturePack_flat_008.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/naturePack_flat_008.obj.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/naturePack_flat_010.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Nature pack extended/naturePack_flat_010.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Human.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Human.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Flower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Flower.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Flower.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Flower.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Food.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Food.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Ground.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Ground.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Seed.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Seed.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/SkinnedHuman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/SkinnedHuman.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Tent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Tent.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Tent.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Tent.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Tree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Tree.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Weapon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Weapon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/HealthBar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/HealthBar.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/JobButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/JobButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Weapon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Weapon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Table.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Table.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test00/NavMesh.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test00/NavMesh.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Inventory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/InventoryItem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/InventoryItem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Crafting/Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Item.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Crafting/Item.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Seed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Seed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Table.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Table.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/EquipmentItem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/EquipmentItem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/BulletFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/BulletFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/FistPattern.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/FistPattern.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MeleePattern.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/PistolPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/SingleShotPattern.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/PistolPattern.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/SingleShotPattern.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/ShotgunPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MultipleShotPattern.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/ShotgunPattern.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MultipleShotPattern.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Pickable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Pickable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/EffectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/EffectManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MeleePattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MeleePattern.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MultipleShotPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MultipleShotPattern.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/SingleShotPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/SingleShotPattern.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IDamagable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IDamagable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IDestroyable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IDestroyable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IEquippable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IEquippable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IPickable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IPickable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelCreator/ColorToPrefab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelCreator/ColorToPrefab.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelCreator/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelCreator/MapGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/DayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/DayManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShaderAdjuster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShaderAdjuster.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/HealthBarSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/HealthBarSprite.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1147,7 +160,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CA34BBEA-71CA-4852-BE64-D92617FE5208/a3/9c91a13b/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MeleePattern.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CA34BBEA-71CA-4852-BE64-D92617FE5208/e5/e5f975b5/Event.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/96/4ee9cdeb/ScriptableRuntimeReflectionSystemWrapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DemoScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/4f/655b0edc/RenderPipelineManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -1234,6 +246,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/49/f0bb24ae/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/1c/d9c3af95/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/BulletFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/ActivityFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShaderAdjuster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0DD71E7E-BD24-4367-880B-6E8BC7CC8DB5/3e/8c1ec91f/StackTrace.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
@@ -1269,14 +282,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/FistPattern.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponPattern.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Wood.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/DayManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OccupationUtil.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GroundUtil.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Seed.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/EquipableFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" />
@@ -1290,13 +301,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelCreator/MapGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Pickable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipment.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MeleePattern.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MultipleShotPattern.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/SingleShotPattern.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MeleePattern.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipment.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Seed.cs" />
       </list>
     </option>
   </component>
@@ -1327,10 +340,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="29821">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="29821" />
+      <option name="pid" />
       <method v="2" />
     </configuration>
   </component>
@@ -1383,6 +396,8 @@
       <workItem from="1587449254898" duration="24735000" />
       <workItem from="1587723097321" duration="13017000" />
       <workItem from="1587745546633" duration="60176000" />
+      <workItem from="1588272311367" duration="374000" />
+      <workItem from="1588273141268" duration="2760000" />
     </task>
     <servers />
   </component>
@@ -1625,19 +640,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs</url>
-          <line>67</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" initialLine="67">
-            <startOffsets>
-              <option value="1429" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1435" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

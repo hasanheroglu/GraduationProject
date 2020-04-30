@@ -75,7 +75,9 @@ namespace Interactable.Environment
 		public IEnumerator Harvest(Responsible responsible)
 		{
 			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
+			responsible.animator.SetBool("isHarvesting", true);
 			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), _harvestDuration);
+			responsible.animator.SetBool("isHarvesting", false);
 			GroundUtil.Clear(gameObject.transform.position);
 			responsible.Inventory.Add(this.gameObject);
 			this.gameObject.transform.position = new Vector3(0f, -100f, 0f);
@@ -87,7 +89,7 @@ namespace Interactable.Environment
 		[Skill(SkillType.None)]
 		public IEnumerator Eat(Responsible responsible)
 		{
-			if (_harvestable) yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
+			if (_harvestable) yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position)); 
 			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), _eatDuration);
 			if (_harvestable) 	{GroundUtil.Clear(gameObject.transform.position);}
 			responsible.Inventory.Remove(gameObject);

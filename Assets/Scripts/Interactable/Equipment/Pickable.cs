@@ -38,7 +38,6 @@ public abstract class Pickable : Interactable.Base.Interactable
 
     public void SetPicked(bool pickedStatus)
     {
-        Debug.Log("Inside!!!");
         if (pickedStatus)
         {
             gameObject.GetComponent<Rigidbody>().isKinematic = true;

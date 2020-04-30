@@ -20,13 +20,13 @@ public class MultipleShotPattern : WeaponPattern
     
     public override void Use(GameObject weapon, Vector3 direction)
     {
-        var position = weapon.transform.position;
+        var bulletPosition = weapon.GetComponent<Weapon>().bulletPoint.transform.position;
 
-        var bulletGo1 = BulletFactory.GetBullet(position + direction * 0.05f, damage);
-        var bulletGo2 = BulletFactory.GetBullet(position + direction * 0.05f, damage);
-        var bulletGo3 = BulletFactory.GetBullet(position + direction * 0.05f, damage);
-        var bulletGo4 = BulletFactory.GetBullet(position + direction * 0.05f, damage);
-        var bulletGo5 = BulletFactory.GetBullet(position + direction * 0.05f, damage);
+        var bulletGo1 = BulletFactory.GetBullet(bulletPosition, damage);
+        var bulletGo2 = BulletFactory.GetBullet(bulletPosition, damage);
+        var bulletGo3 = BulletFactory.GetBullet(bulletPosition, damage);
+        var bulletGo4 = BulletFactory.GetBullet(bulletPosition, damage);
+        var bulletGo5 = BulletFactory.GetBullet(bulletPosition, damage);
 
         bulletGo1.GetComponent<Rigidbody>().velocity = direction.normalized * range;
         bulletGo2.GetComponent<Rigidbody>().velocity = Quaternion.Euler(0, -30, 0) * direction.normalized * range;

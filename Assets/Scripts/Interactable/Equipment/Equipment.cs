@@ -6,28 +6,27 @@ using UnityEngine;
 [System.Serializable]
 public class Equipment
 {
+    private GameObject _defaultMelee;
+    
     public Responsible Responsible { get; set; }
     public Dictionary<EquipableType, GameObject> Items { get; set; }
     public Weapon Weapon { get; set; }
 
     public GameObject weaponPosition;
+
+    private void SetDefaultMelee()
+    {
+        _defaultMelee = WeaponFactory.GetFist(Responsible.gameObject.transform.position);
+        _defaultMelee.GetComponent<Renderer>().enabled = false;
+    }
     
     public Equipment(Responsible responsible)
     {
         Responsible = responsible;
         weaponPosition = Responsible.transform.Find("WeaponPosition").gameObject;
         Items = new Dictionary<EquipableType, GameObject>();
-        
-        /*
-        var weaponGo = WeaponFactory.GetFist(Responsible.transform.position);
-        weaponGo.transform.SetParent(Responsible.weaponPosition.transform);
-        weaponGo.transform.position = Responsible.weaponPosition.transform.position;
-        weaponGo.transform.rotation = Responsible.gameObject.transform.rotation;
-        weaponGo.GetComponent<Rigidbody>().isKinematic = true;
-
-        Items.Add(EquipableType.Weapon, weaponGo);
-        Weapon = weaponGo.GetComponent<Weapon>();
-        */
+        SetDefaultMelee();
+        Equip(_defaultMelee);
     }
     
     public void Equip(GameObject item)
@@ -40,7 +39,8 @@ public class Equipment
             Debug.Log("Equipment is a weapon!");
             item.transform.SetParent(weaponPosition.transform);
             item.transform.position = weaponPosition.transform.position;
-            item.transform.rotation = Responsible.gameObject.transform.rotation;
+            item.transform.localRotation = new Quaternion(0, 1f, 0, 1f);
+            item.GetComponent<Collider>().enabled = false;
             Weapon = item.GetComponent<Weapon>();
             Weapon.Responsible = Responsible;
         }
@@ -55,7 +55,7 @@ public class Equipment
             {
                 if (Items[type] != null)
                 {
-                    Unequip(Items[type]);
+                    //Unequip(Items[type]);
                 }
                 else
                 {
@@ -73,9 +73,12 @@ public class Equipment
     {
         var type = item.GetComponent<Equipable>().type;
 
+        if (_defaultMelee == item) return;
+        
         if (type == EquipableType.Weapon)
         {
-            Weapon = null;
+            item.GetComponent<Collider>().enabled = true;
+            Weapon = _defaultMelee.GetComponent<Weapon>();
         }
         
         if (Items.ContainsKey(type))

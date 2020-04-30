@@ -19,7 +19,7 @@ public class CampFire : Interactable.Base.Interactable, ICraftable
 		InUse = 1;
 		recipeSet = false;
 		SetMethods();
-		recipes = new List<Recipe> {RecipeFactory.GetWoodenGauntlets(this), RecipeFactory.GetWoodenHelmet(this), RecipeFactory.GetWoodenFaulds(this)};
+		recipes = new List<Recipe> {RecipeFactory.GetWoodenGauntlets(this), RecipeFactory.GetWoodenHelmet(this), RecipeFactory.GetWoodenFaulds(this), RecipeFactory.GetTable(this)};
 	}
 
 	[Activity(ActivityType.Cook)]

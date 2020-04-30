@@ -57,7 +57,7 @@ namespace Factory
 
 		public static Effect GetChop()
 		{
-			return new Effect(NeedType.Energy, -0.2f);
+			return new Effect(NeedType.Energy, -0.5f);
 		}
 
 		public static Effect GetHunger()

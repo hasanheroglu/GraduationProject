@@ -33,42 +33,17 @@ public class ZombieBehaviour : Behaviour
 		foreach (var interactableObject in interactableObjects)
 		{
 			var interactable = Util.GetInteractableFromCollider(interactableObject);
-			if (!interactable) continue;
-			if(ReferenceEquals(interactable, this.Responsible)) continue;
-
-			var methods = interactable.Methods;
-			if (methods.Count == 0) continue;
 			
-			foreach (var method in methods)
-			{
-				ActivityAttribute activityAttribute =
-					System.Attribute.GetCustomAttribute(method, typeof(ActivityAttribute)) as ActivityAttribute;
-				
-				if (activityAttribute == null || activityAttribute.ActivityType != Activity ||
-				    (interactable.InUse <= 0)) continue;
-				
-				InteractableAttribute[] interactableAttributes =
-					System.Attribute.GetCustomAttributes(method, typeof (InteractableAttribute)) as InteractableAttribute [];
+			if (!interactable) continue;
+			if(ReferenceEquals(interactable, Responsible)) continue;
 
-				bool typeExist = false;
-
-				if (interactableAttributes.Length <= 0) continue;
-				
-				foreach (var attribute in interactableAttributes)
-				{
-					if (attribute.InteractableType == Responsible.GetType() || attribute.InteractableType == Responsible.GetType().BaseType)
-					{
-						typeExist = true;
-					}
-				}
-				
-				if(!typeExist) continue;
-
-				Responsible.StopWalking();
-				var coroutineInfo = new JobInfo(Responsible, interactable, method, new object[] {Responsible});
-				UIManager.SetInteractionAction(coroutineInfo);
-				return;
-			}
+			var method = interactable.FindAllowedAction(Responsible, Activity);
+			if (method == null) continue;
+			
+			Responsible.FinishJob();
+			var coroutineInfo = new JobInfo(Responsible, interactable, method, new object[] {Responsible});
+			UIManager.SetInteractionAction(coroutineInfo);
+			return;
 		}
 	}
 }

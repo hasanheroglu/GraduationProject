@@ -16,7 +16,7 @@ namespace Interactable.Creatures
 			Behaviour = new HumanBehaviour(this.GetComponent<Responsible>());
 			AutoWill = false;
 			SetMethods();
-			Behaviour.IdleActvities.AddRange(new []{ActivityType.Kill});
+			Behaviour.IdleActvities.AddRange(new []{ActivityType.Chop, ActivityType.Kill});
 			Behaviour.SetActivity();
 			InUse = 999;
 		}

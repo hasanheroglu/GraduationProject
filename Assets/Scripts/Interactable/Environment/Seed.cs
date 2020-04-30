@@ -41,10 +41,11 @@ public class Seed : Pickable, IPlantable
         }
         
         Debug.Log("Planting the " + Name);
-        yield return Util.WaitForSeconds(responsible.GetCurrentJob(), 0.2f);
+        responsible.animator.SetTrigger("plant");
+        yield return Util.WaitForSeconds(responsible.GetCurrentJob(), 1f);
         if(ground != null)
             ground.Occupied = true;
-        
+        responsible.animator.ResetTrigger("plant");
         Debug.Log("Planted the " + Name);
         responsible.Inventory.Remove(gameObject);
         var newProduct = Instantiate(_product,  new Vector3(ground.gameObject.transform.position.x, _product.transform.position.y, ground.gameObject.transform.position.z), _product.transform.rotation);

@@ -58,8 +58,10 @@
             <e p="RecipeManager.cs" t="Include" />
           </e>
           <e p="Factory" t="Include">
+            <e p="ActivityFactory.cs" t="Include" />
             <e p="EffectFactory.cs" t="Include" />
             <e p="HumanFactory.cs" t="Include" />
+            <e p="ItemFactory.cs" t="Include" />
             <e p="NeedFactory.cs" t="Include" />
             <e p="RecipeFactory.cs" t="Include" />
             <e p="SkillFactory.cs" t="Include" />
@@ -85,6 +87,7 @@
               <e p="Ground.cs" t="Include" />
               <e p="Plant.cs" t="Include" />
               <e p="Seed.cs" t="Include" />
+              <e p="Table.cs" t="Include" />
               <e p="Tent.cs" t="Include" />
               <e p="Tree.cs" t="Include" />
               <e p="Water.cs" t="Include" />
@@ -126,6 +129,7 @@
             <e p="IDamagable.cs" t="Include" />
             <e p="IEdible.cs" t="Include" />
             <e p="IHarvestable.cs" t="Include" />
+            <e p="IPlaceable.cs" t="Include" />
             <e p="IPlantable.cs" t="Include" />
             <e p="IShowerable.cs" t="Include" />
             <e p="ISleepable.cs" t="Include" />

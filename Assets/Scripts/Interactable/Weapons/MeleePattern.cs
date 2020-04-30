@@ -26,10 +26,12 @@ public class MeleePattern : WeaponPattern
 
     public override void Use(GameObject weapon, Vector3 direction)
     {
-        var duration = 0.2f;
-        
-        if(_canUse)
+        var duration = 0.5f;
+
+        if (_canUse)
+        {
             weapon.GetComponent<Weapon>().StartCoroutine(MoveWeapon(weapon, direction, duration));
+        }
     }
 
     private IEnumerator MoveWeapon(GameObject weapon, Vector3 direction, float overTime)
@@ -40,6 +42,7 @@ public class MeleePattern : WeaponPattern
         var endPosition = startPosition + direction;
         GameObject damagable = null;
         HashSet<GameObject> damagables = new HashSet<GameObject>();
+        weapon.GetComponent<Weapon>().Responsible.animator.SetBool("isPunching", true);
         
         while(Time.time < startTime + overTime)
         {
@@ -75,6 +78,7 @@ public class MeleePattern : WeaponPattern
         }
         
         weapon.transform.position = weapon.GetComponent<Weapon>().Responsible.Equipment.weaponPosition.transform.position;
+        weapon.GetComponent<Weapon>().Responsible.animator.SetBool("isPunching", false);
         _canUse = true;
     }
 }
