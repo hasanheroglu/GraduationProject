@@ -9,9 +9,13 @@ using Random = UnityEngine.Random;
 public class Table : Pickable, IPlaceable
 {
     private bool _placed;
+    private static int _instanceCount;
     
     private void Awake()
     {
+        SetGroupName("table");
+        instanceNo = _instanceCount;
+        _instanceCount++;
         InUse = 1;
         _placed = false;
         SetMethods();

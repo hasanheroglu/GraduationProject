@@ -13,7 +13,7 @@ public static class EquipableFactory
     {
         var armorObject = Object.Instantiate(Armor, position, Quaternion.identity);
         var armor = armorObject.GetComponent<Armor>();
-        armor.Name = "WoodenHelmet";
+        armor.SetGroupName("woodenhelmet");
         armor.Value = 100;
         armor.durability = 100;
         armor.type = EquipableType.Head;
@@ -24,7 +24,7 @@ public static class EquipableFactory
     {
         var armorObject = Object.Instantiate(Armor, position, Quaternion.identity);
         var armor = armorObject.GetComponent<Armor>();
-        armor.Name = "WoodenBreastPlate";
+        armor.SetGroupName("woodenbreastplate");
         armor.Value = 100;
         armor.durability = 100;
         armor.type = EquipableType.Torso;
@@ -35,7 +35,7 @@ public static class EquipableFactory
     {
         var armorObject = Object.Instantiate(Armor, position, Quaternion.identity);
         var armor = armorObject.GetComponent<Armor>();
-        armor.Name = "WoodenPauldrons";
+        armor.SetGroupName("woodenpauldrons");
         armor.Value = 100;
         armor.durability = 100;
         armor.type = EquipableType.Shoulder;
@@ -46,7 +46,7 @@ public static class EquipableFactory
     {
         var armorObject = Object.Instantiate(Armor, position, Quaternion.identity);
         var armor = armorObject.GetComponent<Armor>();
-        armor.Name = "WoodenGauntlets";
+        armor.SetGroupName("woodengauntlets");
         armor.Value = 100;
         armor.durability = 100;
         armor.type = EquipableType.Arm;
@@ -57,7 +57,7 @@ public static class EquipableFactory
     {
         var armorObject = Object.Instantiate(Armor, position, Quaternion.identity);
         var armor = armorObject.GetComponent<Armor>();
-        armor.Name = "WoodenFaulds";
+        armor.SetGroupName("woodenfaulds");
         armor.Value = 100;
         armor.durability = 100;
         armor.type = EquipableType.Leg;
@@ -68,7 +68,7 @@ public static class EquipableFactory
     {
         var armorObject = Object.Instantiate(Armor, position, Quaternion.identity);
         var armor = armorObject.GetComponent<Armor>();
-        armor.Name = "WoodenGreaves";
+        armor.SetGroupName("woodengreaves");
         armor.Value = 100;
         armor.durability = 100;
         armor.type = EquipableType.Foot;

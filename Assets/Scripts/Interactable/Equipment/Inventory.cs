@@ -27,7 +27,7 @@ public class Inventory
     {
         foreach (var item in Items)
         {
-            if (item.GetComponent<Interactable.Base.Interactable>().Name == itemName)
+            if (item.GetComponent<Interactable.Base.Interactable>().GetGroupName() == itemName)
             {
                 return item;
             }
@@ -56,7 +56,7 @@ public class Inventory
         int count = 0;
         foreach (var item in Items)
         {
-            if (item.GetComponent<Interactable.Base.Interactable>().Name == itemName)
+            if (item.GetComponent<Interactable.Base.Interactable>().GetGroupName() == itemName)
             {
                 count++;
             }

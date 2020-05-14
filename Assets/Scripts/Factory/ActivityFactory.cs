@@ -10,9 +10,10 @@ using UnityEngine;
 
 public static class ActivityFactory
 {
-   public static void GetActivity(Behaviour behaviour)
+   
+   public static Activity GetActivity(ActivityType activityType)
    {
-      switch (behaviour.Activity)
+      switch (activityType)
       {
          case ActivityType.None:
             break;
@@ -21,7 +22,7 @@ public static class ActivityFactory
          case ActivityType.Cook:
             break;
          case ActivityType.Sleep:
-            break;
+            return GetSleep();
          case ActivityType.Workout:
             break;
          case ActivityType.Relax:
@@ -29,86 +30,52 @@ public static class ActivityFactory
          case ActivityType.Social:
             break;
          case ActivityType.Chop:
-            GetChopActivity(behaviour);
-            break;
+            return GetChop();
          case ActivityType.Eat:
-            break;
+            return GetEat();
          case ActivityType.Harvest:
-            break;
+            return GetHarvest();
          case ActivityType.Shower:
             break;
          case ActivityType.Kill:
-            break;
+            return GetKill();
          case ActivityType.Plant:
-            GetPlantActivity(behaviour);
-            break;
+            return GetPlant();
          default:
             throw new ArgumentOutOfRangeException();
       }
+
+      return null;
+   }
+   
+
+   public static Activity GetPlant()
+   {
+      return PlantActivity.GetInstance();
    }
 
-   private static void GetChopActivity(Behaviour behaviour)
+   public static Activity GetKill()
    {
-      Interactable.Base.Interactable interactable = null;
-      MethodInfo method = null;
-      
-      var interactableObjects = Physics.OverlapSphere(behaviour.Responsible.gameObject.transform.position, 10f);
-      if (interactableObjects.Length <= 0) return;
-
-      foreach (var interactableObject in interactableObjects)
-      {
-         if(interactableObject.GetComponent<Interactable.Base.Interactable>() == null) continue;
-         
-         method = interactableObject.GetComponent<Interactable.Base.Interactable>()
-            .FindAllowedAction(behaviour.Responsible, behaviour.Activity);
-         
-         if(method == null) continue;
-
-         interactable = interactableObject.GetComponent<Interactable.Base.Interactable>();
-         
-         var coroutineInfo = new JobInfo(behaviour.Responsible, interactable, method, new object[] {behaviour.Responsible});
-         UIManager.SetInteractionAction(coroutineInfo);
-         return;
-      }
+      return KillActivity.GetInstance();
    }
 
-   private static void GetPlantActivity(Behaviour behaviour)
+   public static Activity GetEat()
    {
-      Interactable.Base.Interactable interactable = null;
-      MethodInfo method = null;
-      
-      foreach (var item in behaviour.Responsible.Inventory.Items)
-      {
-         var methodInfo = item.GetComponent<Interactable.Base.Interactable>()
-            .FindAllowedAction(behaviour.Responsible, behaviour.Activity);
-         
-         if (methodInfo != null)
-         {
-            interactable = item.GetComponent<Interactable.Base.Interactable>();
-            method = methodInfo;
-            break;
-         }
-      }
+      return EatActivity.GetInstance();
+   }
 
-      Ground ground = null;
-      
-      var interactableObjects = Physics.OverlapSphere(behaviour.Responsible.gameObject.transform.position, 50f);
-      if (interactableObjects.Length <= 0) return;
+   public static Activity GetChop()
+   {
+      return ChopActivity.GetInstance();
+   }
 
-      foreach (var interactableObject in interactableObjects)
-      {
-         var groundObject = interactableObject.GetComponent<Ground>();
-         if(groundObject == null) continue;
-         if(groundObject.Occupied) continue;
+   public static Activity GetHarvest()
+   {
+      return HarvestActivity.GetInstance();
+   }
 
-         ground = groundObject;
-      }
-
-      if (method == null || interactable == null) return;
-      
-      var coroutineInfo = new JobInfo(behaviour.Responsible, ground, ground.GetType().GetMethod("Walk"), new object[] {behaviour.Responsible});
-      UIManager.SetInteractionAction(coroutineInfo);
-      coroutineInfo = new JobInfo(behaviour.Responsible, interactable, method, new object[] {behaviour.Responsible});
-      UIManager.SetInteractionAction(coroutineInfo);
+   public static Activity GetSleep()
+   {
+      return SleepActivity.GetInstance();
    }
 }

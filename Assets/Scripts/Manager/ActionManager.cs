@@ -68,6 +68,14 @@ namespace Manager
 					}
 				}
 			}
+
+			if (_responsible != null)
+			{
+				UIManager.Instance.ActivateJobPanel(_responsible.GetComponent<Responsible>().JobPanel);
+				UIManager.Instance.SetInfoPanel(_responsible.GetComponent<Responsible>());
+				UIManager.Instance.SetSkills(_responsible.GetComponent<Responsible>());
+				UIManager.Instance.SetQuests(_responsible.GetComponent<Responsible>());
+			}
 		}
 
 		private void SetResponsible()
@@ -79,34 +87,18 @@ namespace Manager
 			RaycastHit hit;
 			
 			if (!Physics.Raycast(ray, out hit)) return;
-			if (!hit.transform.gameObject.CompareTag("Human")) return;
+			var responsible = hit.transform.gameObject.GetComponent<Responsible>();
+			if (responsible == null) return;
+			if (!responsible.IsPlayer) return;
 			
 			_responsible = hit.transform.gameObject;
 			UIManager.Instance.ActivateJobPanel(_responsible.GetComponent<Responsible>().JobPanel);
 			UIManager.Instance.SetInfoPanel(_responsible.GetComponent<Responsible>());
 			UIManager.Instance.SetSkills(_responsible.GetComponent<Responsible>());
 			UIManager.Instance.SetInventory(_responsible.GetComponent<Responsible>());
+			UIManager.Instance.SetQuests(_responsible.GetComponent<Responsible>());
 		}
-
-		private void SetTarget()
-		{
-			if (Input.GetMouseButtonDown(0))
-			{ 
-				if (_main == null) return;
-
-				Ray ray = _main.ScreenPointToRay(Input.mousePosition);
-				RaycastHit hit;
-				if (Physics.Raycast(ray, out hit))
-				{
-					if(hit.transform.gameObject.CompareTag("Human"))
-					{
-						_responsible = hit.transform.gameObject;
-						//responsible.GetComponent<Responsible>.ShowInfo();
-					}
-				}
-			}
-		}
-
+		
 		private void Interact()
 		{
 			if (!Input.GetMouseButtonDown(1)) return;

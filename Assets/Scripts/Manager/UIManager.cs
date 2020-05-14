@@ -37,6 +37,9 @@ namespace Manager
 		public GameObject inventoryItemPrefab;
 		public GameObject inventoryParent;
 		public GameObject inventory;
+		[Header("Quest Info")] 
+		public GameObject questParent;
+		public GameObject questTextPrefab;
 
 		public HashSet<GameObject> JobPanels { get; private set; }
 
@@ -179,7 +182,7 @@ namespace Manager
 
 		public void SetInfoPanel(Responsible responsible)
 		{
-			responsibleName.GetComponent<Text>().text = responsible.Name;
+			responsibleName.GetComponent<Text>().text = responsible.CharacterName;
 			SetNeeds(responsible);
 			SetSkills(responsible);
 		}
@@ -232,7 +235,7 @@ namespace Manager
 			Dictionary<string, int> inventoryItems = new Dictionary<string, int>();
 			foreach (var item in responsible.Inventory.Items)
 			{
-				var itemName = item.GetComponent<Interactable.Base.Interactable>().Name;
+				var itemName = item.GetComponent<Interactable.Base.Interactable>().GetGroupName();
 				
 				if (inventoryItems.ContainsKey(itemName)) inventoryItems[itemName]++;
 				else inventoryItems.Add(itemName, 1);
@@ -261,6 +264,39 @@ namespace Manager
 			}
 			
 			inventory.SetActive(!inventory.activeSelf);
+		}
+		
+		/*
+		 * QUEST ACTIONS
+		 */
+
+		public void SetQuests(Responsible responsible)
+		{
+			foreach (Transform child in questParent.transform)
+			{
+				Destroy(child.gameObject);
+			}
+
+			float cumulativeHeight = -20f;
+			var baseHeight = 20f;
+			float height;
+			var i = 0;
+			
+			foreach (var quest in responsible.Quests)
+			{
+				var text = quest.Description + " " + quest.DoneCount + "/" + quest.RepetitionCount;
+				if (quest.Completed) text +=  " Completed!";
+				height = baseHeight * (text.Length / 20 + 1);
+				
+				var newQuest = Instantiate(questTextPrefab, Vector3.zero, Quaternion.identity, questParent.transform);
+				var newQuestTransform = newQuest.GetComponent<RectTransform>();
+				newQuestTransform.sizeDelta = new Vector2(newQuestTransform.rect.width, height);
+				newQuest.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0f, cumulativeHeight, 0f);
+				newQuest.GetComponent<Text>().text = text;
+				
+				cumulativeHeight -= height;
+				i++;
+			}
 		}
 	}
 }

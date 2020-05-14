@@ -24,9 +24,13 @@ namespace Interactable.Environment
 		private static GameObject _product;
 		private static GameObject _prefab;
 		private static GameObject _seed;
+		private static int _instanceCount;
 		
 		private void Awake()
 		{
+			SetGroupName("plant");
+			instanceNo = _instanceCount;
+			_instanceCount++;
 			InUse = 1;
 			_harvestable = true;
 			_harvestDuration = 2f;
@@ -86,10 +90,12 @@ namespace Interactable.Environment
 
 		[Activity(ActivityType.Eat)]
 		[Interactable(typeof(Human))]
+		[Interactable(typeof(Cow))]
 		[Skill(SkillType.None)]
 		public IEnumerator Eat(Responsible responsible)
 		{
-			if (_harvestable) yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position)); 
+			if (_harvestable) yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
+			
 			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), _eatDuration);
 			if (_harvestable) 	{GroundUtil.Clear(gameObject.transform.position);}
 			responsible.Inventory.Remove(gameObject);

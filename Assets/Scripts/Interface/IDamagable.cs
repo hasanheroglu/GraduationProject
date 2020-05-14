@@ -2,7 +2,7 @@ namespace Interface
 {
     public interface IDamagable
     {
-        void Damage(int damage);
+        bool Damage(int damage);
         void Heal(int heal);
     }
 }

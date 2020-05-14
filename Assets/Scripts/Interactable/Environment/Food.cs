@@ -6,12 +6,17 @@ using Interactable.Creatures;
 using Interface;
 using UnityEngine;
 
-public class Food : Interactable.Base.Interactable, IEdible {
+public class Food : Interactable.Base.Interactable, IEdible
+{
+	private static int _instanceCount;
+	
 	private void Start()
 	{
+		SetGroupName("food");
+		instanceNo = _instanceCount;
+		_instanceCount++;
 		InUse = 1;
 		SetMethods();
-		Name = "Kebab";
 	}
 
 	[Activity(ActivityType.Eat)]

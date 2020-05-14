@@ -12,9 +12,13 @@ namespace Interactable.Environment
 	public class Tent : Interactable.Base.Interactable, ISleepable
 	{
 		private float _sleepDuration;
+		private static int _instanceCount;
 		
 		private void Start()
 		{
+			SetGroupName("tent");
+			instanceNo = _instanceCount;
+			_instanceCount++;
 			InUse = 1;
 			_sleepDuration = 15f;
 			SetMethods();

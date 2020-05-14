@@ -27,18 +27,15 @@ public abstract class Equipable : Pickable
         if (picked)
         {
             yield return Util.WaitForSeconds(responsible.GetCurrentJob(), _equipDuration);
-            responsible.Equipment.Equip(gameObject);
         }
         else
         {
             yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
             responsible.Inventory.Add(this.gameObject);
             yield return Util.WaitForSeconds(responsible.GetCurrentJob(), _equipDuration);
-            responsible.Equipment.Equip(gameObject);
         }
         
-        SetEquipped(true);
-        SetPicked(true);
+        responsible.Equipment.Equip(gameObject);
         responsible.FinishJob();
     }
 
@@ -48,7 +45,6 @@ public abstract class Equipable : Pickable
         {
             yield return Util.WaitForSeconds(responsible.GetCurrentJob(), _unequipDuration);
             responsible.Equipment.Unequip(gameObject);
-            SetEquipped(false);
         }
 
         yield return null;
@@ -59,6 +55,8 @@ public abstract class Equipable : Pickable
     {
         if (equippedStatus)
         {
+            if(!picked) SetPicked(true);
+            
             Methods.Remove(GetType().GetMethod("Equip"));
             Methods.Add(GetType().GetMethod("Unequip"));
         }

@@ -32,15 +32,17 @@ public class Need
 		
 		if (Value < 0){ Value = 0; }
 
-		if (Value < 20 && !responsible.Behaviour.Activities.Contains(_activity))
+		if (Value < 20 && !responsible.Behaviour.IsFirstAcitivity(_activity))
 		{
-			responsible.Behaviour.Activities.Add(_activity);
-			NotificationManager.Instance.Notify(responsible.Name + "'s " + Name + " level is critical!", responsible.gameObject.transform.position);
+			responsible.Behaviour.AddActivityToBeginning(_activity);
+			responsible.Behaviour.SetActivity();
+			NotificationManager.Instance.Notify(responsible.CharacterName + "'s " + Name + " level is critical!", responsible.gameObject.transform);
 		}
 
-		if (Value >= 20 && responsible.Behaviour.Activities.Contains(_activity))
+		if (Value >= 20 && responsible.Behaviour.IsFirstAcitivity(_activity))
 		{
-			responsible.Behaviour.Activities.Remove(_activity);
+			responsible.Behaviour.RemoveActivity(_activity);
+			responsible.Behaviour.SetActivity();
 		}
 		
 		if (Value > 100){ Value = 100; }

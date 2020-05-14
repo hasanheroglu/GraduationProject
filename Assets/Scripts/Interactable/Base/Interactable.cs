@@ -9,13 +9,15 @@ namespace Interactable.Base
 	public abstract class Interactable : MonoBehaviour
 	{
 
-		public string Name;
 		public int health = 100;
+		public GameObject interactionPoint;
+
+		protected int instanceNo;
+		
+		[SerializeField] private string groupName;
 		private int _inUse;
 		private HashSet<MethodInfo> _methods;
 		
-		public GameObject interactionPoint;
-
 		private void Awake()
 		{
 			SetMethods();
@@ -83,6 +85,21 @@ namespace Interactable.Base
 			}
 
 			return methodInfo;
+		}
+
+		public string GetGroupName()
+		{
+			return groupName;
+		}
+
+		public void SetGroupName(string groupName)
+		{
+			this.groupName = groupName;
+		}
+		
+		public string GetInstanceName()
+		{
+			return groupName + "_" + instanceNo;
 		}
 	}
 }

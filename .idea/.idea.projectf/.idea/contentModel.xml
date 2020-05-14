@@ -41,6 +41,15 @@
         </e>
         <e p="scri.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="Activity" t="Include">
+            <e p="Activity.cs" t="Include" />
+            <e p="ChopActivity.cs" t="Include" />
+            <e p="EatActivity.cs" t="Include" />
+            <e p="HarvestActivity.cs" t="Include" />
+            <e p="KillActivity.cs" t="Include" />
+            <e p="PlantActivity.cs" t="Include" />
+            <e p="SleepActivity.cs" t="Include" />
+          </e>
           <e p="Attribute" t="Include">
             <e p="ActivityAttribute.cs" t="Include" />
             <e p="InteractableAttribute.cs" t="Include" />
@@ -48,8 +57,6 @@
           </e>
           <e p="Behaviour" t="Include">
             <e p="Behaviour.cs" t="Include" />
-            <e p="HumanBehaviour.cs" t="Include" />
-            <e p="ZombieBehaviour.cs" t="Include" />
           </e>
           <e p="Crafting" t="Include">
             <e p="Ingredient.cs" t="Include" />
@@ -69,7 +76,6 @@
           <e p="GroundUtil.cs" t="Include" />
           <e p="Interactable" t="Include">
             <e p="Base" t="Include">
-              <e p="Activity.cs" t="Include" />
               <e p="Effect.cs" t="Include" />
               <e p="Interactable.cs" t="Include" />
               <e p="Job.cs" t="Include" />
@@ -78,6 +84,7 @@
               <e p="Skill.cs" t="Include" />
             </e>
             <e p="Creatures" t="Include">
+              <e p="Cow.cs" t="Include" />
               <e p="Human.cs" t="Include" />
               <e p="Zombie.cs" t="Include" />
             </e>
@@ -146,6 +153,11 @@
             <e p="DayManager.cs" t="Include" />
             <e p="NotificationManager.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
+          </e>
+          <e p="QuestSystem" t="Include">
+            <e p="Quest.cs" t="Include" />
+            <e p="QuestFactory.cs" t="Include" />
+            <e p="QuestManager.cs" t="Include" />
           </e>
           <e p="ShaderAdjuster.cs" t="Include" />
           <e p="UI" t="Include">

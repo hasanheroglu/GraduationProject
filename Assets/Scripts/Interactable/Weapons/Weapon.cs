@@ -16,21 +16,24 @@ public enum WeaponType
 public class Weapon: Equipable
 {
 	public Responsible Responsible { get; set; }
+	public bool CanUse { get; set; }
 
 	private GameObject _target;
-	
-	[Header("Weapon")]
-	[SerializeField] private WeaponType weaponType;
-	[SerializeField] private int damage;
-	[SerializeField] private float range;
-	[SerializeField] private float delay;
-	[SerializeField] public GameObject bulletPoint;
 	private WeaponPattern _weaponPattern;
 
+	[Header("Weapon")]
+	[SerializeField] private WeaponType weaponType;
+	[SerializeField] private float delay;
+	
+	[SerializeField] public int damage;
+	[SerializeField] public float range;
+	[SerializeField] public GameObject bulletPoint;
+	
 	private void Awake()
 	{
 		InUse = 1;
 		SetMethods();
+		CanUse = true;
 		base.Awake();
 	}
 
@@ -38,7 +41,7 @@ public class Weapon: Equipable
 	{
 		if (_weaponPattern == null)
 		{
-			SetWeaponPattern(WeaponFactory.GetWeaponPattern(weaponType, damage, range, delay));
+			SetWeaponPattern(WeaponFactory.GetWeaponPattern(weaponType));
 		}
 	}
 
@@ -48,7 +51,7 @@ public class Weapon: Equipable
 		this.damage = damage;
 		this.range = range;
 		this.delay = delay;
-		SetWeaponPattern(WeaponFactory.GetWeaponPattern(weaponType, damage, range, delay));
+		SetWeaponPattern(WeaponFactory.GetWeaponPattern(weaponType));
 	}
 	
 	public WeaponPattern GetWeaponPattern()
@@ -61,50 +64,50 @@ public class Weapon: Equipable
 		_weaponPattern = weaponPattern;
 	}
 
-	public Coroutine Use(Interactable.Base.Interactable interactable, Coroutine coroutine)
+	public IEnumerator Use()
 	{
-		_target = interactable.gameObject;
-		
-		if (CheckTargetInRange())
+		if (CanUse)
 		{
-			if (coroutine != null)
-			{
-				StopCoroutine(coroutine);
-			}
-
-			coroutine = null;
-			Responsible.StopWalking();
-			Responsible.TargetInRange = true;
-			_weaponPattern.Use(this.gameObject, new Vector3(_target.gameObject.transform.position.x - gameObject.transform.position.x, 0, _target.gameObject.transform.position.z - gameObject.transform.position.z));
-			Responsible.TargetInRange = false;
+			_weaponPattern.Use(gameObject, GetDirection());
+			yield return StartCoroutine(Wait());
 		}
-		else
-		{
-			if (coroutine != null) return coroutine;
-		
-			var circlePos = Vector3.forward * _weaponPattern.range;
-			circlePos = Quaternion.AngleAxis(Random.Range(0, 360), Vector3.up) * circlePos;
-			var destination =
-				_target.GetComponent<Interactable.Base.Interactable>().interactionPoint.transform.position + circlePos;
-			destination.y = 0;
-			coroutine = StartCoroutine(Responsible.Walk(destination));
-		}
-
-		return coroutine;
 	}
 
-	public IEnumerator Reload()
+	public IEnumerator Wait()
 	{
-		yield return new WaitForSeconds(_weaponPattern.delay);
+		CanUse = false;
+		yield return new WaitForSeconds(delay);
+		CanUse = true;
 	}
 
-	private bool CheckTargetInRange()
+	private Vector3 GetDirection()
+	{
+		var respPos = gameObject.transform.position;
+		var targetPos = _target.gameObject.transform.position;
+		return new Vector3(targetPos.x - respPos.x, 0, targetPos.z - respPos.z);
+	}
+
+	public Vector3 GetInRangePosition()
+	{
+		var randPos = Random.insideUnitCircle * range;
+		var destination = _target.GetComponent<Interactable.Base.Interactable>().interactionPoint.transform.position;
+		destination += new Vector3(randPos.x, 0, randPos.y);
+		destination.y = 0;
+		return destination;
+	}
+
+	public void SetTarget(GameObject target)
+	{
+		_target = target;
+	}
+
+	public bool CheckTargetInRange()
 	{
 		var responsiblePos = Responsible.gameObject.transform.position;
 		var targetPos = _target.gameObject.transform.position;
 		var distance = Vector2.Distance(new Vector2(responsiblePos.x, responsiblePos.z), new Vector2(targetPos.x, targetPos.z));
 		
-		return  distance <= _weaponPattern.range;
+		return  distance <= range;
 	}
 
 	[Interactable(typeof(Responsible))]

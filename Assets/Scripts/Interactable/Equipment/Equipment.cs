@@ -53,6 +53,7 @@ public class Equipment
         {
             if (Items.ContainsKey(type))
             {
+                item.GetComponent<Equipable>().SetEquipped(true);
                 if (Items[type] != null)
                 {
                     //Unequip(Items[type]);
@@ -86,6 +87,7 @@ public class Equipment
             Items[type] = null;
             item.transform.parent = null;
             item.transform.position = new Vector3(0f, -100f, 0f);
+            item.GetComponent<Equipable>().SetEquipped(false);
         }
         else
         {

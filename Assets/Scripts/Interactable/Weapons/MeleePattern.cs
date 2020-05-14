@@ -2,41 +2,26 @@
 using System.Collections.Generic;
 using Interactable.Base;
 using Interface;
+using Manager;
 using UnityEngine;
 
 public class MeleePattern : WeaponPattern
 {
-    private bool _canUse;
-
     public MeleePattern()
     {
-        damage = 10;
-        range = 1f;
-        delay = 0f;
-        _canUse = true;
-    }
-    
-    public MeleePattern(int damage, float range, float delay)
-    {
-        this.damage = damage;
-        this.range = range;
-        this.delay = delay;
-        this._canUse = true;
+
     }
 
     public override void Use(GameObject weapon, Vector3 direction)
     {
+        if (!weapon.GetComponent<Weapon>().CanUse) return;
+        
         var duration = 0.5f;
-
-        if (_canUse)
-        {
-            weapon.GetComponent<Weapon>().StartCoroutine(MoveWeapon(weapon, direction, duration));
-        }
+        weapon.GetComponent<Weapon>().StartCoroutine(MoveWeapon(weapon, direction, duration));
     }
 
     private IEnumerator MoveWeapon(GameObject weapon, Vector3 direction, float overTime)
     {
-        _canUse = false;
         float startTime = Time.time;
         var startPosition = weapon.GetComponent<Weapon>().Responsible.Equipment.weaponPosition.transform.position;
         var endPosition = startPosition + direction;
@@ -65,8 +50,16 @@ public class MeleePattern : WeaponPattern
         
         foreach (var damagableObject in damagables)
         {
-            damagableObject.GetComponent<IDamagable>().Damage(damage);
-            damagableObject.GetComponent<Rigidbody>().AddForce(direction.normalized * 200);
+            if (damagableObject.GetComponent<IDamagable>().Damage(weapon.GetComponent<Weapon>().damage))
+            {
+                var killQuests = QuestManager.FindWithActivityType(weapon.GetComponent<Weapon>().Responsible, ActivityType.Kill);
+                foreach (var quest in killQuests)
+                {
+                    quest.Progress(ActivityType.Kill, damagableObject.GetComponent<Interactable.Base.Interactable>().GetGroupName());
+                }
+                UIManager.Instance.SetQuests(weapon.GetComponent<Weapon>().Responsible);
+            }
+            damagableObject.GetComponent<Rigidbody>().AddForce(direction.normalized * 50);
         }
         
         
@@ -79,6 +72,5 @@ public class MeleePattern : WeaponPattern
         
         weapon.transform.position = weapon.GetComponent<Weapon>().Responsible.Equipment.weaponPosition.transform.position;
         weapon.GetComponent<Weapon>().Responsible.animator.SetBool("isPunching", false);
-        _canUse = true;
     }
 }

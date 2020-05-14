@@ -14,8 +14,9 @@ public class CameraManager : MonoBehaviour
     public float moveAmount = 0.5f;
     public GameObject camera;
     public GameObject cameraCenter;
-
+    
     private float _rotation;
+    private static Vector3 _offset;
     
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class CameraManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        _offset = cameraCenter.transform.position - _camera.transform.position;
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
@@ -68,15 +70,25 @@ public class CameraManager : MonoBehaviour
         }
     }
 
-    public static void SetPosition(Vector3 camPosition)
+    public static IEnumerator SetPosition(Transform objTransform)
     {
-        var timer = 0f;
-
-        camPosition.y = _camera.transform.position.y;
-        while (timer < 5f)
+        Debug.Log(_offset);
+        var endPosition = objTransform.position;
+        endPosition -= _offset;
+        endPosition.y = _camera.transform.position.y;
+        var startPos = _camera.transform.position;
+        var startTime = Time.time;
+        var duration = 2f;
+        
+        /*
+        while (Time.time < startTime + duration)
         {
-            timer += Time.deltaTime;
-            _camera.transform.position = Vector3.Slerp(_camera.transform.position, camPosition, Time.deltaTime * 5);
+            _camera.transform.position = Vector3.Lerp(startPos, camPosition, (Time.time - startTime)/duration);
+            yield return null;
         }
+        */
+
+        _camera.transform.position = endPosition;
+        yield return null;
     }
 }

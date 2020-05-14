@@ -68,7 +68,7 @@ public class RecipeManager : MonoBehaviour
 				foreach (var item in items)
 				{
 					
-					if (item.GetComponent<Interactable.Base.Interactable>().Name == ingredient.Name)
+					if (item.GetComponent<Interactable.Base.Interactable>().GetGroupName() == ingredient.Name)
 					{
 						count++;
 					}

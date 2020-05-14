@@ -164,6 +164,7 @@ public class Job
 			if(!immediate)
 			{
 				SkillManager.UpdateSkill(Responsible, SkillType, EarnedXp);
+				if(ActivityType != ActivityType.Kill) QuestManager.Progress(Responsible, this);
 			}
 			
 			EffectManager.Remove(Responsible, Effects);

@@ -10,12 +10,17 @@ using UnityEngine;
 
 public class CampFire : Interactable.Base.Interactable, ICraftable
 {
+	private static int _instanceCount;
+	
 	public Recipe currentRecipe;
 	public bool recipeSet;
 	public List<Recipe> recipes;
 	
 	private void Awake()
 	{
+		SetGroupName("campfire");
+		instanceNo = _instanceCount;
+		_instanceCount++;
 		InUse = 1;
 		recipeSet = false;
 		SetMethods();

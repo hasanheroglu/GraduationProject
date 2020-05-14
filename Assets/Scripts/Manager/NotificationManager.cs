@@ -24,10 +24,10 @@ public class NotificationManager : MonoBehaviour
 		}
 	}
 	
-	public void Notify(String message, Vector3 position)
+	public void Notify(String message, Transform objTransform)
 	{
 		var newNotification = Instantiate(notification, notificationPanel.transform);
-		newNotification.GetComponent<NotificationInfo>().Set(message, position);
+		newNotification.GetComponent<NotificationInfo>().Set(message, objTransform);
 		AdjustPositioning();
 	}
 

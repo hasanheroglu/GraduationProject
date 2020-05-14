@@ -5,9 +5,14 @@ using UnityEngine;
 
 public class Wood : Pickable
 {
+    private static int _instanceCount;
+    
     // Start is called before the first frame update
     private void Awake()
     {
+        SetGroupName("wood");
+        instanceNo = _instanceCount;
+        _instanceCount++;
         InUse = 1;
         SetMethods();
         base.Awake();

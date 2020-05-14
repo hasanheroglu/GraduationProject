@@ -9,10 +9,14 @@ using UnityEngine;
 public class Seed : Pickable, IPlantable
 {
     private GameObject _product;
+    private static int _instanceCount;
     
     // Start is called before the first frame update
     private void Awake()
     {
+        SetGroupName("seed");
+        instanceNo = _instanceCount;
+        _instanceCount++;
         InUse = 1;
         SetMethods();
         base.Awake();
@@ -40,13 +44,11 @@ public class Seed : Pickable, IPlantable
             }
         }
         
-        Debug.Log("Planting the " + Name);
         responsible.animator.SetTrigger("plant");
-        yield return Util.WaitForSeconds(responsible.GetCurrentJob(), 1f);
+        yield return Util.WaitForSeconds(responsible.GetCurrentJob(), 6f);
         if(ground != null)
             ground.Occupied = true;
         responsible.animator.ResetTrigger("plant");
-        Debug.Log("Planted the " + Name);
         responsible.Inventory.Remove(gameObject);
         var newProduct = Instantiate(_product,  new Vector3(ground.gameObject.transform.position.x, _product.transform.position.y, ground.gameObject.transform.position.z), _product.transform.rotation);
         newProduct.GetComponent<Plant>().SetHarvestable(false);

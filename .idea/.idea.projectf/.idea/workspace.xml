@@ -2,139 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41f68628-977b-4739-9fb5-e8b401d59f06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/HumanAnimator.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/HumanAnimator.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/ZombieAnimator.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/ZombieAnimator.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/idle.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/idle.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/jump.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/jump.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/run.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Animations/run.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models/Materials/human_skin.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models/Materials/human_skin.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models/Materials/zombie_skin.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models/Materials/zombie_skin.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models/characterMedium.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Models/characterMedium.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/survivorFemaleA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/survivorFemaleA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/survivorMaleB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/survivorMaleB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/zombieA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/zombieA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/zombieC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animated Character 1/Skins/zombieC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_purpleC.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_purpleC.mtl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_purpleC.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_purpleC.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_redB.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_redB.mtl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_redB.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_redB.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_yellowB.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_yellowB.mtl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_yellowB.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/NatureAssets/flower_yellowB.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/Pistol.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/Pistol.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-9mm.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-9mm.mtl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-9mm.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-9mm.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-shotgun.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-shotgun.mtl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-shotgun.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/bullet-shotgun.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/pistol-coonan.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/pistol-coonan.mtl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/shotgun.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/shotgun.mtl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/shotgun.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Weapons/shotgun.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/HumanAnimator.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/HumanAnimator.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/ZombieAnimator.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/ZombieAnimator.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/ZombieWalking.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/ZombieWalking.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/die.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/die.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/harvest.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/harvest.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/idle.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/idle.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/jump.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/jump.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/plant.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/plant.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/punch.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/punch.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/run.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/run.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/zombie attack.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/zombie attack.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/zombie idle.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/zombie idle.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Human.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Human.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Zombie 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Zombie 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Fist.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Fist.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Flower 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Flower 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/GrassMat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/GrassMat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Pistol.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Pistol.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Shotgun.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Shotgun.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/ActivityFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/ItemFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IPlaceable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IPlaceable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Maps/map_small_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Maps/map_small_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/chop.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/chop.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/eat.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/eat.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/pick_from_ground.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/pick_from_ground.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/Horse.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/Horse.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/Llama.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/Llama.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/PistolBullet.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/PistolBullet.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/ShotgunBullet.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/ShotgunBullet.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/QuestText.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/QuestText.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Activity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Activity/ChopActivity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Activity/HarvestActivity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Activity/HarvestActivity.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Activity/KillActivity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Activity/KillActivity.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Activity/PlantActivity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Activity/PlantActivity.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Activity/SleepActivity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Cow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/QuestSystem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/QuestSystem/Quest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/QuestSystem/Quest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/SkinnedHuman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/SkinnedHuman.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Tent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Tent.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Weapon.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Weapon.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Table.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Table.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/HumanAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Animations/HumanAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/die.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Animations/die.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/CowBlW.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/CowBlW.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Flower 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Flower 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Flower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Flower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Flower.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Flower.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Pistol.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Pistol.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Shotgun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Shotgun.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/ActivityFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/ActivityFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/NeedFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/NeedFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Activity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Activity/Activity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Activity.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Activity/ChopActivity.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Need.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Need.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Seed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Seed.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Table.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Table.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Wood.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Wood.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/EquipableFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/EquipableFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipment.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Pickable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Pickable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/EffectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/EffectManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/BulletFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/BulletFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MeleePattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MeleePattern.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MultipleShotPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MultipleShotPattern.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/SingleShotPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/SingleShotPattern.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponPattern.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IDamagable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IDamagable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/NotificationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/NotificationManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/NotificationInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/NotificationInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +106,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Seed.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/61/a22bd771/SupportedRenderingFeatures.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/35155C1E-A5EC-48CE-8AEB-13C34B030016/42/3836318d/RetainedMode.cs" root0="SKIP_HIGHLIGHTING" />
@@ -164,13 +123,19 @@
     <setting file="file://$PROJECT_DIR$/Assets/DemoScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/4f/655b0edc/RenderPipelineManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62495DF7-0EB7-49F9-8FCD-13D89B5DCDA9/ce/66cb7ad6/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Activity/EatActivity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IDamagable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/RecipeInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Activity/KillActivity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Activity/ChopActivity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ImportedAssets/FarmAnimals_v1.1/VertexColorUnlit.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SkillInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Activity/HarvestActivity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Activity/PlantActivity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/QuestSystem/Quest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/NeedBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/SkillManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2020.1.0a19/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -183,7 +148,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Crafting/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/JobManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -205,6 +169,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ISocializable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ICarriable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Skill.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2020.1.0a19/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/ScrollRect.cs" root0="SKIP_HIGHLIGHTING" />
@@ -219,13 +184,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/SingleShotPattern.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MultipleShotPattern.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IHarvestable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Activity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Activity/Activity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponPattern.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ICraftable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/InventoryItemInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ISleepable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IAttackable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IEdible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Activity/SleepActivity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IChoppable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -240,10 +208,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IPlantable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2020.1.0a19/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Cow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Test00.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/47/6e57b280/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/49/f0bb24ae/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/ItemFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/1c/d9c3af95/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/BulletFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/ActivityFactory.cs" root0="FORCE_HIGHLIGHTING" />
@@ -251,6 +221,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0DD71E7E-BD24-4367-880B-6E8BC7CC8DB5/3e/8c1ec91f/StackTrace.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6E70D638-4BAB-4CCF-8A0E-0DE574CBB65A/d5/e3e20d59/StackTraceUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Table.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/DayManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ImportedAssets/NavMeshComponents/Scripts/NavMeshSourceTag.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
@@ -259,57 +230,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/EquipmentItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/InventoryItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IWearable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Wearable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Wearable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Util.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/WearableFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/PistolPattern.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/ShotgunPattern.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/BulletFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IDamagable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IHarvestable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/PlantFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/FistPattern.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponPattern.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Wood.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/DayManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/OccupationUtil.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GroundUtil.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/EquipableFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Armor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelCreator/NavMeshGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelCreator/MapGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Pickable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/ZombieBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Activity/PlantActivity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/HumanBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Activity/Activity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Activity/WanderActivity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Activity/ChopActivity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Activity/EatActivity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Activity/HarvestActivity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/ActivityFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/NeedFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Activity/SleepActivity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Activity/KillActivity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Seed.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Table.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Wood.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/EquipableFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Util.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/BulletFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IDamagable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem/Quest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Cow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponPattern.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MultipleShotPattern.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/SingleShotPattern.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MeleePattern.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipment.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/NotificationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/NotificationInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Need.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Seed.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" />
       </list>
     </option>
   </component>
@@ -340,10 +311,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="57111">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="57111" />
       <method v="2" />
     </configuration>
   </component>
@@ -397,7 +368,7 @@
       <workItem from="1587723097321" duration="13017000" />
       <workItem from="1587745546633" duration="60176000" />
       <workItem from="1588272311367" duration="374000" />
-      <workItem from="1588273141268" duration="2760000" />
+      <workItem from="1588273141268" duration="55689000" />
     </task>
     <servers />
   </component>
@@ -423,8 +394,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="232" key="GridCell.Tab.0.bottom" timestamp="1588092462069">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.0.bottom" timestamp="1588856844586">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.0.bottom/0.23.1440.795@0.23.1440.795" timestamp="1587549893209" />
     <state width="1398" height="232" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1588092462069" />
@@ -432,10 +403,14 @@
     <state width="1398" height="235" key="GridCell.Tab.0.bottom/0.23.1440.803@0.23.1440.803" timestamp="1580559673193" />
     <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1587323623393" />
     <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.23.1440.806@0.23.1440.806" timestamp="1587323151066" />
-    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1587310711763" />
+    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1588856844586" />
     <state width="1398" height="238" key="GridCell.Tab.0.bottom/0.23.1440.809@0.23.1440.809" timestamp="1580139735866" />
-    <state width="1398" height="232" key="GridCell.Tab.0.center" timestamp="1588092462068">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1588281236312" />
+    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1588687611988" />
+    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1588609890282" />
+    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1588745019733" />
+    <state width="1398" height="236" key="GridCell.Tab.0.center" timestamp="1588856844586">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.0.center/0.23.1440.795@0.23.1440.795" timestamp="1587549893208" />
     <state width="1398" height="232" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1588092462068" />
@@ -443,10 +418,14 @@
     <state width="1398" height="235" key="GridCell.Tab.0.center/0.23.1440.803@0.23.1440.803" timestamp="1580559673192" />
     <state width="1398" height="236" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1587323623392" />
     <state width="1398" height="236" key="GridCell.Tab.0.center/0.23.1440.806@0.23.1440.806" timestamp="1587323151065" />
-    <state width="1398" height="236" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1587310711763" />
+    <state width="1398" height="236" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1588856844586" />
     <state width="1398" height="238" key="GridCell.Tab.0.center/0.23.1440.809@0.23.1440.809" timestamp="1580139735864" />
-    <state width="1398" height="232" key="GridCell.Tab.0.left" timestamp="1588092462063">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1588281236311" />
+    <state width="1398" height="236" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1588687611988" />
+    <state width="1398" height="236" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1588609890281" />
+    <state width="1398" height="236" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1588745019728" />
+    <state width="1398" height="236" key="GridCell.Tab.0.left" timestamp="1588856844585">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.0.left/0.23.1440.795@0.23.1440.795" timestamp="1587549893207" />
     <state width="1398" height="232" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1588092462063" />
@@ -454,10 +433,14 @@
     <state width="1398" height="235" key="GridCell.Tab.0.left/0.23.1440.803@0.23.1440.803" timestamp="1580559673191" />
     <state width="1398" height="236" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1587323623392" />
     <state width="1398" height="236" key="GridCell.Tab.0.left/0.23.1440.806@0.23.1440.806" timestamp="1587323151064" />
-    <state width="1398" height="236" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1587310711762" />
+    <state width="1398" height="236" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1588856844585" />
     <state width="1398" height="238" key="GridCell.Tab.0.left/0.23.1440.809@0.23.1440.809" timestamp="1580139735863" />
-    <state width="1398" height="232" key="GridCell.Tab.0.right" timestamp="1588092462069">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1588281236310" />
+    <state width="1398" height="236" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1588687611987" />
+    <state width="1398" height="236" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1588609890279" />
+    <state width="1398" height="236" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1588745019724" />
+    <state width="1398" height="236" key="GridCell.Tab.0.right" timestamp="1588856844586">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.0.right/0.23.1440.795@0.23.1440.795" timestamp="1587549893208" />
     <state width="1398" height="232" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1588092462069" />
@@ -465,10 +448,14 @@
     <state width="1398" height="235" key="GridCell.Tab.0.right/0.23.1440.803@0.23.1440.803" timestamp="1580559673193" />
     <state width="1398" height="236" key="GridCell.Tab.0.right/0.23.1440.804@0.23.1440.804" timestamp="1587323623393" />
     <state width="1398" height="236" key="GridCell.Tab.0.right/0.23.1440.806@0.23.1440.806" timestamp="1587323151065" />
-    <state width="1398" height="236" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1587310711763" />
+    <state width="1398" height="236" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1588856844586" />
     <state width="1398" height="238" key="GridCell.Tab.0.right/0.23.1440.809@0.23.1440.809" timestamp="1580139735865" />
-    <state width="1398" height="232" key="GridCell.Tab.1.bottom" timestamp="1588092461776">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1588281236311" />
+    <state width="1398" height="236" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1588687611988" />
+    <state width="1398" height="236" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1588609890282" />
+    <state width="1398" height="236" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1588745019730" />
+    <state width="1398" height="236" key="GridCell.Tab.1.bottom" timestamp="1588856844588">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.1.bottom/0.23.1440.795@0.23.1440.795" timestamp="1587549893210" />
     <state width="1398" height="232" key="GridCell.Tab.1.bottom/0.23.1440.798@0.23.1440.798" timestamp="1588092461776" />
@@ -476,10 +463,14 @@
     <state width="1398" height="235" key="GridCell.Tab.1.bottom/0.23.1440.803@0.23.1440.803" timestamp="1580559673195" />
     <state width="1398" height="236" key="GridCell.Tab.1.bottom/0.23.1440.804@0.23.1440.804" timestamp="1587323623396" />
     <state width="1398" height="236" key="GridCell.Tab.1.bottom/0.23.1440.806@0.23.1440.806" timestamp="1587323150818" />
-    <state width="1398" height="236" key="GridCell.Tab.1.bottom/0.23.1440.808@0.23.1440.808" timestamp="1587310711765" />
+    <state width="1398" height="236" key="GridCell.Tab.1.bottom/0.23.1440.808@0.23.1440.808" timestamp="1588856844588" />
     <state width="1398" height="238" key="GridCell.Tab.1.bottom/0.23.1440.809@0.23.1440.809" timestamp="1580139735869" />
-    <state width="1398" height="232" key="GridCell.Tab.1.center" timestamp="1588092461774">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.1.bottom/0.23.1440.811@0.23.1440.811" timestamp="1588281288470" />
+    <state width="1398" height="236" key="GridCell.Tab.1.bottom/0.23.1440.812@0.23.1440.812" timestamp="1588687664187" />
+    <state width="1398" height="236" key="GridCell.Tab.1.bottom/0.23.1440.814@0.23.1440.814" timestamp="1588609944646" />
+    <state width="1398" height="236" key="GridCell.Tab.1.bottom/0.23.1440.816@0.23.1440.816" timestamp="1588745019741" />
+    <state width="1398" height="236" key="GridCell.Tab.1.center" timestamp="1588856844587">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.1.center/0.23.1440.795@0.23.1440.795" timestamp="1587549893209" />
     <state width="1398" height="232" key="GridCell.Tab.1.center/0.23.1440.798@0.23.1440.798" timestamp="1588092461774" />
@@ -487,10 +478,14 @@
     <state width="1398" height="235" key="GridCell.Tab.1.center/0.23.1440.803@0.23.1440.803" timestamp="1580559673194" />
     <state width="1398" height="236" key="GridCell.Tab.1.center/0.23.1440.804@0.23.1440.804" timestamp="1587323623395" />
     <state width="1398" height="236" key="GridCell.Tab.1.center/0.23.1440.806@0.23.1440.806" timestamp="1587323150817" />
-    <state width="1398" height="236" key="GridCell.Tab.1.center/0.23.1440.808@0.23.1440.808" timestamp="1587310711764" />
+    <state width="1398" height="236" key="GridCell.Tab.1.center/0.23.1440.808@0.23.1440.808" timestamp="1588856844587" />
     <state width="1398" height="238" key="GridCell.Tab.1.center/0.23.1440.809@0.23.1440.809" timestamp="1580139735868" />
-    <state width="1398" height="232" key="GridCell.Tab.1.left" timestamp="1588092461773">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.1.center/0.23.1440.811@0.23.1440.811" timestamp="1588281288470" />
+    <state width="1398" height="236" key="GridCell.Tab.1.center/0.23.1440.812@0.23.1440.812" timestamp="1588687664186" />
+    <state width="1398" height="236" key="GridCell.Tab.1.center/0.23.1440.814@0.23.1440.814" timestamp="1588609944646" />
+    <state width="1398" height="236" key="GridCell.Tab.1.center/0.23.1440.816@0.23.1440.816" timestamp="1588745019735" />
+    <state width="1398" height="236" key="GridCell.Tab.1.left" timestamp="1588856844587">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.1.left/0.23.1440.795@0.23.1440.795" timestamp="1587549893209" />
     <state width="1398" height="232" key="GridCell.Tab.1.left/0.23.1440.798@0.23.1440.798" timestamp="1588092461773" />
@@ -498,10 +493,14 @@
     <state width="1398" height="235" key="GridCell.Tab.1.left/0.23.1440.803@0.23.1440.803" timestamp="1580559673194" />
     <state width="1398" height="236" key="GridCell.Tab.1.left/0.23.1440.804@0.23.1440.804" timestamp="1587323623394" />
     <state width="1398" height="236" key="GridCell.Tab.1.left/0.23.1440.806@0.23.1440.806" timestamp="1587323150816" />
-    <state width="1398" height="236" key="GridCell.Tab.1.left/0.23.1440.808@0.23.1440.808" timestamp="1587310711764" />
+    <state width="1398" height="236" key="GridCell.Tab.1.left/0.23.1440.808@0.23.1440.808" timestamp="1588856844587" />
     <state width="1398" height="238" key="GridCell.Tab.1.left/0.23.1440.809@0.23.1440.809" timestamp="1580139735867" />
-    <state width="1398" height="232" key="GridCell.Tab.1.right" timestamp="1588092461775">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.1.left/0.23.1440.811@0.23.1440.811" timestamp="1588281288469" />
+    <state width="1398" height="236" key="GridCell.Tab.1.left/0.23.1440.812@0.23.1440.812" timestamp="1588687664186" />
+    <state width="1398" height="236" key="GridCell.Tab.1.left/0.23.1440.814@0.23.1440.814" timestamp="1588609944645" />
+    <state width="1398" height="236" key="GridCell.Tab.1.left/0.23.1440.816@0.23.1440.816" timestamp="1588745019734" />
+    <state width="1398" height="236" key="GridCell.Tab.1.right" timestamp="1588856844588">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.1.right/0.23.1440.795@0.23.1440.795" timestamp="1587549893210" />
     <state width="1398" height="232" key="GridCell.Tab.1.right/0.23.1440.798@0.23.1440.798" timestamp="1588092461775" />
@@ -509,10 +508,14 @@
     <state width="1398" height="235" key="GridCell.Tab.1.right/0.23.1440.803@0.23.1440.803" timestamp="1580559673194" />
     <state width="1398" height="236" key="GridCell.Tab.1.right/0.23.1440.804@0.23.1440.804" timestamp="1587323623395" />
     <state width="1398" height="236" key="GridCell.Tab.1.right/0.23.1440.806@0.23.1440.806" timestamp="1587323150817" />
-    <state width="1398" height="236" key="GridCell.Tab.1.right/0.23.1440.808@0.23.1440.808" timestamp="1587310711764" />
+    <state width="1398" height="236" key="GridCell.Tab.1.right/0.23.1440.808@0.23.1440.808" timestamp="1588856844588" />
     <state width="1398" height="238" key="GridCell.Tab.1.right/0.23.1440.809@0.23.1440.809" timestamp="1580139735868" />
-    <state width="1398" height="232" key="GridCell.Tab.2.bottom" timestamp="1588092461777">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.1.right/0.23.1440.811@0.23.1440.811" timestamp="1588281288470" />
+    <state width="1398" height="236" key="GridCell.Tab.1.right/0.23.1440.812@0.23.1440.812" timestamp="1588687664187" />
+    <state width="1398" height="236" key="GridCell.Tab.1.right/0.23.1440.814@0.23.1440.814" timestamp="1588609944646" />
+    <state width="1398" height="236" key="GridCell.Tab.1.right/0.23.1440.816@0.23.1440.816" timestamp="1588745019736" />
+    <state width="1398" height="236" key="GridCell.Tab.2.bottom" timestamp="1588856844590">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.2.bottom/0.23.1440.795@0.23.1440.795" timestamp="1587549893211" />
     <state width="1398" height="232" key="GridCell.Tab.2.bottom/0.23.1440.798@0.23.1440.798" timestamp="1588092461777" />
@@ -520,10 +523,13 @@
     <state width="1398" height="235" key="GridCell.Tab.2.bottom/0.23.1440.803@0.23.1440.803" timestamp="1580559673196" />
     <state width="1398" height="236" key="GridCell.Tab.2.bottom/0.23.1440.804@0.23.1440.804" timestamp="1587323623397" />
     <state width="1398" height="236" key="GridCell.Tab.2.bottom/0.23.1440.806@0.23.1440.806" timestamp="1587323150819" />
-    <state width="1398" height="236" key="GridCell.Tab.2.bottom/0.23.1440.808@0.23.1440.808" timestamp="1587310711767" />
+    <state width="1398" height="236" key="GridCell.Tab.2.bottom/0.23.1440.808@0.23.1440.808" timestamp="1588856844590" />
     <state width="1398" height="238" key="GridCell.Tab.2.bottom/0.23.1440.809@0.23.1440.809" timestamp="1580139735876" />
-    <state width="1398" height="232" key="GridCell.Tab.2.center" timestamp="1588092461776">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.2.bottom/0.23.1440.812@0.23.1440.812" timestamp="1588687611817" />
+    <state width="1398" height="236" key="GridCell.Tab.2.bottom/0.23.1440.814@0.23.1440.814" timestamp="1588609890055" />
+    <state width="1398" height="236" key="GridCell.Tab.2.bottom/0.23.1440.816@0.23.1440.816" timestamp="1588745019748" />
+    <state width="1398" height="236" key="GridCell.Tab.2.center" timestamp="1588856844589">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.2.center/0.23.1440.795@0.23.1440.795" timestamp="1587549893211" />
     <state width="1398" height="232" key="GridCell.Tab.2.center/0.23.1440.798@0.23.1440.798" timestamp="1588092461776" />
@@ -531,10 +537,13 @@
     <state width="1398" height="235" key="GridCell.Tab.2.center/0.23.1440.803@0.23.1440.803" timestamp="1580559673196" />
     <state width="1398" height="236" key="GridCell.Tab.2.center/0.23.1440.804@0.23.1440.804" timestamp="1587323623396" />
     <state width="1398" height="236" key="GridCell.Tab.2.center/0.23.1440.806@0.23.1440.806" timestamp="1587323150819" />
-    <state width="1398" height="236" key="GridCell.Tab.2.center/0.23.1440.808@0.23.1440.808" timestamp="1587310711766" />
+    <state width="1398" height="236" key="GridCell.Tab.2.center/0.23.1440.808@0.23.1440.808" timestamp="1588856844589" />
     <state width="1398" height="238" key="GridCell.Tab.2.center/0.23.1440.809@0.23.1440.809" timestamp="1580139735874" />
-    <state width="1398" height="232" key="GridCell.Tab.2.left" timestamp="1588092461776">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.2.center/0.23.1440.812@0.23.1440.812" timestamp="1588687611817" />
+    <state width="1398" height="236" key="GridCell.Tab.2.center/0.23.1440.814@0.23.1440.814" timestamp="1588609890054" />
+    <state width="1398" height="236" key="GridCell.Tab.2.center/0.23.1440.816@0.23.1440.816" timestamp="1588745019747" />
+    <state width="1398" height="236" key="GridCell.Tab.2.left" timestamp="1588856844589">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.2.left/0.23.1440.795@0.23.1440.795" timestamp="1587549893210" />
     <state width="1398" height="232" key="GridCell.Tab.2.left/0.23.1440.798@0.23.1440.798" timestamp="1588092461776" />
@@ -542,10 +551,13 @@
     <state width="1398" height="235" key="GridCell.Tab.2.left/0.23.1440.803@0.23.1440.803" timestamp="1580559673195" />
     <state width="1398" height="236" key="GridCell.Tab.2.left/0.23.1440.804@0.23.1440.804" timestamp="1587323623396" />
     <state width="1398" height="236" key="GridCell.Tab.2.left/0.23.1440.806@0.23.1440.806" timestamp="1587323150819" />
-    <state width="1398" height="236" key="GridCell.Tab.2.left/0.23.1440.808@0.23.1440.808" timestamp="1587310711765" />
+    <state width="1398" height="236" key="GridCell.Tab.2.left/0.23.1440.808@0.23.1440.808" timestamp="1588856844589" />
     <state width="1398" height="238" key="GridCell.Tab.2.left/0.23.1440.809@0.23.1440.809" timestamp="1580139735872" />
-    <state width="1398" height="232" key="GridCell.Tab.2.right" timestamp="1588092461777">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.2.left/0.23.1440.812@0.23.1440.812" timestamp="1588687611816" />
+    <state width="1398" height="236" key="GridCell.Tab.2.left/0.23.1440.814@0.23.1440.814" timestamp="1588609890053" />
+    <state width="1398" height="236" key="GridCell.Tab.2.left/0.23.1440.816@0.23.1440.816" timestamp="1588745019745" />
+    <state width="1398" height="236" key="GridCell.Tab.2.right" timestamp="1588856844590">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.2.right/0.23.1440.795@0.23.1440.795" timestamp="1587549893211" />
     <state width="1398" height="232" key="GridCell.Tab.2.right/0.23.1440.798@0.23.1440.798" timestamp="1588092461777" />
@@ -553,10 +565,13 @@
     <state width="1398" height="235" key="GridCell.Tab.2.right/0.23.1440.803@0.23.1440.803" timestamp="1580559673196" />
     <state width="1398" height="236" key="GridCell.Tab.2.right/0.23.1440.804@0.23.1440.804" timestamp="1587323623397" />
     <state width="1398" height="236" key="GridCell.Tab.2.right/0.23.1440.806@0.23.1440.806" timestamp="1587323150819" />
-    <state width="1398" height="236" key="GridCell.Tab.2.right/0.23.1440.808@0.23.1440.808" timestamp="1587310711766" />
+    <state width="1398" height="236" key="GridCell.Tab.2.right/0.23.1440.808@0.23.1440.808" timestamp="1588856844590" />
     <state width="1398" height="238" key="GridCell.Tab.2.right/0.23.1440.809@0.23.1440.809" timestamp="1580139735874" />
-    <state width="1398" height="232" key="GridCell.Tab.3.bottom" timestamp="1588092461779">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.2.right/0.23.1440.812@0.23.1440.812" timestamp="1588687611817" />
+    <state width="1398" height="236" key="GridCell.Tab.2.right/0.23.1440.814@0.23.1440.814" timestamp="1588609890055" />
+    <state width="1398" height="236" key="GridCell.Tab.2.right/0.23.1440.816@0.23.1440.816" timestamp="1588745019747" />
+    <state width="1398" height="236" key="GridCell.Tab.3.bottom" timestamp="1588856844592">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.3.bottom/0.23.1440.795@0.23.1440.795" timestamp="1587549893213" />
     <state width="1398" height="232" key="GridCell.Tab.3.bottom/0.23.1440.798@0.23.1440.798" timestamp="1588092461779" />
@@ -564,10 +579,13 @@
     <state width="1398" height="235" key="GridCell.Tab.3.bottom/0.23.1440.803@0.23.1440.803" timestamp="1580559673197" />
     <state width="1398" height="236" key="GridCell.Tab.3.bottom/0.23.1440.804@0.23.1440.804" timestamp="1587323623398" />
     <state width="1398" height="236" key="GridCell.Tab.3.bottom/0.23.1440.806@0.23.1440.806" timestamp="1587323150821" />
-    <state width="1398" height="236" key="GridCell.Tab.3.bottom/0.23.1440.808@0.23.1440.808" timestamp="1587310711768" />
+    <state width="1398" height="236" key="GridCell.Tab.3.bottom/0.23.1440.808@0.23.1440.808" timestamp="1588856844592" />
     <state width="1398" height="238" key="GridCell.Tab.3.bottom/0.23.1440.809@0.23.1440.809" timestamp="1580139735879" />
-    <state width="1398" height="232" key="GridCell.Tab.3.center" timestamp="1588092461778">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.3.bottom/0.23.1440.812@0.23.1440.812" timestamp="1588687611819" />
+    <state width="1398" height="236" key="GridCell.Tab.3.bottom/0.23.1440.814@0.23.1440.814" timestamp="1588609890057" />
+    <state width="1398" height="236" key="GridCell.Tab.3.bottom/0.23.1440.816@0.23.1440.816" timestamp="1588745019749" />
+    <state width="1398" height="236" key="GridCell.Tab.3.center" timestamp="1588856844591">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.3.center/0.23.1440.795@0.23.1440.795" timestamp="1587549893212" />
     <state width="1398" height="232" key="GridCell.Tab.3.center/0.23.1440.798@0.23.1440.798" timestamp="1588092461778" />
@@ -575,10 +593,13 @@
     <state width="1398" height="235" key="GridCell.Tab.3.center/0.23.1440.803@0.23.1440.803" timestamp="1580559673197" />
     <state width="1398" height="236" key="GridCell.Tab.3.center/0.23.1440.804@0.23.1440.804" timestamp="1587323623398" />
     <state width="1398" height="236" key="GridCell.Tab.3.center/0.23.1440.806@0.23.1440.806" timestamp="1587323150820" />
-    <state width="1398" height="236" key="GridCell.Tab.3.center/0.23.1440.808@0.23.1440.808" timestamp="1587310711767" />
+    <state width="1398" height="236" key="GridCell.Tab.3.center/0.23.1440.808@0.23.1440.808" timestamp="1588856844591" />
     <state width="1398" height="238" key="GridCell.Tab.3.center/0.23.1440.809@0.23.1440.809" timestamp="1580139735877" />
-    <state width="1398" height="232" key="GridCell.Tab.3.left" timestamp="1588092461778">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.3.center/0.23.1440.812@0.23.1440.812" timestamp="1588687611818" />
+    <state width="1398" height="236" key="GridCell.Tab.3.center/0.23.1440.814@0.23.1440.814" timestamp="1588609890056" />
+    <state width="1398" height="236" key="GridCell.Tab.3.center/0.23.1440.816@0.23.1440.816" timestamp="1588745019749" />
+    <state width="1398" height="236" key="GridCell.Tab.3.left" timestamp="1588856844591">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.3.left/0.23.1440.795@0.23.1440.795" timestamp="1587549893212" />
     <state width="1398" height="232" key="GridCell.Tab.3.left/0.23.1440.798@0.23.1440.798" timestamp="1588092461778" />
@@ -586,10 +607,13 @@
     <state width="1398" height="235" key="GridCell.Tab.3.left/0.23.1440.803@0.23.1440.803" timestamp="1580559673197" />
     <state width="1398" height="236" key="GridCell.Tab.3.left/0.23.1440.804@0.23.1440.804" timestamp="1587323623397" />
     <state width="1398" height="236" key="GridCell.Tab.3.left/0.23.1440.806@0.23.1440.806" timestamp="1587323150820" />
-    <state width="1398" height="236" key="GridCell.Tab.3.left/0.23.1440.808@0.23.1440.808" timestamp="1587310711767" />
+    <state width="1398" height="236" key="GridCell.Tab.3.left/0.23.1440.808@0.23.1440.808" timestamp="1588856844591" />
     <state width="1398" height="238" key="GridCell.Tab.3.left/0.23.1440.809@0.23.1440.809" timestamp="1580139735876" />
-    <state width="1398" height="232" key="GridCell.Tab.3.right" timestamp="1588092461778">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1398" height="236" key="GridCell.Tab.3.left/0.23.1440.812@0.23.1440.812" timestamp="1588687611818" />
+    <state width="1398" height="236" key="GridCell.Tab.3.left/0.23.1440.814@0.23.1440.814" timestamp="1588609890055" />
+    <state width="1398" height="236" key="GridCell.Tab.3.left/0.23.1440.816@0.23.1440.816" timestamp="1588745019749" />
+    <state width="1398" height="236" key="GridCell.Tab.3.right" timestamp="1588856844592">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.3.right/0.23.1440.795@0.23.1440.795" timestamp="1587549893212" />
     <state width="1398" height="232" key="GridCell.Tab.3.right/0.23.1440.798@0.23.1440.798" timestamp="1588092461778" />
@@ -597,8 +621,15 @@
     <state width="1398" height="235" key="GridCell.Tab.3.right/0.23.1440.803@0.23.1440.803" timestamp="1580559673197" />
     <state width="1398" height="236" key="GridCell.Tab.3.right/0.23.1440.804@0.23.1440.804" timestamp="1587323623398" />
     <state width="1398" height="236" key="GridCell.Tab.3.right/0.23.1440.806@0.23.1440.806" timestamp="1587323150820" />
-    <state width="1398" height="236" key="GridCell.Tab.3.right/0.23.1440.808@0.23.1440.808" timestamp="1587310711767" />
+    <state width="1398" height="236" key="GridCell.Tab.3.right/0.23.1440.808@0.23.1440.808" timestamp="1588856844592" />
     <state width="1398" height="238" key="GridCell.Tab.3.right/0.23.1440.809@0.23.1440.809" timestamp="1580139735878" />
+    <state width="1398" height="236" key="GridCell.Tab.3.right/0.23.1440.812@0.23.1440.812" timestamp="1588687611819" />
+    <state width="1398" height="236" key="GridCell.Tab.3.right/0.23.1440.814@0.23.1440.814" timestamp="1588609890056" />
+    <state width="1398" height="236" key="GridCell.Tab.3.right/0.23.1440.816@0.23.1440.816" timestamp="1588745019749" />
+    <state x="529" y="149" key="RiderGenerateDialog" timestamp="1588611130699">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state x="529" y="149" key="RiderGenerateDialog/0.23.1440.814@0.23.1440.814" timestamp="1588611130699" />
     <state x="221" y="68" key="SettingsEditor" timestamp="1582034991940">
       <screen x="0" y="23" width="1440" height="801" />
     </state>
@@ -608,11 +639,11 @@
       <screen x="0" y="23" width="1440" height="798" />
     </state>
     <state width="720" height="399" key="XDebugger.FullValuePopup/0.23.1440.798@0.23.1440.798" timestamp="1587763295844" />
-    <state width="600" height="419" key="javadoc.popup" timestamp="1587749293246">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1588852321356">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="600" height="419" key="javadoc.popup/0.23.1440.798@0.23.1440.798" timestamp="1587749293246" />
-    <state width="600" height="424" key="javadoc.popup/0.23.1440.808@0.23.1440.808" timestamp="1580384577880" />
+    <state width="600" height="424" key="javadoc.popup/0.23.1440.808@0.23.1440.808" timestamp="1588852321356" />
     <state x="383" y="155" width="672" height="667" key="search.everywhere.popup" timestamp="1587896578537">
       <screen x="0" y="23" width="1440" height="798" />
     </state>
@@ -629,17 +660,17 @@
           <option name="timeStamp" value="1" />
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs</url>
-          <line>41</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" initialLine="41">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs</url>
+          <line>38</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" initialLine="38">
             <startOffsets>
-              <option value="1143" />
+              <option value="878" />
             </startOffsets>
             <endOffsets>
-              <option value="1185" />
+              <option value="909" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

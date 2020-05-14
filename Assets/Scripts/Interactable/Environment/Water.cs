@@ -6,9 +6,15 @@ using Interactable.Creatures;
 using Interface;
 using UnityEngine;
 
-public class Water : Interactable.Base.Interactable, IShowerable, IWalkable {
+public class Water : Interactable.Base.Interactable, IShowerable, IWalkable
+{
+	private static int _instanceCount;
+	
 	private void Start()
 	{
+		SetGroupName("water");
+		instanceNo = _instanceCount;
+		_instanceCount++;
 		InUse = 1;
 		SetMethods();
 	}
@@ -18,10 +24,8 @@ public class Water : Interactable.Base.Interactable, IShowerable, IWalkable {
 	public IEnumerator Shower(Responsible responsible)
 	{
 		yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
-		Debug.Log(responsible.Name + " is taking a shower!");
 		responsible.GetCurrentJob().SetProgressDuration(10);
 		yield return new WaitForSeconds(10);
-		Debug.Log(responsible.Name + " took a shower!");
 		responsible.FinishJob();
 	}
 

@@ -9,11 +9,15 @@ using UnityEngine.AI;
 
 namespace Interactable.Base
 {
-	public abstract class Responsible : Interactable, IDamagable
+	public abstract class Responsible : Interactable, IDamagable, IAttackable
 	{
 		private NavMeshAgent _agent;
+		private bool _isDead;
 		
 		public Animator animator;
+
+		public string CharacterName { get; set; }
+		public bool IsPlayer { get; set; }
 
 		public List<Job> Jobs { get; set; }
 		public GameObject JobPanel { get; set; }
@@ -34,30 +38,35 @@ namespace Interactable.Base
 		public bool AutoWill { get; set; }
 		public Behaviour Behaviour { get; set; }
 
+		public List<Quest> Quests { get; set; }
+
 		public GameObject directionPosition;
 
 		private void Awake()
 		{
+			_isDead = false;
+			IsPlayer = false;
+			
 			Jobs = new List<Job>();
 			Needs = new Dictionary<NeedType, Need>();
 			Skills = new Dictionary<SkillType, Skill>();
 			Inventory = new Inventory(this);
 			Equipment = new Equipment(this);
+			Quests = new List<Quest>();
+
+			JobPanel = Instantiate(UIManager.Instance.jobPanelPrefab, UIManager.Instance.canvas.transform);
+			UIManager.Instance.JobPanels.Add(JobPanel);
+			JobPanel.SetActive(false);
 
 			_agent = GetComponent<NavMeshAgent>();
 			animator = GetComponent<Animator>();
-			animator.SetBool("isWalking", false);
+			if(animator != null) animator.SetBool("isWalking", false);
 			JobFinished = true;
-			JobPanel = Instantiate(UIManager.Instance.jobPanelPrefab, UIManager.Instance.canvas.transform);
-			JobPanel.SetActive(false);
-			UIManager.Instance.JobPanels.Add(JobPanel);
 		}
 		public void Update()
 		{
+			if (_isDead) return;
 			if (Jobs.Count > 0 && Jobs[0].Target == null) Jobs[0].Stop(true);
-			
-			Behaviour.SetActivity();
-
 			if (AutoWill) Behaviour.DoActivity();
 			
 			foreach (var need in Needs){ need.Value.Update(this); }
@@ -66,13 +75,14 @@ namespace Interactable.Base
 		}
 		
 
-		public IEnumerator Walk(Vector3 position)
+		public IEnumerator Walk(Vector3 position, bool followTarget = false)
 		{
 			_agent.isStopped = false;
 			_agent.SetDestination(position);
-			animator.SetBool("isWalking", true);
+			TargetInRange = false;
+			if(animator != null) animator.SetBool("isWalking", true);
 
-			if (Target.GetComponent<NavMeshAgent>() != null)
+			if (followTarget && Target.GetComponent<NavMeshAgent>() != null)
 			{
 				while (!TargetInRange)
 				{
@@ -86,7 +96,8 @@ namespace Interactable.Base
 		}
 		public void StopWalking()
 		{
-			animator.SetBool("isWalking", false);
+			if(animator != null) animator.SetBool("isWalking", false);
+			TargetInRange = true;
 			_agent.isStopped = true;
 			_agent.ResetPath();
 			_agent.isStopped = false;
@@ -146,8 +157,10 @@ namespace Interactable.Base
 		}
 
 		
-		public void Damage(int damage)
+		public bool Damage(int damage)
 		{
+			if (_isDead) return false;
+			
 			var decrease = damage * (Equipment.GetArmorValue() / 1000);
 			if (decrease > damage) decrease = damage;
 			
@@ -156,19 +169,73 @@ namespace Interactable.Base
 			if (health <= 0)
 			{
 				health = 0;
-				animator.SetTrigger("dead");
-				
-				if(Jobs.Count > 0)
+				_isDead = true;
+				StopWalking();
+				if(animator != null) animator.SetTrigger("dead");
+
+				if (Jobs.Count > 0)
+				{
 					StopDoingJob(Jobs[0]);
-				
+				}
+
 				Destroy(gameObject, 2.5f);
+				return true;
 			}
+
+			return false;
 		}
 		public void Heal(int heal)
 		{
+			if (_isDead) return;
+
 			health += heal;
 
 			if (health > 100) health = 100;
+		}
+
+		public virtual IEnumerator Attack(Responsible responsible)
+		{
+			Coroutine coroutine = null;
+			Weapon weapon = responsible.Equipment.Weapon;
+			weapon.SetTarget(gameObject);
+			
+			while (health > 0)
+			{
+				if (weapon == null) break;
+				if (weapon.CheckTargetInRange())
+				{
+					if (coroutine != null)
+					{
+						StopCoroutine(coroutine);
+						coroutine = null;
+					}
+					
+					responsible.StopWalking();
+					yield return StartCoroutine(responsible.Turn());
+					
+					if (!Behaviour.IsFirstAcitivity(ActivityType.Kill))
+					{
+						Behaviour.AddActivityToBeginning(ActivityType.Kill);
+						Behaviour.SetActivity();
+					}
+
+					if (IsPlayer)
+					{
+						NotificationManager.Instance.Notify(CharacterName + " is under attack!", gameObject.transform);
+					}
+					
+					yield return weapon.Use();
+				}
+				
+				if(coroutine == null)
+				{
+					coroutine = StartCoroutine(responsible.Walk(weapon.GetInRangePosition(), true));
+				}
+
+				yield return null;
+			}
+		
+			responsible.GetComponent<Responsible>().FinishJob();
 		}
 	}
 }

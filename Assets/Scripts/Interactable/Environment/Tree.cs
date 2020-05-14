@@ -14,9 +14,13 @@ namespace Interactable.Environment
 	{
 		private float _chopDuration;
 		private static GameObject _product;
+		private static int _instanceCount;
 		
 		private void Start()
 		{
+			SetGroupName("tree");
+			instanceNo = _instanceCount;
+			_instanceCount++;
 			_product = Resources.Load<GameObject>("Prefabs/Interactables/Items/Wood");
 			_chopDuration = 6f;
 			InUse = 1;
@@ -28,6 +32,8 @@ namespace Interactable.Environment
 		[Skill(SkillType.Lumberjack, 250)]
 		public IEnumerator Chop(Responsible responsible)
 		{
+			if(true) NotificationManager.Instance.Notify("You should equip an axe!", responsible.gameObject.transform);
+			
 			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), _chopDuration);
 			GroundUtil.Clear(gameObject.transform.position);

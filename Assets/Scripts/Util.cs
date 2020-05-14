@@ -8,7 +8,14 @@ public static class Util
 {
     public static Interactable.Base.Interactable GetInteractableFromCollider(Collider collider)
     {
-        return collider.gameObject.GetComponent<Interactable.Base.Interactable>() ?? collider.transform.parent.gameObject.GetComponent<Interactable.Base.Interactable>();
+        if (collider.gameObject.GetComponent<Interactable.Base.Interactable>() == null)
+        {
+            if (collider.transform.parent == null) return null;
+
+            return collider.transform.parent.gameObject.GetComponent<Interactable.Base.Interactable>();
+        }
+
+        return collider.gameObject.GetComponent<Interactable.Base.Interactable>();
     }
 
     public static GameObject GetDamagableFromCollider(Collider collider)

@@ -6,27 +6,23 @@ public class MultipleShotPattern : WeaponPattern
 {
     public MultipleShotPattern()
     {
-        damage = 15;
-        range = 5f;
-        delay = 2f;
-    }
-    
-    public MultipleShotPattern(int damage, float range, float delay)
-    {
-        this.damage = damage;
-        this.range = range;
-        this.delay = delay;
+
     }
     
     public override void Use(GameObject weapon, Vector3 direction)
     {
-        var bulletPosition = weapon.GetComponent<Weapon>().bulletPoint.transform.position;
+        if (!weapon.GetComponent<Weapon>().CanUse) return;
 
-        var bulletGo1 = BulletFactory.GetBullet(bulletPosition, damage);
-        var bulletGo2 = BulletFactory.GetBullet(bulletPosition, damage);
-        var bulletGo3 = BulletFactory.GetBullet(bulletPosition, damage);
-        var bulletGo4 = BulletFactory.GetBullet(bulletPosition, damage);
-        var bulletGo5 = BulletFactory.GetBullet(bulletPosition, damage);
+        var bulletPosition = weapon.GetComponent<Weapon>().bulletPoint.transform.position;
+        var responsible = weapon.GetComponent<Weapon>().Responsible;
+        var damage = weapon.GetComponent<Weapon>().damage;
+        var range = weapon.GetComponent<Weapon>().range;
+        
+        var bulletGo1 = BulletFactory.GetBullet(bulletPosition, responsible, damage);
+        var bulletGo2 = BulletFactory.GetBullet(bulletPosition, responsible, damage);
+        var bulletGo3 = BulletFactory.GetBullet(bulletPosition, responsible, damage);
+        var bulletGo4 = BulletFactory.GetBullet(bulletPosition, responsible, damage);
+        var bulletGo5 = BulletFactory.GetBullet(bulletPosition, responsible, damage);
 
         bulletGo1.GetComponent<Rigidbody>().velocity = direction.normalized * range;
         bulletGo2.GetComponent<Rigidbody>().velocity = Quaternion.Euler(0, -30, 0) * direction.normalized * range;

@@ -24,11 +24,11 @@ public class NotificationInfo : MonoBehaviour
         message.GetComponent<Text>().text = messageText;
     }
 
-    private void SetButtonAction(Vector3 camPosition)
+    private void SetButtonAction(Transform objTransform)
     {
         button.GetComponent<Button>().onClick.AddListener(delegate
         {
-            CameraManager.SetPosition(camPosition);
+            StartCoroutine(CameraManager.SetPosition(objTransform));
             Destroy(gameObject);
         });
     }
@@ -40,9 +40,9 @@ public class NotificationInfo : MonoBehaviour
         GetComponent<RectTransform>().anchoredPosition = notificationPosition;
     }
     
-    public void Set(string messageText, Vector3 camPosition)
+    public void Set(string messageText, Transform objTransform)
     {
         SetMessage(messageText);
-        SetButtonAction(camPosition);
+        SetButtonAction(objTransform);
     }
 }
