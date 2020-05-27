@@ -109,15 +109,10 @@
               <e p="Inventory.cs" t="Include" />
               <e p="Pickable.cs" t="Include" />
             </e>
-            <e p="Manager" t="Include">
-              <e p="EffectManager.cs" t="Include" />
-              <e p="JobManager.cs" t="Include" />
-              <e p="NeedManager.cs" t="Include" />
-              <e p="SkillManager.cs" t="Include" />
-            </e>
             <e p="Weapons" t="Include">
               <e p="Bullet.cs" t="Include" />
               <e p="BulletFactory.cs" t="Include" />
+              <e p="DamageUtil.cs" t="Include" />
               <e p="MeleePattern.cs" t="Include" />
               <e p="MultipleShotPattern.cs" t="Include" />
               <e p="SingleShotPattern.cs" t="Include" />
@@ -152,8 +147,12 @@
             <e p="ActionManager.cs" t="Include" />
             <e p="CameraManager.cs" t="Include" />
             <e p="DayManager.cs" t="Include" />
+            <e p="EffectManager.cs" t="Include" />
             <e p="GameRushManager.cs" t="Include" />
+            <e p="JobManager.cs" t="Include" />
+            <e p="NeedManager.cs" t="Include" />
             <e p="NotificationManager.cs" t="Include" />
+            <e p="SkillManager.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
           </e>
           <e p="QuestSystem" t="Include">

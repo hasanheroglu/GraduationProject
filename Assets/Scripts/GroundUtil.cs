@@ -13,7 +13,7 @@ public static class GroundUtil
 
         if (ground != null)
         {
-            ground.Occupied = false;
+            ground.occupied = false;
         }
     }
     
@@ -23,7 +23,7 @@ public static class GroundUtil
 
         if (ground != null)
         {
-            ground.Occupied = true;
+            ground.occupied = true;
         }
     }
 

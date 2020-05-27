@@ -84,7 +84,7 @@ public class MapGenerator : MonoBehaviour
                     
                     if(ground == null) continue;
                     
-                    ground.Occupied = true;
+                    ground.occupied = true;
                 }
             }
         }

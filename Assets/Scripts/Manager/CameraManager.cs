@@ -2,6 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public struct Move
+{
+    public Move(float horizontal, float vertical)
+    {
+        Horizontal = horizontal;
+        Vertical = vertical;
+    }
+    
+    public float Horizontal { get; set; }
+    public float Vertical { get; set; }
+};
+
 public class CameraManager : MonoBehaviour
 {
     private static Camera _camera;
@@ -37,30 +49,8 @@ public class CameraManager : MonoBehaviour
         }
         else
         {
-            var horizontalMove = 0f;
-            var verticalMove = 0f;
-            
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-            {
-                horizontalMove = -1;
-            }
-            
-            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-            {
-                horizontalMove = 1;
-            }
-            
-            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-            {
-                verticalMove = -1;
-            }
-            
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-            {
-                verticalMove = 1;
-            }
-            
-            _camera.transform.position += Quaternion.Euler(0, _rotation, 0) * new Vector3(horizontalMove, 0f, verticalMove) * moveAmount;
+            Move move = GetMove();
+            _camera.transform.position += Quaternion.Euler(0, _rotation, 0) * new Vector3(move.Horizontal, 0f, move.Vertical) * moveAmount;
         }
         
         if (Input.mouseScrollDelta.y < 0)
@@ -93,6 +83,33 @@ public class CameraManager : MonoBehaviour
         }
     }
 
+    private Move GetMove()
+    {
+        Move move = new Move(0f, 0f);
+            
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            move.Horizontal = -1;
+        }
+            
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        {
+            move.Horizontal = 1;
+        }
+            
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        {
+            move.Vertical = -1;
+        }
+            
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        {
+            move.Vertical = 1;
+        }
+
+        return move;
+    }
+    
     public static IEnumerator SetPosition(Transform objTransform)
     {
         Debug.Log(_offset);

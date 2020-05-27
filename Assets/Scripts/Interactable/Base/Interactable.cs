@@ -59,32 +59,39 @@ namespace Interactable.Base
 			
 			foreach (var method in _methods)
 			{
-				ActivityAttribute activityAttribute =
-					System.Attribute.GetCustomAttribute(method, typeof(ActivityAttribute)) as ActivityAttribute;
-				
-				if (activityAttribute == null || activityAttribute.ActivityType != activityType || (InUse <= 0)) continue;
-				
-				InteractableAttribute[] interactableAttributes =
-					System.Attribute.GetCustomAttributes(method, typeof (InteractableAttribute)) as InteractableAttribute [];
-
-				bool typeExist = false;
-
-				if (interactableAttributes != null && interactableAttributes.Length <= 0) continue;
-				
-				foreach (var attribute in interactableAttributes)
+				if (IsActivityAllowed(method, activityType) && CanInteractWith(method, responsible))
 				{
-					if (attribute.InteractableType == responsible.GetType() || attribute.InteractableType == responsible.GetType().BaseType)
-					{
-						typeExist = true;
-						methodInfo = method;
-						break;
-					}
+					methodInfo = method;
 				}
-				
-				if(typeExist) break;
 			}
 
 			return methodInfo;
+		}
+
+		private bool IsActivityAllowed(MethodInfo method, ActivityType activityType)
+		{
+			ActivityAttribute activityAttribute =
+				System.Attribute.GetCustomAttribute(method, typeof(ActivityAttribute)) as ActivityAttribute;
+				
+			return activityAttribute != null && activityAttribute.ActivityType == activityType && InUse > 0;
+		}
+
+		private bool CanInteractWith(MethodInfo method, Responsible responsible)
+		{
+			InteractableAttribute[] interactableAttributes =
+				System.Attribute.GetCustomAttributes(method, typeof (InteractableAttribute)) as InteractableAttribute [];
+			
+			if (interactableAttributes != null && interactableAttributes.Length <= 0) return false;
+				
+			foreach (var attribute in interactableAttributes)
+			{
+				if (attribute.InteractableType == responsible.GetType() || attribute.InteractableType == responsible.GetType().BaseType)
+				{
+					return true;
+				}
+			}
+
+			return false;
 		}
 
 		public string GetGroupName()

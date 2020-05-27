@@ -11,8 +11,9 @@ namespace Interactable.Environment
 {
 	public class Tent : Interactable.Base.Interactable, ISleepable
 	{
-		private float _sleepDuration;
 		private static int _instanceCount;
+		
+		[SerializeField] private float sleepDuration;
 		
 		private void Start()
 		{
@@ -20,7 +21,7 @@ namespace Interactable.Environment
 			instanceNo = _instanceCount;
 			_instanceCount++;
 			InUse = 1;
-			_sleepDuration = 15f;
+			sleepDuration = 15f;
 			SetMethods();
 		}
 
@@ -30,7 +31,7 @@ namespace Interactable.Environment
 		public IEnumerator Sleep(Responsible responsible)
 		{
 			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
-			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), _sleepDuration);
+			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), sleepDuration);
 			responsible.FinishJob();
 		}
 	}

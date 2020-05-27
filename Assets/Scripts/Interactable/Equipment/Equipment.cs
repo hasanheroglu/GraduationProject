@@ -33,16 +33,10 @@ public class Equipment
     {
         var type = item.GetComponent<Equipable>().type;
         item.GetComponent<Rigidbody>().isKinematic = true;
-
+        
         if (type == EquipableType.Weapon)
         {
-            Debug.Log("Equipment is a weapon!");
-            item.transform.SetParent(weaponPosition.transform);
-            item.transform.position = weaponPosition.transform.position;
-            item.transform.localRotation = new Quaternion(0, 1f, 0, 1f);
-            item.GetComponent<Collider>().enabled = false;
-            Weapon = item.GetComponent<Weapon>();
-            Weapon.Responsible = Responsible;
+            SetWeapon(item);
         }
         
         if (Items.Count == 0)
@@ -56,7 +50,7 @@ public class Equipment
                 item.GetComponent<Equipable>().SetEquipped(true);
                 if (Items[type] != null)
                 {
-                    //Unequip(Items[type]);
+                    Unequip(Items[type]);
                 }
                 else
                 {
@@ -69,7 +63,7 @@ public class Equipment
             }
         }
     }
-
+    
     public void Unequip(GameObject item)
     {
         var type = item.GetComponent<Equipable>().type;
@@ -108,5 +102,15 @@ public class Equipment
         }
 
         return armorValue;
+    }
+    
+    private void SetWeapon(GameObject item)
+    {
+        item.transform.SetParent(weaponPosition.transform);
+        item.transform.position = weaponPosition.transform.position;
+        item.transform.localRotation = new Quaternion(0, 1f, 0, 1f);
+        item.GetComponent<Collider>().enabled = false;
+        Weapon = item.GetComponent<Weapon>();
+        Weapon.Responsible = Responsible;
     }
 }

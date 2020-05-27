@@ -8,9 +8,10 @@ using UnityEngine;
 
 public class Seed : Pickable, IPlantable
 {
-    private GameObject _product;
     private static int _instanceCount;
     
+    private GameObject _product;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -31,7 +32,7 @@ public class Seed : Pickable, IPlantable
 
         if (ground != null)
         {
-            if (!ground.Occupied)
+            if (!ground.occupied)
             {
                 responsible.Target = ground.gameObject;
                 yield return StartCoroutine(responsible.Walk(ground.gameObject.transform.position));
@@ -47,7 +48,7 @@ public class Seed : Pickable, IPlantable
         responsible.animator.SetTrigger("plant");
         yield return Util.WaitForSeconds(responsible.GetCurrentJob(), 6f);
         if(ground != null)
-            ground.Occupied = true;
+            ground.occupied = true;
         responsible.animator.ResetTrigger("plant");
         responsible.Inventory.Remove(gameObject);
         var newProduct = Instantiate(_product,  new Vector3(ground.gameObject.transform.position.x, _product.transform.position.y, ground.gameObject.transform.position.z), _product.transform.rotation);

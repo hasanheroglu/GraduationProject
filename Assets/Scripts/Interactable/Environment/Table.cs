@@ -8,8 +8,8 @@ using Random = UnityEngine.Random;
 
 public class Table : Pickable, IPlaceable
 {
-    private bool _placed;
     private static int _instanceCount;
+    private bool _placed;
     
     private void Awake()
     {
@@ -74,7 +74,7 @@ public class Table : Pickable, IPlaceable
                 var ground_ = GroundUtil.FindGround(transform.position);
                 if (ground_ != null)
                 {
-                    if (ground_.Occupied)
+                    if (ground_.occupied)
                     {
                         gameObject.GetComponent<ShaderAdjuster>().SetColor(Color.red);
                     }
@@ -92,7 +92,7 @@ public class Table : Pickable, IPlaceable
         yield return new WaitUntil(() => _placed);
         Time.timeScale = 1;
         var ground = GroundUtil.FindGround(transform.position);
-        if (!ground.Occupied)
+        if (!ground.occupied)
         {
             GroundUtil.Occupy(gameObject.transform.position);
             SetPicked(_placed);

@@ -33,11 +33,9 @@ public class CampFire : Interactable.Base.Interactable, ICraftable
 	public IEnumerator Craft(Responsible responsible)
 	{
 		yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
-		Debug.Log(responsible.name + "is cooking!");
 		RecipeManager.Instance.OpenCraftingMenu(recipes, responsible);
 		yield return new WaitUntil(() => recipeSet);
 		yield return currentRecipe.Craft(responsible);
-		Debug.Log(currentRecipe.Name + "Cooking finished!");
 		responsible.FinishJob();
 		var food = RecipeManager.Instance.CreateProduct(currentRecipe, gameObject);
 		Eat(responsible, food);

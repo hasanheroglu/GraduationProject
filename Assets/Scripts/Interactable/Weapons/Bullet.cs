@@ -28,18 +28,13 @@ public class Bullet : MonoBehaviour
         if (damagable != null && !_damaged)
         {
             _damaged = true;
-            Debug.Log("Hit damagable!");
             if (damagable.GetComponent<IDamagable>().Damage(damage))
             {
-                var killQuests = QuestManager.FindWithActivityType(responsible, ActivityType.Kill);
-                foreach (var quest in killQuests)
-                {
-                    quest.Progress(ActivityType.Kill, damagable.GetComponent<Interactable.Base.Interactable>().GetGroupName());
-                }
-                UIManager.Instance.SetQuests(responsible);
+                DamageUtil.ProgressKillQuests(responsible, damagable);   
             }
             damagable.gameObject.GetComponent<Rigidbody>().AddForce(GetComponent<Rigidbody>().velocity.normalized*50);
             Destroy(this.gameObject);
         }
     }
+    
 }

@@ -131,20 +131,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55c16de115474bac9bde4e9ae4efba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Shotgun
   health: 100
   interactionPoint: {fileID: 7744146350909799175}
+  groupName: shotgun
   picked: 0
   _pickDuration: 0
   dropDuration: 0
+  equipped: 0
   _equipDuration: 0
   _unequipDuration: 0
   durability: 0
   type: 6
   weaponType: 2
+  delay: 2
   damage: 30
   range: 10
-  delay: 2
   bulletPoint: {fileID: 9022166384673813924}
 --- !u!114 &3880533374075271688
 MonoBehaviour:

@@ -48,7 +48,7 @@ public class PlantActivity : Activity
         {
             var groundObject = interactableObject.GetComponent<Ground>();
             if(groundObject == null) continue;
-            if(groundObject.Occupied) continue;
+            if(groundObject.occupied) continue;
 
             ground = groundObject;
         }

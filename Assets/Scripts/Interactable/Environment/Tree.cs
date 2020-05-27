@@ -12,18 +12,19 @@ namespace Interactable.Environment
 {
 	public class Tree : Base.Interactable, IChoppable
 	{
-		private float _chopDuration;
-		private static GameObject _product;
 		private static int _instanceCount;
+		
+		[SerializeField] private float chopDuration;
+		private static GameObject _product;
 		
 		private void Start()
 		{
 			SetGroupName("tree");
 			instanceNo = _instanceCount;
 			_instanceCount++;
-			_product = Resources.Load<GameObject>("Prefabs/Interactables/Items/Wood");
-			_chopDuration = 6f;
+			chopDuration = 6f;
 			InUse = 1;
+			_product = Resources.Load<GameObject>("Prefabs/Interactables/Items/Wood");
 			SetMethods();
 		}
 
@@ -35,7 +36,7 @@ namespace Interactable.Environment
 			if(true) NotificationManager.Instance.Notify("You should equip an axe!", responsible.gameObject.transform);
 			
 			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
-			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), _chopDuration);
+			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), chopDuration);
 			GroundUtil.Clear(gameObject.transform.position);
 			responsible.Inventory.Add(CreateProduct());
 			Destroy(gameObject);

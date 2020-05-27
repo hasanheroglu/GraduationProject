@@ -132,7 +132,6 @@ namespace Interactable.Base
 			transform.rotation = newRotation;
 		}
 		
-		
 		public Job GetCurrentJob()
 		{
 			return Jobs[0];
@@ -150,7 +149,6 @@ namespace Interactable.Base
 		{						
 			Jobs[0].Stop(immediate);
 		}
-
 		
 		public bool Damage(int damage)
 		{

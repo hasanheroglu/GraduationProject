@@ -15,16 +15,17 @@ namespace Interactable.Environment
 {
 	public class Plant : Interactable.Base.Interactable, IHarvestable, IEdible
 	{
+		private static int _instanceCount;
+
 		private bool _harvestable;
 		
-		private float _harvestDuration;
-		private float _eatDuration;
-		private float _growDuration;
+		[SerializeField] private float harvestDuration;
+		[SerializeField] private float eatDuration;
+		[SerializeField] private float growDuration;
 		
 		private static GameObject _product;
 		private static GameObject _prefab;
 		private static GameObject _seed;
-		private static int _instanceCount;
 		
 		private void Awake()
 		{
@@ -33,9 +34,10 @@ namespace Interactable.Environment
 			_instanceCount++;
 			InUse = 1;
 			_harvestable = true;
-			_harvestDuration = 2f;
-			_eatDuration = 2f;
-			_growDuration = 15f;
+			harvestDuration = 2f;
+			eatDuration = 2f;
+			growDuration = 15f;
+			_product = Resources.Load<GameObject>("Prefabs/Interactables/Environment/FlowerFruit");
 			_prefab = Resources.Load<GameObject>("Prefabs/Interactables/Environment/Flower");
 			_seed = Resources.Load<GameObject>("Prefabs/Interactables/Environment/Seed");
 			SetMethods();
@@ -45,14 +47,15 @@ namespace Interactable.Environment
 		{
 			float startTime = Time.time;
 			
-			while (Time.time < startTime + _growDuration)
+			while (Time.time < startTime + growDuration)
 			{
-				transform.localScale = Vector3.Lerp(startScale, endScale, (Time.time - startTime)/_growDuration);
+				transform.localScale = Vector3.Lerp(startScale, endScale, (Time.time - startTime)/growDuration);
 				yield return null;
 			}
 
 			SetHarvestable(true);			
 		}
+		
 		public void SetHarvestable(bool harvestable)
 		{
 			if (!harvestable)
@@ -80,10 +83,10 @@ namespace Interactable.Environment
 		{
 			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 			responsible.animator.SetBool("isHarvesting", true);
-			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), _harvestDuration);
+			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), harvestDuration);
 			responsible.animator.SetBool("isHarvesting", false);
 			GroundUtil.Clear(gameObject.transform.position);
-			responsible.Inventory.Add(this.gameObject);
+			responsible.Inventory.Add(CreateProduct());
 			this.gameObject.transform.position = new Vector3(0f, -100f, 0f);
 			responsible.FinishJob();
 		}
@@ -96,7 +99,7 @@ namespace Interactable.Environment
 		{
 			if (_harvestable) yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 			
-			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), _eatDuration);
+			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), eatDuration);
 			if (_harvestable) 	{GroundUtil.Clear(gameObject.transform.position);}
 			responsible.Inventory.Remove(gameObject);
 			

@@ -6,15 +6,18 @@ using Interactable.Creatures;
 using Interface;
 using UnityEngine;
 
-public class Food : Interactable.Base.Interactable, IEdible
+public class Food : Pickable, IEdible
 {
 	private static int _instanceCount;
+
+	[SerializeField] private float eatDuration;
 	
-	private void Start()
+	private void Awake()
 	{
 		SetGroupName("food");
 		instanceNo = _instanceCount;
 		_instanceCount++;
+		eatDuration = 3.0f;
 		InUse = 1;
 		SetMethods();
 	}
@@ -26,11 +29,20 @@ public class Food : Interactable.Base.Interactable, IEdible
 	public IEnumerator Eat(Responsible responsible)
 	{
 		yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
-		Debug.Log(responsible.name + "is eating food!");
-		responsible.GetCurrentJob().SetProgressDuration(3);
-		yield return new WaitForSeconds(3f);
-		Debug.Log(responsible.name + " ate food!");
+		yield return Util.WaitForSeconds(responsible.GetCurrentJob(), eatDuration);
 		Destroy(this.gameObject);
 		responsible.FinishJob();
+	}
+
+	[Interactable(typeof(Responsible))]
+	public override IEnumerator Pick(Responsible responsible)
+	{
+		return base.Pick(responsible);
+	}
+
+	[Interactable(typeof(Responsible))]
+	public override IEnumerator Drop(Responsible responsible)
+	{
+		return base.Drop(responsible);
 	}
 }

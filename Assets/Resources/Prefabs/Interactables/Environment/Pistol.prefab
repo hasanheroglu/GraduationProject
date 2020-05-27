@@ -174,20 +174,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55c16de115474bac9bde4e9ae4efba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Pistol
   health: 100
   interactionPoint: {fileID: 8792316031831268653}
+  groupName: pistol
   picked: 0
   _pickDuration: 0
   dropDuration: 0
+  equipped: 0
   _equipDuration: 0
   _unequipDuration: 0
   durability: 0
   type: 6
   weaponType: 1
+  delay: 1
   damage: 10
   range: 20
-  delay: 1
   bulletPoint: {fileID: 3756819502576794610}
 --- !u!1 &8792316031831268653
 GameObject:

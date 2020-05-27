@@ -32,19 +32,7 @@ public class MeleePattern : WeaponPattern
         while(Time.time < startTime + overTime)
         {
             weapon.transform.position = Vector3.Lerp(startPosition, endPosition, (Time.time - startTime)/overTime);
-            
-            var colliders = Physics.OverlapBox(weapon.transform.position, weapon.transform.localScale / 2);
-            
-            foreach (var collider in colliders)
-            {
-                damagable = Util.GetDamagableFromCollider(collider);
-                
-                if (damagable != null && !ReferenceEquals(damagable, weapon.GetComponent<Weapon>().Responsible.gameObject))
-                {
-                    damagables.Add(damagable);
-                }
-            }
-            
+            damagables = DamageUtil.FindDamagables(weapon.transform.position, weapon.transform.localScale / 2, weapon);
             yield return null;
         }
         
@@ -52,17 +40,11 @@ public class MeleePattern : WeaponPattern
         {
             if (damagableObject.GetComponent<IDamagable>().Damage(weapon.GetComponent<Weapon>().damage))
             {
-                var killQuests = QuestManager.FindWithActivityType(weapon.GetComponent<Weapon>().Responsible, ActivityType.Kill);
-                foreach (var quest in killQuests)
-                {
-                    quest.Progress(ActivityType.Kill, damagableObject.GetComponent<Interactable.Base.Interactable>().GetGroupName());
-                }
-                UIManager.Instance.SetQuests(weapon.GetComponent<Weapon>().Responsible);
+                DamageUtil.ProgressKillQuests(weapon.GetComponent<Weapon>().Responsible, damagableObject);
             }
             damagableObject.GetComponent<Rigidbody>().AddForce(direction.normalized * 50);
         }
-        
-        
+
         startTime = Time.time;
         while(Time.time < startTime + overTime)
         {

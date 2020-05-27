@@ -14,7 +14,7 @@ namespace Interactable.Environment
 	{
 		private static int _instanceCount;
 		
-		[SerializeField] public bool Occupied;
+		[SerializeField] public bool occupied;
 		
 		private void Start()
 		{
@@ -27,7 +27,7 @@ namespace Interactable.Environment
 
 		private void Update()
 		{
-			if (Occupied)
+			if (occupied)
 			{
 				gameObject.GetComponent<ShaderAdjuster>().SetColor(Color.red);
 			}

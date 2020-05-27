@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using Interactable.Base;
+using Manager;
 using UnityEngine;
 
 public enum EquipableType {Head, Shoulder, Arm, Torso, Leg, Foot, Weapon}
 
 public abstract class Equipable : Pickable
 {
-    protected bool equipped;
+    public bool equipped;
 
     [Header("Equipable")]
     [SerializeField] private float _equipDuration;
@@ -36,6 +37,7 @@ public abstract class Equipable : Pickable
         }
         
         responsible.Equipment.Equip(gameObject);
+        UIManager.Instance.SetInventory(responsible);
         responsible.FinishJob();
     }
 
@@ -45,6 +47,7 @@ public abstract class Equipable : Pickable
         {
             yield return Util.WaitForSeconds(responsible.GetCurrentJob(), _unequipDuration);
             responsible.Equipment.Unequip(gameObject);
+            UIManager.Instance.SetInventory(responsible);
         }
 
         yield return null;

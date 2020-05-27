@@ -10,10 +10,10 @@ using UnityEngine.UI;
 public class RecipeManager : MonoBehaviour
 {
 	private Job _job;
+	private static readonly GameObject RecipeInfoPrefab = Resources.Load<GameObject>("Prefabs/UI/RecipeInfo");
 
-	public GameObject craftingMenu;
-	public GameObject recipes;
-	public GameObject recipeInfoPrefab;
+	[SerializeField] private GameObject craftingMenu;
+	[SerializeField] private GameObject recipes;
 
 	public static RecipeManager Instance { get; private set; }
 
@@ -55,13 +55,6 @@ public class RecipeManager : MonoBehaviour
 		var i = 0;
 		foreach (var recipe in recipeList)
 		{
-			var recipeInfo = Instantiate(recipeInfoPrefab, recipes.transform);
-			recipeInfo.GetComponent<RecipeInfo>().SetRecipeInfo(recipe);
-			recipeInfo.GetComponent<RecipeInfo>().selectButton.GetComponent<Button>().interactable = false;
-			var recipeInfoRect = recipeInfo.GetComponent<RectTransform>().rect;
-			var recipeInfoPosition = new Vector3(1, -1*i*recipeInfoRect.height, 0);
-			recipeInfo.GetComponent<RectTransform>().anchoredPosition = recipeInfoPosition;
-
 			foreach (var ingredient in recipe.Ingredients)
 			{
 				var count = 0;
@@ -76,12 +69,24 @@ public class RecipeManager : MonoBehaviour
 
 				if (count >= ingredient.Amount)
 				{
-					recipeInfo.GetComponent<RecipeInfo>().selectButton.GetComponent<Button>().interactable = true;
+					GetRecipeInfo(recipe, i).GetComponent<RecipeInfo>().selectButton.GetComponent<Button>().interactable = true;
 				}
 			}
 
 			i++;
 		}
+	}
+	
+	private GameObject GetRecipeInfo(Recipe recipe, int index)
+	{
+		var recipeInfo = Instantiate(RecipeInfoPrefab, recipes.transform);
+		recipeInfo.GetComponent<RecipeInfo>().SetRecipeInfo(recipe);
+		recipeInfo.GetComponent<RecipeInfo>().selectButton.GetComponent<Button>().interactable = false;
+		var recipeInfoRect = recipeInfo.GetComponent<RectTransform>().rect;
+		var recipeInfoPosition = new Vector3(1, -1*index*recipeInfoRect.height, 0);
+		recipeInfo.GetComponent<RectTransform>().anchoredPosition = recipeInfoPosition;
+
+		return recipeInfo;
 	}
 
 	public GameObject CreateProduct(Recipe recipe, GameObject parent)
