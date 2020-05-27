@@ -11,9 +11,9 @@ public static class QuestManager
     {
         List<Quest> quests = new List<Quest>();
 
-        foreach (var quest in responsible.Quests)
+        foreach (var quest in responsible.quests)
         {
-            if (quest.ActivityType == activityType) quests.Add(quest);
+            if (quest.activityType == activityType) quests.Add(quest);
         }
         
         return quests;
@@ -23,9 +23,9 @@ public static class QuestManager
     {
         List<Quest> quests = new List<Quest>();
         
-        foreach (var quest in responsible.Quests)
+        foreach (var quest in responsible.quests)
         {
-            if (quest.GroupName == groupName) quests.Add(quest);
+            if (quest.groupName == groupName) quests.Add(quest);
         }
         
         return quests;
@@ -33,7 +33,7 @@ public static class QuestManager
 
     public static void Progress(Responsible responsible, Job job)
     {
-        foreach (var quest in responsible.Quests)
+        foreach (var quest in responsible.quests)
         {
             quest.Progress(job);
             //UIManager.Instance.SetQuests(responsible);

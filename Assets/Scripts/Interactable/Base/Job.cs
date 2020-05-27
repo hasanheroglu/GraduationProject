@@ -106,7 +106,7 @@ public class Job
 	
 	private void SetButton(JobInfo jobInfo)
 	{
-		var button = UIManager.Instance.GetJobButton(jobInfo.Responsible.JobPanel.transform);
+		var button = UIManager.Instance.GetJobButton();
 		button.GetComponentInChildren<Text>().text = jobInfo.Method.Name;
 		ButtonUtil.SetOnClickAction(button, UIManager.GetJobButtonAction(this));
 		Button = button;

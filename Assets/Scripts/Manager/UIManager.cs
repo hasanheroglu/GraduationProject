@@ -24,7 +24,7 @@ namespace Manager
 		public GameObject interactionPanelPrefab;
 		[Header("Job")] 
 		public GameObject jobButtonPrefab;
-		public GameObject jobPanelPrefab;
+		public GameObject jobPanel;
 		[Header("Character Info")]
 		public GameObject responsibleName;
 		[Header("Need Info")] 
@@ -40,9 +40,7 @@ namespace Manager
 		[Header("Quest Info")] 
 		public GameObject questParent;
 		public GameObject questTextPrefab;
-
-		public HashSet<GameObject> JobPanels { get; private set; }
-
+		
 		public static UIManager Instance { get; private set; }
 
 		private void Awake()
@@ -55,8 +53,6 @@ namespace Manager
 			{
 				Instance = this;
 			}
-
-			JobPanels = new HashSet<GameObject>();
 		}
 
 		/*
@@ -145,17 +141,9 @@ namespace Manager
 		 * CREATING JOB PANEL AND BUTTONS
 		 */
 		
-		public void ActivateJobPanel(GameObject jobPanel)
+		public GameObject GetJobButton()
 		{
-			foreach (var panel in JobPanels)
-			{
-				panel.SetActive(ReferenceEquals(panel, jobPanel));
-			}
-		}
-		
-		public GameObject GetJobButton(Transform buttonParent)
-		{
-			return Instantiate(jobButtonPrefab, buttonParent);
+			return Instantiate(jobButtonPrefab);
 		}
 		
 		public static UnityAction GetJobButtonAction(Job job)
@@ -166,11 +154,17 @@ namespace Manager
 			};
 		}
 
-		public static void SetJobButtons(Responsible responsible)
+		public void SetJobButtons(Responsible responsible)
 		{
+			foreach (Transform child in jobPanel.transform)
+			{
+				child.SetParent(null);
+			}
+			
 			var i = 0;
 			foreach (var job in responsible.Jobs)
 			{
+				job.Button.transform.SetParent(jobPanel.transform);
 				ButtonUtil.AdjustPosition(job.Button, 1, i);
 				i++;
 			}
@@ -282,10 +276,10 @@ namespace Manager
 			float height;
 			var i = 0;
 			
-			foreach (var quest in responsible.Quests)
+			foreach (var quest in responsible.quests)
 			{
-				var text = quest.Description + " " + quest.DoneCount + "/" + quest.RepetitionCount;
-				if (quest.Completed) text +=  " Completed!";
+				var text = quest.description + " " + quest.doneCount + "/" + quest.repetitionCount;
+				if (quest.completed) text +=  " Completed!";
 				height = baseHeight * (text.Length / 20 + 1);
 				
 				var newQuest = Instantiate(questTextPrefab, Vector3.zero, Quaternion.identity, questParent.transform);

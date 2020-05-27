@@ -12,15 +12,14 @@ namespace Interactable.Base
 	public abstract class Responsible : Interactable, IDamagable, IAttackable
 	{
 		private NavMeshAgent _agent;
-		private bool _isDead;
 		
 		public Animator animator;
+		public bool isPlayer;
+		public bool isDead;
 
 		public string CharacterName { get; set; }
-		public bool IsPlayer { get; set; }
 
 		public List<Job> Jobs { get; set; }
-		public GameObject JobPanel { get; set; }
 		public bool JobFinished { get; set; }
 
 
@@ -38,25 +37,21 @@ namespace Interactable.Base
 		public bool AutoWill { get; set; }
 		public Behaviour Behaviour { get; set; }
 
-		public List<Quest> Quests { get; set; }
+		[SerializeField] public List<Quest> quests;
 
 		public GameObject directionPosition;
 
-		private void Awake()
+		public void Awake()
 		{
-			_isDead = false;
-			IsPlayer = false;
+			isDead = false;
+			//isPlayer = false;
 			
 			Jobs = new List<Job>();
 			Needs = new Dictionary<NeedType, Need>();
 			Skills = new Dictionary<SkillType, Skill>();
 			Inventory = new Inventory(this);
 			Equipment = new Equipment(this);
-			Quests = new List<Quest>();
-
-			JobPanel = Instantiate(UIManager.Instance.jobPanelPrefab, UIManager.Instance.canvas.transform);
-			UIManager.Instance.JobPanels.Add(JobPanel);
-			JobPanel.SetActive(false);
+			quests = new List<Quest>();
 
 			_agent = GetComponent<NavMeshAgent>();
 			animator = GetComponent<Animator>();
@@ -65,7 +60,7 @@ namespace Interactable.Base
 		}
 		public void Update()
 		{
-			if (_isDead) return;
+			if (isDead) return;
 			if (Jobs.Count > 0 && Jobs[0].Target == null) Jobs[0].Stop(true);
 			if (AutoWill) Behaviour.DoActivity();
 			
@@ -159,7 +154,7 @@ namespace Interactable.Base
 		
 		public bool Damage(int damage)
 		{
-			if (_isDead) return false;
+			if (isDead) return false;
 			
 			var decrease = damage * (Equipment.GetArmorValue() / 1000);
 			if (decrease > damage) decrease = damage;
@@ -169,7 +164,7 @@ namespace Interactable.Base
 			if (health <= 0)
 			{
 				health = 0;
-				_isDead = true;
+				isDead = true;
 				StopWalking();
 				if(animator != null) animator.SetTrigger("dead");
 
@@ -186,7 +181,7 @@ namespace Interactable.Base
 		}
 		public void Heal(int heal)
 		{
-			if (_isDead) return;
+			if (isDead) return;
 
 			health += heal;
 
@@ -219,7 +214,7 @@ namespace Interactable.Base
 						Behaviour.SetActivity();
 					}
 
-					if (IsPlayer)
+					if (isPlayer)
 					{
 						NotificationManager.Instance.Notify(CharacterName + " is under attack!", gameObject.transform);
 					}

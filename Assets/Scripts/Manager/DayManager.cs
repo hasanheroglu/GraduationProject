@@ -24,9 +24,15 @@ public class DayManager : MonoBehaviour
     {
         GetTime();
         
+        if(Input.GetKeyDown(KeyCode.DoubleQuote)) SetSpeedZero();
         if(Input.GetKeyDown(KeyCode.Alpha1)) SetSpeedNormal();
         if(Input.GetKeyDown(KeyCode.Alpha2)) SetSpeedFaster();
         if(Input.GetKeyDown(KeyCode.Alpha3)) SetSpeedFastest();
+    }
+
+    public static void SetSpeedZero()
+    {
+        Time.timeScale = 0;
     }
 
     public static void SetSpeedNormal()

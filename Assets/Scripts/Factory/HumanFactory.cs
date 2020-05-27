@@ -6,14 +6,15 @@ using UnityEngine.UI;
 
 namespace Factory
 {
-    public class HumanFactory : MonoBehaviour
+    public static class HumanFactory
     {
-        public GameObject humanName;
-        public GameObject humanPrefab;
+        private static GameObject humanPrefab = Resources.Load<GameObject>("Prefabs/Interactables/Creatures/Human");
 
-        public void CreateHuman()
+        public static GameObject GetHuman(Vector3 position)
         {
-            GameObject human = Instantiate(humanPrefab, new Vector3(0f, 1, 0f), Quaternion.identity);
+            GameObject human = Object.Instantiate(humanPrefab, position, Quaternion.identity);
+            return human;
+            /*
             human.GetComponent<Human>().CharacterName = humanName.GetComponent<Text>().text;
             human.GetComponent<Human>().IsPlayer = true;
             human.GetComponent<Human>().Quests.Add(new Quest(ActivityType.Chop, "tree", 3, "Chop 3 trees!"));
@@ -21,9 +22,10 @@ namespace Factory
             human.GetComponent<Human>().Quests.Add(new Quest(ActivityType.Harvest, "plant", 3, "Harvest 3 flowers!"));
             human.GetComponent<Human>().Quests.Add(new Quest(ActivityType.Plant, "seed", 3, "Plant 3 seeds!"));
             SetNeeds(human.GetComponent<Human>());
+            */
         }
 
-        private void SetNeeds(Responsible human)
+        private static void SetNeeds(Responsible human)
         {
             human.Needs.Add(NeedType.Hunger, NeedFactory.GetHunger());
             human.Needs.Add(NeedType.Fun, NeedFactory.GetFun());

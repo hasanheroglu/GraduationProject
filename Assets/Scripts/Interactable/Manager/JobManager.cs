@@ -17,13 +17,16 @@ namespace Interactable.Manager
 			}
 
 			job.Responsible.Jobs = newJobs;
-			UIManager.SetJobButtons(job.Responsible);
+			
+			if(ActionManager.Instance._responsible.Equals(job.Responsible.gameObject))
+				UIManager.Instance.SetJobButtons(job.Responsible);
 		}
 		
 		public static void AddJob(Job job)
 		{
 			job.Responsible.Jobs.Add(job);
-			UIManager.SetJobButtons(job.Responsible);
+			if(ActionManager.Instance._responsible.Equals(job.Responsible.gameObject))
+				UIManager.Instance.SetJobButtons(job.Responsible);
 		}
 
 		public static void RemoveJob(Job job)
@@ -35,7 +38,8 @@ namespace Interactable.Manager
 		public static void RemoveButton(Job job)
 		{
 			ButtonUtil.Destroy(job.Button);
-			UIManager.SetJobButtons(job.Responsible);
+			if(ActionManager.Instance._responsible.Equals(job.Responsible.gameObject))
+				UIManager.Instance.SetJobButtons(job.Responsible);
 		}
 
 		public static bool ActivityTypeExists(Responsible responsible, ActivityType activityType)

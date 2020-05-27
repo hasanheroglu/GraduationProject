@@ -71,7 +71,6 @@ namespace Manager
 
 			if (_responsible != null)
 			{
-				UIManager.Instance.ActivateJobPanel(_responsible.GetComponent<Responsible>().JobPanel);
 				UIManager.Instance.SetInfoPanel(_responsible.GetComponent<Responsible>());
 				UIManager.Instance.SetSkills(_responsible.GetComponent<Responsible>());
 				UIManager.Instance.SetQuests(_responsible.GetComponent<Responsible>());
@@ -89,10 +88,10 @@ namespace Manager
 			if (!Physics.Raycast(ray, out hit)) return;
 			var responsible = hit.transform.gameObject.GetComponent<Responsible>();
 			if (responsible == null) return;
-			if (!responsible.IsPlayer) return;
+			if (!responsible.isPlayer) return;
 			
 			_responsible = hit.transform.gameObject;
-			UIManager.Instance.ActivateJobPanel(_responsible.GetComponent<Responsible>().JobPanel);
+			UIManager.Instance.SetJobButtons(_responsible.GetComponent<Responsible>());
 			UIManager.Instance.SetInfoPanel(_responsible.GetComponent<Responsible>());
 			UIManager.Instance.SetSkills(_responsible.GetComponent<Responsible>());
 			UIManager.Instance.SetInventory(_responsible.GetComponent<Responsible>());

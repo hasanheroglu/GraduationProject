@@ -37,7 +37,30 @@ public class CameraManager : MonoBehaviour
         }
         else
         {
-            _camera.transform.position += Quaternion.Euler(0, _rotation, 0) * new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")) * moveAmount;
+            var horizontalMove = 0f;
+            var verticalMove = 0f;
+            
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            {
+                horizontalMove = -1;
+            }
+            
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            {
+                horizontalMove = 1;
+            }
+            
+            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            {
+                verticalMove = -1;
+            }
+            
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            {
+                verticalMove = 1;
+            }
+            
+            _camera.transform.position += Quaternion.Euler(0, _rotation, 0) * new Vector3(horizontalMove, 0f, verticalMove) * moveAmount;
         }
         
         if (Input.mouseScrollDelta.y < 0)

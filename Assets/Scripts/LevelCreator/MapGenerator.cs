@@ -37,7 +37,7 @@ public class MapGenerator : MonoBehaviour
         GetComponent<NavMeshSurface>().UpdateNavMesh(GetComponent<NavMeshSurface>().navMeshData);
     }
 
-    private void GenerateMap()
+    public void GenerateMap()
     {
         GenerateGround();
         GetComponent<NavMeshSurface>().BuildNavMesh();

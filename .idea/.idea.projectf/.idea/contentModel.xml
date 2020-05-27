@@ -69,6 +69,7 @@
             <e p="EffectFactory.cs" t="Include" />
             <e p="HumanFactory.cs" t="Include" />
             <e p="ItemFactory.cs" t="Include" />
+            <e p="LevelFactory.cs" t="Include" />
             <e p="NeedFactory.cs" t="Include" />
             <e p="RecipeFactory.cs" t="Include" />
             <e p="SkillFactory.cs" t="Include" />
@@ -151,6 +152,7 @@
             <e p="ActionManager.cs" t="Include" />
             <e p="CameraManager.cs" t="Include" />
             <e p="DayManager.cs" t="Include" />
+            <e p="GameRushManager.cs" t="Include" />
             <e p="NotificationManager.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
           </e>

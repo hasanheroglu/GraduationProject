@@ -5,38 +5,38 @@ using UnityEngine;
 
 public class Quest
 {
-    public ActivityType ActivityType { get; private set; }
-    public string GroupName { get; private set; }
-    public bool Completed { get; set; }
-    public int DoneCount { get; set; }
-    public int RepetitionCount { get; set; }
-    public string Description { get; set; }
+    public ActivityType activityType;
+    public string groupName;
+    public bool completed;
+    public int doneCount;
+    public int repetitionCount;
+    public string description; 
 
 
 
     public Quest(ActivityType activityType, string groupName, int repetitionCount, string description)
     {
-        Completed = false;
-        ActivityType = activityType;
-        GroupName = groupName;
-        DoneCount = 0;
-        RepetitionCount = repetitionCount;
-        Description = description;
+        completed = false;
+        this.activityType = activityType;
+        this.groupName = groupName;
+        doneCount = 0;
+        this.repetitionCount = repetitionCount;
+        this.description = description;
     }
 
     public void Progress(Job job)
     {
-        if (Completed) return;
-        if (ActivityType != job.ActivityType) return;
-        if (GroupName != job.Target.GetGroupName()) return;
-        if (++DoneCount == RepetitionCount) Completed = true;
+        if (completed) return;
+        if (activityType != job.ActivityType) return;
+        if (groupName != job.Target.GetGroupName()) return;
+        if (++doneCount == repetitionCount) completed = true;
     }
 
     public void Progress(ActivityType activityType, string groupName)
     {
-        if (Completed) return;
-        if (ActivityType != activityType) return;
-        if (GroupName != groupName) return;
-        if (++DoneCount == RepetitionCount) Completed = true;
+        if (completed) return;
+        if (this.activityType != activityType) return;
+        if (this.groupName != groupName) return;
+        if (++doneCount == repetitionCount) completed = true;
     }
 }
