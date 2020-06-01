@@ -150,6 +150,7 @@
             <e p="EffectManager.cs" t="Include" />
             <e p="GameRushManager.cs" t="Include" />
             <e p="JobManager.cs" t="Include" />
+            <e p="MainMenuManager.cs" t="Include" />
             <e p="NeedManager.cs" t="Include" />
             <e p="NotificationManager.cs" t="Include" />
             <e p="SkillManager.cs" t="Include" />
