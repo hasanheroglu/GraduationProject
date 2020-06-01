@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41f68628-977b-4739-9fb5-e8b401d59f06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/MainMenuManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/MainMenuManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Maps/Map_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Maps/Map_06.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/ZombieSpawner.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/ZombieSpawner.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/ZombieFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ZombieSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameRushManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameRushManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Maps/Map_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maps/Map_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/SkinnedHuman.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/SkinnedHuman.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Zombie 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Zombie 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Zombie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Zombie.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Zombie.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/DayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/DayManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +70,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/NeedManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/JobInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/38/395f479a/RectTransform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ZombieSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/IngredientInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Maps/Map_02.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -137,6 +146,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/1c/d9c3af95/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/BulletFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/ActivityFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/ZombieFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShaderAdjuster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0DD71E7E-BD24-4367-880B-6E8BC7CC8DB5/3e/8c1ec91f/StackTrace.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
@@ -151,8 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Wood.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/EquipableFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Util.cs" />
@@ -180,7 +188,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/Level0.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factory/LevelFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Activity/EatActivity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/DayManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" />
@@ -202,6 +209,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/MainMenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/GameRushManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/ZombieFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ZombieSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/DayManager.cs" />
       </list>
     </option>
   </component>
@@ -294,7 +304,7 @@
       <workItem from="1588273141268" duration="65482000" />
       <workItem from="1590476942646" duration="440000" />
       <workItem from="1590480194461" duration="11768000" />
-      <workItem from="1590989073677" duration="2441000" />
+      <workItem from="1590989073677" duration="5466000" />
     </task>
     <servers />
   </component>
@@ -535,10 +545,11 @@
     </state>
     <state width="600" height="419" key="javadoc.popup/0.23.1440.798@0.23.1440.798" timestamp="1587749293246" />
     <state width="600" height="424" key="javadoc.popup/0.23.1440.808@0.23.1440.808" timestamp="1588852321356" />
-    <state x="1951" y="179" width="896" height="903" key="search.everywhere.popup" timestamp="1590578669157">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state x="383" y="149" width="672" height="753" key="search.everywhere.popup" timestamp="1591006836955">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="1951" y="179" width="896" height="903" key="search.everywhere.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1590578669156" />
+    <state x="383" y="149" width="672" height="753" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1591006836955" />
     <state x="383" y="155" width="672" height="667" key="search.everywhere.popup/0.23.1440.798@0.23.1440.798" timestamp="1587896578537" />
     <state x="383" y="155" width="672" height="669" key="search.everywhere.popup/0.23.1440.801@0.23.1440.801" timestamp="1587821119420" />
   </component>

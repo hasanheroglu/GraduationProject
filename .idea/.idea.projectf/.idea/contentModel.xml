@@ -73,6 +73,7 @@
             <e p="NeedFactory.cs" t="Include" />
             <e p="RecipeFactory.cs" t="Include" />
             <e p="SkillFactory.cs" t="Include" />
+            <e p="ZombieFactory.cs" t="Include" />
           </e>
           <e p="GroundUtil.cs" t="Include" />
           <e p="Interactable" t="Include">
@@ -176,6 +177,7 @@
             <e p="SkillInfo.cs" t="Include" />
           </e>
           <e p="Util.cs" t="Include" />
+          <e p="ZombieSpawner.cs" t="Include" />
         </e>
       </e>
       <e p="NavMeshComponents.csproj" t="IncludeRecursive" />
