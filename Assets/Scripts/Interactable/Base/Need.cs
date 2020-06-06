@@ -32,14 +32,14 @@ public class Need
 		
 		if (Value < 0){ Value = 0; }
 
-		if (Value < 20 && !responsible.Behaviour.IsFirstAcitivity(_activity))
+		if (Value < 20 && !responsible.Behaviour.IsFirstActivity(_activity))
 		{
 			responsible.Behaviour.AddActivityToBeginning(_activity);
 			responsible.Behaviour.SetActivity();
 			NotificationManager.Instance.Notify(responsible.CharacterName + "'s " + Name + " level is critical!", responsible.gameObject.transform);
 		}
 
-		if (Value >= 20 && responsible.Behaviour.IsFirstAcitivity(_activity))
+		if (Value >= 20 && responsible.Behaviour.IsFirstActivity(_activity))
 		{
 			responsible.Behaviour.RemoveActivity(_activity);
 			responsible.Behaviour.SetActivity();

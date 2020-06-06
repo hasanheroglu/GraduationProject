@@ -12,9 +12,4 @@ public class Ingredient: Item {
 		Image = image;
 		Amount = amount;
 	}
-
-	public void AddAmountInfo(int amount)
-	{
-		
-	}
 }

@@ -24,7 +24,7 @@ public class Behaviour
 		Activity = Activities[0];
 	}
 
-	public bool IsFirstAcitivity(ActivityType activityType)
+	public bool IsFirstActivity(ActivityType activityType)
 	{
 		return Activities[0].Type == activityType;
 	}

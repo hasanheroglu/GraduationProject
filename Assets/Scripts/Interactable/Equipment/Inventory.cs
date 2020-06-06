@@ -65,10 +65,14 @@ public class Inventory
         return count;
     }
 
-    public void Remove(string itemName)
+    public void Remove(string itemName, int count = 1)
     {
-        var toBeRemoved = Find(itemName);
-        Items.Remove(toBeRemoved);
+        for (int i = 0; i < count; i++)
+        {
+            var toBeRemoved = Find(itemName);
+            Items.Remove(toBeRemoved);
+        }
+        
         UIManager.Instance.SetInventory(Responsible);
     }
     

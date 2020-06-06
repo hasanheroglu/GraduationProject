@@ -58,6 +58,7 @@ namespace Interactable.Base
 			if(animator != null) animator.SetBool("isWalking", false);
 			JobFinished = true;
 		}
+		
 		public void Update()
 		{
 			if (isDead) return;
@@ -69,7 +70,6 @@ namespace Interactable.Base
 			StartCoroutine(DoJob());
 		}
 		
-
 		public IEnumerator Walk(Vector3 position, bool followTarget = false)
 		{
 			_agent.isStopped = false;
@@ -89,14 +89,16 @@ namespace Interactable.Base
 			StopWalking();
 			yield return Turn();
 		}
+		
 		public void StopWalking()
 		{
 			if(animator != null) animator.SetBool("isWalking", false);
-			TargetInRange = true;
+			TargetInRange = false;
 			_agent.isStopped = true;
 			_agent.ResetPath();
 			_agent.isStopped = false;
 		}
+		
 		public void Wander()
 		{
 			if (Jobs.Count != 0) return;
@@ -206,7 +208,7 @@ namespace Interactable.Base
 					responsible.StopWalking();
 					yield return StartCoroutine(responsible.Turn());
 					
-					if (!Behaviour.IsFirstAcitivity(ActivityType.Kill))
+					if (!Behaviour.IsFirstActivity(ActivityType.Kill))
 					{
 						Behaviour.AddActivityToBeginning(ActivityType.Kill);
 						Behaviour.SetActivity();

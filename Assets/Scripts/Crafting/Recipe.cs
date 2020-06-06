@@ -28,21 +28,15 @@ namespace Crafting
 
 		public IEnumerator Craft(Responsible responsible)
 		{
+			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), Duration);
+			
 			foreach (var ingredient in Ingredients)
 			{
-				var count = responsible.Inventory.FindCount(ingredient.Name);
-
-				if (count >= ingredient.Amount)
+				if (responsible.Inventory.FindCount(ingredient.Name) >= ingredient.Amount)
 				{
-					for (int i = 0; i < ingredient.Amount; i++)
-					{
-						responsible.Inventory.Remove(ingredient.Name);
-					}
+					responsible.Inventory.Remove(ingredient.Name, ingredient.Amount);
 				}
 			}
-			
-			responsible.GetCurrentJob().SetProgressDuration(Duration);
-			yield return new WaitForSeconds(Duration);
 		}
 	}
 }

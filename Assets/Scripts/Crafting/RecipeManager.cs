@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class RecipeManager : MonoBehaviour
 {
 	private Job _job;
-	private static readonly GameObject RecipeInfoPrefab = Resources.Load<GameObject>("Prefabs/UI/RecipeInfo");
+	private static GameObject _recipeInfoPrefab;
 
 	[SerializeField] private GameObject craftingMenu;
 	[SerializeField] private GameObject recipes;
@@ -27,12 +27,14 @@ public class RecipeManager : MonoBehaviour
 		{
 			Instance = this;
 		}
+		
+		_recipeInfoPrefab = Resources.Load<GameObject>("Prefabs/UI/RecipeInfo");
 	}
 	
 	public void OpenCraftingMenu(List<Recipe> recipeList, Responsible responsible)
 	{
 		craftingMenu.SetActive(true);
-		SetRecipes(recipeList, responsible.Inventory.Items);
+		SetRecipeMenu(recipeList, responsible.Inventory);
 		_job = responsible.Jobs[0];
 	}
 
@@ -45,41 +47,47 @@ public class RecipeManager : MonoBehaviour
 		craftingMenu.SetActive(false);	
 	}
 
-	private void SetRecipes(List<Recipe> recipeList, List<GameObject> items)
+	private void SetRecipeMenu(List<Recipe> recipeList, Inventory inventory)
+	{
+		ClearRecipeMenu();
+		SetRecipes(recipeList, inventory);
+	}
+
+	private void ClearRecipeMenu()
 	{
 		foreach (Transform child in recipes.transform)
 		{
 			Destroy(child.gameObject);
 		}
-		
+	}
+	
+	private void SetRecipes(List<Recipe> recipeList, Inventory inventory)
+	{
 		var i = 0;
 		foreach (var recipe in recipeList)
 		{
-			foreach (var ingredient in recipe.Ingredients)
-			{
-				var count = 0;
-				foreach (var item in items)
-				{
-					
-					if (item.GetComponent<Interactable.Base.Interactable>().GetGroupName() == ingredient.Name)
-					{
-						count++;
-					}
-				}
-
-				if (count >= ingredient.Amount)
-				{
-					GetRecipeInfo(recipe, i).GetComponent<RecipeInfo>().selectButton.GetComponent<Button>().interactable = true;
-				}
-			}
-
+			var recipeInfo = GetRecipeInfo(recipe, i);
+			recipeInfo.GetComponent<RecipeInfo>().selectButton.GetComponent<Button>().interactable = CheckForIngredients(recipe, inventory);
 			i++;
 		}
+	}
+
+	private bool CheckForIngredients(Recipe recipe, Inventory inventory)
+	{
+		foreach (var ingredient in recipe.Ingredients)
+		{
+			if (inventory.FindCount(ingredient.Name) < ingredient.Amount)
+			{
+				return false;
+			}
+		}
+		
+		return true;
 	}
 	
 	private GameObject GetRecipeInfo(Recipe recipe, int index)
 	{
-		var recipeInfo = Instantiate(RecipeInfoPrefab, recipes.transform);
+		var recipeInfo = Instantiate(_recipeInfoPrefab, recipes.transform);
 		recipeInfo.GetComponent<RecipeInfo>().SetRecipeInfo(recipe);
 		recipeInfo.GetComponent<RecipeInfo>().selectButton.GetComponent<Button>().interactable = false;
 		var recipeInfoRect = recipeInfo.GetComponent<RectTransform>().rect;

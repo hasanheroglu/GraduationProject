@@ -122,15 +122,17 @@ public class Job
 		Responsible.JobFinished = false;
 		Responsible.TargetInRange = false;
 		
-		if(Target){
+		if (Target)
+		{
 			Responsible.Target = Target.gameObject;
 		}
 		
 		Responsible.StartCoroutine(Coroutine);
-
 		
-		if(!Responsible.Inventory.InInventory(Target.gameObject))
-			yield return new WaitUntil(() => Responsible.TargetInRange); 
+		if (!Responsible.Inventory.InInventory(Target.gameObject))
+		{
+			yield return new WaitUntil(() => Responsible.TargetInRange);
+		}
 		
 		if (Target == null || Target.InUse <= 0 || !Target.Methods.Contains(Method))
 		{	
