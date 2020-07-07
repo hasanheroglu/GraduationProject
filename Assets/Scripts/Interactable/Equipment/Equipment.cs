@@ -34,11 +34,6 @@ public class Equipment
         var type = item.GetComponent<Equipable>().type;
         item.GetComponent<Rigidbody>().isKinematic = true;
         
-        if (type == EquipableType.Weapon)
-        {
-            SetWeapon(item);
-        }
-        
         if (Items.Count == 0)
         {
             Items.Add(type, item);
@@ -50,17 +45,21 @@ public class Equipment
                 item.GetComponent<Equipable>().SetEquipped(true);
                 if (Items[type] != null)
                 {
+                    Debug.Log("Found similar equipment. Unequiping " + Items[type].GetComponent<Equipable>().GetGroupName());
                     Unequip(Items[type]);
                 }
-                else
-                {
-                    Items[type] = item;
-                }
+                
+                Items[type] = item;
             }
             else
             {
                 Items.Add(type , item);
             }
+        }
+        
+        if (type == EquipableType.Weapon)
+        {
+            SetWeapon(item);
         }
     }
     

@@ -95,7 +95,8 @@ public class Table : Pickable, IPlaceable
         if (!ground.occupied)
         {
             GroundUtil.Occupy(gameObject.transform.position);
-            SetPicked(_placed);
+            SetPicked(!_placed);
+            responsible.Inventory.Remove(GetGroupName());
         }
         else
         {

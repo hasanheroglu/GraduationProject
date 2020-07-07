@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using Attribute;
 using Factory;
 using Interactable.Base;
 using Interactable.Creatures;
+using Interactable.Manager;
 using Interface;
 using Manager;
 using UnityEngine;
@@ -30,13 +32,11 @@ namespace Interactable.Environment
 
 		[Activity(ActivityType.Chop)]
 		[Interactable(typeof(Human))]
-		[Skill(SkillType.Lumberjack, 250)]
+		[Skill(SkillType.Lumberjack, 1000)]
 		public IEnumerator Chop(Responsible responsible)
 		{
-			if(true) NotificationManager.Instance.Notify("You should equip an axe!", responsible.gameObject.transform);
-			
 			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
-			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), chopDuration);
+			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), SkillManager.GetSkillBonusForDuration(responsible, chopDuration));
 			GroundUtil.Clear(gameObject.transform.position);
 			responsible.Inventory.Add(CreateProduct());
 			Destroy(gameObject);

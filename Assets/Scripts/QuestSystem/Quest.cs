@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Manager;
 using UnityEngine;
 
+[System.Serializable]
 public class Quest
 {
     public ActivityType activityType;

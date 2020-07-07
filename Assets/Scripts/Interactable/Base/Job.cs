@@ -17,7 +17,7 @@ public class Job
 
 	public IEnumerator Coroutine { get; set; }
 	
-	private MethodInfo Method { get; set; }
+	public MethodInfo Method { get; set; }
 
 	public Interactable.Base.Interactable Target { get; set; }
 

@@ -28,7 +28,7 @@ public class ButtonUtil : MonoBehaviour {
 	public static void AdjustPosition(GameObject button, int direction, int iterationCount)
 	{
 		var buttonRect = button.GetComponent<RectTransform>().rect;
-		var buttonPosition = new Vector3(1,direction * iterationCount * buttonRect.height, 0);
+		var buttonPosition = new Vector3(1,direction * iterationCount * (buttonRect.height + 5), 0);
 		button.GetComponent<RectTransform>().anchoredPosition = buttonPosition;
 	}
 	

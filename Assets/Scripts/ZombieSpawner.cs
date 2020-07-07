@@ -39,7 +39,7 @@ public class ZombieSpawner : MonoBehaviour
     {
         if (!_waitForNextSpawn)
         {
-            ZombieFactory.GetZombie(transform.position);
+            CreatureFactory.GetZombie(transform.position);
             StartCoroutine(WaitForNextSpawn());
         }
     }

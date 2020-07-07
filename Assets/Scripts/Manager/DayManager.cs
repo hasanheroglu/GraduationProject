@@ -87,6 +87,8 @@ public class DayManager : MonoBehaviour
 
     private void SetClock()
     {
+        if (clock == null) return;
+    
         clock.GetComponent<Text>().text  = String.Format("{0:D2}:{1:D2}", _clock.Hour, _clock.Minute);
     }
 

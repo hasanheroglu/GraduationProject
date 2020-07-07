@@ -16,6 +16,7 @@ namespace Interactable.Base
 		public Animator animator;
 		public bool isPlayer;
 		public bool isDead;
+		public bool autoWill;
 
 		public string CharacterName { get; set; }
 
@@ -28,13 +29,11 @@ namespace Interactable.Base
 		
 		public Dictionary<NeedType, Need> Needs { get; set; }
 		public Dictionary<SkillType, Skill> Skills { get; set; }
-
+		
 		
 		public Inventory Inventory { get; set; }
 		public Equipment Equipment { get; set; }
-		
-		
-		public bool AutoWill { get; set; }
+
 		public Behaviour Behaviour { get; set; }
 
 		[SerializeField] public List<Quest> quests;
@@ -51,7 +50,6 @@ namespace Interactable.Base
 			Skills = new Dictionary<SkillType, Skill>();
 			Inventory = new Inventory(this);
 			Equipment = new Equipment(this);
-			quests = new List<Quest>();
 
 			_agent = GetComponent<NavMeshAgent>();
 			animator = GetComponent<Animator>();
@@ -63,7 +61,7 @@ namespace Interactable.Base
 		{
 			if (isDead) return;
 			if (Jobs.Count > 0 && Jobs[0].Target == null) Jobs[0].Stop(true);
-			if (AutoWill) Behaviour.DoActivity();
+			if (autoWill) Behaviour.DoActivity();
 			
 			foreach (var need in Needs){ need.Value.Update(this); }
 			

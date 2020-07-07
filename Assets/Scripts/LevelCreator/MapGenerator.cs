@@ -26,21 +26,10 @@ public class MapGenerator : MonoBehaviour
         
         GenerateMap();
     }
-
-    public void BuildNavMesh()
-    {
-        GetComponent<NavMeshSurface>().BuildNavMesh();
-    }
-
-    public void UpdateNavMesh()
-    {
-        GetComponent<NavMeshSurface>().UpdateNavMesh(GetComponent<NavMeshSurface>().navMeshData);
-    }
-
-    public void GenerateMap()
+    
+    private void GenerateMap()
     {
         GenerateGround();
-        GetComponent<NavMeshSurface>().BuildNavMesh();
         for (int x = 0; x < map.width; x++)
         {
             for (int y = 0; y < map.height; y++)

@@ -40,7 +40,7 @@ public class RecipeManager : MonoBehaviour
 
 	public void CloseCraftingMenu(bool immediate = false)
 	{
-		if (immediate)
+		if (_job != null && immediate)
 		{
 			_job.Stop(true);
 		}

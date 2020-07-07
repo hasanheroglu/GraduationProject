@@ -17,7 +17,6 @@ public class Cow : Responsible
         Behaviour = new Behaviour(this.GetComponent<Responsible>());
         Behaviour.Activities = new List<Activity> {ActivityFactory.GetActivity(ActivityType.Eat)};
         Behaviour.SetActivity();
-        AutoWill = true;
         SetMethods();
         InUse = 999;
     }

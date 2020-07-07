@@ -143,7 +143,9 @@ namespace Manager
 		
 		public GameObject GetJobButton()
 		{
-			return Instantiate(jobButtonPrefab);
+			var button = Instantiate(jobButtonPrefab, jobPanel.transform);
+			button.transform.SetParent(null);
+			return button;
 		}
 		
 		public static UnityAction GetJobButtonAction(Job job)

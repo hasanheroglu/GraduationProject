@@ -21,7 +21,7 @@ namespace Interactable.Creatures
 			Behaviour = new Behaviour(this.GetComponent<Responsible>());
 			Behaviour.Activities = new List<Activity> {ActivityFactory.GetActivity(ActivityType.Chop), ActivityFactory.GetActivity(ActivityType.Kill)};
 			Behaviour.SetActivity();
-			AutoWill = false;
+			autoWill = false;
 			SetMethods();
 			InUse = 999;
 		}

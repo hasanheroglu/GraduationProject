@@ -18,7 +18,6 @@ public class Zombie : Responsible
 		Behaviour = new Behaviour(this.GetComponent<Responsible>());
 		Behaviour.Activities = new List<Activity> {ActivityFactory.GetActivity(ActivityType.Kill)};
 		Behaviour.SetActivity();
-		AutoWill = true;
 		SetMethods();
 		InUse = 999;
 	}

@@ -50,6 +50,9 @@ public class GameRushManager : MonoBehaviour
         foreach (var character in characters)
         {
             var responsible = character.GetComponent<Responsible>();
+
+            if (responsible.quests == null) return false;
+            
             foreach (var quest in responsible.quests)
             {
                 if (!quest.completed)
