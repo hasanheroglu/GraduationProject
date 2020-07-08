@@ -14,14 +14,12 @@ public static class CreatureFactory
     public static GameObject GetCow(Vector3 position)
     {
         var cow = Object.Instantiate(Cow, position, Cow.transform.rotation);
-        cow.GetComponent<Responsible>().autoWill = true;
         return cow;
     }
 
     public static GameObject GetZombie(Vector3 position)
     {
         var zombie = Object.Instantiate(Zombie, position, Zombie.transform.rotation);
-        zombie.GetComponent<Responsible>().autoWill = true;
         return zombie;
     }
 }

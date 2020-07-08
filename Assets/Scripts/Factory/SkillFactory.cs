@@ -15,6 +15,8 @@
 					return GetHunting();
 				case SkillType.Cooking:
 					return GetCooking();
+				case SkillType.Crafting:
+					return GetCrafting();
 				default:
 					return GetNone();
 			}
@@ -43,6 +45,11 @@
 		private static Skill GetCooking()
 		{
 			return new Skill(SkillType.Cooking, 1, 0, 1000, 1.2f);
+		}
+
+		private static Skill GetCrafting()
+		{
+			return new Skill(SkillType.Crafting, 1, 0, 1000, 1.2f);
 		}
 	}
 }

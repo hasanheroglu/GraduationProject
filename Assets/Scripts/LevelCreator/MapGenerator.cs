@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Interactable.Base;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;

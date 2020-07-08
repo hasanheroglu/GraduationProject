@@ -40,6 +40,15 @@ namespace Factory
 					break;
 				case ActivityType.Plant:
 					break;
+				case ActivityType.Wander:
+					break;
+				case ActivityType.Mine:
+					effects.Add(GetHunger());
+					break;
+				case ActivityType.Craft:
+					break;
+				case ActivityType.Place:
+					break;
 				default:
 					throw new ArgumentOutOfRangeException("activityType", activityType, null);
 			}
@@ -69,7 +78,6 @@ namespace Factory
 		{
 			return new Effect(NeedType.Hygiene, 0.1f);
 		}
-
 	}
 	
 }

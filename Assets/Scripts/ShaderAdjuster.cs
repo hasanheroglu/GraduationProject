@@ -23,6 +23,8 @@ public class ShaderAdjuster : MonoBehaviour
 
     public void SetColor(Color color)
     {
+        if (!_renderer || _renderer.materials == null) return;
+        
         foreach (var material in _renderer.materials)
         {
             material.SetColor("_EmissionColor", material.color * color);
@@ -32,6 +34,8 @@ public class ShaderAdjuster : MonoBehaviour
 
     public void OnMouseEnter()
     {
+        if (!_renderer || _renderer.materials == null) return;
+
         foreach (var material in _renderer.materials)
         {
             material.SetColor("_EmissionColor", material.color * Color.gray);

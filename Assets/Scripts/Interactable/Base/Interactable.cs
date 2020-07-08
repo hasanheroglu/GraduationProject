@@ -55,7 +55,7 @@ namespace Interactable.Base
 		{
 			MethodInfo methodInfo = null;
 			
-			if (_methods.Count == 0) return null;
+			if (_methods == null || _methods.Count == 0) return null;
 			
 			foreach (var method in _methods)
 			{

@@ -36,7 +36,6 @@ public static class QuestManager
         foreach (var quest in responsible.quests)
         {
             quest.Progress(job);
-            //UIManager.Instance.SetQuests(responsible);
         }
     }
     

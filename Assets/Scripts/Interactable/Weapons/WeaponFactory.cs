@@ -7,7 +7,8 @@ using Object = UnityEngine.Object;
 public static class WeaponFactory
 {
     private static readonly GameObject Fist = Resources.Load<GameObject>("Prefabs/Interactables/Environment/Fist");
-    private static readonly GameObject Weapon = Resources.Load<GameObject>("Prefabs/Interactables/Environment/Weapon");
+    private static readonly GameObject Pistol = Resources.Load<GameObject>("Prefabs/Interactables/Environment/Pistol");
+    private static readonly GameObject Shotgun = Resources.Load<GameObject>("Prefabs/Interactables/Environment/Shotgun");
     
     public static GameObject GetFist(Vector3 position)
     {
@@ -19,7 +20,7 @@ public static class WeaponFactory
     
     public static GameObject GetPistol(Vector3 position)
     {
-        var weapon = Object.Instantiate(Weapon, position, Quaternion.identity);
+        var weapon = Object.Instantiate(Pistol, position, Quaternion.identity);
         weapon.GetComponent<Weapon>().SetWeapon(WeaponType.SingleShot, 15, 30f, 1f);
         weapon.GetComponent<Weapon>().SetGroupName("pistol");
         return weapon;
@@ -27,7 +28,7 @@ public static class WeaponFactory
 
     public static GameObject GetShotgun(Vector3 position)
     {
-        var weapon = Object.Instantiate(Weapon, position, Quaternion.identity);
+        var weapon = Object.Instantiate(Shotgun, position, Quaternion.identity);
         weapon.GetComponent<Weapon>().SetWeapon(WeaponType.MultipleShot, 20, 10f, 2f);
         weapon.GetComponent<Weapon>().SetGroupName("shotgun");
         return weapon;

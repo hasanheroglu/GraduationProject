@@ -16,26 +16,22 @@ namespace Interactable.Base
 		public Animator animator;
 		public bool isPlayer;
 		public bool isDead;
-		public bool autoWill;
-
-		public string CharacterName { get; set; }
+		public string characterName; 
 
 		public List<Job> Jobs { get; set; }
 		public bool JobFinished { get; set; }
-
-
+		
 		public GameObject Target { get; set; }
 		public bool TargetInRange { get; set; }
 		
 		public Dictionary<NeedType, Need> Needs { get; set; }
 		public Dictionary<SkillType, Skill> Skills { get; set; }
 		
-		
 		public Inventory Inventory { get; set; }
 		public Equipment Equipment { get; set; }
 
 		public Behaviour Behaviour { get; set; }
-
+		
 		[SerializeField] public List<Quest> quests;
 
 		public GameObject directionPosition;
@@ -50,6 +46,7 @@ namespace Interactable.Base
 			Skills = new Dictionary<SkillType, Skill>();
 			Inventory = new Inventory(this);
 			Equipment = new Equipment(this);
+			Behaviour = GetComponent<Behaviour>();
 
 			_agent = GetComponent<NavMeshAgent>();
 			animator = GetComponent<Animator>();
@@ -60,8 +57,8 @@ namespace Interactable.Base
 		public void Update()
 		{
 			if (isDead) return;
+			if (isPlayer) transform.Find("PlayerIndicator").gameObject.SetActive(true);
 			if (Jobs.Count > 0 && Jobs[0].Target == null) Jobs[0].Stop(true);
-			if (autoWill) Behaviour.DoActivity();
 			
 			foreach (var need in Needs){ need.Value.Update(this); }
 			
@@ -171,6 +168,7 @@ namespace Interactable.Base
 					StopDoingJob(Jobs[0]);
 				}
 
+				Instantiate(Resources.Load<GameObject>("Prefabs/Interactables/Environment/Corpse"), transform.position, Quaternion.identity);
 				Destroy(gameObject, 2.5f);
 				return true;
 			}
@@ -214,7 +212,7 @@ namespace Interactable.Base
 
 					if (isPlayer)
 					{
-						NotificationManager.Instance.Notify(CharacterName + " is under attack!", gameObject.transform);
+						NotificationManager.Instance.Notify(characterName + " is under attack!", gameObject.transform);
 					}
 					
 					yield return weapon.Use();

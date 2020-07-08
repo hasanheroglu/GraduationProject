@@ -14,9 +14,6 @@ public class Cow : Responsible
         SetGroupName("cow");
         instanceNo = _instanceCount;
         _instanceCount++;
-        Behaviour = new Behaviour(this.GetComponent<Responsible>());
-        Behaviour.Activities = new List<Activity> {ActivityFactory.GetActivity(ActivityType.Eat)};
-        Behaviour.SetActivity();
         SetMethods();
         InUse = 999;
     }

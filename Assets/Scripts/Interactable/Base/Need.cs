@@ -36,7 +36,7 @@ public class Need
 		{
 			responsible.Behaviour.AddActivityToBeginning(_activity);
 			responsible.Behaviour.SetActivity();
-			NotificationManager.Instance.Notify(responsible.CharacterName + "'s " + Name + " level is critical!", responsible.gameObject.transform);
+			NotificationManager.Instance.Notify(responsible.characterName + "'s " + Name + " level is critical!", responsible.gameObject.transform);
 		}
 
 		if (Value >= 20 && responsible.Behaviour.IsFirstActivity(_activity))

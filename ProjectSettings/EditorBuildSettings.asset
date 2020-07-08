@@ -12,6 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Test00.unity
     guid: 26b05554221ba0d488a120ce952ebb5b
   - enabled: 1
-    path: Assets/Scenes/Test01.unity
-    guid: f1fe5ff593d00471ab7f1c260bf13e13
+    path: Assets/Scenes/QuestRushLevels/QuestRush_00.unity
+    guid: f003c1128b54148a1916ebeb0b901f09
+  - enabled: 1
+    path: Assets/Scenes/QuestRushLevels/QuestRush_01.unity
+    guid: 2fb020c6676a94ec7992ed8b1ded7a4e
+  - enabled: 1
+    path: Assets/Scenes/QuestRushLevels/QuestRush_02.unity
+    guid: e318f0599d0e04a46a571f272330f3b5
+  - enabled: 1
+    path: Assets/Scenes/QuestRushLevels/QuestRush_03.unity
+    guid: 24169957557d74e04ac767b80b32d327
+  - enabled: 1
+    path: Assets/Scenes/QuestRushLevels/QuestRush_04.unity
+    guid: f96c2e6e255414cae83b3ac9466fe332
   m_configObjects: {}

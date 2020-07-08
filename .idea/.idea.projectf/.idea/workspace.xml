@@ -2,44 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41f68628-977b-4739-9fb5-e8b401d59f06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/Cow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/Cow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRush_01.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRush_01.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Zombie_Presentation.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Zombie_Presentation.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Corpse.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Corpse.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Rock.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Rock.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Stone.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Stone.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/StoneMat.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/StoneMat.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_00.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_00.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_01.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_01.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_02.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_02.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_03.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_03.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_04.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_04.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_05.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_05.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_06.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_06.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_07.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_07.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Rock.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Stone.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IMinable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PlayerIndicator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/New Assets/tent.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/New Assets/tent.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/CowBlW.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/CowBlW.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch1.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch4.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch4.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch7.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Grass/GrassBunch7.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Quests.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test00.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/Cow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/Cow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Human.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Human.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Zombie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Tree 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Tree 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Tree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Tree.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/QuestRush_01.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/QuestRush_01.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Activity/Activity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Activity/Activity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/CreatureFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/CreatureFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/LevelFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/LevelFactory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Corpse.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/ZombieFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/CreatureFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/ZombieFactory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/CreatureFactory.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/SkillFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/SkillFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Need.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Need.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Skill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Skill.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Cow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Cow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Table.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Table.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Wood.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Wood.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelCreator/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelCreator/MapGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/DayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/DayManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameRushManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameRushManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/SkillManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/SkillManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/MainMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/MainMenuManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestSystem/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestSystem/Quest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ZombieSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ZombieSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Corpse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestFactory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Rock.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShaderAdjuster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShaderAdjuster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scri.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scri.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,12 +97,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CA34BBEA-71CA-4852-BE64-D92617FE5208/a3/9c91a13b/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MeleePattern.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CA34BBEA-71CA-4852-BE64-D92617FE5208/e5/e5f975b5/Event.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/LevelFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/96/4ee9cdeb/ScriptableRuntimeReflectionSystemWrapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DemoScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/4f/655b0edc/RenderPipelineManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62495DF7-0EB7-49F9-8FCD-13D89B5DCDA9/ce/66cb7ad6/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Activity/EatActivity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Stone.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PlayerIndicator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/InteractCollider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IDamagable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/RecipeInfo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -98,6 +129,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Crafting/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Corpse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" root0="FORCE_HIGHLIGHTING" />
@@ -136,7 +168,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IHarvestable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Activity/Activity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponPattern.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ICraftable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/InventoryItemInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -152,6 +183,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/SkillAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/ActivityAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attribute/InteractableAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Pickable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ProgressBar.cs" root0="FORCE_HIGHLIGHTING" />
@@ -160,11 +192,13 @@
     <setting file="file:///Applications/Unity/Hub/Editor/2020.1.0a19/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Cow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Test00.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IMinable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/47/6e57b280/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/49/f0bb24ae/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/ItemFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D763B293-74B1-42EF-B7F5-1E3C085D1D5A/1c/d9c3af95/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/BulletFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/ActivityFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/CreatureFactory.cs" root0="FORCE_HIGHLIGHTING" />
@@ -178,61 +212,62 @@
     <setting file="file://$PROJECT_DIR$/Assets/ImportedAssets/NavMeshComponents/Scripts/NavMeshSourceTag.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.2.1/Rider/Editor/RiderInitializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Rock.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/NotificationManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/NotificationInfo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Need.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/HumanFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Manager/JobManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/ActionManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/Level.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/Level0.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/LevelFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Activity/EatActivity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Seed.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/DamageUtil.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/MeleePattern.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/MainMenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ZombieSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/Ingredient.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Wood.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Table.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Activity/ChopActivity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ButtonUtil.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Equipment.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelCreator/MapGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Job.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SkillManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Skill.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/DayManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factory/ZombieFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem/Quest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/MainMenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayerIndicator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/PlayerIndicator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IMinable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Stone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Rock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Skill.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/SkillFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Activity/Activity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/EffectFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Table.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/GameRushManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Interactable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShaderAdjuster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/WeaponFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Corpse.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Zombie.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Cow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/CreatureFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem/Quest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/GameRushManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Creatures/Human.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelCreator/MapGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factory/CreatureFactory.cs" />
       </list>
     </option>
   </component>
@@ -328,7 +363,7 @@
       <workItem from="1590989073677" duration="15848000" />
       <workItem from="1591971418601" duration="8191000" />
       <workItem from="1591984152272" duration="1140000" />
-      <workItem from="1593678048658" duration="6459000" />
+      <workItem from="1593678048658" duration="21313000" />
     </task>
     <servers />
   </component>
@@ -564,10 +599,11 @@
       <screen x="0" y="23" width="1440" height="798" />
     </state>
     <state width="720" height="399" key="XDebugger.FullValuePopup/0.23.1440.798@0.23.1440.798" timestamp="1587763295844" />
-    <state width="800" height="567" key="javadoc.popup" timestamp="1591982566205">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="600" height="473" key="javadoc.popup" timestamp="1594195324177">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="800" height="567" key="javadoc.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1591982566205" />
+    <state width="600" height="473" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1594195324177" />
     <state width="600" height="419" key="javadoc.popup/0.23.1440.798@0.23.1440.798" timestamp="1587749293246" />
     <state width="600" height="424" key="javadoc.popup/0.23.1440.808@0.23.1440.808" timestamp="1588852321356" />
     <state x="383" y="149" width="672" height="753" key="search.everywhere.popup" timestamp="1591006836955">

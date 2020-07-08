@@ -173,9 +173,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0140bc3f3bf443508d58c329a8d8b2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Tree
   health: 100
   interactionPoint: {fileID: 1003886813082132}
+  groupName: tree
+  chopDuration: 0
 --- !u!114 &2728052147940247051
 MonoBehaviour:
   m_ObjectHideFlags: 0

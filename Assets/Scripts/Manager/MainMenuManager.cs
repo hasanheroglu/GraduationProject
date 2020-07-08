@@ -12,7 +12,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void PlayQuestRush()
     {
-        SceneManager.LoadScene("Test01");
+        SceneManager.LoadScene("QuestRush_00");
     }
 
     public void Quit()

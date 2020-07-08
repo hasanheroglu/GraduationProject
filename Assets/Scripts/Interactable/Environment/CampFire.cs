@@ -24,31 +24,39 @@ public class CampFire : Interactable.Base.Interactable, ICraftable
 		InUse = 1;
 		recipeSet = false;
 		SetMethods();
-		recipes = new List<Recipe> {RecipeFactory.GetWoodenGauntlets(this), RecipeFactory.GetWoodenHelmet(this), RecipeFactory.GetWoodenFaulds(this), RecipeFactory.GetTable(this)};
+		recipes = new List<Recipe>
+		{
+			RecipeFactory.GetWoodenGauntlets(this), 
+			RecipeFactory.GetWoodenHelmet(this), 
+			RecipeFactory.GetWoodenFaulds(this), 
+			RecipeFactory.GetTable(this),
+			RecipeFactory.GetShotgun(this)
+		};
 	}
 
-	[Activity(ActivityType.Cook)]
+	[Activity(ActivityType.Craft)]
 	[Interactable(typeof(Human))]
-	[Skill(SkillType.Cooking, 500)]
+	[Skill(SkillType.Crafting, 500)]
 	public IEnumerator Craft(Responsible responsible)
 	{
 		yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 		RecipeManager.Instance.OpenCraftingMenu(recipes, responsible);
 		yield return new WaitUntil(() => recipeSet);
 		yield return currentRecipe.Craft(responsible);
+
+		foreach (var quest in responsible.quests)
+		{
+			quest.Progress(ActivityType.Craft, currentRecipe.Name);
+		}
+
+		var product = RecipeManager.Instance.CreateProduct(currentRecipe, gameObject);
+		product.GetComponent<Pickable>().SetPicked(true);
+		responsible.Inventory.Add(product);
+		
 		responsible.FinishJob();
-		var food = RecipeManager.Instance.CreateProduct(currentRecipe, gameObject);
-		Eat(responsible, food);
 		ResetRecipe();
 	}
-
-	private void Eat(Responsible responsible, GameObject food)
-	{
-		var interactable = food.GetComponent<Interactable.Base.Interactable>();
-		var coroutineInfo = new JobInfo(responsible, interactable,  interactable.GetComponent<IEdible>().GetType().GetMethod("Eat"), new object[] {responsible});
-		UIManager.SetInteractionAction(coroutineInfo, true);
-	}
-
+	
 	public void SetRecipe(Recipe recipe)
 	{
 		currentRecipe = recipe;

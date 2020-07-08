@@ -39,7 +39,6 @@
             <e p="Read-Me.txt" t="Include" />
           </e>
         </e>
-        <e p="scri.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Activity" t="Include">
             <e p="Activity.cs" t="Include" />
@@ -70,7 +69,6 @@
             <e p="EffectFactory.cs" t="Include" />
             <e p="HumanFactory.cs" t="Include" />
             <e p="ItemFactory.cs" t="Include" />
-            <e p="LevelFactory.cs" t="Include" />
             <e p="NeedFactory.cs" t="Include" />
             <e p="RecipeFactory.cs" t="Include" />
             <e p="SkillFactory.cs" t="Include" />
@@ -92,10 +90,13 @@
             </e>
             <e p="Environment" t="Include">
               <e p="CampFire.cs" t="Include" />
+              <e p="Corpse.cs" t="Include" />
               <e p="Food.cs" t="Include" />
               <e p="Ground.cs" t="Include" />
               <e p="Plant.cs" t="Include" />
+              <e p="Rock.cs" t="Include" />
               <e p="Seed.cs" t="Include" />
+              <e p="Stone.cs" t="Include" />
               <e p="Table.cs" t="Include" />
               <e p="Tent.cs" t="Include" />
               <e p="Tree.cs" t="Include" />
@@ -133,6 +134,7 @@
             <e p="IDamagable.cs" t="Include" />
             <e p="IEdible.cs" t="Include" />
             <e p="IHarvestable.cs" t="Include" />
+            <e p="IMinable.cs" t="Include" />
             <e p="IPlaceable.cs" t="Include" />
             <e p="IPlantable.cs" t="Include" />
             <e p="IShowerable.cs" t="Include" />
@@ -159,7 +161,6 @@
           </e>
           <e p="QuestSystem" t="Include">
             <e p="Quest.cs" t="Include" />
-            <e p="QuestFactory.cs" t="Include" />
             <e p="QuestManager.cs" t="Include" />
           </e>
           <e p="ShaderAdjuster.cs" t="Include" />
@@ -172,6 +173,7 @@
             <e p="JobInfo.cs" t="Include" />
             <e p="NeedBox.cs" t="Include" />
             <e p="NotificationInfo.cs" t="Include" />
+            <e p="PlayerIndicator.cs" t="Include" />
             <e p="ProgressBar.cs" t="Include" />
             <e p="RecipeInfo.cs" t="Include" />
             <e p="SkillInfo.cs" t="Include" />

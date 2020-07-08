@@ -178,7 +178,7 @@ namespace Manager
 
 		public void SetInfoPanel(Responsible responsible)
 		{
-			responsibleName.GetComponent<Text>().text = responsible.CharacterName;
+			responsibleName.GetComponent<Text>().text = responsible.characterName;
 			SetNeeds(responsible);
 			SetSkills(responsible);
 		}

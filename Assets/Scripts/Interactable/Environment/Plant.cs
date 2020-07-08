@@ -87,7 +87,7 @@ namespace Interactable.Environment
 			responsible.animator.SetBool("isHarvesting", false);
 			GroundUtil.Clear(gameObject.transform.position);
 			responsible.Inventory.Add(CreateProduct());
-			this.gameObject.transform.position = new Vector3(0f, -100f, 0f);
+			Destroy(gameObject, 0.5f);
 			responsible.FinishJob();
 		}
 
@@ -100,8 +100,15 @@ namespace Interactable.Environment
 			if (_harvestable) yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
 			
 			yield return Util.WaitForSeconds(responsible.GetCurrentJob(), eatDuration);
-			if (_harvestable) 	{GroundUtil.Clear(gameObject.transform.position);}
-			responsible.Inventory.Remove(gameObject);
+			
+			if (_harvestable)
+			{
+				GroundUtil.Clear(gameObject.transform.position);
+			}
+			else
+			{
+				responsible.Inventory.Remove(gameObject);
+			}
 			
 			responsible.Inventory.Add(CreateSeed());
 			responsible.Heal(20);

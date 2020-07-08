@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Attribute;
 using Interactable.Base;
 using Interactable.Environment;
 using UnityEngine;
@@ -36,6 +37,7 @@ public class Table : Pickable, IPlaceable
     }
 
     [Interactable(typeof(Responsible))]
+    [Activity(ActivityType.Place)]
     public IEnumerator Place(Responsible responsible)
     {
         if (_placed)

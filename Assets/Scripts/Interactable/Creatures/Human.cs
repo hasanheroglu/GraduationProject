@@ -18,10 +18,6 @@ namespace Interactable.Creatures
 			SetGroupName("human");
 			instanceNo = _instanceCount;
 			_instanceCount++;
-			Behaviour = new Behaviour(this.GetComponent<Responsible>());
-			Behaviour.Activities = new List<Activity> {ActivityFactory.GetActivity(ActivityType.Chop), ActivityFactory.GetActivity(ActivityType.Kill)};
-			Behaviour.SetActivity();
-			autoWill = false;
 			SetMethods();
 			InUse = 999;
 		}

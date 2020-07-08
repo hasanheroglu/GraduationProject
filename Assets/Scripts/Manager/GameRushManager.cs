@@ -23,7 +23,6 @@ public class GameRushManager : MonoBehaviour
     void Start()
     {
         timer = timeLimit;
-        CreateLevel();
     }
 
     // Update is called once per frame
@@ -51,7 +50,7 @@ public class GameRushManager : MonoBehaviour
         {
             var responsible = character.GetComponent<Responsible>();
 
-            if (responsible.quests == null) return false;
+            if (responsible.quests == null) return true;
             
             foreach (var quest in responsible.quests)
             {
@@ -76,12 +75,7 @@ public class GameRushManager : MonoBehaviour
 
         return false;
     }
-
-    private void CreateLevel()
-    {
-        characters = LevelFactory.GetLevel(_level);
-    }
-
+    
     private void DisplayTimer()
     {
         var minutes = (int) timer / 60;
@@ -104,13 +98,13 @@ public class GameRushManager : MonoBehaviour
 
     public void RestartLevel()
     {
-        SceneManager.LoadScene("Test01");
+        SceneManager.LoadScene("QuestRush_" + String.Format("{0:D2}", _level));
     }
 
     public void NextLevel()
     {
         _level++;
-        SceneManager.LoadScene("Test01");
+        SceneManager.LoadScene("QuestRush_" + String.Format("{0:D2}", _level));
     }
 
     public void LoadMainMenu()

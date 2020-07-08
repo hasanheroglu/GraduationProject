@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum SkillType{None, Lumberjack, Cooking, Hunting, Gardening}
+public enum SkillType{None, Lumberjack, Cooking, Hunting, Gardening, Crafting}
 
 public class Skill
 {

@@ -15,9 +15,6 @@ public class Zombie : Responsible
 		SetGroupName("zombie");
 		instanceNo = _instanceCount;
 		_instanceCount++;
-		Behaviour = new Behaviour(this.GetComponent<Responsible>());
-		Behaviour.Activities = new List<Activity> {ActivityFactory.GetActivity(ActivityType.Kill)};
-		Behaviour.SetActivity();
 		SetMethods();
 		InUse = 999;
 	}
