@@ -1714,10 +1714,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4526473617109870068}
   - component: {fileID: 4526473617119382036}
-  - component: {fileID: 4526473617559384129}
   - component: {fileID: 3731070253090483726}
   - component: {fileID: -1018180468164697562}
+  - component: {fileID: 4526473617559384129}
   - component: {fileID: -2405177780212685037}
+  - component: {fileID: 931954006451450712}
+  - component: {fileID: 3372241204434220567}
   m_Layer: 0
   m_Name: Human
   m_TagString: Human
@@ -1766,29 +1768,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4526473617559384129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4526473617110038996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe4494e2c5f20af45a7bcbe598ef948e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  interactionPoint: {fileID: 4526473617626094472}
-  groupName: human
-  animator: {fileID: 4526473617119382036}
-  isPlayer: 0
-  isDead: 0
-  autoWill: 0
-  characterName: 
-  behaviour: {fileID: 0}
-  quests: []
-  directionPosition: {fileID: 4526473617627587155}
 --- !u!54 &3731070253090483726
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1827,6 +1806,27 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &4526473617559384129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4526473617110038996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4494e2c5f20af45a7bcbe598ef948e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  interactionPoint: {fileID: 4526473617626094472}
+  groupName: human
+  animator: {fileID: 4526473617119382036}
+  isPlayer: 0
+  isDead: 0
+  characterName: 
+  quests: []
+  directionPosition: {fileID: 4526473617627587155}
 --- !u!114 &-2405177780212685037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1841,6 +1841,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activities: 0700000009000000
   autoWill: 0
+--- !u!114 &931954006451450712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4526473617110038996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500a1abc255c54de89e75a479fc5f974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
+--- !u!114 &3372241204434220567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4526473617110038996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c678237bcbf4c2ebea335c091585fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPosition: {fileID: 4526473617251370091}
 --- !u!1 &4526473617110038998
 GameObject:
   m_ObjectHideFlags: 0

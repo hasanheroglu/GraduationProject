@@ -29,7 +29,6 @@ namespace Interactable.Base
 		
 		public Inventory Inventory { get; set; }
 		public Equipment Equipment { get; set; }
-
 		public Behaviour Behaviour { get; set; }
 		
 		[SerializeField] public List<Quest> quests;
@@ -38,14 +37,11 @@ namespace Interactable.Base
 
 		public void Awake()
 		{
-			isDead = false;
-			//isPlayer = false;
-			
 			Jobs = new List<Job>();
 			Needs = new Dictionary<NeedType, Need>();
 			Skills = new Dictionary<SkillType, Skill>();
-			Inventory = new Inventory(this);
-			Equipment = new Equipment(this);
+			Inventory = GetComponent<Inventory>();
+			Equipment = GetComponent<Equipment>();
 			Behaviour = GetComponent<Behaviour>();
 
 			_agent = GetComponent<NavMeshAgent>();

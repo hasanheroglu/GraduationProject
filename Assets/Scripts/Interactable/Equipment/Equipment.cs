@@ -1,32 +1,33 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Interactable.Base;
 using UnityEngine;
 
 [System.Serializable]
-public class Equipment
+public class Equipment: MonoBehaviour
 {
+    private Responsible _responsible;
     private GameObject _defaultMelee;
-    
-    public Responsible Responsible { get; set; }
-    public Dictionary<EquipableType, GameObject> Items { get; set; }
-    public Weapon Weapon { get; set; }
 
     public GameObject weaponPosition;
-
-    private void SetDefaultMelee()
-    {
-        _defaultMelee = WeaponFactory.GetFist(Responsible.gameObject.transform.position);
-        _defaultMelee.GetComponent<Renderer>().enabled = false;
-    }
     
-    public Equipment(Responsible responsible)
+    public Dictionary<EquipableType, GameObject> Items { get; set; }
+    public Weapon Weapon { get; set; }
+    
+    
+    private void Start()
     {
-        Responsible = responsible;
-        weaponPosition = Responsible.transform.Find("WeaponPosition").gameObject;
+        _responsible = GetComponent<Responsible>();
         Items = new Dictionary<EquipableType, GameObject>();
         SetDefaultMelee();
         Equip(_defaultMelee);
+    }
+    
+    private void SetDefaultMelee()
+    {
+        _defaultMelee = WeaponFactory.GetFist(_responsible.gameObject.transform.position);
+        _defaultMelee.GetComponent<Renderer>().enabled = false;
     }
     
     public void Equip(GameObject item)
@@ -110,6 +111,6 @@ public class Equipment
         item.transform.localRotation = new Quaternion(0, 1f, 0, 1f);
         item.GetComponent<Collider>().enabled = false;
         Weapon = item.GetComponent<Weapon>();
-        Weapon.Responsible = Responsible;
+        Weapon.Responsible = _responsible;
     }
 }

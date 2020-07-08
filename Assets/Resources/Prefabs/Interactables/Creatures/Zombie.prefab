@@ -822,6 +822,8 @@ GameObject:
   - component: {fileID: 1628604294734018300}
   - component: {fileID: 7441992466561406168}
   - component: {fileID: 5759457076880108125}
+  - component: {fileID: 7885995016084446506}
+  - component: {fileID: 2862045795216627670}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Human
@@ -926,9 +928,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   isPlayer: 0
   isDead: 0
-  autoWill: 0
   characterName: 
-  behaviour: {fileID: 0}
   quests: []
   directionPosition: {fileID: 6455355352846710409}
 --- !u!114 &5759457076880108125
@@ -945,6 +945,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activities: 0b000000
   autoWill: 1
+--- !u!114 &7885995016084446506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6455355352816020750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500a1abc255c54de89e75a479fc5f974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2862045795216627670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6455355352816020750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c678237bcbf4c2ebea335c091585fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPosition: {fileID: 6455355352689184945}
 --- !u!1 &6455355352816020752
 GameObject:
   m_ObjectHideFlags: 0

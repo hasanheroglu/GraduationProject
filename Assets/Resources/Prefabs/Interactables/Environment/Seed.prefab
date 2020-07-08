@@ -41,9 +41,9 @@ GameObject:
   - component: {fileID: 1394090152885360420}
   - component: {fileID: 459343987204850237}
   - component: {fileID: 7381300636400729356}
-  - component: {fileID: -8754696357051458714}
   - component: {fileID: 5902221280843065070}
   - component: {fileID: 5331539929381335194}
+  - component: {fileID: -8754696357051458714}
   m_Layer: 0
   m_Name: Seed
   m_TagString: Untagged
@@ -115,22 +115,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-8754696357051458714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6604773001231907862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c07a524bb66894b77a58d25850f0ef05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Seed
-  health: 100
-  interactionPoint: {fileID: 4094400456989779590}
-  product: {fileID: 1374016083561066, guid: 44058c539c2aa4a099a53c990e5bd88e, type: 3}
 --- !u!54 &5902221280843065070
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -161,3 +145,21 @@ CapsuleCollider:
   m_Height: 1.9999999
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-8754696357051458714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6604773001231907862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c07a524bb66894b77a58d25850f0ef05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  interactionPoint: {fileID: 4094400456989779590}
+  groupName: seed
+  picked: 0
+  _pickDuration: 0
+  dropDuration: 0

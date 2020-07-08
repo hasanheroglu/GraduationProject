@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8922897440808619820}
   - component: {fileID: 6912171890610946502}
   - component: {fileID: 6818923673112625971}
-  - component: {fileID: 721125601911922563}
-  - component: {fileID: 6139451902502795785}
   - component: {fileID: -7796356452099058234}
+  - component: {fileID: 6139451902502795785}
+  - component: {fileID: 721125601911922563}
   m_Layer: 0
   m_Name: Tent
   m_TagString: Untagged
@@ -100,6 +100,34 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2989305052099074096, guid: 1802fe57b3c9a41719104031973dec10, type: 3}
+--- !u!114 &-7796356452099058234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2399146525636589419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9e1872d76f24b38830e423356a2c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6139451902502795785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2399146525636589419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563ff52728eaa4328995daafe91b14f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  interactionPoint: {fileID: 3174943542290432504}
+  groupName: tent
+  sleepDuration: 0
 --- !u!114 &721125601911922563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,33 +141,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mesh: {fileID: 2399146525636589419}
---- !u!114 &6139451902502795785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2399146525636589419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 563ff52728eaa4328995daafe91b14f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: 
-  health: 100
-  interactionPoint: {fileID: 3174943542290432504}
---- !u!114 &-7796356452099058234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2399146525636589419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c9e1872d76f24b38830e423356a2c1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3174943542290432504
 GameObject:
   m_ObjectHideFlags: 0

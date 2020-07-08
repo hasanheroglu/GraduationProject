@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   interactionPoint: {fileID: 5841643847554083613}
-  groupName: food
+  groupName: flower_fruit
   picked: 0
   _pickDuration: 1
   dropDuration: 1

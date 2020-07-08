@@ -12,10 +12,11 @@ GameObject:
   - component: {fileID: 6511076281918459770}
   - component: {fileID: 677637858830545795}
   - component: {fileID: 2126603202835154321}
-  - component: {fileID: 280527440086840339}
   - component: {fileID: 857755853}
   - component: {fileID: 5689133595385089588}
+  - component: {fileID: 280527440086840339}
   - component: {fileID: 1434479144409684888}
+  - component: {fileID: 8365791512635978719}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Human
@@ -114,29 +115,6 @@ NavMeshAgent:
   m_BaseOffset: 0.06
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &280527440086840339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1250771469795936095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e43d71ac8fb546a58ca1be20af932fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  interactionPoint: {fileID: 1710257124522093497}
-  groupName: 
-  animator: {fileID: 0}
-  isPlayer: 0
-  isDead: 0
-  autoWill: 1
-  characterName: Otis
-  behaviour: {fileID: 0}
-  quests: []
-  directionPosition: {fileID: 3266501207482154163}
 --- !u!64 &857755853
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -167,6 +145,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &280527440086840339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250771469795936095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e43d71ac8fb546a58ca1be20af932fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  interactionPoint: {fileID: 1710257124522093497}
+  groupName: 
+  animator: {fileID: 0}
+  isPlayer: 0
+  isDead: 0
+  characterName: Otis
+  quests: []
+  directionPosition: {fileID: 3266501207482154163}
 --- !u!114 &1434479144409684888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +180,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activities: 08000000
   autoWill: 1
+--- !u!114 &8365791512635978719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250771469795936095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500a1abc255c54de89e75a479fc5f974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
 --- !u!1 &1710257124522093497
 GameObject:
   m_ObjectHideFlags: 0

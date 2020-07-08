@@ -15,26 +15,15 @@ namespace Interactable.Base
 		protected int instanceNo;
 		
 		[SerializeField] private string groupName;
-		private int _inUse;
-		private HashSet<MethodInfo> _methods;
+		
+		public int InUse { get; set; }
+		public HashSet<MethodInfo> Methods { get; set; }
 		
 		private void Awake()
 		{
 			SetMethods();
 		}
-
-		public int InUse
-		{
-			get { return _inUse; }
-			set { _inUse = value; }
-		}
-
-		public HashSet<MethodInfo> Methods
-		{
-			get { return _methods; }
-			set { _methods = value; }
-		}
-
+		
 		protected void SetMethods()
 		{
 			var flags = BindingFlags.Public | BindingFlags.Instance | BindingFlags.FlattenHierarchy;
@@ -55,9 +44,9 @@ namespace Interactable.Base
 		{
 			MethodInfo methodInfo = null;
 			
-			if (_methods == null || _methods.Count == 0) return null;
+			if (Methods == null || Methods.Count == 0) return null;
 			
-			foreach (var method in _methods)
+			foreach (var method in Methods)
 			{
 				if (IsActivityAllowed(method, activityType) && CanInteractWith(method, responsible))
 				{

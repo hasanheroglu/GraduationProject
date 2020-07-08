@@ -1,18 +1,21 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Interactable.Base;
 using Manager;
 using UnityEngine;
 
-public class Inventory
+
+public class Inventory: MonoBehaviour
 {
-    public Responsible Responsible { get; set; }
-    public List<GameObject> Items { get; set; }
+    private Responsible _responsible;
     
-    public Inventory(Responsible responsible)
+    public List<GameObject> Items { get; set; }
+
+    private void Start()
     {
-        Responsible = responsible;
+        _responsible = GetComponent<Responsible>();
         Items = new List<GameObject>();
     }
     
@@ -20,7 +23,7 @@ public class Inventory
     {
         item.transform.position = new Vector3(0f, -100f, 0f);
         Items.Add(item);
-        UIManager.Instance.SetInventory(Responsible);
+        UIManager.Instance.SetInventory(_responsible);
     }
 
     public GameObject Find(string itemName)
@@ -73,12 +76,12 @@ public class Inventory
             Items.Remove(toBeRemoved);
         }
         
-        UIManager.Instance.SetInventory(Responsible);
+        UIManager.Instance.SetInventory(_responsible);
     }
     
     public void Remove(GameObject item)
     {
         Items.Remove(item);
-        UIManager.Instance.SetInventory(Responsible);
+        UIManager.Instance.SetInventory(_responsible);
     }
 }
