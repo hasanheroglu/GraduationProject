@@ -19,6 +19,12 @@ public static class RecipeFactory
 		return new Recipe("table", ingredients, typeof(ItemFactory).GetMethod("GetTable"), 12f, craftable);
 	}
 	
+	public static Recipe GetPistol(ICraftable craftable)
+	{
+		List<Ingredient> ingredients = new List<Ingredient>() {new Ingredient("wood", null, 1), new Ingredient("stone", null, 1)};
+		return new Recipe("pistol", ingredients, typeof(WeaponFactory).GetMethod("GetPistol"), 6f, craftable);
+	}
+	
 	public static Recipe GetShotgun(ICraftable craftable)
 	{
 		List<Ingredient> ingredients = new List<Ingredient>() {new Ingredient("wood", null, 2), new Ingredient("stone", null, 1)};

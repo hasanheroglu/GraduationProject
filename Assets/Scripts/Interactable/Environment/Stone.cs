@@ -8,13 +8,13 @@ public class Stone : Pickable
     private static int _instanceCount;
     
     // Start is called before the first frame update
-    void Awake()
+    private void Awake()
     {
-        SetGroupName("stone");
         instanceNo = _instanceCount;
         _instanceCount++;
         InUse = 1;
         SetMethods();
+        base.Awake();
     }
     
     [Interactable(typeof(Responsible))]

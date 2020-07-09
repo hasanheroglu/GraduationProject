@@ -12,7 +12,7 @@ public class NotificationInfo : MonoBehaviour
     [SerializeField]
     private GameObject button;
 
-    private float expireDuration = 60f;
+    private float expireDuration = 5f;
 
     private void Start()
     {

@@ -13,7 +13,7 @@ public class Inventory: MonoBehaviour
     
     public List<GameObject> Items { get; set; }
 
-    private void Start()
+    private void Awake()
     {
         _responsible = GetComponent<Responsible>();
         Items = new List<GameObject>();

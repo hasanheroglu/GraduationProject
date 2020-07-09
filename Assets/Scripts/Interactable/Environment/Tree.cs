@@ -15,13 +15,12 @@ namespace Interactable.Environment
 	public class Tree : Base.Interactable, IChoppable
 	{
 		private static int _instanceCount;
-		
-		[SerializeField] private float chopDuration;
 		private static GameObject _product;
+
+		[SerializeField] private float chopDuration;
 		
-		private void Start()
+		private void Awake()
 		{
-			SetGroupName("tree");
 			instanceNo = _instanceCount;
 			_instanceCount++;
 			chopDuration = 6f;

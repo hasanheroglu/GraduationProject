@@ -2528,7 +2528,7 @@ PrefabInstance:
     - target: {fileID: 280527440086840339, guid: ea65f9aebd8aa4abc9b268629d5cfe85,
         type: 3}
       propertyPath: quests.Array.data[0].groupName
-      value: plant
+      value: flower
       objectReference: {fileID: 0}
     - target: {fileID: 280527440086840339, guid: ea65f9aebd8aa4abc9b268629d5cfe85,
         type: 3}
@@ -2538,7 +2538,7 @@ PrefabInstance:
     - target: {fileID: 280527440086840339, guid: ea65f9aebd8aa4abc9b268629d5cfe85,
         type: 3}
       propertyPath: quests.Array.data[0].description
-      value: Eat 3 plants!
+      value: Eat 3 flowers!
       objectReference: {fileID: 0}
     - target: {fileID: 280527440086840339, guid: ea65f9aebd8aa4abc9b268629d5cfe85,
         type: 3}

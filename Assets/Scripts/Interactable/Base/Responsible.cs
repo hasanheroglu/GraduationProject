@@ -77,8 +77,8 @@ namespace Interactable.Base
 				}
 			}
 			yield return new WaitUntil((() => TargetInRange));
-			StopWalking();
 			yield return Turn();
+			StopWalking();
 		}
 		
 		public void StopWalking()
@@ -93,16 +93,19 @@ namespace Interactable.Base
 		public void Wander()
 		{
 			if (Jobs.Count != 0) return;
-		
+
 			var position = gameObject.transform.position;
-			var direction = new Vector2(position.x, position.z) + Random.insideUnitCircle * 10f;
-			var destination = new Vector3(direction.x, 0.4f, direction.y);
-
+			var direction = new Vector2(position.x, position.z) + Random.insideUnitCircle * 100f;
+			var destination = new Vector3(direction.x, 0f, direction.y);
+			
 			var ground = GroundUtil.FindGround(destination);
-			if(ground != null) JobManager.AddJob(new Job(new JobInfo(this, ground, ground.GetType().GetMethod("Walk"), new object[]{this})));
+			if (ground)
+			{
+				Debug.Log(ground.name);
+				JobManager.AddJob(new Job(new JobInfo(this, ground, ground.GetType().GetMethod("Walk"), new object[]{this})));
+			}
 		}
-
-
+		
 		public IEnumerator Turn()
 		{
 			var respDirection = new Vector2(directionPosition.transform.position.x - transform.position.x, directionPosition.transform.position.z - transform.position.z);

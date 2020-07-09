@@ -16,9 +16,8 @@ namespace Interactable.Environment
 		
 		[SerializeField] public bool occupied;
 		
-		private void Start()
+		private void Awake()
 		{
-			SetGroupName("ground");
 			instanceNo = _instanceCount;
 			_instanceCount++;
 			InUse = 999; //infinite use change this value!!!
@@ -33,7 +32,6 @@ namespace Interactable.Environment
 			}
 		}
 
-		[Activity(ActivityType.None)]
 		[Interactable(typeof(Responsible))]
 		public IEnumerator Walk(Responsible responsible)
 		{ 

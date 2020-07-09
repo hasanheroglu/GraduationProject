@@ -110,15 +110,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 627b52b78be5446ce8c57a379c1739ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: 
   health: 100
   interactionPoint: {fileID: 7492295287841834577}
+  groupName: armor
   picked: 0
   _pickDuration: 0
   dropDuration: 0
+  equipped: 0
   _equipDuration: 0
   _unequipDuration: 0
-  _durability: 0
+  durability: 0
   type: 0
 --- !u!54 &-724748077115178466
 Rigidbody:

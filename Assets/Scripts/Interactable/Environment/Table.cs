@@ -14,7 +14,6 @@ public class Table : Pickable, IPlaceable
     
     private void Awake()
     {
-        SetGroupName("table");
         instanceNo = _instanceCount;
         _instanceCount++;
         InUse = 1;

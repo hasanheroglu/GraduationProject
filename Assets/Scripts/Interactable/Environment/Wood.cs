@@ -10,7 +10,6 @@ public class Wood : Pickable
     // Start is called before the first frame update
     private void Awake()
     {
-        SetGroupName("wood");
         instanceNo = _instanceCount;
         _instanceCount++;
         InUse = 1;

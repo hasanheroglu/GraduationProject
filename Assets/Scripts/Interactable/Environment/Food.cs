@@ -14,12 +14,12 @@ public class Food : Pickable, IEdible
 	
 	private void Awake()
 	{
-		SetGroupName("food");
 		instanceNo = _instanceCount;
 		_instanceCount++;
 		eatDuration = 3.0f;
 		InUse = 1;
 		SetMethods();
+		base.Awake();
 	}
 
 	[Activity(ActivityType.Eat)]

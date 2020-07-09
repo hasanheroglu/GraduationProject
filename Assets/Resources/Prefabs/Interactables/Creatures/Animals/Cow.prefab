@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 280527440086840339}
   - component: {fileID: 1434479144409684888}
   - component: {fileID: 8365791512635978719}
+  - component: {fileID: 4052616980223772239}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Human
@@ -159,7 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   interactionPoint: {fileID: 1710257124522093497}
-  groupName: 
+  groupName: cow
   animator: {fileID: 0}
   isPlayer: 0
   isDead: 0
@@ -192,7 +193,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 500a1abc255c54de89e75a479fc5f974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items: []
+--- !u!114 &4052616980223772239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250771469795936095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c678237bcbf4c2ebea335c091585fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPosition: {fileID: 6628461181700840415}
 --- !u!1 &1710257124522093497
 GameObject:
   m_ObjectHideFlags: 0

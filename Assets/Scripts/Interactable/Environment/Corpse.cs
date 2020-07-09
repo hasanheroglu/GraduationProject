@@ -12,9 +12,8 @@ public class Corpse : Interactable.Base.Interactable, IEdible
     [SerializeField] private float eatDuration = 5f;
     
     // Start is called before the first frame update
-    void Awake()
+    private void Awake()
     {
-        SetGroupName("corpse");
         instanceNo = _instanceCount;
         _instanceCount++;
         InUse = 1;

@@ -18,7 +18,6 @@ public class CampFire : Interactable.Base.Interactable, ICraftable
 	
 	private void Awake()
 	{
-		SetGroupName("campfire");
 		instanceNo = _instanceCount;
 		_instanceCount++;
 		InUse = 1;
@@ -30,7 +29,8 @@ public class CampFire : Interactable.Base.Interactable, ICraftable
 			RecipeFactory.GetWoodenHelmet(this), 
 			RecipeFactory.GetWoodenFaulds(this), 
 			RecipeFactory.GetTable(this),
-			RecipeFactory.GetShotgun(this)
+			RecipeFactory.GetShotgun(this),
+			RecipeFactory.GetPistol(this)
 		};
 	}
 

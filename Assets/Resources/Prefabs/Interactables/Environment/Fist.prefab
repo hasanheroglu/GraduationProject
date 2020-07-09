@@ -141,20 +141,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55c16de115474bac9bde4e9ae4efba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Fist
   health: 100
   interactionPoint: {fileID: 5817086894111822035}
+  groupName: 
   picked: 0
   _pickDuration: 0
   dropDuration: 0
+  equipped: 0
   _equipDuration: 0
   _unequipDuration: 0
   durability: 0
   type: 6
   weaponType: 0
+  delay: 0
   damage: 10
   range: 2
-  delay: 0
   bulletPoint: {fileID: 0}
 --- !u!114 &5817086894991313969
 MonoBehaviour:

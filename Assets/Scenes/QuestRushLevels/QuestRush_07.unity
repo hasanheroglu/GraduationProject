@@ -222,7 +222,7 @@ PrefabInstance:
     - target: {fileID: 4526473617559384129, guid: 1feb2f08aa69d4355b273df1bdd29740,
         type: 3}
       propertyPath: isPlayer
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4526473617559384129, guid: 1feb2f08aa69d4355b273df1bdd29740,
         type: 3}

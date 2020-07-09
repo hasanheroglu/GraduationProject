@@ -10,9 +10,8 @@ public class Water : Interactable.Base.Interactable, IShowerable, IWalkable
 {
 	private static int _instanceCount;
 	
-	private void Start()
+	private void Awake()
 	{
-		SetGroupName("water");
 		instanceNo = _instanceCount;
 		_instanceCount++;
 		InUse = 1;

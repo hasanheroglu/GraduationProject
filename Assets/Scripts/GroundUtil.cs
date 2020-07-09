@@ -34,7 +34,7 @@ public static class GroundUtil
 
     public static Ground FindGround(Vector3 position)
     {
-        var colliders = Physics.OverlapBox(position, new Vector3(0.1f, 10f, 0.1f));
+        var colliders = Physics.OverlapBox(position, new Vector3(0.001f, 10f, 0.001f));
         Ground ground = null;
         foreach (var collider in colliders)
         {

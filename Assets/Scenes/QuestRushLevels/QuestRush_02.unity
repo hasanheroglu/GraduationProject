@@ -1388,7 +1388,7 @@ PrefabInstance:
     - target: {fileID: 4526473617559384129, guid: 1feb2f08aa69d4355b273df1bdd29740,
         type: 3}
       propertyPath: quests.Array.data[0].groupName
-      value: plant
+      value: flower
       objectReference: {fileID: 0}
     - target: {fileID: 4526473617559384129, guid: 1feb2f08aa69d4355b273df1bdd29740,
         type: 3}
@@ -1398,7 +1398,7 @@ PrefabInstance:
     - target: {fileID: 4526473617559384129, guid: 1feb2f08aa69d4355b273df1bdd29740,
         type: 3}
       propertyPath: quests.Array.data[0].description
-      value: Harvest 3 plants!
+      value: Harvest 3 flowers!
       objectReference: {fileID: 0}
     - target: {fileID: 4526473617559384129, guid: 1feb2f08aa69d4355b273df1bdd29740,
         type: 3}

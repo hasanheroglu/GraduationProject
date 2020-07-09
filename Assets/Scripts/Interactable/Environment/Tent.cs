@@ -15,9 +15,8 @@ namespace Interactable.Environment
 		
 		[SerializeField] private float sleepDuration;
 		
-		private void Start()
+		private void Awake()
 		{
-			SetGroupName("tent");
 			instanceNo = _instanceCount;
 			_instanceCount++;
 			InUse = 1;

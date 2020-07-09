@@ -15,7 +15,6 @@ public class Seed : Pickable, IPlantable
     // Start is called before the first frame update
     private void Awake()
     {
-        SetGroupName("seed");
         instanceNo = _instanceCount;
         _instanceCount++;
         InUse = 1;

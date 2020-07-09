@@ -29,7 +29,6 @@ namespace Interactable.Environment
 		
 		private void Awake()
 		{
-			SetGroupName("plant");
 			instanceNo = _instanceCount;
 			_instanceCount++;
 			InUse = 1;

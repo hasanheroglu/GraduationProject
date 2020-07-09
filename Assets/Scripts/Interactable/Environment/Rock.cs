@@ -14,9 +14,8 @@ public class Rock : Interactable.Base.Interactable, IMinable
     private static GameObject _stone;
     
     // Start is called before the first frame update
-    void Awake()
+    private void Awake()
     {
-        SetGroupName("rock");
         instanceNo = _instanceCount;
         _instanceCount++;
         InUse = 1;
