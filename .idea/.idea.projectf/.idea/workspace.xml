@@ -2,49 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41f68628-977b-4739-9fb5-e8b401d59f06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Maps/Map_07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Maps/Map_07.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Maps/Map_08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Maps/Map_08.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_08.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_08.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectf/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/Cow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Animals/Cow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Creatures/Zombie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/CampFire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/CampFire.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Fist.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Fist.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Ground.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Ground.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Rock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Rock.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Rock.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Environment/Rock.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Armor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Armor.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Food.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Food.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Table.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Table.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Wood.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Items/Wood.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Weapon.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Interactables/Weapon.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_00.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_00.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_02.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_02.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_07.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/QuestRushLevels/QuestRush_07.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/RecipeFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GroundUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GroundUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/CampFire.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Corpse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Corpse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Food.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Ground.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Plant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Rock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Rock.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Seed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Seed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Stone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Stone.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Table.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Table.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Wood.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Wood.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/NotificationInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/NotificationInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/ZombieSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Weapons/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/Recipe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/Ingredient.cs" />
@@ -230,7 +187,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Tree.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Water.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Seed.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Wood.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Environment/Table.cs" />
@@ -243,6 +199,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/Behaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Base/Responsible.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/NotificationInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Equipment/Pickable.cs" />
       </list>
     </option>
   </component>
@@ -338,7 +296,7 @@
       <workItem from="1590989073677" duration="15848000" />
       <workItem from="1591971418601" duration="8191000" />
       <workItem from="1591984152272" duration="1140000" />
-      <workItem from="1593678048658" duration="31861000" />
+      <workItem from="1593678048658" duration="32657000" />
     </task>
     <servers />
   </component>
