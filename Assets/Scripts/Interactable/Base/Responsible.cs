@@ -95,7 +95,7 @@ namespace Interactable.Base
 			if (Jobs.Count != 0) return;
 
 			var position = gameObject.transform.position;
-			var direction = new Vector2(position.x, position.z) + Random.insideUnitCircle * 100f;
+			var direction = new Vector2(position.x, position.z) + Random.insideUnitCircle * 8f;
 			var destination = new Vector3(direction.x, 0f, direction.y);
 			
 			var ground = GroundUtil.FindGround(destination);
@@ -203,12 +203,12 @@ namespace Interactable.Base
 					responsible.StopWalking();
 					yield return StartCoroutine(responsible.Turn());
 					
-					if (!Behaviour.IsFirstActivity(ActivityType.Kill))
+					if (Jobs.Count != 0 && !Jobs[0].Target.Equals(responsible) && Behaviour.autoWill)
 					{
-						Behaviour.AddActivityToBeginning(ActivityType.Kill);
-						Behaviour.SetActivity();
+						JobManager.AddJob(new Job(new JobInfo(this, responsible, responsible.GetType().GetMethod("Attack"), new object []{this})));
+						FinishJob(true);
 					}
-
+					
 					if (isPlayer)
 					{
 						NotificationManager.Instance.Notify(characterName + " is under attack!", gameObject.transform);

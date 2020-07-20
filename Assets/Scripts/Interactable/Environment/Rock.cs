@@ -9,7 +9,7 @@ public class Rock : Interactable.Base.Interactable, IMinable
 {
     private static int _instanceCount;
 
-    [SerializeField] private float mineDuration;
+    [SerializeField] private float mineDuration = 3f;
     
     private static GameObject _stone;
     
@@ -19,7 +19,6 @@ public class Rock : Interactable.Base.Interactable, IMinable
         instanceNo = _instanceCount;
         _instanceCount++;
         InUse = 1;
-        mineDuration = 3f;
         _stone = Resources.Load<GameObject>("Prefabs/Interactables/Environment/Stone");
         SetMethods();
     }

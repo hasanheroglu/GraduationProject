@@ -16,6 +16,7 @@ public class DayManager : MonoBehaviour
     private Clock _clock;
     private int _temperature;
     private float _sunRotateAmount;
+    private static GameObject _gameSpeedText;
 
     [SerializeField] private int gameMinuteInRealtimeSeconds = 1;
     [SerializeField] private Light sun;
@@ -28,6 +29,8 @@ public class DayManager : MonoBehaviour
         _clock.Hour = 12;
         _clock.Minute = 0;
         _sunRotateAmount = 0.25f; //180 degrees divided by 12 (12 hours day / 12 hours night) and divided by minutes in an hour
+        _gameSpeedText = GameObject.Find("Canvas").transform.Find("GameSpeed").gameObject;
+        SetSpeedNormal();
     }
 
     // Update is called once per frame
@@ -45,21 +48,25 @@ public class DayManager : MonoBehaviour
     public static void SetSpeedZero()
     {
         Time.timeScale = 0;
+        _gameSpeedText.GetComponent<Text>().text = "Game Speed: Paused";
     }
 
     public static void SetSpeedNormal()
     {
         Time.timeScale = 1;
+        _gameSpeedText.GetComponent<Text>().text = "Game Speed: 1x";
     }
 
     public static void SetSpeedFaster()
     {
         Time.timeScale = 2;
+        _gameSpeedText.GetComponent<Text>().text = "Game Speed: 2x";
     }
 
     public static void SetSpeedFastest()
     {
         Time.timeScale = 4;
+        _gameSpeedText.GetComponent<Text>().text = "Game Speed: 4x";
     }
 
     private void GetTime()
