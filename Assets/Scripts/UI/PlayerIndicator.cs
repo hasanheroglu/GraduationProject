@@ -18,7 +18,7 @@ public class PlayerIndicator : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (ActionManager.Instance._responsible.Equals(_responsible.gameObject))
         {

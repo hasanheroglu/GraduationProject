@@ -23,14 +23,21 @@ public class Food : Pickable, IEdible
 	}
 
 	[Activity(ActivityType.Eat)]
-	[Interactable(typeof(Responsible))]
 	[Interactable(typeof(Human))]
 	[Skill(SkillType.None)]
 	public IEnumerator Eat(Responsible responsible)
 	{
-		yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
+		if(!picked){
+			yield return StartCoroutine(responsible.Walk(interactionPoint.transform.position));
+		}
+
 		yield return Util.WaitForSeconds(responsible.GetCurrentJob(), eatDuration);
-		Destroy(this.gameObject);
+
+		if(picked){
+			responsible.Inventory.Remove(GetGroupName());
+		}
+
+		Destroy(this.gameObject, 0.1f);
 		responsible.FinishJob();
 	}
 

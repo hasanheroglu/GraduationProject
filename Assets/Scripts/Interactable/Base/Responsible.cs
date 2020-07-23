@@ -208,12 +208,7 @@ namespace Interactable.Base
 						JobManager.AddJob(new Job(new JobInfo(this, responsible, responsible.GetType().GetMethod("Attack"), new object []{this})));
 						FinishJob(true);
 					}
-					
-					if (isPlayer)
-					{
-						NotificationManager.Instance.Notify(characterName + " is under attack!", gameObject.transform);
-					}
-					
+							
 					yield return weapon.Use();
 				}
 				

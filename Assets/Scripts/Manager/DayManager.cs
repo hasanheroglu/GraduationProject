@@ -39,7 +39,7 @@ public class DayManager : MonoBehaviour
         GetTime();
         SetClock();
         
-        if(Input.GetKeyDown(KeyCode.DoubleQuote)) SetSpeedZero();
+        if(Input.GetKeyDown(KeyCode.Space)) SetSpeedZero();
         if(Input.GetKeyDown(KeyCode.Alpha1)) SetSpeedNormal();
         if(Input.GetKeyDown(KeyCode.Alpha2)) SetSpeedFaster();
         if(Input.GetKeyDown(KeyCode.Alpha3)) SetSpeedFastest();
